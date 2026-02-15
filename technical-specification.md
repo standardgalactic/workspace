@@ -6,100 +6,69 @@
 
 ### Analytical Introduction
 
-The Five-Engine Plenum Architecture represents a strategic departure from standard inflationary cosmology. Traditional models necessitate an expanding metric \( a(t) \) to facilitate structure formation; this architecture operates within a static spatial manifold \( (\mathcal{M}, g) \) where spatial volume remains constant. In this non-expanding context, cosmological evolution is driven by the internal redistribution of density through non-equilibrium thermodynamics rather than metric dilation. Structure is treated not as an artifact of expansion, but as the result of variational instabilities within a coupled scalar-entropy system.
+The Five-Engine Plenum Architecture represents a departure from inflationary cosmology. Conventional models rely on an expanding metric a(t) to enable structure formation. In this framework, evolution unfolds on a static spatial manifold (𝓜, g) whose volume is constant. Cosmological change arises from internal redistribution governed by non-equilibrium thermodynamics rather than metric dilation. Structure is therefore interpreted as the outcome of variational instabilities in a coupled scalar–entropy system.
 
 ### The Five-Engine Schematic
 
-The plenum is maintained by five core operators governing field evolution and thermodynamic stability.
+The plenum is regulated by five operators governing field evolution and thermodynamic stability.
 
-**GAS (Gradient Anisotropic Smoothing)**  
-Defined as:
+**GAS — Gradient Anisotropic Smoothing**
 
-\[
-\mathcal{G}[\phi] = c^2 \Delta_g \phi
-\]
+𝓖[φ] = c² Δ_g φ
 
-Strategic function: The primary diffusive stabilizer. It enforces global equilibrium by smoothing high-frequency fluctuations across the manifold.
+Strategic function: primary diffusive stabilizer enforcing equilibrium by damping high-frequency fluctuations.
 
-**DTR (Deferred Thermodynamic Reservoirs)**  
-Operates via a memory kernel \( K(t) \) introducing delayed entropy injection:
+**DTR — Deferred Thermodynamic Reservoirs**
 
-\[
-\mathcal{R}[\phi](t) = \int_{-\infty}^{t} K(t - \tau)\phi(\tau)\, d\tau
-\]
+𝓡[φ](t) = ∫_{−∞}^{t} K(t − τ) φ(τ) dτ
 
-Strategic function: Prevents immediate thermal death by allowing the system to store and release thermodynamic potential across temporal scales.
+Strategic function: introduces delayed entropy injection, preventing rapid thermal equilibration by storing and releasing thermodynamic potential across time.
 
-**PTLR (Poincaré-Triggered Lattice Recrystallization)**  
-A nonlinear projection \( \Pi_\Lambda(\phi) \) onto a discrete crystallographic subspace \( \Lambda \).
+**PTLR — Poincaré-Triggered Lattice Recrystallization**
 
-Strategic function: Enforces discrete symmetry recurrence, ensuring periodic return to structured configurations based on Poincaré return conditions.
+Π_Λ(φ)
 
-**SIED (Scalar Irruption via Entropic Differential)**  
-Defined as:
+Strategic function: nonlinear projection onto a discrete crystallographic subspace Λ, enforcing recurrence and structured symmetry via Poincaré return conditions.
 
-\[
-\mathcal{I}[\phi] = \beta \phi \Delta_g S
-\]
+**SIED — Scalar Irruption via Entropic Differential**
 
-Strategic function: The fundamental engine of structure formation. Couples the scalar field to entropy curvature, triggering localized growth when entropic differentials exceed smoothing thresholds.
+𝓘[φ] = β φ Δ_g S
 
-**NFR (Neutrino Fossil Registry)**  
-A retarded integral memory kernel \( \mathcal{N}[\phi] \) recording \( \nu(x,t) \) as a fossilized entropy trace.
+Strategic function: primary structure formation engine; couples scalar density to entropy curvature and induces localized growth when entropic feedback overwhelms smoothing.
 
-Strategic function: Acts as a permanent record of prior irruption events, allowing historical scalar amplification to influence future cycles.
+**NFR — Neutrino Fossil Registry**
 
-While these engines operate in tandem, structure emergence is governed primarily by the instability threshold of the SIED operator where diffusive smoothing fails.
+𝓝[φ] = ε ∫_𝓜 η(x, y) φ(y) dy
+
+Strategic function: retarded memory operator preserving the integrated trace of past irruption events.
+
+Although these operators act jointly, structure emergence is governed primarily by the instability threshold of the SIED operator, where diffusive smoothing fails.
 
 ---
 
-## 2. Variational Foundations of the Coupled Scalar-Entropy System
+## 2. Variational Foundations of the Coupled Scalar–Entropy System
 
 ### Analytical Introduction
 
-A variational formulation defines the plenum’s energy landscape, ensuring structure arises from the action principle rather than external imposition.
+A variational formulation defines the plenum’s energy landscape, ensuring structure arises from intrinsic dynamics rather than external forcing.
 
 ### Action Functional
 
-The dynamics derive from:
-
-\[
-\mathcal{A}[\phi, v] =
-\int_{\mathbb{R}} \int_{\mathcal{M}}
-\left(
-\frac{1}{2}(\partial_t \phi)^2
-- \frac{c^2}{2} |\nabla \phi|^2
-+ v \cdot \nabla \phi
-- U(\phi,S)
-\right)
-d\mu_g \, dt
-\]
+𝓐[φ, v] = ∫_ℝ ∫_𝓜 [ ½(∂ₜφ)² − ½c² |∇φ|² + v · ∇φ − U(φ, S) ] dμ_g dt
 
 Entropy density:
 
-\[
-S[\phi] = -\phi \log \phi
-\]
+S[φ] = −φ log φ
 
 Effective potential:
 
-\[
-U(\phi,S) = \frac{\alpha}{2}\phi^2 + \beta \phi \Delta_g S
-\]
+U(φ, S) = (α/2) φ² + β φ Δ_g S
 
-### Evolution Equation
+### Evolution Equation (Dissipative Regime)
 
-Passing to a dissipative regime:
+∂ₜφ = c² Δ_g φ − ∇·(φ v) + α φ + β φ Δ_g S
 
-\[
-\partial_t \phi =
-c^2 \Delta_g \phi
-- \nabla \cdot (\phi v)
-+ \alpha \phi
-+ \beta \phi \Delta_g S
-\]
-
-Structure formation occurs when the entropic curvature term dominates smoothing.
+Structure formation begins when the entropic curvature term dominates smoothing.
 
 ---
 
@@ -109,62 +78,48 @@ Structure formation occurs when the entropic curvature term dominates smoothing.
 
 Perturbation growth rate:
 
-\[
-\gamma_k =
-- \left(
-c^2 - \beta \phi_0 (1 + \log \phi_0)
-\right)\lambda_k
-+ \alpha
-\]
+γ_k = −(c² − β φ₀ (1 + log φ₀)) λ_k + α
 
-Instability occurs when:
+Instability occurs when
 
-\[
-\beta \phi_0 (1 + \log \phi_0) > c^2
-\]
+β φ₀ (1 + log φ₀) > c²
 
 ### Supercritical Pitchfork Bifurcation
 
 Effective diffusion coefficient:
 
-\[
-D_{\text{eff}} = c^2 - \beta \phi_0 \kappa_S
-\]
+D_eff = c² − β φ₀ κ_S
 
-When \( D_{\text{eff}} < 0 \), backward-parabolic amplification replaces smoothing. Higher-order nonlinearities (e.g. \( \eta \psi^3 \)) stabilize the new equilibrium.
+When D_eff < 0, backward-parabolic amplification replaces smoothing. Higher-order nonlinearities (e.g. η ψ³) stabilize the post-bifurcation equilibrium.
 
 ---
 
 ## 4. Operational Topography: Vaults, Crack Points, and Domains
 
-Plenum monitoring uses entropy curvature:
+Entropy curvature:
 
-\[
-\kappa_S = -\Delta_g S
-\]
+κ_S = −Δ_g S
 
 Vacuum response field:
 
-\[
-\chi = -\beta \Delta_g S
-\]
+χ = −β Δ_g S
 
-| Feature        | Definition | Operational State |
-|---------------|------------|------------------|
-| Entropy Vault | \( \kappa_S > 0 \) | Stabilizer |
-| Crack Point | \( \kappa_S > \kappa_c \), where \( \beta \phi_0 \kappa_c = c^2 \) | Trigger |
-| Lamphron State | \( \chi < 0 \) | Global Suppression |
-| Lamphrodyne State | \( \chi > 0 \) | Structure Formation |
+| Feature           | Definition                    | Operational State   |
+| ----------------- | ----------------------------- | ------------------- |
+| Entropy Vault     | κ_S > 0                       | Stabilizer          |
+| Crack Point       | κ_S > κ_c where β φ₀ κ_c = c² | Trigger             |
+| Lamphron State    | χ < 0                         | Global suppression  |
+| Lamphrodyne State | χ > 0                         | Structure formation |
 
 ---
 
 ## 5. Synergy and Inter-Engine Coupling
 
-**PTLR–SIED Catalysis**  
-Projection toward \( \Lambda \) concentrates scalar deviations, creating entropy compression spikes that breach Crack Point thresholds.
+**PTLR–SIED catalysis**
+Projection toward Λ concentrates scalar deviations, generating entropy compression spikes that can exceed crack-point thresholds.
 
-**NFR Fossilization**  
-Records integrated scalar amplification, ensuring past irruptions influence future recurrence cycles.
+**NFR fossilization**
+Records integrated scalar amplification, allowing prior irruptions to influence future recurrence cycles.
 
 ---
 
@@ -172,21 +127,15 @@ Records integrated scalar amplification, ensuring past irruptions influence futu
 
 ### BV Consistency
 
-The action satisfies the Classical Master Equation:
+{S_BV, S_BV} = 0
 
-\[
-\{S_{BV}, S_{BV}\} = 0
-\]
-
-Scalar irruption corresponds to a change in the homotopy type of the critical locus of the action.
+Scalar irruption corresponds to a change in the homotopy type of the critical locus of the action functional.
 
 ### Quantized Mode Excitation
 
 In lamphrodyne regimes:
 
-\[
-\ddot{\hat{\phi}}_k = \omega_k^2 \hat{\phi}_k
-\]
+φ̈_k = ω_k² φ_k
 
 Inverted harmonic oscillator sectors generate exponential fluctuation growth without metric expansion.
 
@@ -194,35 +143,19 @@ Inverted harmonic oscillator sectors generate exponential fluctuation growth wit
 
 ## 7. The Crystal Plenum: Discrete Lattice Realization
 
-The manifold \( (\mathcal{M}, g) \) is discretized as lattice \( \Lambda \).
+The manifold (𝓜, g) may be discretized as lattice Λ.
 
 Discrete Laplacian:
 
-\[
-(\Delta_\Lambda \phi)_i
-\]
+(Δ_Λ φ)*i = ∑*{j ~ i} (φ_j − φ_i)
 
 Instability remains bounded due to finite spectral support.
 
 Discrete free energy:
 
-\[
-E_\Lambda[\phi] =
-\sum_i
-\left(
-\frac{c^2}{2}
-\sum_{j \sim i}
-(\phi_j - \phi_i)^2
--
-\frac{\alpha}{2}\phi_i^2
--
-\frac{\beta}{2}
-\phi_i^2
-(\Delta_\Lambda S)_i
-\right)
-\]
+E_Λ[φ] = ∑*i [ (c²/2) ∑*{j ~ i} (φ_j − φ_i)² − (α/2) φ_i² − (β/2) φ_i² (Δ_Λ S)_i ]
 
-Saturation forms discrete crystal-like condensates.
+Nonlinear saturation yields crystal-like condensates.
 
 ---
 
@@ -230,18 +163,11 @@ Saturation forms discrete crystal-like condensates.
 
 ### Resonant Structure Formation
 
-Band-limited instability produces quasi-periodic scalar resonances analogous to BAO, emerging from entropic bifurcation rather than expansion.
+Band-limited instability produces quasi-periodic scalar resonances analogous to baryon acoustic oscillations, arising from entropic bifurcation rather than expansion.
 
 ### Mass Conservation
 
-Global scalar mass conservation:
-
-\[
-\frac{d}{dt}
-\int_{\mathcal{M}} \phi \, d\mu_g
-=
-0
-\]
+d/dt ∫_𝓜 φ dμ_g = 0
 
 Structure formation is internal redistribution without volume change.
 
@@ -249,5 +175,4 @@ Structure formation is internal redistribution without volume change.
 
 ## Final Statement
 
-Scalar irruption is the fundamental entropic phase transition enabling structure formation in a non-expanding universe. By replacing metric expansion with non-equilibrium dynamics, the Five-Engine Plenum Architecture provides a conserved framework for complex cosmological order.
-
+Scalar irruption constitutes an entropic phase transition enabling structure formation within a non-expanding universe. By replacing metric expansion with non-equilibrium dynamics, the Five-Engine Plenum Architecture provides a conserved framework for the emergence of complex cosmological order.
