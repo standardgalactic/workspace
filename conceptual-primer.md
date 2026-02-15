@@ -23,30 +23,24 @@ If space does not expand, something else must "break" to generate structure. Tha
 
 ## 2. The Secret Geometry of Entropy
 
-Entropy is not merely disorder; it has curvature. Define entropy density:
+Entropy is not merely disorder; it possesses curvature. Define entropy density:
 
-\[
-S[\phi] = -\phi \log \phi
-\]
+S[φ] = −φ log φ
 
 Entropy curvature:
 
-\[
-\kappa_S = -\Delta_g S
-\]
+κ_S = −Δ_g S
 
 The plenum contains two competing effects:
 
-- **Smoothing scale** \( c^2 \), acting through diffusion.
-- **Entropic coupling** \( \beta \), feeding curvature back into scalar growth.
+* **Smoothing scale** c², acting through diffusion.
+* **Entropic coupling** β, feeding curvature back into scalar growth.
 
 ### Scalar Irruption Criterion
 
 The instability threshold is:
 
-\[
-\beta \phi_0 (1 + \log \phi_0) > c^2
-\]
+β φ₀ (1 + log φ₀) > c²
 
 When this inequality holds, smoothing is overwhelmed. Diffusion no longer flattens perturbations; it amplifies them.
 
@@ -58,17 +52,15 @@ Before irruption occurs, entropy accumulates in localized regions.
 
 An **Entropy Vault** satisfies:
 
-\[
-\kappa_S > 0
-\]
+κ_S > 0
 
 This corresponds to downward concavity in entropy geometry. These regions act as reservoirs of compressed informational curvature.
 
 Characteristics:
 
-- Local concavity stores potential energy.
-- High-frequency modes accumulate.
-- Stability persists until threshold crossing.
+* Local concavity stores potential energy.
+* High-frequency modes accumulate.
+* Stability persists until threshold crossing.
 
 A vault is metastable compression awaiting sign inversion.
 
@@ -78,28 +70,24 @@ A vault is metastable compression awaiting sign inversion.
 
 Effective diffusion coefficient:
 
-\[
-D_{\text{eff}} = c^2 - \beta \phi_0 \kappa_S
-\]
+D_eff = c² − β φ₀ κ_S
 
 A **Crack Point** occurs when:
 
-\[
-D_{\text{eff}} < 0
-\]
+D_eff < 0
 
 This marks the transition from parabolic smoothing to backward-parabolic amplification.
 
 ### Sequence of Events
 
 1. Entropy curvature increases.
+
 2. Critical threshold exceeded:
 
-   \[
-   \kappa_S > \kappa_c = \frac{c^2}{\beta \phi_0}
-   \]
+   κ_S > κ_c = c² / (β φ₀)
 
 3. Diffusion sign flips.
+
 4. Only a finite band of Laplacian modes destabilizes.
 
 Because instability is band-limited, structure condenses discretely rather than diverging uncontrollably.
@@ -110,16 +98,14 @@ Because instability is band-limited, structure condenses discretely rather than 
 
 Define vacuum response field:
 
-\[
-\chi = -\beta \Delta_g S
-\]
+χ = −β Δ_g S
 
-| Feature | Lamphron Regime | Lamphrodyne Regime |
-|----------|----------------|--------------------|
-| Effective Diffusion | Positive | Negative |
-| Entropy Curvature | \( \kappa_S < 0 \) | \( \kappa_S > 0 \) |
-| Operator Type | Parabolic (smoothing) | Backward-parabolic (amplifying) |
-| Behavior | Suppresses growth | Induces irruption |
+| Feature             | Lamphron Regime       | Lamphrodyne Regime              |
+| ------------------- | --------------------- | ------------------------------- |
+| Effective Diffusion | Positive              | Negative                        |
+| Entropy Curvature   | κ_S < 0               | κ_S > 0                         |
+| Operator Type       | Parabolic (smoothing) | Backward-parabolic (amplifying) |
+| Behavior            | Suppresses growth     | Induces irruption               |
 
 The plenum alternates between these regimes without changing its underlying metric.
 
@@ -127,50 +113,35 @@ The plenum alternates between these regimes without changing its underlying metr
 
 ## 6. The Five Engines of the Plenum
 
-Scalar irruption operates within a broader dynamical architecture:
+Scalar irruption operates within a broader dynamical architecture.
 
 ### GAS — Gradient Anisotropic Smoothing
 
-\[
-\mathcal{G} = c^2 \Delta_g \phi
-\]
+𝒢 = c² Δ_g φ
 
 Baseline diffusion stabilizer.
 
 ### DTR — Deferred Thermodynamic Reservoirs
 
-\[
-\mathcal{R}[\phi](t) =
-\int_{-\infty}^{t}
-K(t-\tau)\phi(\tau)\, d\tau
-\]
+𝓡[φ](t) = ∫_{−∞}^{t} K(t − τ) φ(τ) dτ
 
 Temporal entropy memory injection.
 
 ### PTLR — Poincaré-Triggered Lattice Recrystallization
 
-\[
-\Pi_\Lambda(\phi)
-\]
+Π_Λ(φ)
 
 Recurrence-based entropy concentration catalyst.
 
 ### SIED — Scalar Irruption via Entropic Differential
 
-\[
-\mathcal{I} = \beta \phi \Delta_g S
-\]
+𝓘 = β φ Δ_g S
 
 Primary amplification engine.
 
 ### NFR — Neutrino Fossil Registry
 
-\[
-\mathcal{N} =
-\epsilon
-\int_{\mathcal{M}}
-\eta(x,y)\phi(y)\, dy
-\]
+𝒩 = ε ∫_𝓜 η(x, y) φ(y) dy
 
 Weak residual memory trace of past irruptions.
 
