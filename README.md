@@ -1,4 +1,13 @@
-# Scalar Irruption via Entropic Differential  
+# Scalar Irruption via Entropic Differential
+
+[Main Essay](https://standardgalactic.github.io/workspace/Scalar%20Irruption%20via%20Entropic%20Differential.pdf)
+
+[Early Draft (shorter)](https://standardgalactic.github.io/workspace/Scalar%20Irruption%20via%20Entropic%20Differential%20-%20draft%2001.pdf)
+
+[Finite Spinodal Instability](https://standardgalactic.github.io/workspace/Finite%20Spinodal%20Instability.pdf)
+
+[Enframing and Gradient Regulation](https://standardgalactic.github.io/workspace/Enframing%20and%20Gradient%20Regulation.pdf)
+
 ## Non-Equilibrium Structure Formation in a Static Plenum
 
 This repository presents a structured overview of the Scalar Irruption framework: a non-expansionary model of cosmological structure formation based on entropy curvature and sign inversion of effective diffusion within a static plenum.
@@ -7,7 +16,7 @@ Rather than relying on metric expansion or inflationary vacuum potentials, this 
 
 ---
 
-## Repository Contents
+## Topic Overview 
 
 ### Blog Post  
 **[blog-post.md](blog-post.md)**  
