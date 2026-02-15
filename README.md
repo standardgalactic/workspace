@@ -10,9 +10,11 @@
 
 ## Non-Equilibrium Structure Formation in a Static Plenum
 
-This repository presents a structured overview of the Scalar Irruption framework: a non-expansionary model of cosmological structure formation based on entropy curvature and sign inversion of effective diffusion within a static plenum.
+This repository outlines an exploratory framework for cosmological structure formation that does not rely on metric expansion. The Scalar Irruption model investigates how entropy curvature and sign inversions in effective diffusion could generate structure within a static plenum.
 
-Rather than relying on metric expansion or inflationary vacuum potentials, this framework proposes that structure emerges from internal entropic geometry through threshold-driven instability.
+The material presented here is preliminary and should be read as a working hypothesis rather than a finished theory. It combines analytic sketches and numerical experiments intended to probe the mathematical behavior and stability properties of the proposed mechanism. A full relativistic formulation, microphysical grounding, and comparison with observational data remain open tasks.
+
+At its core, the framework explores whether threshold-driven changes in entropic geometry can convert diffusive smoothing into localized amplification, producing instability-driven structure without geometric expansion.
 
 ---
 
