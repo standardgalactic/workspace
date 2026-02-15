@@ -77,37 +77,29 @@ The plenum does not explode globally; it undergoes localized, band-limited insta
 
 ## 5. Lamphrodyne Domains: When Diffusion Reverses
 
-Most of the plenum exists in the **Lamphron regime**, characterized by:
+Most of the plenum exists in the **Lamphron regime**, characterized by
 
-\[
-\chi = -\beta \Delta_g S < 0
-\]
+χ = −β Δ_g S < 0
 
 In Lamphron regions:
 
-- Diffusion is positive.
-- Perturbations decay.
-- Uniformity is preserved.
+* Diffusion is positive.
+* Perturbations decay.
+* Uniformity is preserved.
 
-In contrast, **Lamphrodyne domains** satisfy:
+In contrast, **Lamphrodyne domains** satisfy
 
-\[
-\chi > 0
-\]
+χ > 0
 
-Here:
+Here,
 
-\[
-D_{\text{eff}} < 0
-\]
+D_eff < 0
 
 The system transitions from parabolic smoothing to backward-parabolic amplification. Small fluctuations grow exponentially rather than dissipate.
 
-In spectral terms, unstable modes satisfy:
+In spectral terms, unstable modes satisfy
 
-\[
-\lambda_k < \frac{\alpha + \chi_k}{c^2}
-\]
+λ_k < (α + χ_k) / c²
 
 Only a finite band of eigenmodes destabilizes, preventing ultraviolet divergence and producing structured condensation.
 
@@ -117,12 +109,8 @@ Only a finite band of eigenmodes destabilizes, preventing ultraviolet divergence
 
 Scalar irruptions leave persistent traces. The **Neutrino Fossil Registry (NFR)** acts as a retarded memory kernel:
 
-\[
-\mathcal{N} =
-\epsilon
-\int_{\mathcal{M}}
-\eta(x,y)\phi(y)\, dy
-\]
+𝒩 = ε ∫_𝓜 η(x, y) φ(y) dy
+
 
 Each irruption contributes:
 
