@@ -18,11 +18,11 @@ In standard cosmology, structure formation is modeled within the expanding Fried
 
 In the Static Plenum model:
 
-- The spatial manifold \( (\mathcal{M}, g) \) is time-independent.
-- Total scalar mass is conserved.
-- No global scale factor \( a(t) \) is present.
+* The spatial manifold (𝓜, g) is time-independent.
+* Total scalar mass is conserved.
+* No global scale factor a(t) is present.
 
-Rather than metric dilution, the scalar density field \( \phi \) undergoes redistribution. Structure emerges from internal spectral reorganization.
+Rather than metric dilution, the scalar density field φ undergoes redistribution. Structure emerges from internal spectral reorganization.
 
 The universe resembles a resonant crystal rather than an expanding balloon. Complexity is a feature of internal architecture, not geometric dilation.
 
@@ -32,23 +32,17 @@ The universe resembles a resonant crystal rather than an expanding balloon. Comp
 
 Entropy is traditionally associated with dissipation. In scalar irruption theory, entropy also possesses curvature:
 
-\[
-S[\phi] = -\phi \log \phi
-\]
+S[φ] = −φ log φ
 
 Define entropy curvature:
 
-\[
-\kappa_S = -\Delta_g S
-\]
+κ_S = −Δ_g S
 
-When entropy curvature becomes locally concave downward (\( \kappa_S > 0 \)), regions of compressed informational geometry form. These are called **entropy vaults**.
+When entropy curvature becomes locally concave downward (κ_S > 0), regions of compressed informational geometry form. These are called **entropy vaults**.
 
-Entropy vaults are metastable reservoirs where smoothing is locally weakened. When curvature couples to the scalar field via entropic differential:
+Entropy vaults are metastable reservoirs where smoothing is locally weakened. When curvature couples to the scalar field via the entropic differential
 
-\[
-\beta \phi \Delta_g S
-\]
+β φ Δ_g S
 
 it can drive instability rather than decay.
 
@@ -60,21 +54,15 @@ The transition from uniformity to structure occurs at the **Scalar Irruption Cri
 
 Effective diffusion:
 
-\[
-D_{\text{eff}} = c^2 - \beta \phi_0 \kappa_S
-\]
+D_eff = c² − β φ₀ κ_S
 
 The system destabilizes when:
 
-\[
-D_{\text{eff}} < 0
-\]
+D_eff < 0
 
 This occurs at the critical threshold:
 
-\[
-\kappa_S > \kappa_c = \frac{c^2}{\beta \phi_0}
-\]
+κ_S > κ_c = c² / (β φ₀)
 
 At this crack point:
 
