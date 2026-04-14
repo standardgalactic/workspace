@@ -1,0 +1,1440 @@
+1
+00:00:00,000 --> 00:00:11,720
+Normalmente cuando pensamos en que algo es estable o duradero o que simplemente sobrevive al paso del tiempo, pues imaginamos una piedra.
+
+2
+00:00:12,160 --> 00:00:14,800
+Sí, claro, es la intuición más común.
+
+3
+00:00:14,800 --> 00:00:31,640
+O sea, visualizamos algo sólido, súper pesado, muy rígido, algo que se queda ahí plantado en el mismo lugar, resistiendo de manera pues completamente pasiva mientras todo el mundo a su alrededor cambia, ¿no?
+
+4
+00:00:32,740 --> 00:00:44,220
+Históricamente siempre buscamos aferrarnos a estas, digamos, fortalezas inamovibles frente al caos. O sea, pensamos que la inmovilidad es sinónimo total de seguridad.
+
+5
+00:00:44,800 --> 00:01:01,400
+Pero fíjate que cuando te pones a analizar cómo sobreviven realmente los sistemas complejos a lo largo de los siglos, ya sean culturas o idiomas o instituciones, pues te das cuenta de que esa piedra es un pésimo ejemplo.
+
+6
+00:01:01,520 --> 00:01:06,700
+Pésimo, porque si lo piensas, si a una piedra le da suficientes golpes, pues se quiebra.
+
+7
+00:01:06,700 --> 00:01:19,280
+Exacto. Se quiebra y ya no vuelve a ser piedra nunca. O sea, se vuelve polvo y se acabó. Resulta que la verdadera estabilidad se parece muchísimo más a...
+
+8
+00:01:19,280 --> 00:01:21,240
+Hace cuenta una llama.
+
+9
+00:01:21,240 --> 00:01:31,400
+Totalmente. Porque una llama, pues no es una cosa material en el sentido tradicional. O sea, no puedes agarrar el fuego y guardarlo en un cajón.
+
+10
+00:01:31,500 --> 00:01:32,460
+No para nada.
+
+11
+00:01:32,460 --> 00:01:42,340
+Es un proceso constante. Si te le quedas viendo una vela, la llama se está destruyendo y reconstituyendo continuamente con cada milisegundo que pasa.
+
+12
+00:01:43,060 --> 00:01:47,680
+Quema oxígeno, consume combustible, genera luz todo al mismo tiempo.
+
+13
+00:01:47,680 --> 00:02:00,600
+Y precisamente de eso vamos a platicar hoy, en esta exploración de los documentos. Vamos a intentar redefinir por completo qué significa que algo sea verdaderamente estable.
+
+14
+00:02:01,320 --> 00:02:10,720
+Para este análisis profundo, nos estamos basando en un ensayo súper interesante de abril de 2026, escrito por Flyxion.
+
+15
+00:02:11,120 --> 00:02:12,840
+Un texto fascinante, por cierto.
+
+16
+00:02:12,840 --> 00:02:23,880
+Muy, muy bueno. Se llama retorno bajo restricción, una teoría de la persistencia en el lenguaje, el ritual y la forma.
+
+17
+00:02:24,620 --> 00:02:32,780
+Y el argumento central aquí, la misión de hoy, es entender que la estabilidad no es la ausencia de cambio.
+
+18
+00:02:33,240 --> 00:02:41,840
+Al contrario, es un logro puramente dinámico. O sea, si quieres que algo persista, no puedes dejarlo quieto.
+
+19
+00:02:41,840 --> 00:02:47,340
+Así es. Y el autor aborda esto de una manera súper metódica.
+
+20
+00:02:48,000 --> 00:02:57,080
+Para entender cómo sobreviven los sistemas, el ensayo introduce este concepto fundamental que él llama el principio de restricción-recurrencia.
+
+21
+00:02:57,760 --> 00:03:00,440
+Este es, digamos, el motor de toda su teoría.
+
+22
+00:03:01,440 --> 00:03:06,500
+Ok. A ver, vamos a desmenuzar esto un poco porque el nombre suena muy técnico.
+
+23
+00:03:06,500 --> 00:03:16,280
+El principio dice básicamente que para que cualquier cosa mantenga su identidad en el tiempo, necesita dos elementos trabajando en conjunto.
+
+24
+00:03:16,660 --> 00:03:18,600
+Ajá. Dos piezas clave.
+
+25
+00:03:18,760 --> 00:03:29,520
+Primero, la recurrencia, que podemos entenderla como este mecanismo de retorno, o sea, la acción de repetir algo o de volver a ejecutar un proceso.
+
+26
+00:03:29,520 --> 00:03:32,880
+Y segundo, la restricción.
+
+27
+00:03:33,220 --> 00:03:34,560
+¿Qué viene siendo la regla?
+
+28
+00:03:35,060 --> 00:03:44,520
+Exacto. La regla o la condición que asegura que ese retorno caiga en una zona permitida, para que no se convierta nomás en ruido aleatorio.
+
+29
+00:03:45,460 --> 00:03:50,020
+Es que eso es vital. Recurrencia sin restricción es puro caos.
+
+30
+00:03:50,020 --> 00:03:55,980
+Y restricción sin recurrencia, pues es muerte térmica, es parálisis.
+
+31
+00:03:56,560 --> 00:04:03,800
+Fíjate que para intentar aterrizar esto en algo súper mundano, yo me la pasé pensando en el proceso de cuidar una masa madre.
+
+32
+00:04:03,980 --> 00:04:05,360
+Ah, buenísima analogía.
+
+33
+00:04:05,360 --> 00:04:14,400
+Sí, porque si alguien de quienes nos escuchan ha intentado hacer pan en casa, saben que tienes este frasco con agua y harina lleno de bacterias vivas.
+
+34
+00:04:14,980 --> 00:04:21,980
+Si dejas la masa madre estática en la mesa, pues se consume su alimento, se acidifica y se muere.
+
+35
+00:04:22,180 --> 00:04:24,120
+Claro. Dejarla quieta es matarla.
+
+36
+00:04:24,120 --> 00:04:36,120
+Exacto. Entonces, para que ese pequeño ecosistema sobreviva y mantenga su identidad, o sea, su sabor característico, tienes que intervenir repetidamente.
+
+37
+00:04:36,900 --> 00:04:43,840
+Tienes que alimentarla cada cierto tiempo. Esa acción, el alimentarla, es la recurrencia.
+
+38
+00:04:44,160 --> 00:04:44,600
+Ajá.
+
+39
+00:04:44,600 --> 00:04:57,420
+Pero no puedes echarle lo que sea ni a cualquier temperatura. Tienes proporciones muy específicas de agua y harina que debes respetar sí o sí. Y esa, pues es la restricción.
+
+40
+00:04:57,840 --> 00:05:12,800
+Es una excelente analogía porque te muestra que la identidad del pan no está en una célula específica de levadura. O sea, está en el ciclo mismo. Y el ensayo, de hecho, contrasta esto con otras teorías clásicas para que veamos bien la diferencia.
+
+41
+00:05:13,200 --> 00:05:14,020
+¿Como cuáles?
+
+42
+00:05:14,020 --> 00:05:26,900
+Pues, por ejemplo, en la teoría de la información clásica, el enfoque siempre está en enviar un mensaje del punto A al punto B con la menor cantidad de ruido posible.
+
+43
+00:05:27,560 --> 00:05:36,480
+O en la cibernética tradicional, se trata de sistemas que usan retroalimentación para mantener un estado fijo, como un termostato.
+
+44
+00:05:36,700 --> 00:05:38,820
+Que se queda en 20 grados y ya.
+
+45
+00:05:38,820 --> 00:05:57,520
+Exacto. Pero aquí el autor nos habla de algo distinto. Nos habla de identidad bajo iteración. O sea, de la reconstitución activa de un sistema. De hecho, el autor llega a formalizar esto matemáticamente y cita conceptos como el teorema del punto fijo de Banach.
+
+46
+00:05:57,520 --> 00:06:02,820
+A ver, a ver, espera. No me avientes teoremas matemáticos así sin anestesia.
+
+47
+00:06:03,080 --> 00:06:03,900
+Perdón, perdón.
+
+48
+00:06:04,000 --> 00:06:12,500
+¿Qué significa eso en cristiano? ¿Por qué suela a que necesitamos un pizarrón gigante para entenderlo? Y yo estoy un poco perdida.
+
+49
+00:06:12,500 --> 00:06:19,940
+Tienes toda la razón. Vamos a bajarlo a la tierra. Imagina un tazón hondo, como un plato para sopadesos grandes.
+
+50
+00:06:20,180 --> 00:06:21,560
+Ajá. Un tazón.
+
+51
+00:06:21,720 --> 00:06:35,080
+Y sueltas una canica en el borde. Sin importar desde qué ángulo la sueltes o qué tan fuerte la empujes hacia adentro, la gravidad y la forma cóncava del tazón van a obligar a la canica a rodar y regresar al fondo.
+
+52
+00:06:35,180 --> 00:06:36,920
+Al centro exacto del plato.
+
+53
+00:06:36,920 --> 00:06:56,440
+Eso, Homero. Al centro. La forma del tazón es la restricción. Ese centro es un punto fijo. Entonces, el teorema básicamente dice que, bajo ciertas reglas, un espacio dinámico siempre empujará las cosas de regreso a un punto de equilibrio, sin importar cuánta turbulencia o al inicio.
+
+54
+00:06:56,820 --> 00:06:57,220
+Órale.
+
+55
+00:06:57,220 --> 00:07:12,000
+En nuestro caso, la identidad de un sistema no significa estar congelado. Significa tener un tazón tan bien diseñado que, pase lo que pase, el sistema siempre, pero siempre, encuentra el camino de regreso a su forma original.
+
+56
+00:07:12,000 --> 00:07:37,840
+Ok. No, pues eso tiene muchísimo más sentido. Ahora, entiendo perfectamente cómo aplica esto a algo físico, como tu canica, o algo vivo, como mi masa madre. Pero si esta estabilidad requiere esta especie de latido, de retorno constante, ¿qué pasa con algo abstracto?
+
+57
+00:07:37,840 --> 00:07:38,840
+¿Cómo qué?
+
+58
+00:07:39,160 --> 00:07:55,340
+Como el lenguaje. O sea, a mí en la escuela me enseñaron que las palabras significan lo que dice el diccionario y punto. Y un diccionario literalmente congela el significado de una palabra en un pedazo de papel.
+
+59
+00:07:55,340 --> 00:08:13,340
+Y justo ese es el engaño del diccionario. O sea, nos hace creer que las palabras son como cajitas. Tú asumes que si abres la cajita, adentro encuentras una lista de significados enumerados del 1 al 10, como si el significado fuera una propiedad totalmente estática.
+
+60
+00:08:14,220 --> 00:08:14,700
+Ajá.
+
+61
+00:08:14,700 --> 00:08:27,160
+Pero el ensayo da un giro brillante y argumenta, desde la lingüística, que las palabras no son listas de significados. Son procesos. Son instrucciones dinámicas.
+
+62
+00:08:27,500 --> 00:08:39,260
+Y fíjate que el ejemplo que pone en el texto me dejó pensando un buen rato. Analiza una raíz del idioma árabe clásico, la raíz Q-R-A.
+
+63
+00:08:39,820 --> 00:08:41,940
+Uf, ese ejemplo es buenísimo.
+
+64
+00:08:41,940 --> 00:09:09,400
+Sí, porque si tú buscas esta raíz en un diccionario tradicional, las traducciones que te da parecen no tener ninguna relación lógica entre sí. O sea, dice que significa leer en voz alta, recitar de memoria, reunir elementos que estaban dispersos, regresar después de una larga ausencia, esperar un intervalo de tiempo e incluso advertir desde la puerta de una casa.
+
+65
+00:09:09,400 --> 00:09:11,780
+Suena a una mezcla rarísima.
+
+66
+00:09:12,560 --> 00:09:30,640
+Totalmente. Si yo leo eso, mi primera conclusión es que, a lo largo de mil años, pues la palabra sufrió una deriva total. Se fue deformando por accidentes históricos, malas traducciones y terminó absorbiendo significados completamente al azar.
+
+67
+00:09:30,640 --> 00:09:47,780
+Y claro, esa es la conclusión lógica bajo el modelo estático del diccionario. Pero el autor demuestra que no hay azar aquí. La teoría unifica todo este campo semántico, argumentando que la raíz árabe no es una lista de palabras sueltas. Es un operador comprimido.
+
+68
+00:09:47,780 --> 00:09:49,280
+¿Un operador?
+
+69
+00:09:49,420 --> 00:09:55,520
+Sí. Funciona como un esquema dinámico al que él llama retorno estructurado bajo restricción.
+
+70
+00:09:55,520 --> 00:10:05,540
+A ver, explícame cómo leer en voz alta y esperar un intervalo de tiempo son la misma cosa bajo este modelo, porque yo no lo veo.
+
+71
+00:10:05,540 --> 00:10:23,240
+Piénsalo estructuralmente. Leer un texto es un retorno constante de tus ojos a la página, guiado por la restricción de los símbolos y la gramática que estás leyendo. Recitar es un retorno a la memoria bajo la restricción de una secuencia de versos que debes seguir.
+
+72
+00:10:23,600 --> 00:10:24,260
+Ah, claro.
+
+73
+00:10:24,260 --> 00:10:44,620
+Reunir una manada de animales es regresar elementos que estaban dispersos bajo la restricción de un corral. Y esperar un intervalo de tiempo no es inactividad. Es un retorno de la atención marcando el inicio y el fin de un lapso bajo la restricción del relojo del movimiento del sol.
+
+74
+00:10:44,620 --> 00:10:56,600
+O sea que la raíz verbal no describe el objeto material con el que estás interactuando, sino que describe el movimiento lógico que estás ejecutando.
+
+75
+00:10:56,780 --> 00:11:03,760
+Exacto. Y para rematar, el autor menciona un sustantivo derivado de esta misma raíz, la palabra cura.
+
+76
+00:11:03,760 --> 00:11:21,120
+Durante muchísimos siglos, los juristas islámicos han debatido sobre este término porque, paradójicamente, se usa en los textos legales tanto para describir el periodo de menstruación de una mujer como para describir el periodo de pureza entre las menstruaciones.
+
+77
+00:11:21,420 --> 00:11:26,140
+Que parecen conceptos biológicos diametralmente opuestos.
+
+78
+00:11:26,440 --> 00:11:27,480
+Totalmente opuestos.
+
+79
+00:11:27,480 --> 00:11:36,520
+Lo cual me imagino que genera un problema enorme si estás intentando interpretar leyes usando un diccionario estático.
+
+80
+00:11:36,960 --> 00:11:39,340
+Claro. Un dolor de cabeza legal.
+
+81
+00:11:39,860 --> 00:11:46,160
+Pero el ensayo resuelve esta aparente contradicción mostrando que la palabra no nombra un estado estático.
+
+82
+00:11:46,620 --> 00:11:49,120
+O sea, estar menstruando o no estarlo.
+
+83
+00:11:49,700 --> 00:11:56,400
+Lo que hace la palabra es indexar una fase delimitada dentro de un ciclo fisiológico que es recurrente.
+
+84
+00:11:56,400 --> 00:11:57,560
+Ah, ok.
+
+85
+00:11:58,080 --> 00:12:05,300
+Dependiendo de cómo calibres tu marco de referencia, la palabra apunta al evento en sí o al intervalo entre eventos.
+
+86
+00:12:05,680 --> 00:12:07,860
+Pero la estructura de fondo es idéntica.
+
+87
+00:12:08,260 --> 00:12:11,820
+Es un retorno cíclico que está delimitado temporalmente.
+
+88
+00:12:12,180 --> 00:12:12,780
+¡Guau!
+
+89
+00:12:13,220 --> 00:12:20,500
+Me tomo un segundo a procesar esto porque va muy en contra de cómo solemos pensar en la evolución de los idiomas.
+
+90
+00:12:20,800 --> 00:12:22,580
+Sí, rompe muchos esquemas.
+
+91
+00:12:22,580 --> 00:12:24,120
+Y me surge una duda.
+
+92
+00:12:24,640 --> 00:12:33,800
+¿Me estás sugiriendo que hace miles de años las personas hablaban en, no sé, algoritmos o fórmulas matemáticas sin saberlo?
+
+93
+00:12:34,160 --> 00:12:40,020
+Porque esto me suena casi a una teoría de conspiración sobre un idioma perfecto y originario.
+
+94
+00:12:40,020 --> 00:12:42,940
+Y esa es una duda súper válida.
+
+95
+00:12:43,280 --> 00:12:48,020
+De hecho, el texto hace una pausa metodológica vital justo en esa parte para evitar malentendidos.
+
+96
+00:12:49,240 --> 00:12:57,020
+El autor aclara que esta convergencia estructural no significa para nada que todos los idiomas desciendan de un mismo idioma ancestral perfecto.
+
+97
+00:12:58,140 --> 00:12:59,120
+Ok, menos mal.
+
+98
+00:12:59,120 --> 00:13:05,480
+No es un tema de genealogía, ni de diseño consciente de que alguien se sentó a inventar el idioma perfecto.
+
+99
+00:13:05,880 --> 00:13:08,160
+Es puramente evolutivo y estructural.
+
+100
+00:13:08,780 --> 00:13:13,420
+Esto pasa en cualquier sistema humano que intente mantener su significado a través del tiempo,
+
+101
+00:13:13,860 --> 00:13:18,580
+a través del ruido, del teléfono descompuesto de las generaciones y la entropía.
+
+102
+00:13:18,940 --> 00:13:22,980
+O sea, ¿es supervivencia básica del lenguaje?
+
+103
+00:13:22,980 --> 00:13:32,100
+Pues, para que un significado sobreviva, las leyes de la dinámica lo fuerzan a usar estas soluciones de retorno y restricción.
+
+104
+00:13:32,840 --> 00:13:38,660
+Si el significado no tiene esa estructura de tazón que decíamos que lo haga volver al centro,
+
+105
+00:13:39,200 --> 00:13:42,660
+simplemente se diluye, se confunde y desaparece.
+
+106
+00:13:43,060 --> 00:13:45,600
+Vale, entiendo perfectamente.
+
+107
+00:13:46,140 --> 00:13:51,940
+Ahora, si el lenguaje necesita estas reglas para no desintegrarse con el paso del tiempo,
+
+108
+00:13:51,940 --> 00:13:53,940
+¿qué pasa con nosotros?
+
+109
+00:13:54,500 --> 00:13:56,040
+¿A qué te refieres con nosotros?
+
+110
+00:13:56,560 --> 00:14:00,020
+Me refiero a nosotros como individuos, como sociedades,
+
+111
+00:14:00,440 --> 00:14:06,140
+porque vivimos en un mundo que es un caos absoluto donde las cosas cambian todos los días.
+
+112
+00:14:06,560 --> 00:14:14,420
+¿Cómo logramos los humanos estabilizar nuestras propias creencias o nuestra propia identidad bajo este principio?
+
+113
+00:14:14,840 --> 00:14:19,160
+Porque yo como persona no opero como una palabra impresa en un texto.
+
+114
+00:14:19,160 --> 00:14:24,780
+Pues, el ensayo argumenta que sí, que de hecho operas bajo el mismísimo principio,
+
+115
+00:14:25,460 --> 00:14:29,840
+solo que a nivel humano lo llamamos de otra manera, lo llamamos ritual.
+
+116
+00:14:30,340 --> 00:14:32,540
+Ah, ¿los rituales?
+
+117
+00:14:32,540 --> 00:14:33,280
+Exacto.
+
+118
+00:14:33,280 --> 00:14:41,280
+El Artov utiliza ejemplos teológicos muy precisos para ilustrar cómo el ser humano busca anclarse a algo estable.
+
+119
+00:14:41,940 --> 00:14:50,280
+Por ejemplo, comienza analizando los juramentos en el Corán, los Qasam, que frecuentemente invocan fenómenos naturales.
+
+120
+00:14:50,840 --> 00:14:54,460
+O sea, juran por el sol o juran por las fases de la luna.
+
+121
+00:14:54,460 --> 00:15:00,620
+Y uno pensaría que invocan a la luna por alguna razón mística o esotérica, ¿no?
+
+122
+00:15:01,000 --> 00:15:02,680
+¿Qué es lo que suele decirse siempre?
+
+123
+00:15:03,440 --> 00:15:09,340
+Pero, estructuralmente, el texto señala algo muchísimo más terrenal y lógico.
+
+124
+00:15:10,020 --> 00:15:12,440
+No se invoca a la luna por arte de magia.
+
+125
+00:15:12,980 --> 00:15:15,120
+Se hace por sus propiedades físicas.
+
+126
+00:15:15,120 --> 00:15:18,800
+Las fases de la luna son observables por cualquiera.
+
+127
+00:15:19,380 --> 00:15:27,440
+Son predecibles, son recurrentes, y lo más importante de todo, no dependen de la opinión ni del estado de ánimo de nadie.
+
+128
+00:15:27,840 --> 00:15:30,620
+Claro, son independientes a nosotros.
+
+129
+00:15:31,040 --> 00:15:31,340
+Ajá.
+
+130
+00:15:31,640 --> 00:15:34,360
+Son perfectos anclajes epistémicos.
+
+131
+00:15:34,940 --> 00:15:39,100
+Al atar tu declaración humana, que de por sí es falible y dudosa,
+
+132
+00:15:39,100 --> 00:15:46,360
+a un ciclo natural inmutable, le estás dando a tu palabra una base súper estable frente a toda la comunidad.
+
+133
+00:15:47,100 --> 00:15:49,620
+Estás usando a la luna como tu restricción.
+
+134
+00:15:50,500 --> 00:15:51,840
+Oye, qué interesante.
+
+135
+00:15:52,680 --> 00:15:55,400
+Ese sería como el anclaje externo.
+
+136
+00:15:55,660 --> 00:16:02,940
+Pero luego, el texto entra a analizar los rituales que hacemos con nuestro propio cuerpo y nuestra propia voz.
+
+137
+00:16:03,300 --> 00:16:05,600
+Sí, los rituales encarnados.
+
+138
+00:16:05,600 --> 00:16:12,340
+Analiza la invocación que se hace durante la perelinación islámica, la famosa talvilla.
+
+139
+00:16:13,060 --> 00:16:17,880
+Es esta frase que los peregrinos repiten rítmicamente sin cesar.
+
+140
+00:16:18,560 --> 00:16:19,600
+Dicen algo como,
+
+141
+00:16:20,260 --> 00:16:21,840
+Aquí estoy, oh Dios.
+
+142
+00:16:22,240 --> 00:16:23,080
+Aquí estoy.
+
+143
+00:16:23,480 --> 00:16:24,540
+No tienes socio.
+
+144
+00:16:25,000 --> 00:16:25,600
+Así es.
+
+145
+00:16:26,160 --> 00:16:28,780
+Si tú ves eso desde fuera, podrías pensar,
+
+146
+00:16:29,240 --> 00:16:31,820
+A ver, ¿por qué tienen que decirlo mil veces?
+
+147
+00:16:32,380 --> 00:16:34,900
+Con una sola vez basta para que Dios te escuche.
+
+148
+00:16:34,900 --> 00:16:35,460
+No.
+
+149
+00:16:35,940 --> 00:16:36,580
+Exacto.
+
+150
+00:16:36,720 --> 00:16:39,160
+Esa es la visión occidental moderna.
+
+151
+00:16:39,740 --> 00:16:43,800
+Pero el ensayo desglosa esto como si fuera un plano de ingeniería.
+
+152
+00:16:44,580 --> 00:16:50,560
+Repetir, aquí estoy, una y otra vez, no es simple redundancia emocional.
+
+153
+00:16:51,200 --> 00:16:53,460
+Es una alineación iterativa.
+
+154
+00:16:53,940 --> 00:16:56,340
+Es la recurrencia en acción.
+
+155
+00:16:56,340 --> 00:16:58,320
+Esa es la recurrencia.
+
+156
+00:16:58,320 --> 00:17:03,800
+Cada vez que das un paso en el desierto y lo dices, vuelves a calibrar tu mente.
+
+157
+00:17:04,440 --> 00:17:06,320
+Regresas al centro de ese tazón.
+
+158
+00:17:06,840 --> 00:17:09,240
+Y luego viene la segunda parte de la frase.
+
+159
+00:17:09,720 --> 00:17:10,900
+No tienes socio.
+
+160
+00:17:10,900 --> 00:17:15,120
+Esta no es solo una cláusula teológica que le pegaron al final.
+
+161
+00:17:15,360 --> 00:17:18,960
+Opera mecánicamente como el cierne y la exclusividad.
+
+162
+00:17:19,100 --> 00:17:21,140
+Esa es la restricción.
+
+163
+00:17:21,140 --> 00:17:28,240
+O sea que, sin esa restricción, decir solamente, aquí estoy, es demasiado abierto.
+
+164
+00:17:28,920 --> 00:17:36,020
+Podría estarle diciendo, aquí estoy, a mis problemas familiares, a mi ego, al cansancio de caminar.
+
+165
+00:17:36,020 --> 00:17:49,800
+Al agregar la restricción excluyente de no tienes socio, eliminas todas esas alternativas mentales y obligas a tu sistema cognitivo a converger en un solo punto focal.
+
+166
+00:17:49,960 --> 00:17:50,780
+Precisamente.
+
+167
+00:17:51,360 --> 00:17:52,840
+Funciona como un embudo.
+
+168
+00:17:53,600 --> 00:17:57,480
+Y el autor hace un contraste brillante que me encantaría resaltar.
+
+169
+00:17:58,120 --> 00:18:04,240
+Compara esta talvia con la famosísima frase de Martín Lutero cuando estaba frente a la dieta de Worms.
+
+170
+00:18:04,240 --> 00:18:08,120
+Ah, la de, aquí estoy, no puedo hacer otra cosa.
+
+171
+00:18:08,520 --> 00:18:09,100
+Esa mera.
+
+172
+00:18:10,180 --> 00:18:17,220
+Estructuralmente parece que ambas frases buscan la misma estabilidad, pero operan por vías completamente opuestas.
+
+173
+00:18:17,740 --> 00:18:19,740
+Sí, yo también noté eso.
+
+174
+00:18:20,380 --> 00:18:27,680
+Porque, mientras que el peregrino alcanza la estabilidad asumiendo que es un esfuerzo continuo de iteración.
+
+175
+00:18:28,040 --> 00:18:30,000
+O sea, un trabajo constante.
+
+176
+00:18:30,560 --> 00:18:31,160
+Exacto.
+
+177
+00:18:31,160 --> 00:18:35,140
+La estabilidad se la gana paso a paso repitiendo el ritual.
+
+178
+00:18:35,500 --> 00:18:40,640
+Pero la frase de Lutero asume la estabilidad como un estado que ya logró.
+
+179
+00:18:41,240 --> 00:18:46,160
+Como un punto fijo e inamovible, donde él ya está plantado como una piedra.
+
+180
+00:18:46,800 --> 00:18:51,780
+Y esto, te digo, tiene implicaciones enormes sobre cómo entendemos la psicología humana hoy en día.
+
+181
+00:18:51,780 --> 00:18:53,780
+Totalmente.
+
+182
+00:18:53,780 --> 00:19:03,360
+Te juro que leyendo esto me cayó el 20 de que tendemos a concebir nuestra propia identidad de la misma forma que pensábamos en la piedra estática del principio.
+
+183
+00:19:03,780 --> 00:19:06,020
+Sí, creemos que somos estáticos.
+
+184
+00:19:06,020 --> 00:19:16,840
+Creemos que tenemos una identidad fija, un yo verdadero que está oculto en algún lugar del cerebro y que debemos proteger a toda costa de los cambios.
+
+185
+00:19:16,840 --> 00:19:22,740
+Pero si aplicamos la teoría de Floxion, las personas no tienen una identidad.
+
+186
+00:19:23,280 --> 00:19:26,660
+La identidad es algo que hacemos constantemente.
+
+187
+00:19:26,880 --> 00:19:29,240
+Es un verbo, no un sustantivo.
+
+188
+00:19:29,240 --> 00:19:41,600
+Exacto. Somos el resultado dinámico de los hábitos, las rutinas, las reacciones y los mantras internos que elegimos repetir cada mañana frente al espejo.
+
+189
+00:19:42,340 --> 00:19:46,800
+Somos lo que iteramos, bajo las restricciones de nuestros valores.
+
+190
+00:19:47,140 --> 00:19:49,820
+Y esa es una lectura súper clave del texto.
+
+191
+00:19:50,540 --> 00:19:55,840
+El ensayo define al sujeto, al individuo mismo, como un sistema dinámico.
+
+192
+00:19:55,840 --> 00:20:03,580
+Nos sugiere que la convicción, el creer profundamente en algo, no es un archivo guardado en un disco duro mental.
+
+193
+00:20:04,320 --> 00:20:12,160
+La convicción es la configuración de una persona que cuando es empujada, desestabilizada o atacada por el mundo exterior,
+
+194
+00:20:12,780 --> 00:20:18,060
+tiene la capacidad de regresar a sus principios bajo esta recurrencia restringida.
+
+195
+00:20:18,060 --> 00:20:23,960
+O sea, la resiliencia no es aguantar el golpe como una pared de ladrillos.
+
+196
+00:20:23,960 --> 00:20:27,720
+Es reconfigurarte rapidísimo y volver al centro.
+
+197
+00:20:28,080 --> 00:20:31,620
+Tal cual. Volver a tu forma original tras la turbulencia.
+
+198
+00:20:32,000 --> 00:20:36,760
+Es una forma muy, muy práctica de ver los tropiezos personales.
+
+199
+00:20:37,440 --> 00:20:42,700
+Pero bueno, ya hablamos mucho de la mente humana y de palabras árabes milenarias,
+
+200
+00:20:42,880 --> 00:20:45,200
+que son cosas un poco abstractas.
+
+201
+00:20:45,900 --> 00:20:50,040
+El ensayo hace una transición lógica vital en este punto.
+
+202
+00:20:50,300 --> 00:20:51,640
+Sí, se va a lo material.
+
+203
+00:20:51,640 --> 00:21:01,740
+Nos dice, bueno, ¿qué pasa cuando los humanos intentamos externalizar todo este proceso de memoria y recurrencia en objetos físicos?
+
+204
+00:21:02,000 --> 00:21:04,720
+Y lo lleva directo al terreno de la tecnología.
+
+205
+00:21:05,220 --> 00:21:09,640
+Que me encanta porque los fierros, las máquinas son jueces súper implacables.
+
+206
+00:21:10,800 --> 00:21:17,720
+O sea, nos muestran exactamente qué pasa cuando el equilibrio entre restricción y recurrencia se rompe.
+
+207
+00:21:17,720 --> 00:21:27,360
+Así es. Y para aterrizarlo históricamente, el autor nos lleva de viaje al siglo XI en China con la invención de la imprenta de tipos móviles.
+
+208
+00:21:27,720 --> 00:21:28,220
+¡Órale!
+
+209
+00:21:28,220 --> 00:21:36,260
+Porque este invento encarna la teoría físicamente. Es perfecta. Piensa en el proceso de imprimir un libro en esa época.
+
+210
+00:21:36,900 --> 00:21:41,300
+Primero, tienes que tallar caracteres individuales en pequeños bloques de arcilla.
+
+211
+00:21:41,980 --> 00:21:48,080
+A esto, él le llama discretización, que es crear unidades de significado bien delimitadas.
+
+212
+00:21:48,380 --> 00:21:50,220
+Ajá, las letritas separadas.
+
+213
+00:21:50,220 --> 00:22:04,560
+Luego, colocas esos bloques dentro de un marco rígido de hierro. Ese marco metálico es la restricción posicional. Obliga a las piezas a mantener una gramática estricta para que no se muevan del lugar.
+
+214
+00:22:04,980 --> 00:22:06,420
+¡Claro! Les da estructura.
+
+215
+00:22:06,780 --> 00:22:17,060
+Y finalmente, le aplicas tinta y presionas el bloque contra el papel una y otra vez. Esa es la recurrencia. Él lo llama la impresión iterativa.
+
+216
+00:22:17,060 --> 00:22:24,120
+Entonces, tienes un sistema mecánico que fue diseñado específicamente para estabilizar el lenguaje en el tiempo.
+
+217
+00:22:24,820 --> 00:22:30,340
+Pero, como decíamos, lo valioso de analizar las máquinas es que las máquinas fallan.
+
+218
+00:22:30,900 --> 00:22:37,880
+Y Flyxion nos ofrece una taxonomía de los modos de falla que me parece de lo más útil de todo el documento.
+
+219
+00:22:38,360 --> 00:22:42,060
+Identifica cuatro formas principales en las que cualquier sistema colapsa.
+
+220
+00:22:42,860 --> 00:22:45,340
+Sí, esos cuatro modos sonoro puro.
+
+221
+00:22:45,340 --> 00:22:48,340
+A ver, vamos a desglosarlas para quienes nos escuchan.
+
+222
+00:22:48,840 --> 00:22:51,100
+La primera falla es la que llama deriva.
+
+223
+00:22:51,400 --> 00:22:56,040
+La deriva ocurre cuando tienes recurrencia, pero pierdes la restricción.
+
+224
+00:22:56,240 --> 00:22:56,560
+Ok.
+
+225
+00:22:57,400 --> 00:22:58,360
+En la imprenta.
+
+226
+00:22:59,020 --> 00:23:07,480
+Esto pasa cuando los tipos de arcilla o de metal se desgastan tanto por el uso repetido que la letra pierde sus bordes definidos.
+
+227
+00:23:07,960 --> 00:23:09,600
+Se vuelve una mancha borrosa.
+
+228
+00:23:10,060 --> 00:23:11,240
+¿Y en la vida real?
+
+229
+00:23:11,240 --> 00:23:18,500
+En la vida humana es sacar fotocopias de una fotocopia hasta que el documento es ilegible.
+
+230
+00:23:19,140 --> 00:23:30,140
+O lingüísticamente es cuando una palabra se vuelve supertendencia y se empieza a usar para describir tantas cosas diferentes que termina no significando absolutamente nada.
+
+231
+00:23:30,780 --> 00:23:32,540
+Perdió su borde, su restricción.
+
+232
+00:23:32,540 --> 00:23:36,340
+Claro, como cuando le dicen tóxico a todo.
+
+233
+00:23:37,140 --> 00:23:41,800
+Luego tenemos el opuesto directo a la deriva, que sería la rigidez.
+
+234
+00:23:42,420 --> 00:23:48,200
+Aquí tienes toda la restricción del mundo, pero tienes cero recurrencia adaptativa.
+
+235
+00:23:48,200 --> 00:23:49,160
+Exacto.
+
+236
+00:23:49,620 --> 00:23:57,880
+Imagínate una placa de imprenta que fue tallada en una sola pieza sólida de madera, en lugar de usar los tipos móviles que puedes cambiar.
+
+237
+00:23:58,420 --> 00:24:00,120
+No puedes reconfigurarla nunca.
+
+238
+00:24:00,660 --> 00:24:05,220
+Si te equivocaste y hay un error tipográfico, tienes que tirar todo el bloque a la basura.
+
+239
+00:24:05,840 --> 00:24:07,300
+Es restricción absoluta.
+
+240
+00:24:07,800 --> 00:24:08,360
+Uy, sí.
+
+241
+00:24:08,360 --> 00:24:12,000
+Y a nivel cultural esto pasa cuando un ritual se fosiliza.
+
+242
+00:24:12,560 --> 00:24:17,660
+La comunidad repite los movimientos físicos, pero ya se les olvidó por completo de por qué los hacían.
+
+243
+00:24:18,100 --> 00:24:25,320
+Como no hay una iteración viva y consciente, frente a un cambio ambiental drástico, el ritual se rompe, porque no sabe cómo adaptarse.
+
+244
+00:24:25,620 --> 00:24:28,980
+Es pura fragilidad disfrazada de solidez.
+
+245
+00:24:29,340 --> 00:24:29,900
+Exacto.
+
+246
+00:24:29,900 --> 00:24:33,540
+El tercer modo de falla es la oscilación.
+
+247
+00:24:34,240 --> 00:24:38,840
+Este lo describe como una cito dinámica no convergente.
+
+248
+00:24:39,460 --> 00:24:47,740
+Y a mí me suena a cuando las reglas de un sistema son tan ambiguas que cada vez que ejecutas el proceso te da un resultado distinto.
+
+249
+00:24:48,480 --> 00:24:52,080
+En la mente es como un bucle de duda cognitiva.
+
+250
+00:24:52,260 --> 00:24:52,580
+Ajá.
+
+251
+00:24:53,440 --> 00:24:56,440
+Ese loop que no te deja avanzar.
+
+252
+00:24:56,440 --> 00:25:06,100
+Tienes dos ideas que compiten, y la mente salta de una a otra sin poder establecerse en un punto de equilibrio jamás.
+
+253
+00:25:06,580 --> 00:25:07,160
+Tal cual.
+
+254
+00:25:07,920 --> 00:25:12,180
+Y finalmente, el cuarto modo está la obstrucción.
+
+255
+00:25:12,600 --> 00:25:17,820
+Este es el escenario donde tienes restricciones que son mutuamente incompatibles.
+
+256
+00:25:18,580 --> 00:25:20,460
+Las reglas chocan entre sí.
+
+257
+00:25:20,460 --> 00:25:26,100
+Es como si intentaras encajar un bloque cuadrado en un agujero redondo en tu imprenta.
+
+258
+00:25:26,440 --> 00:25:34,380
+No hay iteración posible porque la estructura misma está en conflicto interno y el sistema simplemente se traba, se paraliza.
+
+259
+00:25:34,860 --> 00:25:49,740
+Fíjate que mientras repasaba estos cuatro modos de falla en mis notas, y muy especialmente el de deriva y el de rigidez, pues no podía dejar de pensar en todos los debates actuales sobre la inteligencia artificial.
+
+260
+00:25:49,740 --> 00:25:52,040
+Uy, claro, es el tema del momento.
+
+261
+00:25:52,740 --> 00:26:01,180
+Específicamente los modelos de lenguaje, los famosos LLMs, porque parecen sufrir de esto a nivel epidémico.
+
+262
+00:26:01,900 --> 00:26:05,740
+Por ejemplo, cuando una IA empieza a alucinar…
+
+263
+00:26:06,500 --> 00:26:08,640
+Es cuando inventa cosas, ¿no?
+
+264
+00:26:08,640 --> 00:26:21,160
+Ajá, cuando le haces una pregunta y te responde con datos históricos inventados o con referencias a libros que ni existen, pero lo hace con una fluidez y una seguridad tremendas.
+
+265
+00:26:21,900 --> 00:26:24,380
+Eso me suena exactamente a la deriva.
+
+266
+00:26:24,900 --> 00:26:28,820
+O sea, tienes una capacidad inmensa de recurrencia.
+
+267
+00:26:29,340 --> 00:26:36,740
+La máquina puede predecir la siguiente palabra de forma infinita, pero sin la restricción de anclarse a hechos reales.
+
+268
+00:26:36,740 --> 00:26:39,080
+Es una observación súper clave.
+
+269
+00:26:40,000 --> 00:26:41,560
+Y por otro lado, velo así.
+
+270
+00:26:42,420 --> 00:26:51,640
+¿Qué pasa cuando le pides algo a la IA y el sistema colapsa y de repente empieza a repetir la misma oración exacta en un bucle infinito?
+
+271
+00:26:51,920 --> 00:26:52,900
+Ah, me ha pasado.
+
+272
+00:26:53,420 --> 00:26:54,560
+Eso es rigidez.
+
+273
+00:26:55,320 --> 00:26:57,740
+Es restricción sin salida productiva.
+
+274
+00:26:57,740 --> 00:27:07,100
+Y fíjate que el autor, de hecho, aplica este marco directamente al famoso problema de alineación, el alignment problem, en la inteligencia artificial.
+
+275
+00:27:07,420 --> 00:27:17,740
+A ver, explícame bien eso, porque solemos pensar que alinear una IA es nada más enseñarle a no decir groserías o cosas ofensivas.
+
+276
+00:27:17,740 --> 00:27:21,360
+No, no. Va muchísimo más allá.
+
+277
+00:27:21,980 --> 00:27:27,720
+El reto de la alineación bajo esta teoría no es solo que la máquina genere respuestas amables.
+
+278
+00:27:28,300 --> 00:27:38,020
+El verdadero reto estructural es lograr que produzca inferencias que converjan hacia estados estables de honestidad, utilidad y lógica racional.
+
+279
+00:27:38,700 --> 00:27:41,780
+¿Y cómo logran eso los ingenieros hoy en día?
+
+280
+00:27:41,780 --> 00:27:47,320
+A través de algo llamado aprendizaje por refuerzo con retroalimentación humana.
+
+281
+00:27:47,980 --> 00:27:55,080
+Básicamente usas humanos reales para castigar las respuestas irrelevantes de la máquina y premiar las correctas.
+
+282
+00:27:55,740 --> 00:28:07,420
+Lo que estás haciendo mecánicamente ahí es diseñar pesos matemáticos, o sea, restricciones, para gobernar el inmenso mar de posibilidades aleatorias de la red neuronal.
+
+283
+00:28:07,420 --> 00:28:18,420
+La alineación es el arte de crear el tazón correcto para que los trillones de iteraciones de la IA siempre caigan de vuelta al centro de nuestra razonalidad humana.
+
+284
+00:28:19,120 --> 00:28:27,700
+¡Guau! Claro, si no tienes buenas restricciones, te enfrentas a un sistema que te va a generar ruido a escala industrial.
+
+285
+00:28:28,540 --> 00:28:29,140
+Exactamente.
+
+286
+00:28:29,140 --> 00:28:36,080
+Y eso me lleva al punto final del ensayo que creo que responde a la duda más natural de todo esto.
+
+287
+00:28:36,600 --> 00:28:45,980
+Si nuestras máquinas fallan y nuestros sentidos humanos fallan y vivimos en un mundo que es inherentemente ruidoso y caótico,
+
+288
+00:28:46,740 --> 00:28:49,820
+este, ¿cómo logramos distinguir lo que es real?
+
+289
+00:28:50,060 --> 00:28:53,060
+Es la gran pregunta epistemológica.
+
+290
+00:28:53,060 --> 00:29:01,820
+Sí, y para responder esto, el autor usa el experimento mental de la pantalla táctil bajo la lluvia.
+
+291
+00:29:02,400 --> 00:29:08,360
+Y debo confesar que este ejemplo me cambió por completo la forma de ver las cosas.
+
+292
+00:29:08,980 --> 00:29:11,520
+Es que es el cierre perfecto para el ensayo.
+
+293
+00:29:12,140 --> 00:29:15,460
+A ver, imagina la pantalla de tu teléfono celular moderno.
+
+294
+00:29:15,460 --> 00:29:19,680
+Físicamente, esta pantalla opera mediante capacitancia.
+
+295
+00:29:20,180 --> 00:29:23,940
+O sea, la pantalla genera un campo electrostático constante.
+
+296
+00:29:24,320 --> 00:29:29,860
+Y cuando tu dedo, que es conductivo, toca el cristal, perturba ese campo.
+
+297
+00:29:30,440 --> 00:29:36,080
+Los sensores registran la posición exacta de esa perturbación y el software ejecute el comando.
+
+298
+00:29:36,460 --> 00:29:39,520
+No sé, abre una aplicación o teclea una letra.
+
+299
+00:29:39,940 --> 00:29:43,020
+Funciona de maravilla bajo condiciones normales.
+
+300
+00:29:43,020 --> 00:29:51,140
+De maravilla. Pero, ¿qué pasa si sales a la calle y de repente empieza a llover fuerte sobre la pantalla de tu celular?
+
+301
+00:29:51,340 --> 00:29:53,780
+Pues que el teléfono se vuelve inoperable.
+
+302
+00:29:54,200 --> 00:30:03,620
+Se vuelve loco, empieza a abrir la cámara, marca números al azar, hace su min, su maut, todo al mismo tiempo.
+
+303
+00:30:04,140 --> 00:30:05,440
+Es un caos total.
+
+304
+00:30:06,380 --> 00:30:08,840
+Exactamente. ¿Y por qué ocurre esto?
+
+305
+00:30:08,840 --> 00:30:14,400
+Porque las gotas de lluvia que contienen minerales y sal, pues también son conductivas.
+
+306
+00:30:14,960 --> 00:30:26,520
+A nivel físico, en la capa más fundamental de sus sensores, el teléfono no tiene la capacidad estructural para distinguir entre la conductividad de un pulgar humano y la de una gota de agua.
+
+307
+00:30:26,780 --> 00:30:31,260
+Para la pantalla, ambos son toques completamente reales.
+
+308
+00:30:31,260 --> 00:30:43,060
+Sí, reales y válidos. La conclusión del autor aquí es demoledora. Nos dice que ninguna actualización de software en el nivel superior, visual, va a solucionar esto jamás.
+
+309
+00:30:43,520 --> 00:30:49,360
+El problema es inherente a la interfaz del sistema con el mundo material. El ruido es inevitable.
+
+310
+00:30:49,360 --> 00:31:08,360
+Y el paralelismo con nosotros es súper obvio. O sea, los humanos operamos igualito. Nuestros sentidos, nuestros instrumentos científicos más avanzados, nuestro propio lenguaje, todos son interfaces capacitivas operando bajo una tormenta constante.
+
+311
+00:31:08,360 --> 00:31:21,040
+Nunca, pero nunca vamos a poder captar la realidad sin sesgo, sin ruido, sin algún grado de error de medición. Siempre va a haber lluvia cayendo en nuestra pantalla.
+
+312
+00:31:21,740 --> 00:31:22,540
+Tristemente, sí.
+
+313
+00:31:22,920 --> 00:31:33,860
+Y esto podría ser muy deprimente, la verdad. Podría llevarnos a un hilismo total de pensar, bueno, pues nunca conoceremos la verdad absoluta. Pero me encanta que la teoría le da la vuelta.
+
+314
+00:31:33,860 --> 00:31:46,940
+Sí, el autor lo rescata argumentando que la persistencia, y por ende la verdad misma, no requiere que tengamos una fotografía perfecta e inmaculada de la realidad externa.
+
+315
+00:31:47,820 --> 00:31:51,040
+Lo que requiere es robustez bajo iteración.
+
+316
+00:31:51,040 --> 00:32:09,120
+Un sistema sobrevive si, a pesar de todo el ruido, a pesar de los toques erráticos de la lluvia, su ciclo de restricción y recurrencia es lo suficientemente fuerte como para retomar el rumbo y volver a converger en un punto útil.
+
+317
+00:32:09,120 --> 00:32:19,900
+Nos obliga a replantear la definición de la verdad. O sea, la verdad ya no es una correspondencia estática de uno a uno con el mundo material.
+
+318
+00:32:20,460 --> 00:32:23,820
+La verdad es la estabilidad bajo recurrencia.
+
+319
+00:32:23,820 --> 00:32:43,260
+Si una idea, o un teorema científico, o incluso un valor moral, puede sobrevivir a ser puesto a prueba miles de veces, resistir el escrutinio, absorber los errores y seguir retornando a una estructura coherente que nos ayude a navegar el mundo,
+
+320
+00:32:43,780 --> 00:32:48,000
+entonces eso es lo más parecido a la verdad que necesitamos.
+
+321
+00:32:48,000 --> 00:32:57,780
+Cambia por completo el paradigma científico y filosófico. Y el ensayo incluso toca brevemente cómo ésta aplica a nuestra propia biología neurológica.
+
+322
+00:32:58,400 --> 00:33:06,000
+O sea, la memoria humana no es recuperar un archivo del pasado que estaba guardado en una bóveda intacta en el cerebro.
+
+323
+00:33:06,600 --> 00:33:12,160
+La neurociencia moderna nos dice que recordar es un proceso de reinstanciación activa.
+
+324
+00:33:13,040 --> 00:33:14,240
+¿Reinstanciación activa?
+
+325
+00:33:14,240 --> 00:33:24,040
+Sí, cada vez que recuerdas algo, tu cerebro reconstruye el evento en tiempo real en el presente, utilizando las restricciones del contexto que estás viviendo hoy.
+
+326
+00:33:24,640 --> 00:33:31,340
+Tu recuerdo es un retorno iterativo que se recalibra constantemente para poder sobrevivir en tu mente actual.
+
+327
+00:33:31,780 --> 00:33:43,100
+¡Guau! Pues, a manera de cierre, yo creo que el viaje que hemos dado hoy en este análisis es profundamente valioso y muy aplicable.
+
+328
+00:33:43,100 --> 00:33:44,220
+Muy aplicable.
+
+329
+00:33:44,400 --> 00:33:51,820
+Empezamos derrumbando esta idea de que, para ser fuertes, hay que ser como una piedra rígida.
+
+330
+00:33:52,820 --> 00:34:02,760
+Descubrimos que es muchísimo mejor ser como una llama, que mantiene su identidad consumiendo y rehaciendo su entorno constantemente.
+
+331
+00:34:02,760 --> 00:34:12,060
+Vimos cómo las raíces milenarias del lenguaje árabe aplican esto, cómo nuestros rituales nos anclan como las fases de la luna,
+
+332
+00:34:12,060 --> 00:34:19,440
+y por qué nuestras tecnologías, desde una imprenta antigua hasta la inteligencia artificial más moderna,
+
+333
+00:34:19,980 --> 00:34:26,120
+colapsan si no tienen este balance sano entre la repetición y las reglas claras.
+
+334
+00:34:26,120 --> 00:34:33,480
+Y lo más importante de todo, creo yo, entendemos que la verdad sobrevive porque sabe cómo volver a su centro.
+
+335
+00:34:33,900 --> 00:34:43,920
+Sí. Y si hay una lección práctica para quienes nos escuchan, es que se lleven esto y analicen los sistemas de su propia vida con esta lupa.
+
+336
+00:34:44,460 --> 00:34:48,840
+En su trabajo, en sus relaciones de pareja, en sus hábitos diarios.
+
+337
+00:34:48,840 --> 00:34:52,120
+Claro, no hay que buscar la rigidez por buscarla.
+
+338
+00:34:52,320 --> 00:34:58,740
+Valores principales. Hay que cuidar el ciclo. Hay que alimentar la llama. Alimentar la masa madre.
+
+339
+00:34:59,260 --> 00:35:02,220
+Y bueno, ese es básicamente el trabajo de estar vivos.
+
+340
+00:35:02,620 --> 00:35:03,580
+Sí, literal.
+
+341
+00:35:04,520 --> 00:35:11,200
+Y antes de despedirnos, yo quiero dejarles un pensamiento derivado del texto para que lo sigan explorando por su cuenta.
+
+342
+00:35:11,200 --> 00:35:21,940
+Si la memoria, como nos acaba de explicar el experto, es una reinstanciación activa que se reconstruye biológicamente cada vez que evocamos un evento,
+
+343
+00:35:22,640 --> 00:35:28,040
+¿significa esto que cada vez que pensamos en nuestro recuerdo más preciado de la infancia,
+
+344
+00:35:28,680 --> 00:35:36,860
+en realidad lo estamos sobrescribiendo en el presente, alterando ligeramente su código base con la persona que somos el día de hoy?
+
+345
+00:35:37,380 --> 00:35:38,740
+Uf, qué fuerte.
+
+346
+00:35:38,740 --> 00:35:46,420
+¿Y si nuestra identidad es meramente la suma dinámica de todos esos retornos constantes?
+
+347
+00:35:47,040 --> 00:35:55,540
+¿Qué sucede con la versión original de nosotros mismos una vez que empezamos a recordar repetidamente quiénes fuimos?
+
+348
+00:35:56,020 --> 00:35:57,780
+Es una pregunta bellísima.
+
+349
+00:35:58,280 --> 00:36:03,620
+Y nos sugiere que quizá ese yo original inamovible, pues nunca existió, ¿no?
+
+350
+00:36:03,980 --> 00:36:08,180
+Solo existe la versión de nosotros que logra retornar a sí misma hoy.
+
+351
+00:36:08,180 --> 00:36:09,260
+Me encanta.
+
+352
+00:36:10,060 --> 00:36:13,620
+Con esa paradoja en mente, terminamos nuestra sesión de hoy.
+
+353
+00:36:14,180 --> 00:36:17,560
+Sigan cuestionando cómo funcionan las cosas a su alrededor,
+
+354
+00:36:18,220 --> 00:36:21,320
+alimenten muchísimo esa curiosidad intelectual,
+
+355
+00:36:21,780 --> 00:36:26,100
+y nos escuchamos en nuestra próxima exploración de los documentos.
+
+356
+00:36:26,500 --> 00:36:27,060
+¡Hasta luego!
+
+357
+00:36:27,060 --> 00:36:28,060
+¡Gracias!
+
+358
+00:36:28,060 --> 00:36:29,060
+¡Gracias!
+
+359
+00:36:29,060 --> 00:36:30,060
+¡Gracias!
+
+360
+00:36:30,060 --> 00:36:31,060
+¡Gracias!
+

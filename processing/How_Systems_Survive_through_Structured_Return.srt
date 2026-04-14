@@ -1,0 +1,1956 @@
+1
+00:00:00,000 --> 00:00:06,880
+you know um when we think about things that last right things that truly survive
+
+2
+00:00:06,880 --> 00:00:14,960
+the brutal test of time right we have this like deeply ingrained psychological habit
+
+3
+00:00:14,960 --> 00:00:21,760
+of picturing something solid like you picture a stone yeah exactly a rock yeah or you imagine
+
+4
+00:00:21,760 --> 00:00:27,880
+i don't know a fortress wall made of granite a mountain range a diamond maybe we have this
+
+5
+00:00:27,880 --> 00:00:37,420
+inherent bias that just um equates stability with mass and rigidity oh absolutely the underlying
+
+6
+00:00:37,420 --> 00:00:43,840
+assumption is basically that to survive a thing has to resist change entirely it has to be
+
+7
+00:00:43,840 --> 00:00:49,440
+frozen like locked in its current state just repelling the elements i mean it is the intuitive
+
+8
+00:00:49,440 --> 00:00:55,000
+way human beings view the world and honestly it makes total sense from an evolutionary standpoint
+
+9
+00:00:55,000 --> 00:01:01,320
+right we look for solid ground we build shelters that don't move so we conceptualize stability as
+
+10
+00:01:01,320 --> 00:01:10,120
+this um static property a literal physical resistance to the passage of time into environmental pressure
+
+11
+00:01:10,120 --> 00:01:15,460
+for then you know you look at other things that persist in our world things that are arguably
+
+12
+00:01:15,460 --> 00:01:21,600
+much much more powerful and they aren't solid at all right they're entirely dynamic exactly
+
+13
+00:01:21,600 --> 00:01:28,460
+think about the flame on a candle it is incredibly stable i mean a well-tended flame can sit there
+
+14
+00:01:28,460 --> 00:01:36,900
+burning for hours even days but a flame isn't solid not at all it isn't resisting change it is
+
+15
+00:01:36,900 --> 00:01:44,660
+literally made of change it's constantly um pulling in new oxygen right burning new wax exhausting heat
+
+16
+00:01:44,660 --> 00:01:52,020
+light it's a process yeah it persists precisely through the continuous unbroken reconstitution of its own
+
+17
+00:01:52,020 --> 00:01:58,340
+process yeah and if it stops changing it just dies the flame is i mean it's the absolute definition of a
+
+18
+00:01:58,340 --> 00:02:05,520
+dynamical achievement the stone is stable in a passive sense but the flame is stable in an active metabolic sense
+
+19
+00:02:05,520 --> 00:02:12,620
+and the core argument we are looking at today is that the most profound structures in human history
+
+20
+00:02:12,620 --> 00:02:19,860
+the really important stuff exactly our languages our religious rituals our physical texts and honestly
+
+21
+00:02:19,860 --> 00:02:26,600
+our very identities they don't survive like the stone they survive like the flame which is just such a wild
+
+22
+00:02:26,600 --> 00:02:34,520
+reframing and that actually brings us to the mission of today's deep dive we're welcoming you yes you listening
+
+23
+00:02:34,520 --> 00:02:43,220
+right now to join us on a journey that i genuinely believe will um fundamentally alter
+
+24
+00:02:43,220 --> 00:02:49,640
+how you look at the world it really changes your perspective it changes how you look at your habits your own mind
+
+25
+00:02:49,640 --> 00:02:54,400
+everything we are setting out to answer one of the most profound questions we can ask which is
+
+26
+00:02:54,400 --> 00:03:02,500
+why do certain things manage to survive across centuries while other things just you know fade away to the
+
+27
+00:03:02,500 --> 00:03:09,700
+ambient noise of history it is a massive sweeping question but uh what's great is we are grounding
+
+28
+00:03:09,700 --> 00:03:16,740
+it in a very specific highly rigorous new framework today exactly so our guide for this deep dive is
+
+29
+00:03:16,740 --> 00:03:23,920
+this extraordinary essay it was actually published today april 14 2026 hot off the presses right hot off
+
+30
+00:03:23,920 --> 00:03:29,540
+the virtual presses it's by the author Flyxion and it's titled return under constraint a theory of
+
+31
+00:03:29,540 --> 00:03:35,820
+persistence in language ritual and form and i have to admit when i first read the title i assumed it was
+
+32
+00:03:35,820 --> 00:03:43,380
+going to be like a super niche historical analysis oh it sounds incredibly academic right but it's not
+
+33
+00:03:43,380 --> 00:03:50,980
+i mean it is academic but it proposes this fundamental underlying rule of reality yeah what's fascinating
+
+34
+00:03:50,980 --> 00:03:57,300
+here is the author introduces what they call the constraint recurrence principle okay let's unpack this so
+
+35
+00:03:57,300 --> 00:04:04,040
+the premise builds directly on that analogy of the flame you just mentioned stability is not about
+
+36
+00:04:04,040 --> 00:04:11,160
+freezing an object in place persistence is a dynamical problem right the theory basically states that any
+
+37
+00:04:11,160 --> 00:04:19,380
+structure whether it's um a spoken word a spiritual practice a piece of ancient technology or even like
+
+38
+00:04:19,380 --> 00:04:25,640
+modern artificial intelligence which we will definitely get to oh we will yeah but any of those things
+
+39
+00:04:25,640 --> 00:04:32,420
+survive only if they repeatedly return to themselves under specific bounded constraints constraint and
+
+40
+00:04:32,420 --> 00:04:37,460
+recurrence those are the two big concepts the two words we need you to just keep in your minds today
+
+41
+00:04:37,460 --> 00:04:44,320
+the anchors for the whole discussion exactly and the journey this essay takes us on is wildly ambitious
+
+42
+00:04:44,320 --> 00:04:52,640
+i mean we are going to travel from ancient arabic linguistics to islamic pilgrimage rituals over to 11th
+
+43
+00:04:52,640 --> 00:05:03,100
+century chinese printing presses and finally land on modern ai and cognitive science it covers so much ground
+
+44
+00:05:03,100 --> 00:05:10,420
+it really does but um before we get into the historical examples we need to understand the actual physics of this
+
+45
+00:05:10,420 --> 00:05:19,640
+idea because when we talk about like preserving information or stability my mind immediately goes to the 20th
+
+46
+00:05:19,640 --> 00:05:27,880
+century claude shannon yes i think of claude shannon and information theory you know the idea of getting a
+
+47
+00:05:27,880 --> 00:05:34,000
+message from point a to point b without a noisy telephone line just completely scrambling it and
+
+48
+00:05:34,000 --> 00:05:39,780
+shannon's information theory is i mean it's the foundation of our entire digital world right the internet
+
+49
+00:05:39,780 --> 00:05:46,240
+wouldn't exist without it exactly but it addresses a fundamentally different problem than Flyxion's theory
+
+50
+00:05:46,240 --> 00:05:53,180
+because shannon was working at bell labs in the late 1940s he was concerned with the fidelity of
+
+51
+00:05:53,180 --> 00:06:00,520
+transmission like a wire right in his model you already have a static message a telegram a voice
+
+52
+00:06:00,520 --> 00:06:06,100
+recording and your goal is to send it across a noisy channel okay but the constraint recurrence
+
+53
+00:06:06,100 --> 00:06:12,440
+principle isn't about preserving a message in transit it's about the stability of identity
+
+54
+00:06:12,440 --> 00:06:22,300
+under iteration meaning wait say that again how does the structure maintain its um its selfness
+
+55
+00:06:22,300 --> 00:06:30,080
+when it has to be repeatedly reinstantiated over and over by different people across vast stretches of
+
+56
+00:06:30,080 --> 00:06:35,360
+time okay that makes sense so let's look at another framework then because when you say dynamical
+
+57
+00:06:35,360 --> 00:06:42,380
+system and maintaining stability to me that sounds a lot like cybernetics oh interesting like feedback loop
+
+58
+00:06:42,380 --> 00:06:49,000
+yeah exactly like a thermostat you set it to 70 degrees the room gets cold the heater kicks on the room
+
+59
+00:06:49,000 --> 00:06:55,340
+gets hot the heater turns off it's a continuous feedback loop maintaining a steady state is that what
+
+60
+00:06:55,340 --> 00:07:01,120
+we are talking about here it is definitely related but Flyxion draws a really sharp distinction there
+
+61
+00:07:01,120 --> 00:07:09,280
+okay cybernetics relies on continuous analog feedback to regulate a system like you said the thermostat is
+
+62
+00:07:09,280 --> 00:07:15,900
+constantly continuously sampling the air right but Flyxion's theory is about discrete punctuated
+
+63
+00:07:15,900 --> 00:07:23,660
+acts of reconstitution it is not a continuous holding pattern think about a spoken word or a printed page
+
+64
+00:07:23,660 --> 00:07:32,120
+or a ritual prayer these are discrete acts the system essentially pauses or degrades over time and then
+
+65
+00:07:32,120 --> 00:07:38,320
+it has to be actively rebuilt from scratch in the next iteration okay i think i get it so it's not like
+
+66
+00:07:38,320 --> 00:07:43,600
+building a fortress wall to keep the wind out and it's not like a thermostat just humming in the
+
+67
+00:07:43,600 --> 00:07:49,880
+background constantly adjusting you know it's more like okay it's like keeping a top spinning on a table
+
+68
+00:07:49,880 --> 00:07:55,200
+yes that's a great way to look at it right because the moment you stop applying the spin
+
+69
+00:07:55,200 --> 00:08:04,320
+that discrete punctuated input of energy the top eventually wobbles and falls over the top doesn't
+
+70
+00:08:04,320 --> 00:08:10,160
+stay upright because it's rigid it stays upright because you keep interacting with it in a very
+
+71
+00:08:10,160 --> 00:08:16,080
+specific constrained way that captures the discrete nature of it perfectly the spinning top requires
+
+72
+00:08:16,080 --> 00:08:23,120
+periodic inputs of energy but those inputs also have to be applied at a specific angle right if you just
+
+73
+00:08:23,120 --> 00:08:29,520
+smack the top randomly it flies off the table exactly and this brings us to the mathematical heartbeat of
+
+74
+00:08:29,520 --> 00:08:37,120
+the essay because Flyxion actually formalizes this dynamical survival with a specific operator
+
+75
+00:08:37,120 --> 00:08:45,920
+equation okay hit me with the math it's t equals r composed with c okay t equals r composed with c i'm
+
+76
+00:08:45,920 --> 00:08:53,520
+always you know a little wary when we drop literal mathematical formulas into human cultural history but let's
+
+77
+00:08:53,520 --> 00:08:58,960
+break this down what are we actually calculating here well we aren't really calculating a number we are
+
+78
+00:08:58,960 --> 00:09:05,680
+describing a process okay so t is the composite operator that's the total action that keeps the
+
+79
+00:09:05,680 --> 00:09:13,440
+system stable and alive over time total survival got it right r stands for the recurrence operator
+
+80
+00:09:13,440 --> 00:09:21,520
+which is just the act of repeating or returning spin exactly the spin and then c stands for the constraint
+
+81
+00:09:21,520 --> 00:09:27,600
+operator the rules or the boundaries okay so what about the composed with part that little circle
+
+82
+00:09:27,600 --> 00:09:33,520
+between them the composition symbol means these two things must happen in conjunction you apply
+
+83
+00:09:33,520 --> 00:09:39,040
+constraint and then you follow it with recurrence they are locked together so if i apply this back to
+
+84
+00:09:39,040 --> 00:09:47,040
+my spinning top analogy um the recurrence is my hand actively spinning it again and again yes so what is
+
+85
+00:09:47,040 --> 00:09:55,280
+the constraint is the physical shape of the top or the friction of the table it is honestly all of
+
+86
+00:09:55,280 --> 00:10:04,080
+those boundaries the constraint restricts the top's movement to a single axis of rotation oh i see because
+
+87
+00:10:04,080 --> 00:10:10,720
+think about it if you only have recurrence meaning you just apply kinetic energy over and over without any
+
+88
+00:10:10,720 --> 00:10:17,360
+constraint on the direction or axis you just get chaos the object tumbles around the room right it's just
+
+89
+00:10:17,360 --> 00:10:24,560
+chaotic energy but if you only have constraints say you clamp the top in an iron vice so it physically
+
+90
+00:10:24,560 --> 00:10:31,360
+cannot move off its axis well now you have zero recurrence you just can't spin exactly you get a dead
+
+91
+00:10:31,360 --> 00:10:40,160
+frozen system it is only the composition of the two the r and the c that produces the kind of stable
+
+92
+00:10:40,160 --> 00:10:46,800
+adaptive persistence that allows complex systems to actually survive it's so fascinating because it
+
+93
+00:10:46,800 --> 00:10:54,080
+implies that survival is a verb not a noun yes but you know i can imagine you listening right now
+
+94
+00:10:54,080 --> 00:11:00,000
+thinking okay abstract math and spinning tops are great but how does this actually look in the real
+
+95
+00:11:00,000 --> 00:11:06,400
+world how does this manifest in human culture because we don't exist in a vacuum like how do words for
+
+96
+00:11:06,400 --> 00:11:14,000
+instance survive for thousands of years and to explore that the essay takes us into the world of semitic
+
+97
+00:11:14,000 --> 00:11:20,400
+languages yes specifically ancient arabic linguistics right and to understand how radical Flyxion's
+
+98
+00:11:20,400 --> 00:11:26,160
+application is here we really have to look at how arabic vocabulary is structured because it's very
+
+99
+00:11:26,160 --> 00:11:33,360
+different from english completely different unlike english where words are largely just standalone units
+
+100
+00:11:33,360 --> 00:11:40,080
+arabic is built on a root system so most words are derived from a skeletal root which is typically
+
+101
+00:11:40,080 --> 00:11:50,080
+three three consonants okay and the essay focuses on one very specific highly foundational root it's q r a
+
+102
+00:11:50,080 --> 00:11:58,000
+cough ra humza right and if you look up q r a in a standard arabic english dictionary today it almost
+
+103
+00:11:58,000 --> 00:12:05,120
+always just translates as to read or to recite yes i mean it's literally the root of the word quran which
+
+104
+00:12:05,120 --> 00:12:11,520
+translates as the recitation that is the most common translation today for sure but flitchin points
+
+105
+00:12:11,520 --> 00:12:19,360
+out that if you open a massive comprehensive classical arabic lexicon something like the lisan al-arab like
+
+106
+00:12:19,360 --> 00:12:26,640
+the old historical dictionaries exactly the range of meanings historically assigned to this exact same root
+
+107
+00:12:26,640 --> 00:12:34,880
+is just incredibly broad it's kind of wild it really is it doesn't just mean to read aloud it also means
+
+108
+00:12:34,880 --> 00:12:41,360
+to gather or collect scattered things together okay it means to match one portion to another portion
+
+109
+00:12:41,920 --> 00:12:49,520
+to return after a long absence to recall a memory to wait through a bounded interval of time
+
+110
+00:12:50,800 --> 00:12:56,560
+and bizarrely even to warn someone from a threshold okay i have to play devil's advocate here for a
+
+111
+00:12:56,560 --> 00:13:03,680
+second go for it isn't that just standard polysemy like every language has words with multiple totally
+
+112
+00:13:03,680 --> 00:13:11,200
+unrelated meanings sure in english the word bat can mean a flying mammal with wings or it can mean a
+
+113
+00:13:11,200 --> 00:13:17,280
+wooden stick used in baseball right that doesn't mean there is some deep hidden dynamical connection
+
+114
+00:13:17,280 --> 00:13:23,520
+between vampires and the new york yankees no obviously not it's just an accident of historical phonetics
+
+115
+00:13:24,240 --> 00:13:33,120
+two different sounds merged over time so why shouldn't we just assume q a meaning both to read and to wait
+
+116
+00:13:33,680 --> 00:13:41,280
+is just a historical accident see that is exactly the skepticism that modern linguistics trains into us oh yeah
+
+117
+00:13:42,080 --> 00:13:50,080
+we are conditioned by our dictionaries to think of words as static containers we think a word is a box and
+
+118
+00:13:50,080 --> 00:13:56,240
+these disparate meanings reading gathering waiting they're just random objects rattling around inside
+
+119
+00:13:56,240 --> 00:14:03,680
+that box numbered one through ten right like a list but classical arabic lexicographers did not view their
+
+120
+00:14:03,680 --> 00:14:10,640
+language that way and Flyxion argues we shouldn't either okay the author claims these aren't accidental
+
+121
+00:14:10,640 --> 00:14:20,560
+homophones like the bad example a root like q r a is not a list of nouns and verbs it is a semantic field it is
+
+122
+00:14:20,560 --> 00:14:29,200
+a compressed dynamical operator meaning wait the root itself is an action it's a formula precisely the
+
+123
+00:14:29,200 --> 00:14:36,480
+argument is that q r a represents a single underlying dynamical schema which is what it is the ordered
+
+124
+00:14:36,480 --> 00:14:42,880
+reassembly or reactivation of elements across time okay or to put it in the language of the theory it's
+
+125
+00:14:42,880 --> 00:14:48,720
+structured return structured return okay let's actually test that against the dictionary list you
+
+126
+00:14:48,720 --> 00:14:55,600
+just gave because i need to see how this works how is reading a structured return well think about what
+
+127
+00:14:55,600 --> 00:15:04,000
+you are doing when you read you are looking at dispersed individual symbols on a page the letters right the
+
+128
+00:15:04,000 --> 00:15:12,080
+letters and you are sequentially gathering them returning them to a coherent cognitive hole in your
+
+129
+00:15:12,080 --> 00:15:20,960
+mind oh okay what is recitation it is the structured return of a memorized sequence of sounds into the air
+
+130
+00:15:21,520 --> 00:15:27,840
+what is recollection it is returning to a prior state of knowing oh i see it okay what about the physical
+
+131
+00:15:27,840 --> 00:15:33,440
+meanings though like gathering scattered objects it's the exact same process just applied to physical space
+
+132
+00:15:33,440 --> 00:15:38,640
+instead of memory you take elements that have drifted apart like a herd of animals and you
+
+133
+00:15:38,640 --> 00:15:45,360
+return them to a constrained structured arrangement a pen exactly even waiting through an interval which
+
+134
+00:15:45,360 --> 00:15:51,600
+sounds so different yeah how does waiting fit when you wait through a cyclic interval you are occupying
+
+135
+00:15:51,600 --> 00:15:57,040
+a space within a recurrent structure waiting for the cycle to return to its starting point
+
+136
+00:15:57,040 --> 00:16:06,480
+that is wild so the dictionary basically forces us to translate this fluid dynamic process into rigid
+
+137
+00:16:06,480 --> 00:16:12,800
+english verbs but the root itself is just the code for the process it's like a mathematical function
+
+138
+00:16:12,800 --> 00:16:19,120
+like fx you plug different variables into the qra functions you plug written symbols into it you get
+
+139
+00:16:19,120 --> 00:16:24,960
+reading you plug stattered sheep into it you get gathering you plug time into it you get waiting
+
+140
+00:16:24,960 --> 00:16:32,560
+Flyxion calls this semantic compression semantic compression yeah it is an incredibly efficient way to
+
+141
+00:16:32,560 --> 00:16:41,120
+store information over centuries because four phonetic sounds encode this vast dynamical invariant
+
+142
+00:16:41,760 --> 00:16:50,720
+and that invariant can operate across memory action time physical objects wow the constraint is the
+
+143
+00:16:50,720 --> 00:16:57,920
+structure of the root itself the recurrence is its application to all these various domains of human life
+
+144
+00:16:57,920 --> 00:17:05,440
+that makes perfect sense but the essay takes this concept and applies it to a specific controversy that
+
+145
+00:17:05,440 --> 00:17:13,200
+actually blew my mind oh the legal debate yes because from this root qra we get this specific noun
+
+146
+00:17:13,200 --> 00:17:20,160
+quora or plural quoru and historically classical islamic scholars and jurists have argued
+
+147
+00:17:20,160 --> 00:17:26,960
+endlessly over what this specific noun means because it appears to contain a literal logical contradiction
+
+148
+00:17:26,960 --> 00:17:34,320
+it is one of the most famous linguistic debates in islamic jurisprudence the word is used in a legal
+
+149
+00:17:34,320 --> 00:17:41,840
+context specifically regarding the waiting period for women after a divorce okay but the classical lexicon
+
+150
+00:17:41,840 --> 00:17:50,080
+state that the word qor translates as the period of menstruation and it also translates as the period of
+
+151
+00:17:50,160 --> 00:17:56,160
+purity between menstruation so it means a physical state and it also means the exact opposite of that
+
+152
+00:17:56,160 --> 00:18:03,360
+state yes and if you subscribe to the static dictionary view of language if you think a word just points
+
+153
+00:18:03,360 --> 00:18:14,160
+to a single rigid physical object or state this is an unsolvable paradox i mean logically how can a word
+
+154
+00:18:14,160 --> 00:18:20,800
+mean both x and not x simultaneously it shouldn't be possible and legal schools literally split over
+
+155
+00:18:20,800 --> 00:18:27,280
+which state the word was actually meant to denote but Flyxion argues that if we view the word through
+
+156
+00:18:27,280 --> 00:18:34,080
+the constraint recurrence principle if the word is a process not an object the contradiction completely
+
+157
+00:18:34,080 --> 00:18:40,320
+vanishes entirely let me see if i can translate the essay's explanation into an analogy for the listener
+
+158
+00:18:40,960 --> 00:18:46,640
+because it's a bit dense yeah it gets very technical so imagine two people staring at an analog clock on
+
+159
+00:18:46,640 --> 00:18:52,720
+a wall right one person points at the clock and says the hour is that single tick when the big hand
+
+160
+00:18:52,720 --> 00:18:59,440
+hits the 12 right the second person points at the exact same clock and says no you're wrong the hour is
+
+161
+00:18:59,440 --> 00:19:07,520
+the 60 minutes of space between the 12s yeah now if you look at it rigidly they're pointing to two completely
+
+162
+00:19:07,520 --> 00:19:13,680
+different mutually exclusive things a single instantaneous tick versus a 60 minute duration
+
+163
+00:19:14,880 --> 00:19:21,200
+but from a dynamical perspective they're pointing to the exact same cyclic structure that is a
+
+164
+00:19:21,200 --> 00:19:27,440
+phenomenal way to visualize it Flyxion actually uses a highly technical term for this they call it
+
+165
+00:19:27,440 --> 00:19:34,960
+phase indexing on a cyclic manifold phase indexing on a cyclic manifold right the underlying biological
+
+166
+00:19:34,960 --> 00:19:41,760
+reality the menstrual cycle is a continuous repeating manifold it is a dynamical process
+
+167
+00:19:42,560 --> 00:19:50,000
+the word core does not denote a fixed static state of blood or no blood it denotes the structured
+
+168
+00:19:50,000 --> 00:19:56,000
+return of the cycle itself so the underdetermined the ambiguity of the word isn't a flaw in the
+
+169
+00:19:56,000 --> 00:20:01,760
+language at all no the word perfectly describes the cycle the disagreement between the scholars
+
+170
+00:20:01,760 --> 00:20:07,840
+is literally just about where you drop your anchor on that cycle precisely the scholars were trying
+
+171
+00:20:07,840 --> 00:20:16,720
+to force a dynamical operator into a static category the identity of the word core isn't found in a
+
+172
+00:20:16,720 --> 00:20:25,200
+specific biological fluid its identity is the recurrence of the constraint it's the loop it's a loop and this
+
+173
+00:20:25,200 --> 00:20:31,600
+fundamentally challenges how we think about the evolution of meaning itself words survive thousands
+
+174
+00:20:31,600 --> 00:20:37,760
+of years not because they have rigid unyielding definitions right they survive because they encode
+
+175
+00:20:37,760 --> 00:20:45,520
+dynamical schemas that can be repeatedly applied to a constantly changing world man okay so if language
+
+176
+00:20:45,520 --> 00:20:52,640
+requires this dynamic return to survive what happens when we zoom out a bit because words are just tools
+
+177
+00:20:52,640 --> 00:20:58,800
+ultimately true what happens when the human being using the tool needs to survive across time like
+
+178
+00:20:58,800 --> 00:21:06,240
+how does a person a human subject prevent their own identity or their own truth from just drifting into
+
+179
+00:21:06,240 --> 00:21:12,800
+chaos well this is where the essay moves from semantics into the realm of human ritual and subjectivity
+
+180
+00:21:12,800 --> 00:21:19,360
+which is my favorite part yeah in Flyxion starts this exploration by analyzing the structure of ancient
+
+181
+00:21:19,360 --> 00:21:26,000
+ancient oaths specifically quranic oaths okay because throughout the text there are these constant
+
+182
+00:21:26,000 --> 00:21:32,720
+invocations swearing by natural phenomena swearing by the dawn swearing by the sun by the night
+
+183
+00:21:33,280 --> 00:21:39,520
+and very prominently swearing by the moon you know coming from a modern secular perspective
+
+184
+00:21:39,520 --> 00:21:45,840
+my immediate instinct is to read that as purely literary sure sounds poetic but it's poetic heightening
+
+185
+00:21:45,840 --> 00:21:52,800
+yeah if i say i swear on my mother's grave i'm not literally invoking the physics of the granite
+
+186
+00:21:52,800 --> 00:21:58,800
+gravestone i'm just trying to show you how serious i am right or maybe people read it as a metaphysical
+
+187
+00:21:58,800 --> 00:22:04,880
+claim like the moon is a sacred magical object and that is the standard literary interpretation
+
+188
+00:22:05,680 --> 00:22:13,760
+but Flyxion proposes a structural epistemological interpretation epistemology meaning the study of how we know
+
+189
+00:22:13,760 --> 00:22:20,000
+what is true exactly if you are trying to anchor a truth claim in a world that is chaotic and
+
+190
+00:22:20,000 --> 00:22:25,680
+constantly degrading you need a referent that is outside of human subjectivity you need an epistemic
+
+191
+00:22:25,680 --> 00:22:32,560
+anchor so what makes the moon a good epistemic anchor why the moon well think about its properties
+
+192
+00:22:32,560 --> 00:22:39,920
+it is publicly observable to everyone it is entirely immune to human manipulation you can't touch it or change
+
+193
+00:22:39,920 --> 00:22:46,880
+it true and most importantly it represents a highly reliable cyclic structure it possesses
+
+194
+00:22:46,880 --> 00:22:55,600
+incredibly low entropy the phases of the moon are a massive cosmic recurrence operator wow so when a text
+
+195
+00:22:55,600 --> 00:23:04,240
+says nay by the moon it's not performing sympathetic magic or just writing nice poetry no it is actively
+
+196
+00:23:04,240 --> 00:23:12,160
+selecting a natural mechanism of recurrence to ground a conceptual claim yes the oath itself is the
+
+197
+00:23:12,160 --> 00:23:18,480
+constraint right it binds the speaker to the statement but the moon is the recurrence it provides the
+
+198
+00:23:18,480 --> 00:23:24,240
+continuous temporal rhythm that proves the constraint holds across time because without the constraint of
+
+199
+00:23:24,240 --> 00:23:30,960
+the oath the claim is just noise but without the recurrence of the moon's cycle the oath has no temporal
+
+200
+00:23:30,960 --> 00:23:36,560
+grip it's just a momentary sound exactly it's an utterance that fades as soon as it is spoken
+
+201
+00:23:36,560 --> 00:23:42,480
+together the constraint and the recurrence stabilize the proposition they create a fixed point in human
+
+202
+00:23:42,480 --> 00:23:51,760
+experience and building on that idea of creating a fixed point for a human being the essay brings in
+
+203
+00:23:51,760 --> 00:23:59,360
+what i think is its most emotionally resonant example the talbia yes the author analyzes the talbia
+
+204
+00:23:59,360 --> 00:24:04,960
+and for listeners who might not be familiar the talbia is the invocation that is broken continuously by
+
+205
+00:24:04,960 --> 00:24:11,760
+millions of muslims during the hajj pilgrimage in mecca as they walk they recite it right as they are
+
+206
+00:24:11,760 --> 00:24:17,360
+physically moving they constantly recite this specific phrase i'm actually going to read the english
+
+207
+00:24:17,360 --> 00:24:25,200
+translation provided in the essay so we can analyze the structure of it go for it it goes here i am oh god
+
+208
+00:24:25,200 --> 00:24:31,120
+here i am here i am you have no partner here i am indeed all praise and blessing belong to you and
+
+209
+00:24:31,120 --> 00:24:38,640
+all sovereignty you have no partner when you view this text through the lens of the t equals r composed
+
+210
+00:24:38,640 --> 00:24:45,520
+with c equation it ceases to be merely a devotional poem it becomes something else entirely it reveals
+
+211
+00:24:45,520 --> 00:24:52,800
+itself as a highly engineered cognitive stabilization mechanism oh that's a great phrase Flyxion begins
+
+212
+00:24:52,800 --> 00:24:59,280
+by pointing out that the phrase here i am is not a descriptive status update right like sharing your
+
+213
+00:24:59,280 --> 00:25:07,600
+location on your phone exactly the pilgrim is not informing the divine of their physical gps coordinate god
+
+214
+00:25:07,600 --> 00:25:15,200
+knows where you are right it is a performative utterance it is an iterative alignment of the self
+
+215
+00:25:15,200 --> 00:25:22,960
+it is the spin on the top it's the occurrence operator yes each repetition of here i am
+
+216
+00:25:22,960 --> 00:25:31,520
+is a discrete step of recurrence it is the individual reinstantiating their presence however as we know from
+
+217
+00:25:31,520 --> 00:25:38,480
+the mathematical model we talked about earlier recurrence without constraint is just drift right if you just
+
+218
+00:25:38,480 --> 00:25:44,480
+walk around saying here i am here i am you are present but you are unanchored you could be
+
+219
+00:25:44,480 --> 00:25:49,520
+pledging your presence to your own ego to your wealth to the crowd of people around you so
+
+220
+00:25:50,080 --> 00:25:57,440
+where is the constraint here's where it gets really interesting yeah it's the phrase you have no partner
+
+221
+00:25:57,440 --> 00:26:03,760
+yes the essay refers to this as the exclusivity constraint and the mathematics of this are profound
+
+222
+00:26:03,760 --> 00:26:09,920
+in dynamical systems theory we talk about attractor landscapes okay visualize this for us if you imagine
+
+223
+00:26:09,920 --> 00:26:16,160
+a landscape of hills and valleys and you drop a marble onto it the marble will naturally roll down
+
+224
+00:26:16,160 --> 00:26:22,000
+into a valley that valley is an attractor basin it's where the system naturally wants to settle exactly
+
+225
+00:26:22,800 --> 00:26:33,200
+now the human mind has countless attractor basins distractions desires fears anxieties the repetition of
+
+226
+00:26:33,200 --> 00:26:41,280
+here i am drops the marble into the landscape but the phrase you have no partner acts as a mathematical
+
+227
+00:26:41,280 --> 00:26:49,200
+operator that flattens all other valleys wow it restricts the admissible set of alignments to a single
+
+228
+00:26:49,200 --> 00:26:56,880
+exclusive reference point it reduces the entire attractor landscape to a single basin that makes the concept
+
+229
+00:26:56,880 --> 00:27:02,960
+of a constraint so much clearer to me because a constraint doesn't just draw a box around what
+
+230
+00:27:02,960 --> 00:27:09,200
+is allowed its primary function is to systematically eliminate what is not allowed exactly it cuts off
+
+231
+00:27:09,200 --> 00:27:15,280
+all alternative paths and this leads to a brilliant juxtaposition in the essay fluxine contrasts the
+
+232
+00:27:15,280 --> 00:27:22,320
+mechanics of the talbia with another deeply famous historical declaration of conviction yeah this is such a cool
+
+233
+00:27:22,320 --> 00:27:29,200
+comparison it's martin luther at the diet of worms in 1521 luther standing before the holy roman emperor
+
+234
+00:27:29,200 --> 00:27:37,280
+facing potential execution famously declares here i stand i can do no other so you have here i am on one
+
+235
+00:27:37,280 --> 00:27:44,000
+side spoken by millions of people walking in a continuous circle and you have here i stand on the other
+
+236
+00:27:44,000 --> 00:27:52,080
+side spoken by a solitary monk refusing to move an inch right and they feel emotionally very similar
+
+237
+00:27:52,320 --> 00:27:59,360
+right they're both ultimate statements of human conviction but how does the theory separate them
+
+238
+00:27:59,920 --> 00:28:06,560
+well they attempt to achieve the exact same structural goal which is fixing the human subject
+
+239
+00:28:06,560 --> 00:28:15,120
+relative to a governing constraint but they utilize completely different operational modes so look at
+
+240
+00:28:15,120 --> 00:28:21,920
+luther's phrasing here i stand this is an assertion of a pre-existing fixed point he is
+
+241
+00:28:21,920 --> 00:28:28,240
+presenting his identity as already stabilized what work is already done exactly the inner convergence has
+
+242
+00:28:28,240 --> 00:28:34,960
+already happened and he is now externally declaring it as a static rigid fact he is attempting to be the
+
+243
+00:28:34,960 --> 00:28:43,520
+stone he is bracing for impact yes but the talbia enacts the fixed point through iteration the stability of
+
+244
+00:28:43,520 --> 00:28:49,520
+the pilgrim is in a pre-existing condition that they just bring with them to mecca in their suitcase
+
+245
+00:28:49,520 --> 00:28:56,080
+the stability is achieved in real time step by step through the repeated utterance of the phrase
+
+246
+00:28:56,080 --> 00:29:04,080
+under the constraint of exclusivity luther asserts stability the pilgrim generates it dynamically
+
+247
+00:29:04,080 --> 00:29:12,000
+so luther is essentially saying i have arrived at the final destination while the pilgrim is saying i am
+
+248
+00:29:12,000 --> 00:29:19,840
+continuously arriving breath by breath yes and i want you the listener to really internalize this think
+
+249
+00:29:19,840 --> 00:29:26,640
+about your own core convictions like the beliefs that you feel define who you truly are are they just
+
+250
+00:29:26,640 --> 00:29:31,680
+static positions you hold in your head like a trophy sitting on a shelf collecting dust right or are
+
+251
+00:29:31,680 --> 00:29:39,360
+they dynamic configurations that you actually physically return to through your daily habits through your
+
+252
+00:29:39,360 --> 00:29:45,680
+routines your constrained actions Flyxion is really suggesting here that true identity isn't a
+
+253
+00:29:45,680 --> 00:29:52,400
+substance you possess it's a process you execute that's beautifully put and if you don't continually
+
+254
+00:29:52,400 --> 00:30:00,880
+reinstantiate your values through recurrence they will inevitably drift and you know while human identity
+
+255
+00:30:00,880 --> 00:30:06,480
+provides a psychological lens for this theory the physical world presents an entirely different set of
+
+256
+00:30:06,480 --> 00:30:13,680
+challenges how do you instantiate this principle in inner matter and this is where flick sean takes
+
+257
+00:30:13,680 --> 00:30:20,400
+us on this sudden historical leap to 11th century china i have to say this was the moment in the essay
+
+258
+00:30:20,400 --> 00:30:27,520
+where i genuinely laughed out loud it's quite the pivot we have just gone from arabic lexicography to
+
+259
+00:30:28,240 --> 00:30:34,720
+thong theology to martin luther and suddenly we're talking about the invention of movable type printing
+
+260
+00:30:34,720 --> 00:30:41,760
+during the song dynasty but as you read the section it becomes undeniably clear the printing press
+
+261
+00:30:41,760 --> 00:30:50,640
+is the ultimate literal physical manifestation of t equals r composed with c it really is it is the
+
+262
+00:30:50,640 --> 00:30:57,280
+theory rendered in iron clay and heat the historical account flick sean relies on describes the inventor
+
+263
+00:30:57,280 --> 00:31:03,760
+vishang cutting characters into clay and the clay was incredibly thin described as the edge of a coin
+
+264
+00:31:03,760 --> 00:31:10,560
+very fragile very in Flyxion identifies this initial act of cutting the wet clay as the first indispensable
+
+265
+00:31:10,560 --> 00:31:16,560
+step of persistence discretization discretization okay yeah explain how that works in physical space
+
+266
+00:31:16,560 --> 00:31:24,000
+why is cutting the clay so important to stability well imagine a continuous unbroken slab of wet clay
+
+267
+00:31:25,120 --> 00:31:32,800
+because it is continuous it admits infinite variation you can mold it into anything a bowl a statue right but
+
+268
+00:31:32,800 --> 00:31:40,560
+precisely because it can be anything it is highly susceptible to noise and degradation a fingerprint
+
+269
+00:31:41,120 --> 00:31:48,480
+a drop of water a slight change in temperature all of that alters the continuous slab it ruins it but
+
+270
+00:31:48,480 --> 00:31:57,440
+by taking a knife and cutting the clay into discrete specific bounded characters you force the continuous medium
+
+271
+00:31:57,440 --> 00:32:06,640
+the cut itself is a physical constraint you are saying this object is now a and it cannot easily bleed into
+
+272
+00:32:06,640 --> 00:32:12,560
+becoming b oh i love that it's like turning an analog painting into digital pixels you are forcing the continuous
+
+273
+00:32:12,560 --> 00:32:20,400
+information into distinct manageable blocks exactly but clay is fragile the text notes that b shang actually
+
+274
+00:32:20,400 --> 00:32:26,880
+baked the clay in a fire to harden it and then comes the actual printing mechanism he takes an iron plate and on that
+
+275
+00:32:26,880 --> 00:32:34,400
+plate he places an iron frame and he packs the baked clay characters tightly inside this iron frame and that
+
+276
+00:32:34,400 --> 00:32:41,440
+iron frame is the literal embodiment of the constraint operator and physical space right the frame enforces
+
+277
+00:32:41,440 --> 00:32:49,200
+positional alignment it guarantees that the discrete characters stay in correct spatial relation to one another
+
+278
+00:32:49,920 --> 00:32:56,560
+it mathematically prevents the text from drifting into chaos as it's being used and finally we have the
+
+279
+00:32:56,560 --> 00:33:05,440
+recurrence operator yes the text describes how b shang would use two iron forms while one form was being
+
+280
+00:33:05,440 --> 00:33:12,400
+pressed onto the paper leaving the ink impression the second form was being arranged with new characters they
+
+281
+00:33:12,400 --> 00:33:20,800
+were constantly alternating the ink is applied the plate is pressed the paper is removed and the process repeats and
+
+282
+00:33:20,800 --> 00:33:27,680
+think about the philosophical implication of this process regarding identity where does the text actually
+
+283
+00:33:27,680 --> 00:33:35,040
+exist does the text live in the ink no the ink is consumed it dries up does it live in the paper no paper
+
+284
+00:33:35,040 --> 00:33:42,080
+degrades it burns it rots does it even live in the clay type no because the clay eventually chips and must be
+
+285
+00:33:42,080 --> 00:33:48,720
+replaced exactly the identity of the book doesn't live in the physical materials at all the identity lives in the
+
+286
+00:33:48,720 --> 00:33:56,160
+reproducibility of the form the text is the fixed point of the printing process to be the same text
+
+287
+00:33:56,720 --> 00:34:05,360
+is to return under the constraint of the iron frame to oneself across multiple iterations of paper it is the
+
+288
+00:34:05,360 --> 00:34:11,840
+exact same mathematical dynamic as the arabic root and the pilgrimage ritual i am going to interrupt here
+
+289
+00:34:11,840 --> 00:34:17,760
+though because i have to push back on behalf of the listener please do i am looking at my notes right
+
+290
+00:34:17,760 --> 00:34:25,280
+now we have an ancient arabic dictionary a religious prayer from the middle east and a clay printing press
+
+291
+00:34:25,280 --> 00:34:31,840
+from song dynasty china a skeptical listener could easily say come on this is just pattern matching sure
+
+292
+00:34:31,840 --> 00:34:37,840
+you are just cherry picking history you're finding things that vaguely look like a spinning top ripping
+
+293
+00:34:37,840 --> 00:34:44,320
+them out of their historical context and forcing them into a unified theory of everything isn't this
+
+294
+00:34:44,320 --> 00:34:50,640
+just a massive coincidence that is the most important critique you can level at any cross-disciplinary
+
+295
+00:34:50,640 --> 00:34:58,800
+theory right if a theory explains everything it often explains nothing but flixayish anticipates this exact
+
+296
+00:34:58,800 --> 00:35:06,480
+critique and counters it with a concept borrowed from evolutionary biology they call it convergence without
+
+297
+00:35:06,480 --> 00:35:11,520
+descent convergence without descent convergence without descent meaning they end up in the exact same
+
+298
+00:35:11,520 --> 00:35:18,640
+place without sharing a bloodline exactly the author is explicitly stating that these examples do not
+
+299
+00:35:18,640 --> 00:35:26,240
+share a historical or genealogical lineage the semantic structure of ancient arabic did not cause the
+
+300
+00:35:26,240 --> 00:35:33,440
+invention of the chinese printing press obviously not but they exhibit structural convergence consider
+
+301
+00:35:33,440 --> 00:35:41,680
+evolutionary biology a shark is a cartilaginous fish a dolphin is a mammal they have completely
+
+302
+00:35:41,680 --> 00:35:48,080
+different evolutionary histories they are separated by hundreds of millions of years of descent right
+
+303
+00:35:48,080 --> 00:35:53,440
+yet if you look at their silhouettes they look incredibly similar they both have dorsal fins streamlined
+
+304
+00:35:53,440 --> 00:36:01,600
+bodies flippers why because the physics of water dictates that shape if you want to move fast
+
+305
+00:36:01,600 --> 00:36:08,960
+through a dense liquid there are only a few hydrodynamic shapes that actually work the environment forces
+
+306
+00:36:08,960 --> 00:36:16,240
+the solution exactly the environment constrains the viable solutions Flyxion's argument is that time
+
+307
+00:36:16,240 --> 00:36:24,320
+entropy and environmental noise act as the ocean any system whether it is an abstract idea a human conviction
+
+308
+00:36:24,320 --> 00:36:30,400
+or a physical technology or a physical technology that is trying to survive the erosive forces of time
+
+309
+00:36:31,040 --> 00:36:38,720
+must evolve this exact mechanism it has to have a dorsal fin yes it must develop a constraint and it must
+
+310
+00:36:38,720 --> 00:36:47,920
+develop a mechanism for recurrence it is a structural necessity to combat entropy the fact that independent
+
+311
+00:36:47,920 --> 00:36:56,400
+systems across human history arrive at the exact same t equals r composed with c pattern without any
+
+312
+00:36:56,400 --> 00:37:02,960
+possibility of borrowing from each other doesn't weaken the theory it validates it it validates it yeah it
+
+313
+00:37:02,960 --> 00:37:09,360
+proves that the solution space for persistence in our universe is highly highly constrained that is a
+
+314
+00:37:09,360 --> 00:37:15,200
+phenomenal defense it frames this not as history but is the underlying physics of persistence exactly and
+
+315
+00:37:15,200 --> 00:37:20,480
+any good physics theory doesn't just describe how things work when they are perfect it has to be able
+
+316
+00:37:20,480 --> 00:37:27,280
+to predict how things break right if survival requires this perfect delicate composition of constraint
+
+317
+00:37:27,280 --> 00:37:33,280
+and recurrence what happens if the equation is unbalanced well this is where the theory transitions
+
+318
+00:37:33,280 --> 00:37:41,520
+from an abstract framework into a really practical diagnostic tool Flyxion mathematically deduces five specific
+
+319
+00:37:41,520 --> 00:37:48,080
+failure modes five distinct ways that systems fall apart when the composite operator is compromised
+
+320
+00:37:48,640 --> 00:37:54,320
+let's explore these because as i was reading this section i found myself mapping these failure modes
+
+321
+00:37:54,320 --> 00:38:02,400
+onto literally everything in my life my relationships my habits the companies i buy from oh it applies to
+
+322
+00:38:02,400 --> 00:38:09,920
+everything let's start with what happens if you remove constraint you have recurrence but no constraint
+
+323
+00:38:09,920 --> 00:38:16,880
+the essay calls this failure mode one drift in a dynamical system if you have continuous energy
+
+324
+00:38:16,880 --> 00:38:23,840
+input but no boundary conditions the system just wanders aimlessly in semantics this is semantic
+
+325
+00:38:23,840 --> 00:38:30,240
+bleaching that's when a word is used so often in so many different contexts that it loses all specific meaning
+
+326
+00:38:30,240 --> 00:38:37,520
+like the word literally perfect example in the printing press example drift occurs if the iron frame breaks
+
+327
+00:38:37,520 --> 00:38:44,240
+you are still pressing the clay onto the paper but the characters slide around the text warps it's the
+
+328
+00:38:44,240 --> 00:38:51,840
+childhood game of telephone the whisper keeps recurring it gets passed from ear to ear around the circle
+
+329
+00:38:52,480 --> 00:38:58,560
+but there is zero constraint on the fidelity of the message right so by the time it reaches the end
+
+330
+00:38:58,560 --> 00:39:07,680
+the dog is barking has mutated into a frog is parking right the system evolves but it evolves without
+
+331
+00:39:07,680 --> 00:39:15,200
+stabilization eventually dissolving into pure noise exactly now let's flip the equation what happens if you
+
+332
+00:39:15,200 --> 00:39:22,720
+have absolute constraint but you remove recurrence this is failure mode two rigidity so the system is tightly
+
+333
+00:39:22,720 --> 00:39:29,360
+bounded but it's never being reinstantiated or refreshed right it collapses into a static configuration
+
+334
+00:39:30,000 --> 00:39:36,880
+it achieves stability but it is the brittle stability of a frozen object it loses all capacity to adapt to
+
+335
+00:39:36,880 --> 00:39:42,800
+changed environmental conditions it becomes the stone exactly if a ritual is performed with perfect
+
+336
+00:39:42,800 --> 00:39:50,160
+obsessive exactitude but the practitioner has lost all internal emotional connection to it that is rigidity the
+
+337
+00:39:50,160 --> 00:39:57,520
+constraint is there but the living recurrence is gone think about a massive legacy corporation they have a 500
+
+338
+00:39:57,520 --> 00:40:06,080
+page employee handbook every possible scenario is constrained by a rule but the employees are just going
+
+339
+00:40:06,080 --> 00:40:12,240
+through the motions completely disconnected from the actual daily reality of the customer right it looks
+
+340
+00:40:12,240 --> 00:40:20,880
+incredibly stable on paper it looks like a fortress but the moment a nimble startup enters the market
+
+341
+00:40:21,440 --> 00:40:28,640
+the legacy company shatters because it cannot adapt yeah it has brittleness instead of resilience that maps
+
+342
+00:40:28,640 --> 00:40:36,080
+perfectly the third failure mode involves both operators but they fail to synchronize failure mode three is
+
+343
+00:40:36,080 --> 00:40:42,160
+oscillation or non-convergent dynamics okay what does that look like the system possesses both
+
+344
+00:40:42,160 --> 00:40:49,680
+constraint and recurrence but it never settles into a fixed point it endlessly cycles between states it
+
+345
+00:40:49,680 --> 00:40:55,760
+perpetually overcorrects i think of this like adjusting the dial on a really cheap shower oh yes you
+
+346
+00:40:55,760 --> 00:41:01,760
+turn it slightly it's scalding hot you turn it back a millimeter it's freezing cold you are constrained
+
+347
+00:41:01,760 --> 00:41:08,640
+by the dial and you are repeatedly interacting with it recurrence but you never find the stable warm middle
+
+348
+00:41:08,640 --> 00:41:16,240
+or to make it more human think of a toxic on again off again relationship the couple keeps returning to
+
+349
+00:41:16,240 --> 00:41:21,280
+each other that's the recurrence and they keep fighting over the exact same boundaries and rules the
+
+350
+00:41:21,280 --> 00:41:27,840
+constraint yeah but the dynamic never resolves into a stable partnership they just oscillate forever
+
+351
+00:41:27,840 --> 00:41:33,680
+oscillation is incredibly draining because it consumes energy without achieving persistence
+
+352
+00:41:34,640 --> 00:41:42,400
+but it is actually not as structurally fatal as failure mode four obstruction this one got highly technical
+
+353
+00:41:42,400 --> 00:41:49,040
+on the essay the author refers to incompatible constraints yes in Flyxion invokes a concept from
+
+354
+00:41:49,040 --> 00:41:56,320
+topology here called a non-vanishing cohomological class okay we definitely do unpack that topology
+
+355
+00:41:56,320 --> 00:42:03,520
+cohomological classes how do we visualize this well topology is the mathematical study of shapes and spaces
+
+356
+00:42:04,080 --> 00:42:10,080
+cohomology in a very very simplified sense is a way of measuring the holes or fundamental
+
+357
+00:42:10,080 --> 00:42:17,600
+inconsistencies in the space imagine you are given a set of rules for building a structure locally
+
+358
+00:42:17,600 --> 00:42:25,120
+meaning looking at any single piece of the structure in isolation the rules make perfect sense you can
+
+359
+00:42:25,120 --> 00:42:32,640
+connect piece a to piece b perfectly but globally when you try to build the entire thing
+
+360
+00:42:32,640 --> 00:42:39,200
+the rules contradict each other so the system is essentially asking you to achieve the impossible
+
+361
+00:42:39,200 --> 00:42:45,120
+exactly the classic visual analogy is an mc escher drawing like the penrose stairs
+
+362
+00:42:45,120 --> 00:42:50,560
+the endless staircase oh i love those if you look at any single step in the drawing
+
+363
+00:42:50,560 --> 00:42:57,200
+the local constraint makes perfect sense this step goes down to the next step but if you follow the
+
+364
+00:42:57,200 --> 00:43:03,360
+recurrence of the steps all the way around the loop you somehow end up above where you started while
+
+365
+00:43:03,360 --> 00:43:09,200
+supposedly constantly going downward right it breaks your brain the global constraints are incompatible
+
+366
+00:43:09,200 --> 00:43:16,720
+with the local constraints in a real world system this means no stable solution exists the system
+
+367
+00:43:16,720 --> 00:43:21,760
+searches forever for a resting state but is mathematically prevented from finding one by its own
+
+368
+00:43:21,760 --> 00:43:29,280
+contradictory rules that is fascinating the rules themselves are the poison and finally we arrive
+
+369
+00:43:29,280 --> 00:43:38,880
+at failure mode five local minima which the essay also calls false stability in dynamical systems a local
+
+370
+00:43:38,880 --> 00:43:46,000
+minimum is a valley in the attractor landscape that is stable but it is not the deepest or optimal valley
+
+371
+00:43:46,000 --> 00:43:53,440
+the system drops into this shallow valley and just gets stuck it settles right it stopped exploring the
+
+372
+00:43:53,440 --> 00:44:00,640
+landscape before it finds the true global configuration it's premature optimization you find a solution
+
+373
+00:44:00,640 --> 00:44:07,280
+that barely works and because it technically survives you stop trying to improve right you get comfortable
+
+374
+00:44:07,280 --> 00:44:15,200
+in a mediocre job or a society accepts a deeply flawed political system just because it provides basic order
+
+375
+00:44:15,920 --> 00:44:22,640
+it's a full stability that prevents true flourishing and if we understand these five failure modes drift
+
+376
+00:44:22,640 --> 00:44:28,480
+rigidity oscillation obstruction and local minima we actually hold the keys to the final section
+
+377
+00:44:28,480 --> 00:44:33,920
+af Flyxion's essay the big finale because the author doesn't just leave us in the 11th century
+
+378
+00:44:34,560 --> 00:44:41,760
+they take this diagnostic tool and turn it directly onto the cutting edge of our own era they apply it to
+
+379
+00:44:41,760 --> 00:44:48,960
+epistemology human memory and artificial intelligence the implication section this is where the theory hits
+
+380
+00:44:48,960 --> 00:44:55,920
+terrifyingly close to home let's start with how our own minds work human memory yeah because we have a
+
+381
+00:44:55,920 --> 00:45:02,880
+cultural narrative that memory operates like a digital hard drive or a filing cabinet you're experienced a
+
+382
+00:45:02,880 --> 00:45:08,480
+childhood birthday party your brain takes a video recording of it drops it in a folder
+
+383
+00:45:08,480 --> 00:45:15,520
+and when you're 40 years old you just open the folder and hit play and cognitive science particularly
+
+384
+00:45:15,520 --> 00:45:21,520
+since the early work of researchers like elizabeth loftus has known that the filing cabinet model is
+
+385
+00:45:21,520 --> 00:45:29,120
+entirely incorrect Flyxion uses the constraint recurrence principle to explain exactly why right memory
+
+386
+00:45:29,120 --> 00:45:36,000
+is not a process of storage and retrieval memory is a process of reinstantiation under constraint so
+
+387
+00:45:36,000 --> 00:45:43,520
+when i remember that birthday party i'm not hitting play on a video no every single time you recall a
+
+388
+00:45:43,520 --> 00:45:52,160
+memory you are actively reconstructing it in real time recall is a recurrence operator you rebuild the memory
+
+389
+00:45:52,160 --> 00:45:58,800
+from fragments constrained by your current emotional state your present beliefs and the context of why you are
+
+390
+00:45:58,800 --> 00:46:07,040
+remembering it right now wow memory is a flame not a stone exactly and because it is a reconstructive
+
+391
+00:46:07,040 --> 00:46:13,760
+process human memory is highly susceptible to the exact failure modes we just discussed oh that makes
+
+392
+00:46:13,760 --> 00:46:19,760
+so much sense what is a false memory it is drift you reconstruct the event recurrence but without
+
+393
+00:46:19,760 --> 00:46:25,920
+sufficient factual constraint so the narrative wanders into fiction and you believe it completely what is a
+
+394
+00:46:25,920 --> 00:46:33,600
+traumatic flashback or a rumination loop that is rigidity or oscillation the system gets stuck in a
+
+395
+00:46:33,600 --> 00:46:40,480
+hyper constrained loop and cannot integrate new context memory is a dynamical system that must be
+
+396
+00:46:40,480 --> 00:46:46,960
+actively maintained which flows immediately into a terrifying philosophical question if my memory is
+
+397
+00:46:46,960 --> 00:46:55,120
+constantly being reconstructed and it's subject to drift and noise how do i know what is actually true
+
+398
+00:46:55,120 --> 00:47:02,080
+the ultimate question how does Flyxion define truth because historically truth is defined as
+
+399
+00:47:02,080 --> 00:47:09,280
+correspondence a statement is true if it perfectly maps onto the objective physical reality of the
+
+400
+00:47:09,280 --> 00:47:14,960
+universe correspondence theory relies on the assumption that we can access a perfectly clear
+
+401
+00:47:14,960 --> 00:47:22,240
+noiseless view of the universe to check our statements against which we can't right Flyxion argues that
+
+402
+00:47:22,240 --> 00:47:29,120
+because our sensory access to the world is always mediated and noisy static correspondence isn't enough
+
+403
+00:47:29,120 --> 00:47:37,840
+instead Flyxion defines truth dynamically truth is stability under recurrence stability under recurrence
+
+404
+00:47:37,840 --> 00:47:45,920
+meaning it survives the fire yes a proposition earns its status as truth not just because it supposedly
+
+405
+00:47:45,920 --> 00:47:52,160
+matches a hidden reality but because it can survive the continuous recurrence of inquiry skepticism
+
+406
+00:47:52,240 --> 00:47:58,640
+testing and new data okay if a scientific theory or a personal belief shatters the very first time
+
+407
+00:47:58,640 --> 00:48:05,520
+you apply the constraint of a hard question it wasn't stable truth truth is that which returns to itself
+
+408
+00:48:05,520 --> 00:48:11,520
+after being doubted and this brings us to the elephant in the room of modern technology we are currently
+
+409
+00:48:11,520 --> 00:48:18,720
+building systems that attempt to mimic human memory and generate truth yes we are i am talking about artificial
+
+410
+00:48:18,720 --> 00:48:25,280
+intelligence specifically large language models which are fundamentally transforming society right now this is where
+
+411
+00:48:25,280 --> 00:48:32,720
+af Flyxion's theory demonstrates immense predictive power to understand an llm you have to understand that it is
+
+412
+00:48:32,720 --> 00:48:41,600
+at its mathematical core an engine that generates sequences of tokens basically parts of words based on massive
+
+413
+00:48:41,600 --> 00:48:48,080
+probability distributions right it is attempting to generate a response to do this successfully
+
+414
+00:48:48,080 --> 00:48:55,760
+it must implement constraint meaning the output must be grammatically admissible and contextually relevant to your
+
+415
+00:48:55,760 --> 00:49:03,600
+prompt yes and it must implement recurrence it must generate the sequence word by word looping its own output
+
+416
+00:49:03,600 --> 00:49:11,520
+back into its context window to predict the next word and when we look at how ai systems fail the mapping to
+
+417
+00:49:11,520 --> 00:49:19,600
+flishen's taxonomy is almost eerie let's look at ai hallucination classic problem this is when a chatbot in a highly
+
+418
+00:49:19,600 --> 00:49:27,440
+confident authoritative tone invents a historical battle that never happened or cites a legal precedent that simply does
+
+419
+00:49:27,440 --> 00:49:37,360
+not exist hallucination is pure drift the model is successfully executing recurrence it is generating
+
+420
+00:49:37,360 --> 00:49:46,000
+incredibly plausible fluent text but it has lost the constraint of factual grounding right the mathematical
+
+421
+00:49:46,000 --> 00:49:52,640
+weights guiding its generation have wandered out of the bounded region of truth and into an unconstrained
+
+422
+00:49:52,640 --> 00:49:59,120
+region of just statistical probability what about the opposite problem i've seen examples where an ai
+
+423
+00:49:59,120 --> 00:50:05,440
+model gets completely stuck repeating the exact same phrase infinitely it just outputs i am sorry i am sorry
+
+424
+00:50:05,440 --> 00:50:14,400
+i am sorry forever that is rigidity or an extreme form of a local minimum the system has applied a constraint
+
+425
+00:50:14,400 --> 00:50:21,440
+so heavily that the recurrence operator can no longer generate new structure it's trapped the ai has fallen
+
+426
+00:50:21,440 --> 00:50:26,320
+into an attractor basin so deep that the probability of the next word being anything other than
+
+427
+00:50:26,320 --> 00:50:34,160
+i or am or sorry approaches zero it is structurally frozen so the entire ai alignment problem the billions of
+
+428
+00:50:34,160 --> 00:50:41,840
+dollars being spent to figure out how to make ai safe reliable and truthful Flyxion is arguing that this isn't just a
+
+429
+00:50:41,840 --> 00:50:49,920
+problem of feeding the model more data no it is fundamentally a constraint recurrence engineering problem we have to design
+
+430
+00:50:50,480 --> 00:50:59,520
+better mathematical operators to bound their generation a perfectly aligned ai system is one that can achieve
+
+431
+00:50:59,520 --> 00:51:07,360
+stable complex configurations under the rigorous constraints of human values through the continuous
+
+432
+00:51:07,360 --> 00:51:16,320
+recurrence of inference it is staggering how seamlessly this theory scales from an 11th century clay tile to a
+
+433
+00:51:16,320 --> 00:51:23,200
+trillion parameter neural network it's a universal law and to truly synthesize this entire journey for
+
+434
+00:51:23,200 --> 00:51:30,880
+you listening Flyxion ends the essay with one of the most elegant illuminating physical analogies i've
+
+435
+00:51:30,880 --> 00:51:37,280
+encountered in a long time the rain analogy yes the rain analogy it centers on the capacitive touch screen
+
+436
+00:51:37,280 --> 00:51:43,840
+of a modern smartphone and it perfectly encapsulates why the world is inherently noisy and why the constraint
+
+437
+00:51:43,840 --> 00:51:50,960
+recurrence principle is the only structural mechanism capable of surviving that noise let's visualize this
+
+438
+00:51:50,960 --> 00:51:56,880
+imagine your smartphone the glass screen doesn't actually sense pressure it works by projecting a faint
+
+439
+00:51:56,880 --> 00:52:04,080
+electrical field across the surface when your finger which is conductive touches the glass it distorts that
+
+440
+00:52:04,080 --> 00:52:11,680
+electrical field the phone sensors measure the distortion calculate the exact coordinates of the touch
+
+441
+00:52:11,680 --> 00:52:20,640
+and open your email app it relies on the assumption that an electrical perturbation equals human intent now take
+
+442
+00:52:20,640 --> 00:52:28,720
+take that exact same phone and stand outside in a heavy rainstorm right drops of water begin hitting the screen
+
+443
+00:52:29,360 --> 00:52:36,960
+water is also conductive to the electrical sensors sitting beneath the glass a heavy drop of rain generates an
+
+444
+00:52:36,960 --> 00:52:43,840
+electrical perturbation that is virtually indistinguishable from a deliberate tap of your finger and we have all
+
+445
+00:52:43,840 --> 00:52:50,960
+experience this you try to use your phone in the rain and the screen goes completely chaotic apps are opening
+
+446
+00:52:50,960 --> 00:52:57,680
+text is being typed calls are being dropped isn't this because at the projection layer the literal boundary
+
+447
+00:52:57,680 --> 00:53:04,320
+between the sensor and reality the hardware cannot tell the difference between your human intention
+
+448
+00:53:04,320 --> 00:53:10,160
+and the random environmental noise of the weather af Flyxion uses a formal mathematical term here right
+
+449
+00:53:10,160 --> 00:53:17,200
+yes they say the projection from the latent state of reality to the observable signal is non-injective
+
+450
+00:53:17,200 --> 00:53:24,480
+meaning multiple different causes can produce the exact same effect yes a finger tap produces a
+
+451
+00:53:24,480 --> 00:53:32,320
+signal a raindrop produces the identical signal therefore the device is structurally mathematically unable
+
+452
+00:53:32,320 --> 00:53:39,360
+to recover the true state of the world just by looking at a single isolated moment of sensory input
+
+453
+00:53:39,360 --> 00:53:47,120
+wow no amount of processing power at the sensor layer can fix the ambiguity the limitation is built into
+
+454
+00:53:47,120 --> 00:53:53,360
+the physics of observation and this is the profound truth about the universe we live in the world is
+
+455
+00:53:53,360 --> 00:54:01,440
+noisy the rain is always falling whether you are an ai model trying to interpret a user's prompt a human
+
+456
+00:54:01,440 --> 00:54:07,440
+trying to reconstruct a faded memory or a culture trying to pass down a ritual through generations of flawed human
+
+457
+00:54:07,440 --> 00:54:15,440
+beings the noise is constant always you can never perfectly perceive the objective truth in a single snapshot
+
+458
+00:54:15,440 --> 00:54:22,160
+so how does anything persist in a non-injective world if a single snapshot is always corrupted by noise
+
+459
+00:54:22,160 --> 00:54:30,080
+how do you find the signal Flyxion's answer is you abandon the attempt to find perfect static clarity in a single moment
+
+460
+00:54:30,080 --> 00:54:40,000
+you rely on the constraint recurrence principle persistence does not demand a perfect noise-free interpretation of reality
+
+461
+00:54:40,640 --> 00:54:48,080
+it requires a dynamical process robust enough to recover from noise over time exactly if a system can
+
+462
+00:54:48,080 --> 00:54:55,840
+repeatedly apply its constraints and continuously reconstitute itself across multiple iterations the random
+
+463
+00:54:55,840 --> 00:55:03,840
+unstructured noise of the rain will eventually wash out the intended structured signal will stabilize and emerge
+
+464
+00:55:04,560 --> 00:55:11,520
+there is a line in the essay that gave me absolute chills Flyxion writes persistence is not perfect
+
+465
+00:55:11,520 --> 00:55:19,280
+reconstruction but reliable return it is the ultimate defense mechanism against entropy okay we have covered an
+
+466
+00:55:19,280 --> 00:55:24,560
+immense expanse of human knowledge today for you listening let's tie these threads together let's do it
+
+467
+00:55:24,560 --> 00:55:31,760
+we began with the ancient arabic root qra and discovered that words are not static objects trapped in
+
+468
+00:55:31,760 --> 00:55:39,360
+dictionaries they are compressed dynamical processes of structured return we explored the islamic telbia
+
+469
+00:55:39,360 --> 00:55:45,760
+and realized that human conviction is not a trophy sitting on a shelf it is an identity repeatedly
+
+470
+00:55:45,760 --> 00:55:52,720
+enacted through the constraint of exclusivity we traveled to the song dynasty and found that the true identity of
+
+471
+00:55:52,720 --> 00:55:59,760
+a printed text lives not in the fragile paper or ink but in the reproducibility of discrete forms
+
+472
+00:56:00,560 --> 00:56:07,360
+and we mapped all this onto the fundamental challenges of human memory and artificial intelligence across all
+
+473
+00:56:07,360 --> 00:56:14,880
+these disparate domains separated by vast oceans of history geography and material composition we found the
+
+474
+00:56:14,880 --> 00:56:23,600
+exact same structural solution convergence without dissent the central thesis holds universally what persists
+
+475
+00:56:23,600 --> 00:56:29,920
+is that which returns under constraint whether you are a flickering flame an ancient word a religious
+
+476
+00:56:29,920 --> 00:56:36,560
+ritual a neural network or a human being commuting to work you only survive if you actively recreate
+
+477
+00:56:36,560 --> 00:56:44,080
+yourself within defined boundaries you the listener your identity is not a static substance you are not a stone
+
+478
+00:56:44,560 --> 00:56:51,200
+you are a dynamic process your identity is a flame built out of your daily habits constrained by your core
+
+479
+00:56:51,200 --> 00:56:59,760
+values and recurring through your everyday actions your stability is not a given is a daily dynamical
+
+480
+00:56:59,760 --> 00:57:07,200
+achievement which leaves us with a final somewhat provocative thought something for you to mull over as you
+
+481
+00:57:07,200 --> 00:57:16,880
+step back into the noise of your own life today if your identity is entirely built on what repeatedly returns under
+
+482
+00:57:16,880 --> 00:57:25,680
+your current constraints what would happen tomorrow if you deliberately changed just one of those constraints oh
+
+483
+00:57:25,680 --> 00:57:32,800
+that's a big question if you slightly alter the boundary of what you allow yourself to do or think or say who would you
+
+484
+00:57:32,800 --> 00:57:39,520
+converge into next a shift in the constraint operator inevitably changes the fixed point it changes the
+
+485
+00:57:39,520 --> 00:57:46,320
+ultimate destination of the self we often trap ourselves into thinking we have to change everything to become
+
+486
+00:57:46,320 --> 00:57:52,320
+someone new but maybe you don't maybe you just need to change one constraint and let the mathematics of
+
+487
+00:57:52,320 --> 00:57:59,280
+recurrence do the rest thank you so much for joining us on this incredible deep dive keep questioning keep
+
+488
+00:57:59,280 --> 00:58:05,920
+returning to your curiosity under the constraint of truth and remember the stone only looks stable because
+
+489
+00:58:05,920 --> 00:58:10,640
+it's dead the real survivors are the flames catch you next time
+
