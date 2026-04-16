@@ -1,3 +1,9 @@
+# Return Under Constraint
+
+[Meditations on the Talbiya](https://standardgalactic.github.io/workspace/return_under_constraint.pdf)
+
+* [Audio Overviews](https://standardgalactic.github.io/workspace/processing/) — *English, Spanish, and Arabic*
+
 # Scalar Irruption via Entropic Differential
 
 [Main Essay](https://standardgalactic.github.io/workspace/Scalar%20Irruption%20via%20Entropic%20Differential.pdf)

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RSVP Scope</title>
+
+<style>
+body{
+margin:0;
+background:#000;
+color:#7cff7c;
+font-family:monospace;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100vh;
+text-align:center;
+}
+
+/* ===== canvas ===== */
+
+canvas{
+width:420px;
+height:420px;
+background:#000;
+border-radius:50%;
+box-shadow:
+0 0 40px rgba(0,255,120,0.25) inset,
+0 0 30px rgba(0,255,120,0.08);
+margin-bottom:20px;
+}
+
+/* ===== controls ===== */
+
+.controls{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+button, select{
+background:#001400;
+border:1px solid #00ff00;
+color:#7cff7c;
+padding:8px 12px;
+cursor:pointer;
+font-family:monospace;
+}
+
+/* ===== subtitles ===== */
+
+.subs{
+margin-top:12px;
+max-width:600px;
+min-height:2em;
+font-size:.95em;
+opacity:.85;
+}
+
+/* ===== footer ===== */
+
+.footer{
+margin-top:14px;
+font-size:.85em;
+opacity:.7;
+}
+
+.footer a{
+color:#7cff7c;
+text-decoration:none;
+border-bottom:1px solid rgba(124,255,124,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="viz"></canvas>
+
+<div class="controls">
+<button id="toggle">Play</button>
+<button id="subsBtn">Subs On</button>
+<select id="trackSelect"></select>
+</div>
+
+<div id="subs" class="subs"></div>
+
+<div class="footer">
+<a href="https://standardgalactic.github.io/workspace/return_under_constraint.pdf" target="_blank">
+return_under_constraint.pdf
+</a>
+</div>
+
+<audio id="audio" preload="metadata">
+<source id="audioSrc" src="">
+<track id="trackEl" kind="subtitles">
+</audio>
+
+<script>
+
+/* ===== TRACKS ===== */
+
+const tracks = [
+"Persistence_as_return_under_constraint.mp3",
+"How_Systems_Survive_through_Structured_Return.mp3",
+"La_estabilidad_es_un_logro_dinámico.mp3",
+"لماذا_يستقر_اللهب_وينهار_الحجر.mp3"
+]
+
+const params = new URLSearchParams(location.search)
+let start = params.get("track")
+
+let current = 0
+if(start){
+const i = tracks.indexOf(start)
+if(i !== -1) current = i
+}
+
+/* ===== ELEMENTS ===== */
+
+const audio = document.getElementById("audio")
+const src = document.getElementById("audioSrc")
+const trackEl = document.getElementById("trackEl")
+const toggle = document.getElementById("toggle")
+const subsBtn = document.getElementById("subsBtn")
+const select = document.getElementById("trackSelect")
+const subs = document.getElementById("subs")
+
+let subsOn = true
+
+/* ===== SELECT ===== */
+
+tracks.forEach((t,i)=>{
+const opt = document.createElement("option")
+opt.value = t
+opt.textContent = `[${i+1}] ` + t.replace(".mp3","").replace(/_/g," ")
+select.appendChild(opt)
+})
+
+/* ===== LOAD ===== */
+
+function loadTrack(i, autoplay=false){
+
+current = (i+tracks.length)%tracks.length
+const file = tracks[current]
+
+src.src = file
+trackEl.src = file.replace(".mp3",".vtt")
+
+select.value = file
+
+audio.load()
+
+audio.onloadedmetadata = ()=>{
+const t = audio.textTracks[0]
+if(!t) return
+t.mode = "hidden"
+
+t.oncuechange = ()=>{
+if(!subsOn){ subs.textContent=""; return }
+const cue = t.activeCues[0]
+subs.textContent = cue ? cue.text : ""
+}
+
+if(autoplay){
+audio.play()
+toggle.textContent="Pause"
+}
+}
+}
+
+loadTrack(current)
+
+/* ===== CONTROLS ===== */
+
+toggle.onclick = ()=>{
+if(audio.paused){
+audio.play()
+toggle.textContent="Pause"
+}else{
+audio.pause()
+toggle.textContent="Play"
+}
+}
+
+subsBtn.onclick = ()=>{
+subsOn = !subsOn
+subsBtn.textContent = subsOn ? "Subs On" : "Subs Off"
+if(!subsOn) subs.textContent=""
+}
+
+select.onchange = ()=>{
+loadTrack(select.selectedIndex, true)
+}
+
+audio.onended = ()=>{
+loadTrack(current+1, true)
+}
+
+/* ===== KEYBOARD ===== */
+
+window.addEventListener("keydown",(e)=>{
+
+if(e.code==="Space"){
+e.preventDefault()
+toggle.click()
+}
+
+if(e.key==="ArrowRight") loadTrack(current+1,true)
+if(e.key==="ArrowLeft") loadTrack(current-1,true)
+
+if(e.key.toLowerCase()==="s") subsBtn.click()
+
+const n=parseInt(e.key)
+if(n>=1 && n<=tracks.length){
+loadTrack(n-1,true)
+}
+
+})
+
+/* ===== AUDIO ANALYSIS ===== */
+
+let ctx, analyser, buf
+
+function initAudio(){
+
+if(ctx) return
+
+ctx = new (window.AudioContext||window.webkitAudioContext)()
+analyser = ctx.createAnalyser()
+analyser.fftSize = 1024
+
+const srcNode = ctx.createMediaElementSource(audio)
+srcNode.connect(analyser)
+analyser.connect(ctx.destination)
+
+buf = new Uint8Array(analyser.fftSize)
+}
+
+/* ===== CANVAS ===== */
+
+const canvas = document.getElementById("viz")
+const c = canvas.getContext("2d")
+
+const dpr = window.devicePixelRatio || 1
+canvas.width = 420*dpr
+canvas.height = 420*dpr
+c.setTransform(dpr,0,0,dpr,0,0)
+
+/* ===== DRAW ===== */
+
+let phase = 0
+
+function draw(){
+
+c.fillStyle="rgba(0,0,0,0.12)"
+c.fillRect(0,0,420,420)
+
+if(analyser){
+
+analyser.getByteTimeDomainData(buf)
+
+/* energy smoothing */
+
+let energy=0
+for(let i=0;i<buf.length;i++){
+let d=buf[i]-128
+energy += d*d
+}
+energy/=buf.length
+
+let e=Math.min(energy/6000,1)
+
+/* lissajous */
+
+c.beginPath()
+
+for(let i=0;i<buf.length;i++){
+
+let t=i/buf.length*2*Math.PI
+let a=(buf[i]-128)/128
+
+/* slower + larger */
+
+let f1 = 2.5 + e*1.5
+let f2 = 3.5 + e*2
+
+let x=Math.sin(f1*t + phase)*a*160*(1+e*0.4)
+let y=Math.sin(f2*t)*a*160*(1+e*0.4)
+
+let px=210+x
+let py=210+y
+
+if(i===0) c.moveTo(px,py)
+else c.lineTo(px,py)
+}
+
+/* glow */
+
+c.strokeStyle=`rgba(0,255,120,${0.6+e*0.4})`
+c.lineWidth=1.4+e*1.5
+c.shadowColor="#00ff88"
+c.shadowBlur=12+e*20
+c.stroke()
+c.shadowBlur=0
+
+}
+
+/* slower drift */
+phase += 0.004
+
+requestAnimationFrame(draw)
+}
+
+draw()
+
+/* init audio on first play */
+
+toggle.addEventListener("click", initAudio)
+
+</script>
+
+</body>
+</html>
