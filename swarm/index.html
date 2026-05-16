@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSVP Plenum — Entropic Loom</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #04060a;
+    --panel: rgba(6, 10, 18, 0.82);
+    --border: rgba(80, 160, 255, 0.18);
+    --accent: #4af;
+    --accent2: #8af;
+    --dim: rgba(120, 180, 255, 0.45);
+    --text: #c8dff8;
+    --mono: 'Share Tech Mono', monospace;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--text);
+    font-family: var(--mono);
+  }
+
+  #canvas-container {
+    position: fixed; inset: 0;
+    cursor: grab;
+  }
+  #canvas-container:active { cursor: grabbing; }
+
+  canvas { display: block; width: 100% !important; height: 100% !important; }
+
+  /* ── HUD top-left ── */
+  #hud {
+    position: fixed; top: 22px; left: 24px;
+    max-width: 320px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    padding: 16px 20px 14px;
+    border-radius: 2px;
+    pointer-events: none;
+    animation: fadeIn 1.2s ease both;
+  }
+  #hud-title {
+    font-family: var(--serif);
+    font-size: 1.18rem;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: #e8f4ff;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  #hud-desc {
+    font-size: 0.68rem;
+    line-height: 1.65;
+    color: var(--dim);
+    letter-spacing: 0.02em;
+  }
+  #hud-stats {
+    margin-top: 10px;
+    font-size: 0.63rem;
+    color: rgba(100,160,255,0.5);
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+    display: flex; gap: 18px;
+  }
+  #hud-stats span { color: var(--accent); }
+
+  /* ── Controls panel ── */
+  #controls {
+    position: fixed; top: 22px; right: 24px;
+    width: 240px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    padding: 14px 18px 16px;
+    border-radius: 2px;
+    animation: fadeIn 1.4s ease both;
+  }
+  #controls-header {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(100,160,255,0.55);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ctrl-row {
+    display: flex; align-items: center;
+    margin-bottom: 11px;
+    gap: 0;
+  }
+  .ctrl-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: var(--dim);
+    width: 108px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ctrl-slider {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    background: rgba(80,140,255,0.22);
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+  }
+  .ctrl-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 6px rgba(68,170,255,0.7);
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .ctrl-slider:hover::-webkit-slider-thumb { transform: scale(1.4); }
+  .ctrl-val {
+    font-size: 0.60rem;
+    color: var(--accent);
+    width: 36px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  /* ── Bottom bar ── */
+  #bottombar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    height: 32px;
+    background: rgba(4,6,14,0.75);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(6px);
+    display: flex; align-items: center;
+    padding: 0 20px;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    color: rgba(100,150,255,0.38);
+    gap: 28px;
+    pointer-events: none;
+    animation: fadeIn 1.8s ease both;
+  }
+  #bottombar b { color: rgba(100,150,255,0.6); }
+
+  /* ── 3D Annotations ── */
+  .annotation {
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(140,200,255,0.7);
+    white-space: nowrap;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .annotation::before {
+    content: '◈';
+    font-size: 0.5rem;
+    color: var(--accent);
+    opacity: 0.8;
+  }
+
+  /* ── Grain overlay ── */
+  #grain {
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.028;
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* pause button */
+  #pausebtn {
+    position: fixed; bottom: 44px; right: 24px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--dim);
+    font-family: var(--mono);
+    font-size: 0.60rem;
+    letter-spacing: 0.12em;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: color 0.2s, border-color 0.2s;
+    backdrop-filter: blur(8px);
+  }
+  #pausebtn:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div id="canvas-container"></div>
+<div id="grain"></div>
+
+<!-- HUD -->
+<div id="hud">
+  <div id="hud-title">RSVP Plenum — Entropic Loom</div>
+  <div id="hud-desc">A scalar-vector-entropy particle field where coherence forms admissibility basins, torsion braids vector flow, entropy destabilizes laminar order, and recursion folds trajectories into persistent structure.</div>
+  <div id="hud-stats">
+    FPS <span id="stat-fps">—</span> &nbsp; PARTICLES <span id="stat-pts">20 000</span> &nbsp; T <span id="stat-time">0.00</span>
+  </div>
+</div>
+
+<!-- Controls -->
+<div id="controls">
+  <div id="controls-header">Field Parameters</div>
+  <!-- sliders injected by JS -->
+</div>
+
+<button id="pausebtn">⏸ PAUSE</button>
+
+<!-- Bottom bar -->
+<div id="bottombar">
+  <span><b>DRAG</b> rotate &nbsp;·&nbsp; <b>SCROLL</b> zoom &nbsp;·&nbsp; <b>RIGHT-DRAG</b> pan</span>
+  <span>RSVP Scalar-Vector Plenum &nbsp;·&nbsp; Flyxion 2026</span>
+</div>
+
+<!-- Annotation container -->
+<div id="annotations"></div>
+
+<!-- Three.js r128 from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+// ─────────────────────────────────────────────
+//  CONFIGURATION
+// ─────────────────────────────────────────────
+const PARTICLE_COUNT = 20000;
+const POINT_SIZE     = 1.6;
+
+// ─────────────────────────────────────────────
+//  CONTROL SYSTEM
+// ─────────────────────────────────────────────
+const controlDefs = [
+  { id: 'span',      label: 'Field Span',        min: 20,  max: 180,  val: 100  },
+  { id: 'arms',      label: 'Filament Arms',      min: 2,   max: 16,   val: 7    },
+  { id: 'twist',     label: 'Torsion',            min: 0.2, max: 8.0,  val: 3.4  },
+  { id: 'coherence', label: 'Field Coherence',    min: 0.0, max: 1.0,  val: 0.68 },
+  { id: 'entropy',   label: 'Entropy Flux',       min: 0.0, max: 2.0,  val: 0.58 },
+  { id: 'pulse',     label: 'Breathing',          min: 0.0, max: 1.0,  val: 0.38 },
+  { id: 'chaos',     label: 'Laminar Chaos',      min: 0.0, max: 1.0,  val: 0.22 },
+  { id: 'recursion', label: 'Recursive Drift',    min: 0.0, max: 3.0,  val: 1.15 },
+];
+
+const controlValues = {};
+const controlPanel  = document.getElementById('controls');
+
+controlDefs.forEach(def => {
+  controlValues[def.id] = def.val;
+  const row = document.createElement('div');
+  row.className = 'ctrl-row';
+
+  const label = document.createElement('div');
+  label.className = 'ctrl-label';
+  label.textContent = def.label;
+
+  const slider = document.createElement('input');
+  slider.type = 'range';
+  slider.className = 'ctrl-slider';
+  slider.min   = def.min;
+  slider.max   = def.max;
+  slider.step  = (def.max - def.min) / 500;
+  slider.value = def.val;
+
+  const valEl = document.createElement('div');
+  valEl.className = 'ctrl-val';
+  valEl.textContent = def.val.toFixed(2);
+
+  slider.addEventListener('input', () => {
+    controlValues[def.id] = parseFloat(slider.value);
+    valEl.textContent = parseFloat(slider.value).toFixed(2);
+  });
+
+  row.appendChild(label);
+  row.appendChild(slider);
+  row.appendChild(valEl);
+  controlPanel.appendChild(row);
+});
+
+function addControl(id) { return controlValues[id] ?? 0; }
+
+// ─────────────────────────────────────────────
+//  ANNOTATION SYSTEM
+// ─────────────────────────────────────────────
+const annotationData = {};
+
+function annotate(id, posVec, text) {
+  if (!annotationData[id]) {
+    const el = document.createElement('div');
+    el.className = 'annotation';
+    el.id = 'ann-' + id;
+    el.textContent = text;
+    document.getElementById('annotations').appendChild(el);
+  }
+  annotationData[id] = { pos: posVec.clone(), text };
+}
+
+function updateAnnotations(camera, renderer) {
+  const w = renderer.domElement.clientWidth;
+  const h = renderer.domElement.clientHeight;
+  const tmp = new THREE.Vector3();
+  for (const id in annotationData) {
+    const d  = annotationData[id];
+    const el = document.getElementById('ann-' + id);
+    if (!el) continue;
+    tmp.copy(d.pos).project(camera);
+    const x = (tmp.x * 0.5 + 0.5) * w;
+    const y = (-(tmp.y) * 0.5 + 0.5) * h;
+    if (tmp.z > 1) { el.style.display = 'none'; continue; }
+    el.style.display = 'flex';
+    el.style.left = x + 'px';
+    el.style.top  = y + 'px';
+  }
+}
+
+// ─────────────────────────────────────────────
+//  setInfo (updates HUD, ignore calls from i>0)
+// ─────────────────────────────────────────────
+function setInfo(title, desc) {
+  document.getElementById('hud-title').textContent = title;
+  document.getElementById('hud-desc').textContent  = desc;
+}
+
+// ─────────────────────────────────────────────
+//  THREE.JS SCENE
+// ─────────────────────────────────────────────
+const container = document.getElementById('canvas-container');
+const renderer  = new THREE.WebGLRenderer({ antialias: false, alpha: false });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setClearColor(0x04060a, 1);
+container.appendChild(renderer.domElement);
+
+const scene  = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(55, container.clientWidth / container.clientHeight, 0.1, 5000);
+camera.position.set(0, 40, 320);
+
+// ── Particles geometry ──
+const positions = new Float32Array(PARTICLE_COUNT * 3);
+const colors    = new Float32Array(PARTICLE_COUNT * 3);
+
+const geometry = new THREE.BufferGeometry();
+geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+geometry.setAttribute('color',    new THREE.BufferAttribute(colors,    3));
+
+const material = new THREE.PointsMaterial({
+  size: POINT_SIZE,
+  vertexColors: true,
+  sizeAttenuation: true,
+  transparent: true,
+  opacity: 0.88,
+  depthWrite: false,
+  blending: THREE.AdditiveBlending,
+});
+
+const points = new THREE.Points(geometry, material);
+scene.add(points);
+
+// ── Scratch objects (no GC in loop) ──
+const scratchTarget = new THREE.Vector3();
+const scratchColor  = new THREE.Color();
+
+// ─────────────────────────────────────────────
+//  PARTICLE SHADER (per-particle update)
+// ─────────────────────────────────────────────
+function updateParticle(i, count, time) {
+  const span      = addControl('span');
+  const arms      = addControl('arms');
+  const twist     = addControl('twist');
+  const coherence = addControl('coherence');
+  const entropy   = addControl('entropy');
+  const pulse     = addControl('pulse');
+  const chaos     = addControl('chaos');
+  const recursion = addControl('recursion');
+
+  const tau  = 6.28318530718;
+  const gold = 0.618033988749895;
+  const n    = count > 1 ? count - 1 : 1;
+  const u    = i / n;
+  const q    = u * 2.0 - 1.0;
+  const shell = Math.sqrt(Math.max(0.000001, 1.0 - q * q));
+
+  const g   = tau * i * gold;
+  const phi = g * arms + time * 0.032;
+  const psi = u * tau * 137.0 * (0.25 + coherence);
+
+  const scalarA = Math.sin(phi * 0.11 + time * 0.38) * Math.cos(psi * 0.07 - time * 0.27);
+  const scalarB = Math.sin(psi * entropy + q * 7.5 + time * 1.35);
+  const vectorT = Math.cos(phi * twist - time * 0.76);
+  const rec     = Math.sin(phi * recursion + scalarA * 3.8 + time * 0.22);
+  const fold    = Math.sin(phi * twist + q * 9.0 - time * 0.88);
+  const lace    = Math.cos(psi * arms + time * 0.65) * Math.sin(phi * 3.0 - time * 0.37);
+
+  const gate    = 0.52 + 0.48 * Math.sin(scalarA * coherence * 4.8 + scalarB * 1.9);
+  const breathe = 1.0 + Math.sin(time * 0.52) * pulse * 0.16;
+  const radius  = span * shell * gate * (0.32 + 0.68 * Math.abs(fold)) * breathe;
+  const drift   = chaos * entropy * span * 0.09;
+  const spiral  = phi * coherence + rec * 1.85 + scalarB * 0.32;
+
+  const px = Math.cos(spiral + lace * 0.52) * radius + Math.sin(psi * 0.31 + time * 1.1) * drift;
+  const py = q * span * 0.9 + scalarB * drift * 0.55 + rec * 7.5;
+  const pz = Math.sin(spiral - lace * 0.52) * radius + Math.cos(psi * 0.27 - time * 0.68) * drift;
+
+  scratchTarget.set(px, py, pz);
+
+  const compression = gate * (1.0 - 0.48 * Math.abs(scalarB));
+  const rawHue = 0.57 + 0.2 * scalarA + 0.1 * rec + time * 0.014;
+  const hue    = rawHue - Math.floor(rawHue);
+  const sat    = Math.min(1.0, 0.68 + 0.16 * Math.abs(vectorT) + 0.12 * Math.abs(lace));
+  const lit    = Math.min(0.86, Math.max(0.18, 0.26 + 0.52 * compression));
+
+  scratchColor.setHSL(hue, sat, lit);
+
+  // write into buffer
+  const idx = i * 3;
+  positions[idx]     = scratchTarget.x;
+  positions[idx + 1] = scratchTarget.y;
+  positions[idx + 2] = scratchTarget.z;
+  colors[idx]     = scratchColor.r;
+  colors[idx + 1] = scratchColor.g;
+  colors[idx + 2] = scratchColor.b;
+
+  // annotations on particle 0
+  if (i === 0) {
+    const sp = addControl('span');
+    setInfo(
+      'RSVP Plenum — Entropic Loom',
+      'A scalar-vector-entropy particle field where coherence forms admissibility basins, torsion braids vector flow, entropy destabilizes laminar order, and recursion folds trajectories into persistent structure.'
+    );
+    annotate('core',    new THREE.Vector3(0, 0, 0),              'Low-S Constraint Basin');
+    annotate('stream',  new THREE.Vector3(sp * 0.55, 0, 0),      'Vector Torsion Stream');
+    annotate('entropy', new THREE.Vector3(0, sp * 0.65, 0),      'Entropy Gradient');
+    annotate('loom',    new THREE.Vector3(-sp * 0.4, 0, sp * 0.4), 'Recursive Crosshatch');
+  }
+}
+
+// ─────────────────────────────────────────────
+//  ORBIT CONTROLS (manual, no import needed)
+// ─────────────────────────────────────────────
+let isDragging = false, isRightDrag = false;
+let prevMouse  = { x: 0, y: 0 };
+let spherical  = { theta: 0.3, phi: 1.1, radius: 320 };
+let panOffset  = new THREE.Vector3(0, 0, 0);
+
+function applyCameraFromSpherical() {
+  camera.position.set(
+    panOffset.x + spherical.radius * Math.sin(spherical.phi) * Math.sin(spherical.theta),
+    panOffset.y + spherical.radius * Math.cos(spherical.phi),
+    panOffset.z + spherical.radius * Math.sin(spherical.phi) * Math.cos(spherical.theta)
+  );
+  camera.lookAt(panOffset);
+}
+applyCameraFromSpherical();
+
+container.addEventListener('mousedown', e => {
+  isDragging   = true;
+  isRightDrag  = e.button === 2;
+  prevMouse    = { x: e.clientX, y: e.clientY };
+});
+container.addEventListener('contextmenu', e => e.preventDefault());
+window.addEventListener('mouseup',   () => { isDragging = false; });
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  const dx = e.clientX - prevMouse.x;
+  const dy = e.clientY - prevMouse.y;
+  prevMouse = { x: e.clientX, y: e.clientY };
+  if (isRightDrag) {
+    const right = new THREE.Vector3();
+    const up    = new THREE.Vector3();
+    camera.matrix.extractBasis(right, up, new THREE.Vector3());
+    panOffset.addScaledVector(right, -dx * 0.25);
+    panOffset.addScaledVector(up,     dy * 0.25);
+  } else {
+    spherical.theta -= dx * 0.005;
+    spherical.phi    = Math.max(0.05, Math.min(Math.PI - 0.05, spherical.phi + dy * 0.005));
+  }
+  applyCameraFromSpherical();
+});
+container.addEventListener('wheel', e => {
+  spherical.radius = Math.max(30, Math.min(1200, spherical.radius + e.deltaY * 0.3));
+  applyCameraFromSpherical();
+  e.preventDefault();
+}, { passive: false });
+
+// Touch support
+let lastTouch = null;
+container.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    isDragging  = true; isRightDrag = false;
+    prevMouse   = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  }
+  lastTouch = e.touches;
+}, { passive: true });
+container.addEventListener('touchend', () => { isDragging = false; });
+container.addEventListener('touchmove', e => {
+  if (e.touches.length === 1 && isDragging) {
+    const dx = e.touches[0].clientX - prevMouse.x;
+    const dy = e.touches[0].clientY - prevMouse.y;
+    prevMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    spherical.theta -= dx * 0.005;
+    spherical.phi    = Math.max(0.05, Math.min(Math.PI - 0.05, spherical.phi + dy * 0.005));
+    applyCameraFromSpherical();
+  }
+}, { passive: true });
+
+// Pause
+let paused = false;
+let pausedAt = 0;
+let pauseAccum = 0;
+document.getElementById('pausebtn').addEventListener('click', () => {
+  paused = !paused;
+  document.getElementById('pausebtn').textContent = paused ? '▶ RESUME' : '⏸ PAUSE';
+  if (paused) pausedAt = performance.now();
+  else pauseAccum += performance.now() - pausedAt;
+});
+
+// Resize
+window.addEventListener('resize', () => {
+  const w = container.clientWidth, h = container.clientHeight;
+  renderer.setSize(w, h);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+});
+
+// ─────────────────────────────────────────────
+//  RENDER LOOP
+// ─────────────────────────────────────────────
+let frameCount = 0, fpsTimer = 0, fps = 0;
+const clock = new THREE.Clock();
+
+function animate(now) {
+  requestAnimationFrame(animate);
+
+  if (paused) return;
+
+  const elapsed  = (performance.now() - pauseAccum) * 0.001;
+  const delta    = clock.getDelta();
+
+  // FPS counter
+  frameCount++;
+  fpsTimer += delta;
+  if (fpsTimer >= 0.5) {
+    fps = Math.round(frameCount / fpsTimer);
+    frameCount = 0; fpsTimer = 0;
+    document.getElementById('stat-fps').textContent  = fps;
+    document.getElementById('stat-time').textContent = elapsed.toFixed(1);
+  }
+
+  // Update all particles
+  for (let idx = 0; idx < PARTICLE_COUNT; idx++) {
+    updateParticle(idx, PARTICLE_COUNT, elapsed);
+  }
+
+  geometry.attributes.position.needsUpdate = true;
+  geometry.attributes.color.needsUpdate    = true;
+  geometry.computeBoundingSphere();
+
+  // Slow auto-rotate when not dragging
+  if (!isDragging) {
+    spherical.theta += delta * 0.04;
+    applyCameraFromSpherical();
+  }
+
+  renderer.render(scene, camera);
+  updateAnnotations(camera, renderer);
+}
+
+requestAnimationFrame(animate);
+</script>
+</body>
+</html>
