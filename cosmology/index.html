@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fossil Manifolds and Mediated Extraction</title>
+
+<style>
+
+:root{
+  --fg:#7cffc4;
+  --bright:#00ff88;
+}
+
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#000;
+  font-family:monospace;
+  color:var(--fg);
+  cursor:pointer;
+  touch-action:manipulation;
+}
+
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* scanlines */
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:60;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 1px,
+      transparent 2px,
+      transparent 4px
+    );
+
+  opacity:.12;
+}
+
+/* cosmic background */
+
+#space{
+  position:fixed;
+  inset:0;
+  z-index:1;
+}
+
+/* portal */
+
+.portal{
+  position:relative;
+  z-index:10;
+}
+
+#viz{
+  width:min(520px,88vw);
+  height:min(520px,88vw);
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(0,22,14,0.98) 0%,
+      rgba(0,8,6,1) 42%,
+      #000 100%);
+
+  border:2px solid rgba(0,255,120,0.22);
+
+  box-shadow:
+    inset 0 0 80px rgba(0,255,120,0.05),
+    0 0 55px rgba(0,255,120,0.12);
+}
+
+/* title */
+
+.title{
+  position:fixed;
+
+  top:18px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:min(92vw,760px);
+
+  text-align:center;
+
+  color:var(--bright);
+
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+
+  font-size:clamp(10px,2.5vw,13px);
+
+  line-height:1.4;
+
+  text-shadow:
+    0 0 12px #00ff66;
+
+  z-index:30;
+}
+
+/* subtitles */
+
+#subs{
+  position:fixed;
+
+  bottom:42px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:min(640px,92vw);
+
+  min-height:2em;
+
+  text-align:center;
+  line-height:1.45;
+
+  font-size:14px;
+
+  padding:8px 12px;
+
+  border-radius:6px;
+
+  color:#d8ffe8;
+
+  text-shadow:
+    0 0 8px #00ff88;
+
+  background:
+    rgba(0,20,0,0.24);
+
+  border:
+    1px solid rgba(0,255,120,0.10);
+
+  z-index:30;
+}
+
+/* essay */
+
+#essay{
+  position:fixed;
+
+  bottom:10px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:min(92vw,720px);
+
+  text-align:center;
+
+  color:#7cffc4;
+
+  opacity:0.72;
+
+  text-decoration:none;
+
+  font-size:12px;
+
+  z-index:30;
+}
+
+#essay:hover{
+  opacity:1;
+}
+
+/* startup */
+
+#overlay{
+  position:fixed;
+  inset:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#000;
+
+  z-index:100;
+
+  color:#00ff88;
+
+  letter-spacing:0.15em;
+
+  text-shadow:
+    0 0 10px #00ff66;
+}
+
+#overlay.hidden{
+  display:none;
+}
+
+#overlay span{
+  animation:blink 1.2s step-start infinite;
+}
+
+@keyframes blink{
+  50%{ opacity:0; }
+}
+
+/* glitch */
+
+body.glitch{
+  animation:glitch 0.25s linear;
+  filter:contrast(1.25) brightness(1.15);
+}
+
+@keyframes glitch{
+  0%{ transform:translate(0,0); }
+  20%{ transform:translate(-10px,5px); }
+  40%{ transform:translate(8px,-4px); }
+  60%{ transform:translate(-5px,7px); }
+  80%{ transform:translate(6px,-3px); }
+  100%{ transform:translate(0,0); }
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="space"></canvas>
+
+<div id="overlay">
+  <span>[ TAP OR CLICK ANYWHERE ]</span>
+</div>
+
+<div class="title">
+  Fossil Manifolds and Mediated Extraction
+</div>
+
+<div class="portal">
+  <canvas id="viz"></canvas>
+</div>
+
+<div id="subs"></div>
+
+<a id="essay"
+href="https://standardgalactic.github.io/workspace/cosmology/fossil_manifolds.pdf"
+target="_blank">
+Fossil Manifolds and Mediated Extraction
+</a>
+
+<audio id="audio" preload="auto">
+  <source src="The_Uncorrupted_Cosmic_Fossil.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const audio =
+  document.getElementById("audio");
+
+const viz =
+  document.getElementById("viz");
+
+const g =
+  viz.getContext("2d");
+
+const space =
+  document.getElementById("space");
+
+const sg =
+  space.getContext("2d");
+
+const subs =
+  document.getElementById("subs");
+
+const overlay =
+  document.getElementById("overlay");
+
+/* prevent essay clicks from toggling playback */
+
+document.getElementById("essay")
+.onclick = e=>e.stopPropagation();
+
+/* =========================================================
+   SETUP
+========================================================= */
+
+const DPR =
+  window.devicePixelRatio || 1;
+
+viz.width  = 460 * DPR;
+viz.height = 460 * DPR;
+
+g.scale(DPR,DPR);
+
+function resizeSpace(){
+
+  space.width =
+    innerWidth * DPR;
+
+  space.height =
+    innerHeight * DPR;
+
+  sg.scale(DPR,DPR);
+}
+
+resizeSpace();
+
+window.addEventListener(
+  "resize",
+  resizeSpace
+);
+
+/* =========================================================
+   STARS
+========================================================= */
+
+const stars = [];
+
+for(let i=0;i<260;i++){
+
+  stars.push({
+
+    x:Math.random()*innerWidth,
+    y:Math.random()*innerHeight,
+
+    z:0.2 + Math.random()*1.8,
+
+    s:Math.random()*2
+  });
+}
+
+/* =========================================================
+   AUDIO
+========================================================= */
+
+let ctxAudio;
+let analyser;
+let data;
+
+let started = false;
+
+function initAudio(){
+
+  if(ctxAudio) return;
+
+  ctxAudio =
+    new (
+      window.AudioContext ||
+      window.webkitAudioContext
+    )();
+
+  analyser =
+    ctxAudio.createAnalyser();
+
+  analyser.fftSize = 2048;
+
+  data =
+    new Uint8Array(
+      analyser.fftSize
+    );
+
+  const src =
+    ctxAudio.createMediaElementSource(audio);
+
+  src.connect(analyser);
+  analyser.connect(ctxAudio.destination);
+}
+
+async function start(){
+
+  if(started) return;
+
+  started = true;
+
+  overlay.classList.add("hidden");
+
+  initAudio();
+
+  if(ctxAudio.state==="suspended"){
+    await ctxAudio.resume();
+  }
+
+  audio.play().catch(console.warn);
+
+  enableMotion();
+}
+
+/* =========================================================
+   UNIVERSAL TAP / CLICK CONTROL
+========================================================= */
+
+/*
+  Mobile browsers were flashing because the
+  original code only listened for ONE click
+  ever using { once:true }.
+
+  This handler persists forever and toggles
+  playback correctly on phones and desktops.
+*/
+
+document.body.addEventListener(
+  "click",
+  async e=>{
+
+    /* don't toggle when clicking essay link */
+    if(e.target.closest("#essay")) return;
+
+    /* first interaction */
+    if(!started){
+      await start();
+      return;
+    }
+
+    /* resume suspended audio context */
+    if(
+      ctxAudio &&
+      ctxAudio.state === "suspended"
+    ){
+      await ctxAudio.resume();
+    }
+
+    /* toggle playback */
+    if(audio.paused){
+
+      try{
+        await audio.play();
+      }catch(err){
+        console.warn(err);
+      }
+
+    }else{
+
+      audio.pause();
+    }
+  }
+);
+
+/* =========================================================
+   SUBTITLES
+========================================================= */
+
+let cues = [];
+
+async function loadVTT(file){
+
+  try{
+
+    const r =
+      await fetch(file);
+
+    if(!r.ok){
+      throw new Error(file);
+    }
+
+    const txt =
+      await r.text();
+
+    const blocks =
+      txt.split(/\n{2,}/);
+
+    for(const block of blocks){
+
+      const lines =
+        block.trim().split("\n");
+
+      const ts =
+        lines.find(
+          l=>l.includes("-->")
+        );
+
+      if(!ts) continue;
+
+      const [s,e] =
+        ts.split("-->")
+          .map(x=>x.trim());
+
+      const text =
+        lines
+          .slice(lines.indexOf(ts)+1)
+          .join(" ")
+          .trim();
+
+      cues.push({
+        start:parseTime(s),
+        end:parseTime(e),
+        text
+      });
+    }
+
+  }catch(err){
+
+    console.warn(
+      "VTT error:",
+      err
+    );
+  }
+}
+
+function parseTime(t){
+
+  const p =
+    t.replace(",",".")
+     .split(":");
+
+  return p.length===3
+    ? +p[0]*3600 + +p[1]*60 + +p[2]
+    : +p[0]*60 + +p[1];
+}
+
+audio.ontimeupdate = ()=>{
+
+  const t =
+    audio.currentTime;
+
+  const cue =
+    cues.find(c =>
+      t >= c.start &&
+      t < c.end + 0.2
+    );
+
+  subs.textContent =
+    cue ? cue.text : "";
+};
+
+loadVTT(
+  "The_Uncorrupted_Cosmic_Fossil.vtt"
+);
+
+/* =========================================================
+   TRACKING
+========================================================= */
+
+let targetX = 0;
+let targetY = 0;
+
+let offsetX = 0;
+let offsetY = 0;
+
+/* mouse */
+
+window.addEventListener(
+  "mousemove",
+  e=>{
+
+    const nx =
+      e.clientX / innerWidth - 0.5;
+
+    const ny =
+      e.clientY / innerHeight - 0.5;
+
+    targetX = nx * 24;
+    targetY = ny * 24;
+  }
+);
+
+/* =========================================================
+   MOTION
+========================================================= */
+
+function enableMotion(){
+
+  if(
+    typeof DeviceOrientationEvent ===
+    "undefined"
+  ) return;
+
+  if(
+    typeof DeviceOrientationEvent.requestPermission ===
+    "function"
+  ){
+
+    DeviceOrientationEvent
+    .requestPermission()
+    .then(state=>{
+
+      if(state==="granted"){
+        attachMotion();
+      }
+    })
+    .catch(()=>{});
+
+  }else{
+
+    attachMotion();
+  }
+}
+
+function attachMotion(){
+
+  window.addEventListener(
+    "deviceorientation",
+    e=>{
+
+      const gamma =
+        e.gamma || 0;
+
+      const beta =
+        e.beta || 0;
+
+      targetX =
+        Math.max(
+          -26,
+          Math.min(26,gamma*0.8)
+        );
+
+      targetY =
+        Math.max(
+          -26,
+          Math.min(26,(beta-45)*0.5)
+        );
+    }
+  );
+}
+
+/* =========================================================
+   GLITCH TIMING
+========================================================= */
+
+let nextGlitch =
+  performance.now() + 16000;
+
+function triggerGlitch(){
+
+  document.body.classList.add(
+    "glitch"
+  );
+
+  setTimeout(()=>{
+
+    document.body.classList.remove(
+      "glitch"
+    );
+
+  },250);
+}
+
+/* =========================================================
+   DRAW
+========================================================= */
+
+let tick = 0;
+let phase = 0;
+
+function draw(now){
+
+  tick++;
+
+  /* space background */
+
+  sg.fillStyle =
+    "rgba(0,0,0,0.28)";
+
+  sg.fillRect(
+    0,0,
+    innerWidth,
+    innerHeight
+  );
+
+  for(const s of stars){
+
+    s.y += s.z * 0.6;
+
+    if(s.y > innerHeight){
+
+      s.y = -5;
+      s.x = Math.random()*innerWidth;
+    }
+
+    const glow =
+      0.2 + Math.sin(
+        tick*0.01 + s.x
+      ) * 0.12;
+
+    sg.fillStyle =
+      `rgba(180,255,220,${
+        glow
+      })`;
+
+    sg.fillRect(
+      s.x,
+      s.y,
+      s.s,
+      s.s
+    );
+  }
+
+  /* portal */
+
+  g.fillStyle =
+    "rgba(0,4,0,0.06)";
+
+  g.fillRect(0,0,460,460);
+
+  const cx = 230;
+  const cy = 230;
+  const R  = 180;
+
+  let energy = 0;
+
+  if(analyser){
+
+    analyser.getByteTimeDomainData(
+      data
+    );
+
+    for(let i=0;i<data.length;i+=8){
+
+      energy +=
+        Math.abs(
+          (data[i]-128)/128
+        );
+    }
+
+    energy /= (data.length/8);
+  }
+
+  offsetX +=
+    (targetX-offsetX)*0.03;
+
+  offsetY +=
+    (targetY-offsetY)*0.03;
+
+  if(now > nextGlitch){
+
+    triggerGlitch();
+
+    nextGlitch =
+      now +
+      12000 +
+      Math.random()*24000;
+  }
+
+  phase +=
+    0.012 + energy*0.03;
+
+  g.save();
+
+  g.beginPath();
+
+  g.arc(cx,cy,R,0,Math.PI*2);
+
+  g.clip();
+
+  /* subtle shells */
+
+  for(let i=1;i<=6;i++){
+
+    g.beginPath();
+
+    const rr =
+      (R/6)*i +
+      Math.sin(
+        tick*0.003+i
+      ) * 1.5;
+
+    g.arc(
+      cx,cy,
+      rr,
+      0,
+      Math.PI*2
+    );
+
+    g.strokeStyle =
+      `rgba(120,255,180,${
+        0.01+i*0.006
+      })`;
+
+    g.lineWidth = 1;
+
+    g.stroke();
+  }
+
+  /* trace */
+
+  if(analyser){
+
+    const lag =
+      Math.floor(
+        data.length * (
+          0.11 +
+          Math.sin(
+            tick*0.002
+          ) * 0.04
+        )
+      );
+
+    /* ghost */
+
+    g.beginPath();
+
+    for(let i=0;i<data.length;i++){
+
+      const a =
+        (data[i]-128)/128;
+
+      const b =
+        (data[
+          (i+lag)%data.length
+        ]-128)/128;
+
+      const theta =
+        (i/data.length) *
+        Math.PI*2;
+
+      const warp =
+        1 +
+        Math.sin(
+          theta*5 + phase
+        ) * 0.04;
+
+      const x =
+        cx +
+        offsetX +
+        a * R *
+        warp * 0.9;
+
+      const y =
+        cy +
+        offsetY +
+        b * R *
+        warp * 0.82;
+
+      if(i===0)
+        g.moveTo(x,y);
+      else
+        g.lineTo(x,y);
+    }
+
+    g.strokeStyle =
+      `rgba(120,255,180,${
+        0.10+energy*0.22
+      })`;
+
+    g.lineWidth = 6;
+
+    g.stroke();
+
+    /* bright */
+
+    g.beginPath();
+
+    for(let i=0;i<data.length;i++){
+
+      const a =
+        (data[i]-128)/128;
+
+      const b =
+        (data[
+          (i+lag)%data.length
+        ]-128)/128;
+
+      const theta =
+        (i/data.length) *
+        Math.PI*2;
+
+      const warp =
+        1 +
+        Math.sin(
+          theta*5 + phase
+        ) * 0.04;
+
+      const x =
+        cx +
+        offsetX +
+        a * R *
+        warp * 0.9;
+
+      const y =
+        cy +
+        offsetY +
+        b * R *
+        warp * 0.82;
+
+      if(i===0)
+        g.moveTo(x,y);
+      else
+        g.lineTo(x,y);
+    }
+
+    g.strokeStyle =
+      "#7cffc4";
+
+    g.lineWidth =
+      1.3 + energy*1.8;
+
+    g.shadowBlur =
+      12 + energy*24;
+
+    g.shadowColor =
+      "#00ff88";
+
+    g.stroke();
+
+    g.shadowBlur = 0;
+  }
+
+  /* portal boundary */
+
+  g.beginPath();
+
+  g.arc(cx,cy,R,0,Math.PI*2);
+
+  g.strokeStyle =
+    "rgba(120,255,180,0.22)";
+
+  g.lineWidth = 2;
+
+  g.stroke();
+
+  g.restore();
+
+  requestAnimationFrame(draw);
+}
+
+draw(performance.now());
+
+</script>
+
+</body>
+</html>

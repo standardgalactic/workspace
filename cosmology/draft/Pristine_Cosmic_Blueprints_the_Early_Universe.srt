@@ -1,0 +1,2580 @@
+1
+00:00:00,000 --> 00:00:08,660
+So imagine you are tasked with reconstructing the exact architectural blueprints of this ancient, long-lost temple.
+
+2
+00:00:08,800 --> 00:00:09,040
+Okay.
+
+3
+00:00:09,320 --> 00:00:12,160
+And you're given a choice between two sites to excavate.
+
+4
+00:00:12,700 --> 00:00:17,600
+Site one is right in the middle of the most bustling, sprawling metropolis on Earth.
+
+5
+00:00:17,640 --> 00:00:20,400
+Right. A city that's been built over a thousand times.
+
+6
+00:00:20,480 --> 00:00:25,820
+Exactly. I mean, continuously built, destroyed, rebuilt, paved over for literally thousands of years.
+
+7
+00:00:25,820 --> 00:00:32,860
+The temple is down there somewhere, but it's buried under skyscrapers and subways and just centuries of concrete.
+
+8
+00:00:32,960 --> 00:00:33,660
+I'm left with that.
+
+9
+00:00:33,780 --> 00:00:34,300
+Yeah, right.
+
+10
+00:00:34,660 --> 00:00:40,740
+And then the second site is a totally barren, silent desert, thousands of miles from any civilization.
+
+11
+00:00:41,500 --> 00:00:50,720
+And out there, a single tiny outpost of that exact same ancient culture was buried by a sandstorm on the very day it was built.
+
+12
+00:00:50,840 --> 00:00:51,280
+Oh, wow.
+
+13
+00:00:51,400 --> 00:00:53,680
+And hasn't been touched since. So where are you going to dig?
+
+14
+00:00:53,680 --> 00:00:56,080
+I mean, the desert without question.
+
+15
+00:00:56,240 --> 00:00:56,320
+Right.
+
+16
+00:00:56,400 --> 00:01:01,400
+The metropolis has the scale, obviously. It has all that energy, a staggering volume of material.
+
+17
+00:01:01,600 --> 00:01:06,480
+But, well, the information you actually want has just been completely pulverized by the passage of time.
+
+18
+00:01:06,760 --> 00:01:10,480
+Yeah, by the relentless activity of the city itself, you know.
+
+19
+00:01:10,480 --> 00:01:10,640
+Yeah.
+
+20
+00:01:10,820 --> 00:01:19,140
+And that intuitive choice right there that hits at the very core of this massive paradox in how we understand the universe.
+
+21
+00:01:19,140 --> 00:01:28,640
+It really does. Because usually when we think about finding these profound cosmic truths, we picture looking at the most spectacular things.
+
+22
+00:01:28,740 --> 00:01:33,940
+Right. We imagine pointing our telescopes at, I don't know, supermassive black holes tearing stars into ribbons.
+
+23
+00:01:34,040 --> 00:01:38,540
+Or those gigantic swirling galaxy clusters filled with trillions of suns.
+
+24
+00:01:38,540 --> 00:01:44,760
+We just assume that where there's the most action, the most light and mass, there's the most information.
+
+25
+00:01:44,760 --> 00:01:47,980
+Yeah. And it's a pervasive bias in astronomy, isn't it?
+
+26
+00:01:48,120 --> 00:01:48,280
+Yeah.
+
+27
+00:01:48,280 --> 00:01:51,580
+We just naturally equate scale and luminosity with significance.
+
+28
+00:01:51,900 --> 00:01:52,100
+Yeah.
+
+29
+00:01:52,240 --> 00:01:55,720
+Like the loudest voice in the cosmic room obviously has the most important story to tell.
+
+30
+00:01:55,980 --> 00:02:00,620
+But the reality of informational preservation actually flips that logic entirely upside down.
+
+31
+00:02:01,040 --> 00:02:07,440
+The most informative structures in the universe, the ones that actually hold the pristine, untouched blueprints of how everything began,
+
+32
+00:02:07,920 --> 00:02:10,760
+they are often both maximally preserved and maximally inaccessible.
+
+33
+00:02:11,480 --> 00:02:13,200
+Which is just wild to think about.
+
+34
+00:02:13,200 --> 00:02:20,160
+Right. Because the brightest objects are actually screaming so much noise that you literally cannot hear the original message.
+
+35
+00:02:20,640 --> 00:02:21,720
+Okay, let's unpack this.
+
+36
+00:02:21,800 --> 00:02:21,980
+Yeah.
+
+37
+00:02:22,020 --> 00:02:25,720
+Because we are going on a really, really mind-bending journey today.
+
+38
+00:02:25,800 --> 00:02:26,660
+We definitely are.
+
+39
+00:02:26,880 --> 00:02:32,060
+Our mission for this deep dive is to explore a fascinating paper from May 2026.
+
+40
+00:02:32,480 --> 00:02:38,480
+It's by an independent researcher named Flyxion, and it's titled Fossil Manifolds and Mediated Extraction.
+
+41
+00:02:38,600 --> 00:02:40,660
+A bit of a mouthful, but a brilliant paper.
+
+42
+00:02:40,660 --> 00:02:47,840
+Yeah, for sure. And it revolves around this single, incredibly faint, ancient galaxy known as LAP1B.
+
+43
+00:02:48,260 --> 00:02:55,120
+So we're going to look at the sources, the data, the underlying physics, and really try to figure out what this all means for you, the listener.
+
+44
+00:02:55,340 --> 00:03:00,020
+Because understanding this really does change how you view the concept of history itself.
+
+45
+00:03:00,020 --> 00:03:07,080
+Exactly. So to set the cosmic stage for you, we were looking at an object sitting at a redshift of roughly 6.6.
+
+46
+00:03:07,160 --> 00:03:14,920
+Yeah. Which, in terms of cosmic time, means the light we're receiving from LAP1B left that galaxy about 800 million years after the Big Bang.
+
+47
+00:03:15,340 --> 00:03:18,500
+And considering the universe is around 13.8 billion years old.
+
+48
+00:03:18,560 --> 00:03:21,140
+We are looking back into the very, very distant past.
+
+49
+00:03:21,140 --> 00:03:27,420
+Right. But this paper, it isn't just a catalog entry of, like, another old galaxy.
+
+50
+00:03:27,740 --> 00:03:30,140
+Flyxion is fundamentally challenging our epistemology.
+
+51
+00:03:30,980 --> 00:03:33,080
+Yeah, how we actually know what we know about the universe.
+
+52
+00:03:33,300 --> 00:03:33,480
+Right.
+
+53
+00:03:33,480 --> 00:03:50,920
+The paper argues that our deepest observational access to the underlying physics of the cosmos doesn't come from giant bright galaxies, but from the rarest coincidences of what the author terms minimal overriding and maximal geometric mediation.
+
+54
+00:03:50,920 --> 00:03:56,860
+I think there's a really powerful connection here to how you, the listener, navigate everyday life, too.
+
+55
+00:03:56,940 --> 00:03:57,500
+Oh, absolutely.
+
+56
+00:03:57,500 --> 00:04:02,140
+Like, think about trying to find the ground truth of a major news event.
+
+57
+00:04:02,300 --> 00:04:02,520
+Right.
+
+58
+00:04:02,640 --> 00:04:04,840
+Or even just tracing back a rumor in your workplace.
+
+59
+00:04:05,320 --> 00:04:12,220
+Finding the actual objective truth usually means you have to look past the loudest, most complex, most heavily repeated versions of the story.
+
+60
+00:04:12,300 --> 00:04:15,100
+Because the truth gets spun, right? It gets edited and layered over.
+
+61
+00:04:15,220 --> 00:04:15,660
+Exactly.
+
+62
+00:04:16,180 --> 00:04:24,120
+To find reality, you have to locate that quiet, untouched, original source that hasn't been reinterpreted 100 times.
+
+63
+00:04:24,120 --> 00:04:30,060
+We're essentially talking about applying that exact philosophy, but on a cosmic, multibillion-year scale.
+
+64
+00:04:30,300 --> 00:04:32,080
+That framing is so essential.
+
+65
+00:04:32,720 --> 00:04:43,340
+Because to truly understand why LAP1B is so revolutionary, we really have to dismantle a very common phrase used in astrophysics, which is chemical evolution.
+
+66
+00:04:43,580 --> 00:04:44,660
+Right, chemical evolution.
+
+67
+00:04:44,760 --> 00:04:48,140
+When astronomers study galaxies, they look at the elements within them.
+
+68
+00:04:48,140 --> 00:04:53,840
+The universe started with just hydrogen, helium, and, you know, a tiny bit of lithium.
+
+69
+00:04:53,840 --> 00:04:54,780
+Just the basics.
+
+70
+00:04:54,960 --> 00:04:58,960
+Right. Everything else. Carbon, oxygen, iron was forged inside stars.
+
+71
+00:04:59,400 --> 00:05:02,200
+So we track how these heavier elements build up over time.
+
+72
+00:05:02,400 --> 00:05:07,340
+See, when I hear the phrase chemical evolution, my brain automatically thinks of progress.
+
+73
+00:05:07,480 --> 00:05:08,580
+Sure, that's natural.
+
+74
+00:05:08,720 --> 00:05:16,500
+I picture a galaxy growing up, getting more complex, you know, adding more elements to its periodic table and becoming this richer, more diverse place.
+
+75
+00:05:16,880 --> 00:05:19,800
+It sounds like a linear journey from simple to advanced.
+
+76
+00:05:19,800 --> 00:05:23,700
+Which is the exact misconception Flyxion's paper is targeting.
+
+77
+00:05:23,840 --> 00:05:27,380
+The term evolution implies this neat, traceable lineage.
+
+78
+00:05:27,800 --> 00:05:32,580
+But what astronomers are actually observing in mature galaxies is chemical averaging.
+
+79
+00:05:32,720 --> 00:05:33,560
+Chemical averaging, okay.
+
+80
+00:05:33,560 --> 00:05:38,340
+Think about the life cycle of a massive modern galaxy like our Milky Way.
+
+81
+00:05:38,740 --> 00:05:42,280
+A generation of stars forms from a cloud of gas.
+
+82
+00:05:42,800 --> 00:05:53,060
+The massive stars burn through their fuel quickly and explode as supernovae, injecting newly forged heavy elements, which astronomers just call metals, into the surrounding space.
+
+83
+00:05:53,120 --> 00:05:53,340
+Right.
+
+84
+00:05:53,340 --> 00:06:00,040
+That gas mixes, and then a second generation of stars forms from that slightly enriched material.
+
+85
+00:06:00,300 --> 00:06:03,300
+They live, they explode, they enrich the gas even further.
+
+86
+00:06:03,420 --> 00:06:04,500
+It just keeps compounding.
+
+87
+00:06:04,580 --> 00:06:04,940
+Exactly.
+
+88
+00:06:05,080 --> 00:06:08,140
+Then you have galaxies crashing into each other, merging their gas.
+
+89
+00:06:08,260 --> 00:06:08,380
+Right.
+
+90
+00:06:08,440 --> 00:06:14,140
+You have supermassive black holes erupting and stirring the interstellar medium with these massive turbulent winds.
+
+91
+00:06:14,140 --> 00:06:16,880
+So it's not a neat, orderly progression at all.
+
+92
+00:06:16,960 --> 00:06:18,720
+It's basically an industrial blender.
+
+93
+00:06:18,940 --> 00:06:21,340
+An industrial blender is the perfect way to describe it.
+
+94
+00:06:21,760 --> 00:06:32,540
+The cumulative effect of all that violent activity is that the current chemical makeup of a mature galaxy cannot tell you the story of any single star or any single supernova from its youth.
+
+95
+00:06:32,700 --> 00:06:33,320
+Oh, I see.
+
+96
+00:06:33,560 --> 00:06:36,960
+The chemical signature we see today is a mathematical integral.
+
+97
+00:06:37,480 --> 00:06:43,140
+It's a vast average calculated over millions of individual explosive events spanning billions of years.
+
+98
+00:06:43,140 --> 00:06:43,940
+Wow.
+
+99
+00:06:44,260 --> 00:06:52,040
+The specific details, the precise energy and geometry of those very first individual explosions, they're completely diluted.
+
+100
+00:06:52,140 --> 00:06:53,200
+They're totally overwritten.
+
+101
+00:06:53,360 --> 00:06:54,800
+Okay, let me try to visualize this.
+
+102
+00:06:55,660 --> 00:06:58,760
+Imagine you're walking past a brick wall in a massive city.
+
+103
+00:06:59,640 --> 00:07:08,140
+On day one of this city's history, someone painted this tiny, beautiful, highly detailed blue bird on one of the bricks.
+
+104
+00:07:08,480 --> 00:07:09,340
+Okay, I'm with you.
+
+105
+00:07:09,620 --> 00:07:11,060
+That is the first event.
+
+106
+00:07:11,060 --> 00:07:15,900
+But over the next 50 years, thousands of different graffiti artists come by.
+
+107
+00:07:16,360 --> 00:07:22,300
+They spray paint over the bird, over each other's tags, layering neon greens, bright reds, thick black letters, white outlines.
+
+108
+00:07:22,940 --> 00:07:26,860
+Eventually, you have this incredibly complex, vibrant, multicolored wall.
+
+109
+00:07:27,500 --> 00:07:30,060
+Now, the final color of the wall is fascinating in its own right.
+
+110
+00:07:30,340 --> 00:07:31,740
+It tells the story of a busy city.
+
+111
+00:07:31,740 --> 00:07:40,500
+But if I point at a muddy purple spot on that wall and ask you to reconstruct the exact wingspan and shade of the blue bird that was painted there 50 years ago...
+
+112
+00:07:40,500 --> 00:07:41,280
+It's completely impossible.
+
+113
+00:07:41,480 --> 00:07:44,680
+Yeah, you cannot unmix the paint just by looking at the final layer.
+
+114
+00:07:45,100 --> 00:07:51,260
+The wall has achieved high chemical complexity, but it has been reduced to zero historical resolution.
+
+115
+00:07:51,700 --> 00:07:54,280
+You literally cannot trace the trajectory backward.
+
+116
+00:07:54,440 --> 00:07:55,240
+That makes so much sense.
+
+117
+00:07:55,240 --> 00:08:03,000
+And this brings us directly to what Flyxion formalizes as Principle 1, the informational privilege of low averaging systems.
+
+118
+00:08:03,200 --> 00:08:04,320
+Okay, Principle 1.
+
+119
+00:08:04,540 --> 00:08:18,160
+It states that among physically comparable systems, those that have undergone the fewest averaging operations over their history retain the highest density of recoverable information per observable degree of freedom.
+
+120
+00:08:18,160 --> 00:08:22,740
+So, fewer layers of paint equals more information about the base layer.
+
+121
+00:08:22,820 --> 00:08:25,800
+But wait, I want to push back on that slightly or at least get some clarification.
+
+122
+00:08:26,200 --> 00:08:28,440
+Because my brain immediately goes to age.
+
+123
+00:08:28,580 --> 00:08:28,780
+Sure.
+
+124
+00:08:28,980 --> 00:08:31,160
+Doesn't older just inherently mean more primitive?
+
+125
+00:08:31,640 --> 00:08:38,280
+Like, if we point our telescopes at a really, really old galaxy, aren't we automatically looking at a wall with fewer layers of paint on it?
+
+126
+00:08:38,680 --> 00:08:39,740
+It's a vital distinction.
+
+127
+00:08:40,000 --> 00:08:42,980
+And the author actually spends significant time clarifying it.
+
+128
+00:08:43,640 --> 00:08:46,980
+Antiquity does not automatically equal least overwritten.
+
+129
+00:08:47,080 --> 00:08:47,420
+Oh, really?
+
+130
+00:08:47,420 --> 00:08:48,020
+Yeah.
+
+131
+00:08:48,860 --> 00:08:54,920
+Imagine a galaxy that formed very early in the universe, right alongside LAP-1B.
+
+132
+00:08:56,160 --> 00:09:02,200
+But suppose this other galaxy experienced a massive, violent burst of star formation right out of the gate.
+
+133
+00:09:02,300 --> 00:09:02,560
+Okay.
+
+134
+00:09:02,860 --> 00:09:09,140
+Millions of massive stars igniting and exploding as supernovae in a very tight chronological window.
+
+135
+00:09:09,980 --> 00:09:16,380
+That galaxy is incredibly old, sitting way back in the early universe, but it is thoroughly, heavily overwritten.
+
+136
+00:09:16,380 --> 00:09:18,960
+The blender was turned on to maximum speed immediately.
+
+137
+00:09:19,140 --> 00:09:19,360
+Exactly.
+
+138
+00:09:19,480 --> 00:09:21,140
+The paint is already completely mixed.
+
+139
+00:09:21,260 --> 00:09:22,720
+Ah, I see the nuance now.
+
+140
+00:09:23,260 --> 00:09:28,180
+So, least overwritten is an informational category, not purely a chronological one.
+
+141
+00:09:28,260 --> 00:09:33,980
+It's about the ratio of the recoverable event history compared to the total time that has elapsed.
+
+142
+00:09:33,980 --> 00:09:34,640
+You've got it.
+
+143
+00:09:34,640 --> 00:09:43,440
+You could have a relatively young system that is totally overwritten because it was incredibly active, or you could have a very old system that is completely pristine because nothing ever happened to it.
+
+144
+00:09:43,540 --> 00:09:43,740
+Right.
+
+145
+00:09:43,740 --> 00:09:47,540
+I challenge you to think about how this applies to, say, human archaeology.
+
+146
+00:09:48,240 --> 00:09:52,960
+Imagine an archaeological dig uncovers a perfectly preserved, untouched clay tablet.
+
+147
+00:09:53,560 --> 00:09:58,380
+It's a receipt from an ancient Sumerian grain merchant sealed in a dry jar in a cave.
+
+148
+00:09:58,640 --> 00:09:58,900
+Okay.
+
+149
+00:09:58,900 --> 00:10:21,340
+That single tiny piece of clay provides more precise, uncorrupted, high-resolution information about the exact economics and daily life of that specific day in history than a massive, sprawling historical textbook that's been translated, edited, politically redacted, and summarized by 50 different empires over 3,000 years.
+
+150
+00:10:21,400 --> 00:10:22,660
+Oh, it's a great comparison.
+
+151
+00:10:22,660 --> 00:10:30,780
+The textbook is larger. It covers a vastly greater span of time. But the receipt is a direct, unaveraged event log.
+
+152
+00:10:31,100 --> 00:10:44,900
+A direct event log in matter. I absolutely love that phrasing. So if LAP-1b is our ancient Sumerian receipt, our nearly blank canvas, with just the very first brushstrokes on it, what does that first pristine brushstroke actually look like?
+
+153
+00:10:45,040 --> 00:10:49,180
+When astronomers pull down the data from the telescope, what is the universe actually telling us?
+
+154
+00:10:49,180 --> 00:10:54,300
+To read that brushstroke, we have to look at the extreme statistics captured by the James Webb Space Telescope.
+
+155
+00:10:54,940 --> 00:11:00,520
+Specifically, the paper cites the spectroscopy data reported by Nakajima and their team in 2026.
+
+156
+00:11:01,060 --> 00:11:05,400
+Spectroscopy. That's essentially taking the faint light from the galaxy and passing it through a prism.
+
+157
+00:11:05,500 --> 00:11:10,760
+Right. Yes. In JWST's case, an incredibly advanced instrument called NIR-Spec.
+
+158
+00:11:10,760 --> 00:11:18,020
+It breaks the light into its component colors. Different chemical elements absorb and emit light at very specific known wavelengths.
+
+159
+00:11:18,420 --> 00:11:20,700
+So it essentially gives us a chemical barcode.
+
+160
+00:11:21,000 --> 00:11:23,540
+And the barcode for LAP-1b is just staggering.
+
+161
+00:11:24,120 --> 00:11:30,840
+The JWST data shows that the oxygen abundance is 4.2 plus or minus 1.8 times 10 to the negative third solar.
+
+162
+00:11:30,960 --> 00:11:31,180
+Right.
+
+163
+00:11:31,180 --> 00:11:41,180
+Let me put that in context for a point. It means the amount of oxygen in the gas of LAP-1b is roughly 4 one thousandths of the amount of oxygen we measure in our own sun.
+
+164
+00:11:41,700 --> 00:11:43,080
+It is functionally non-existent?
+
+165
+00:11:43,240 --> 00:11:49,680
+Yeah. It falls incredibly far below what astronomers previously considered the metallicity floor of about 2% solar.
+
+166
+00:11:50,040 --> 00:11:55,520
+It's essentially just pristine hydrogen and helium just mirroring the raw material left over from the Big Bang.
+
+167
+00:11:55,520 --> 00:12:00,320
+The near total absence of oxygen is the first major confirmation here.
+
+168
+00:12:00,700 --> 00:12:05,440
+It proves we are looking at a system that has not been overwritten by generations of star formation.
+
+169
+00:12:05,800 --> 00:12:07,340
+The blender was never turned on.
+
+170
+00:12:07,640 --> 00:12:12,380
+But the mere lack of heavy elements isn't actually the most profound part of the Nakajima data.
+
+171
+00:12:12,900 --> 00:12:17,300
+The true anomaly lies in the ratio between the few trace elements that actually are present.
+
+172
+00:12:18,440 --> 00:12:24,400
+LAP-1b exhibits a highly elevated carbon to oxygen ratio, often referred to as the CO ratio.
+
+173
+00:12:24,400 --> 00:12:27,600
+It sits at roughly one to two times the solar value.
+
+174
+00:12:27,920 --> 00:12:31,080
+Which completely breaks the standard rules of chemical enrichment.
+
+175
+00:12:31,420 --> 00:12:40,820
+I mean, from what I understand, when standard massive stars explode in the modern universe, they manufacture and blast out a massive amount of oxygen alongside carbon.
+
+176
+00:12:40,980 --> 00:12:41,720
+Right. They do.
+
+177
+00:12:41,960 --> 00:12:49,560
+Because oxygen is heavier and forms deeper in the star, a normal early galaxy should have a much lower ratio of carbon relative to oxygen.
+
+178
+00:12:49,560 --> 00:12:54,620
+But LAP-1b is just swimming in carbon compared to its negligible oxygen levels.
+
+179
+00:12:55,080 --> 00:12:57,980
+How does the galaxy end up with the carbon but miss out on the oxygen?
+
+180
+00:12:58,380 --> 00:13:05,220
+The answer requires us to look at the specific physical mechanism of the very first generation of stars to ever ignite in the universe.
+
+181
+00:13:05,880 --> 00:13:08,300
+Astronomers call them Population 3 stars.
+
+182
+00:13:08,520 --> 00:13:09,360
+Population 3.
+
+183
+00:13:09,460 --> 00:13:09,660
+Yeah.
+
+184
+00:13:09,920 --> 00:13:10,320
+Got it.
+
+185
+00:13:10,320 --> 00:13:14,500
+These stars were formed purely from primordial hydrogen and helium.
+
+186
+00:13:15,400 --> 00:13:22,980
+Because they lacked heavy elements to help cool the gas as it collapsed, they had to be incredibly massive hundreds of times the mass of our sun.
+
+187
+00:13:23,080 --> 00:13:24,380
+So they were absolute monsters.
+
+188
+00:13:24,660 --> 00:13:25,060
+Absolutely.
+
+189
+00:13:25,360 --> 00:13:34,920
+And when we look at LAP-1b's carbon to oxygen anomaly, we are looking at the specific explosive signature of what are called faint Population 3rd Supernovae.
+
+190
+00:13:34,920 --> 00:13:39,100
+See, the word faint next to supernovae, it just feels like an oxymoron to me.
+
+191
+00:13:39,200 --> 00:13:41,960
+It does, but it describes the energetics of the explosion.
+
+192
+00:13:42,760 --> 00:13:46,640
+Picture the internal structure of one of these massive early stars like an onion.
+
+193
+00:13:47,380 --> 00:13:53,680
+Deep in the core, under immense pressure and temperature, the star is fusing heavy elements like oxygen and silicon.
+
+194
+00:13:54,020 --> 00:13:54,260
+Right.
+
+195
+00:13:54,740 --> 00:13:58,620
+In the lighter, cooler layers further out from the core, it is fusing carbon.
+
+196
+00:13:59,140 --> 00:14:01,640
+When the star runs out of fuel, gravity wins.
+
+197
+00:14:01,640 --> 00:14:10,580
+The core collapses inward, hits a critical density, and rebounds, sending a colossal shockwave rippling outward to blow the star apart.
+
+198
+00:14:10,740 --> 00:14:12,040
+That's a standard supernova.
+
+199
+00:14:12,320 --> 00:14:12,680
+Yes.
+
+200
+00:14:13,120 --> 00:14:25,060
+In a standard, highly energetic supernova, that shockwave is so powerful, it easily blasts the entire onion out into deep space, both the inner oxygen core and the outer carbon shells.
+
+201
+00:14:25,280 --> 00:14:28,460
+So what on Earth happens in a faint supernova?
+
+202
+00:14:29,100 --> 00:14:31,320
+Well, the explosion energy is remarkably low.
+
+203
+00:14:31,320 --> 00:14:40,320
+The core collapses, the shockwave rebounds, and pushes outward, but it has to fight against the immense gravitational pull of the star's incredibly dense inner layers.
+
+204
+00:14:40,660 --> 00:14:40,980
+Oh, I see.
+
+205
+00:14:41,040 --> 00:14:47,660
+It's like, okay, it's like a space agency trying to launch a massive heavy satellite using a rocket with underperforming engines.
+
+206
+00:14:47,720 --> 00:14:48,720
+That's a great analogy.
+
+207
+00:14:48,720 --> 00:14:55,440
+The launch sequence initiates, the rocket leaves the pad, but it just doesn't have the kinetic energy to achieve escape velocity.
+
+208
+00:14:56,140 --> 00:15:03,420
+The heaviest part of the payload, the inner oxygen core, is pulled back down by gravity and crashes into the central black hole that's forming.
+
+209
+00:15:03,540 --> 00:15:03,780
+Right.
+
+210
+00:15:03,780 --> 00:15:14,880
+But the lightweight aerodynamic fairings, the carbon sitting in the outer shells of the star, they're far enough out and light enough that the weak shockwave successfully blows them away into the surrounding cosmic gas.
+
+211
+00:15:14,880 --> 00:15:19,880
+That gravitational fallback mechanism is the key to the entire chemical anomaly.
+
+212
+00:15:20,740 --> 00:15:26,840
+Flyxion introduces a conceptual framework in the paper called sphere pop to describe this exact dynamic.
+
+213
+00:15:26,980 --> 00:15:27,700
+Sphere pop.
+
+214
+00:15:27,700 --> 00:15:28,220
+Yes.
+
+215
+00:15:28,720 --> 00:15:34,000
+Within this framework, the gravitational fallback acts as a physical propagation filter.
+
+216
+00:15:34,740 --> 00:15:43,020
+It selectively allows certain elemental products, the carbon, to propagate outward into the future state space of the galaxy.
+
+217
+00:15:43,340 --> 00:15:43,600
+Okay.
+
+218
+00:15:43,720 --> 00:15:49,060
+And simultaneously, it physically refuses entry to other products, the oxygen trapping them in the remnant.
+
+219
+00:15:49,340 --> 00:15:54,020
+So the universe is essentially running the material through a sieve based on atomic weight and stellar depth.
+
+220
+00:15:54,020 --> 00:15:59,240
+But it's crucial to point out, as the author does, that this isn't a semantic choice being made by the cosmos.
+
+221
+00:15:59,540 --> 00:16:02,040
+Right. The system isn't deciding that carbon is better than oxygen.
+
+222
+00:16:02,420 --> 00:16:10,460
+Exactly. It's a strict, blind, unyielding physical constraint, dictated purely by gravitational geometry and explosion energetics.
+
+223
+00:16:10,700 --> 00:16:14,580
+And this brings us right back to the power of the least overwritten system.
+
+224
+00:16:14,580 --> 00:16:22,540
+Because LAP-1b is so pristine, because it hasn't been painted over by a thousand other normal, highly energetic supernovae,
+
+225
+00:16:22,940 --> 00:16:27,460
+we can still clearly read the exact result of that specific propagation filter.
+
+226
+00:16:27,640 --> 00:16:28,000
+Wow.
+
+227
+00:16:28,280 --> 00:16:30,360
+We aren't looking at an average of elements.
+
+228
+00:16:30,540 --> 00:16:35,420
+We are literally reading the specific geometry of the universe's earliest, weakest explosions.
+
+229
+00:16:36,060 --> 00:16:39,720
+The chemistry itself is acting as an event log in matter.
+
+230
+00:16:39,720 --> 00:16:41,800
+That concept gives me chills.
+
+231
+00:16:42,620 --> 00:16:47,520
+We are reading the literal diary of a dying star from 800 million years after the dawn of time,
+
+232
+00:16:47,700 --> 00:16:49,780
+and the ink is made of carbon and oxygen.
+
+233
+00:16:50,020 --> 00:16:50,980
+It's a chemical fossil.
+
+234
+00:16:51,280 --> 00:16:51,960
+It really is.
+
+235
+00:16:52,380 --> 00:16:54,880
+But the chemistry is only half the story in this paper.
+
+236
+00:16:55,360 --> 00:17:00,640
+If we want to understand how LAP-1b managed to stay so quiet for so long while the blender never turned on,
+
+237
+00:17:01,080 --> 00:17:02,720
+we have to look at its physical structure.
+
+238
+00:17:02,960 --> 00:17:07,280
+Because when you look at the mass budget of this object, the numbers don't seem to add up at all.
+
+239
+00:17:07,280 --> 00:17:09,200
+The mass discrepancy is profound.
+
+240
+00:17:10,260 --> 00:17:13,580
+Let's break down the physical scale of what we are observing here.
+
+241
+00:17:14,520 --> 00:17:22,920
+The stellar mass, meaning the actual combined weight of all the glowing stars inside this galaxy that JWST can detect,
+
+242
+00:17:23,260 --> 00:17:26,720
+is constrained to less than 3,300 solar masses.
+
+243
+00:17:27,120 --> 00:17:29,140
+To put that in perspective for you, the listener,
+
+244
+00:17:29,620 --> 00:17:34,560
+our Milky Way galaxy has a stellar mass of roughly 60 billion solar masses.
+
+245
+00:17:34,820 --> 00:17:35,060
+Yeah.
+
+246
+00:17:35,060 --> 00:17:37,620
+So 3,300 solar masses is nothing.
+
+247
+00:17:38,020 --> 00:17:39,200
+It's not even a dwarf galaxy.
+
+248
+00:17:39,360 --> 00:17:41,280
+It's more akin to just a heavy star cluster.
+
+249
+00:17:41,420 --> 00:17:41,900
+Exactly.
+
+250
+00:17:42,240 --> 00:17:44,940
+The visible footprint is microscopic on a cosmic scale.
+
+251
+00:17:45,340 --> 00:17:47,960
+But astronomers don't just count the light to weigh a galaxy.
+
+252
+00:17:48,120 --> 00:17:49,760
+They measure how the galaxy moves.
+
+253
+00:17:50,160 --> 00:17:53,140
+The Nakajima data includes a measurement of the dynamical mass.
+
+254
+00:17:53,140 --> 00:17:53,480
+Yeah.
+
+255
+00:17:53,520 --> 00:17:55,500
+I was reading the methodology section of the sources,
+
+256
+00:17:55,700 --> 00:18:00,440
+and they mentioned using something called H-alpha emission line broadening to figure out the mass.
+
+257
+00:18:00,560 --> 00:18:00,680
+Right.
+
+258
+00:18:00,840 --> 00:18:04,780
+Now, I know H-alpha has to do with the red light emitted by glowing hydrogen gas,
+
+259
+00:18:04,880 --> 00:18:09,700
+but how does looking at the color of hydrogen tell you how heavy the invisible parts of the galaxy are?
+
+260
+00:18:09,700 --> 00:18:12,500
+It is a brilliant piece of deductive physics.
+
+261
+00:18:13,160 --> 00:18:18,060
+Inside the galaxy, hydrogen gas is being heated by the stars, causing it to glow,
+
+262
+00:18:18,440 --> 00:18:21,140
+emitting that specific H-alpha wavelength.
+
+263
+00:18:21,380 --> 00:18:21,620
+Okay.
+
+264
+00:18:21,620 --> 00:18:23,720
+But the gas isn't sitting still.
+
+265
+00:18:24,020 --> 00:18:27,620
+It's swirling around inside the gravitational well of the galaxy.
+
+266
+00:18:28,360 --> 00:18:30,920
+As a cloud of gas moves toward our telescope,
+
+267
+00:18:31,260 --> 00:18:33,720
+the light waves it emits get slightly compressed,
+
+268
+00:18:34,300 --> 00:18:37,820
+shifting the color infinitesimally toward the blue end of the spectrum.
+
+269
+00:18:38,160 --> 00:18:38,560
+Got it.
+
+270
+00:18:38,660 --> 00:18:43,480
+As the gas swirls away from us, the light waves stretch, shifting toward the red.
+
+271
+00:18:43,740 --> 00:18:44,980
+This is the Doppler effect.
+
+272
+00:18:45,220 --> 00:18:48,340
+Like the pitch of an ambulance siren changing as it drives past you?
+
+273
+00:18:48,600 --> 00:18:50,820
+Precisely the same principle, but with light.
+
+274
+00:18:50,820 --> 00:18:54,800
+Because the gas in the galaxy is swirling in all different directions simultaneously,
+
+275
+00:18:55,280 --> 00:18:59,240
+we see all those tiny blue and red shifts at the exact same time.
+
+276
+00:18:59,340 --> 00:18:59,840
+Oh, I see.
+
+277
+00:19:00,160 --> 00:19:06,000
+The result is that the crisp, narrow barcode line of H-alpha light looks smear out or broadened.
+
+278
+00:19:06,520 --> 00:19:09,360
+The wider the smear, the faster the gas is swirling.
+
+279
+00:19:09,540 --> 00:19:13,560
+And the faster the gas is swirling, the more intense the underlying gravity must be
+
+280
+00:19:13,560 --> 00:19:16,280
+to keep that gas from just Flyxion off into deep space.
+
+281
+00:19:16,340 --> 00:19:17,300
+That makes total sense.
+
+282
+00:19:17,600 --> 00:19:17,860
+Right.
+
+283
+00:19:17,860 --> 00:19:22,920
+By measuring the width of that smear, astronomers can calculate the total mass of everything in
+
+284
+00:19:22,920 --> 00:19:24,920
+that region, seen and unseen.
+
+285
+00:19:25,520 --> 00:19:31,460
+And when they measured the smear for LAP-1b, the dynamical mass came out to roughly 10 to
+
+286
+00:19:31,460 --> 00:19:32,680
+the 7th solar masses.
+
+287
+00:19:33,200 --> 00:19:34,780
+10 million solar masses.
+
+288
+00:19:35,000 --> 00:19:35,140
+Yep.
+
+289
+00:19:35,640 --> 00:19:42,340
+Which means the stars we can see, the 3,300 solar masses, make up less than 1% of the total
+
+290
+00:19:42,340 --> 00:19:48,360
+structure, the vast, overwhelming majority of this system is an invisible organizing structure.
+
+291
+00:19:49,360 --> 00:19:51,080
+We are talking about a dark matter halo.
+
+292
+00:19:51,400 --> 00:19:56,120
+We have a microscopic sprinkling of visible stars trapped inside a massive, invisible
+
+293
+00:19:56,120 --> 00:19:57,220
+gravitational vault.
+
+294
+00:19:57,560 --> 00:20:01,920
+The question the paper poses is, how do we interpret the relationship between those
+
+295
+00:20:01,920 --> 00:20:09,800
+two very different philosophical and mathematical frameworks reviewing this?
+
+296
+00:20:09,800 --> 00:20:14,340
+The first is the standard view, the lambda-CDM or cold dark matter paradigm.
+
+297
+00:20:14,740 --> 00:20:19,800
+In the standard lambda-CDM view, you tweet the dark matter halo as a pre-existing scaffold
+
+298
+00:20:19,800 --> 00:20:20,700
+or a container.
+
+299
+00:20:21,080 --> 00:20:21,160
+Yeah.
+
+300
+00:20:21,360 --> 00:20:26,160
+The dark matter clumped together first in the early universe, creating a massive gravitational
+
+301
+00:20:26,160 --> 00:20:27,940
+pothole in the fabric of space.
+
+302
+00:20:28,540 --> 00:20:34,540
+Then, the visible matter, the hydrogen gas, simply fell into that pothole, pulled at the
+
+303
+00:20:34,540 --> 00:20:36,520
+bottom, and condensed to form stars.
+
+304
+00:20:36,660 --> 00:20:36,960
+Right.
+
+305
+00:20:36,960 --> 00:20:43,120
+In this interpretation, the massive ratio of dark matter to stars just tells you that this
+
+306
+00:20:43,120 --> 00:20:47,320
+particular pothole was incredibly inefficient at turning its gas into stars.
+
+307
+00:20:47,720 --> 00:20:49,800
+That is the conventional container model.
+
+308
+00:20:49,800 --> 00:20:56,660
+But Flyxion introduces a different descriptive framing, referred to as the RSVP or SIED interpretation.
+
+309
+00:20:57,380 --> 00:21:01,880
+Instead of viewing the dark matter as a bucket that the baryonic matter fills, this framework
+
+310
+00:21:01,880 --> 00:21:08,620
+asks us to look at the luminous matter, those 3,300 solar masses of stars, as sparse tracers.
+
+311
+00:21:08,780 --> 00:21:09,540
+Sparse tracers.
+
+312
+00:21:09,720 --> 00:21:10,020
+Yes.
+
+313
+00:21:10,200 --> 00:21:14,300
+They are merely marking the deepest point of what the author calls a constraint basin.
+
+314
+00:21:14,480 --> 00:21:16,380
+Okay, let me try to build a mental model for this.
+
+315
+00:21:16,380 --> 00:21:20,100
+Imagine you are standing on the bank of a massive wide river in the dead of night.
+
+316
+00:21:20,540 --> 00:21:21,440
+It is pitch black.
+
+317
+00:21:21,840 --> 00:21:25,320
+You cannot see the water, you cannot see the banks, and you certainly cannot see the complex
+
+318
+00:21:25,320 --> 00:21:27,360
+churning currents beneath the surface.
+
+319
+00:21:27,440 --> 00:21:28,520
+Okay, spooky river.
+
+320
+00:21:28,860 --> 00:21:29,360
+I like it.
+
+321
+00:21:29,680 --> 00:21:35,180
+But you have a handful of glowing bioluminescent leaves, and you toss them into the water.
+
+322
+00:21:35,800 --> 00:21:38,100
+Those glowing leaves do not shape the riverbed.
+
+323
+00:21:38,520 --> 00:21:41,360
+They don't control the flow of millions of gallons of water.
+
+324
+00:21:41,760 --> 00:21:43,100
+They're entirely passive.
+
+325
+00:21:43,440 --> 00:21:44,720
+They're just along for the ride.
+
+326
+00:21:44,940 --> 00:21:45,280
+Exactly.
+
+327
+00:21:45,280 --> 00:21:49,640
+They simply get swept along by the invisible currents, eventually pooling together in the
+
+328
+00:21:49,640 --> 00:21:50,780
+deepest swirling eddy.
+
+329
+00:21:51,460 --> 00:21:56,300
+By looking at where those few glowing leaves gather and how they circle, you can trace and
+
+330
+00:21:56,300 --> 00:22:00,580
+infer the invisible immense structure of the river's hydrodynamics.
+
+331
+00:22:00,920 --> 00:22:03,260
+That analogy perfectly captures the dynamic.
+
+332
+00:22:03,820 --> 00:22:07,240
+The baryons, the stars, are the glowing leaves.
+
+333
+00:22:07,600 --> 00:22:08,820
+They do not fill the basin.
+
+334
+00:22:09,200 --> 00:22:11,180
+They simply illuminate its geometry.
+
+335
+00:22:11,540 --> 00:22:13,020
+That's a beautiful way to think about it.
+
+336
+00:22:13,020 --> 00:22:17,660
+And to understand why this is so important for LAP-1b, consider the alternative.
+
+337
+00:22:17,660 --> 00:22:22,580
+In a massive modern galaxy like the Milky Way, those glowing leaves aren't passive at all.
+
+338
+00:22:22,880 --> 00:22:27,280
+A massive galaxy has tremendous amounts of what astronomers call baryonic feedback.
+
+339
+00:22:27,440 --> 00:22:28,320
+Baryonic feedback.
+
+340
+00:22:28,620 --> 00:22:28,820
+What?
+
+341
+00:22:28,820 --> 00:22:32,320
+Meaning the visible matter fighting back against the gravity.
+
+342
+00:22:32,320 --> 00:22:32,960
+Yes.
+
+343
+00:22:33,660 --> 00:22:40,920
+You have millions of supernovae detonating, blasting, colossal shockwaves through the dark matter halo.
+
+344
+00:22:41,580 --> 00:22:49,980
+You have supermassive black holes at the center consuming matter and shooting out relativistic jets of radiation and plasma that pierce through the galaxy.
+
+345
+00:22:50,120 --> 00:22:51,060
+It's incredibly violent.
+
+346
+00:22:51,060 --> 00:23:00,880
+All of that violent, energetic, visible matter actually churns, heats, and physically reshapes the dark matter container it sits in over billions of years.
+
+347
+00:23:00,980 --> 00:23:09,700
+So going back to the analogy, the glowing leaves suddenly sprout shovels and start digging up the riverbed, literally changing the course of the water.
+
+348
+00:23:09,700 --> 00:23:11,520
+That is exactly what happens.
+
+349
+00:23:11,720 --> 00:23:15,000
+The visible matter and the dark matter become inextricably entangled.
+
+350
+00:23:15,340 --> 00:23:23,420
+When you look at a modern galaxy, you cannot easily untangle the two to see what the original pristine dark matter structure looked like before the stars started blowing up.
+
+351
+00:23:23,520 --> 00:23:24,700
+Right. The record is destroyed.
+
+352
+00:23:25,180 --> 00:23:31,140
+But in LAP-1b, because the stellar mass is so incredibly tiny, that baryonic feedback is virtually non-existent.
+
+353
+00:23:31,360 --> 00:23:37,040
+A few thousand stars cannot generate enough supernovae to move 10 million solar masses of dark matter.
+
+354
+00:23:37,040 --> 00:23:40,220
+The visible matter truly is just a passive tracer.
+
+355
+00:23:40,900 --> 00:23:47,180
+This means the dark matter halo of LAP-1b is sitting there exactly as it formed, totally untouched.
+
+356
+00:23:47,520 --> 00:23:52,040
+It is a pure, uncorrupted readout of primitive gravitational organization.
+
+357
+00:23:52,880 --> 00:23:54,340
+So we don't just have a chemical fossil.
+
+358
+00:23:54,420 --> 00:23:55,860
+We have a structural fossil, too.
+
+359
+00:23:55,960 --> 00:23:59,240
+We are seeing the raw blueprint of a dark matter halo.
+
+360
+00:23:59,280 --> 00:23:59,680
+We are.
+
+361
+00:24:00,060 --> 00:24:06,320
+But observing this pristine structure raises a massive fundamental question about how things get built in the universe.
+
+362
+00:24:06,320 --> 00:24:15,920
+If this tiny galaxy didn't form by clumping together with a bunch of other small galaxies over time, how did it just, you know, appear at this exact size?
+
+363
+00:24:16,060 --> 00:24:20,900
+That question strikes at the very heart of the standard hierarchical formation narrative.
+
+364
+00:24:21,300 --> 00:24:24,480
+Standard cosmology relies heavily on a bottom-up process.
+
+365
+00:24:25,160 --> 00:24:32,780
+Small fluctuations in dark matter form small halos, and gravity relentlessly pulls those small halos together to form larger and larger structures.
+
+366
+00:24:33,060 --> 00:24:35,260
+It is like building a house brick by brick.
+
+367
+00:24:35,260 --> 00:24:36,240
+Okay, bottom-up.
+
+368
+00:24:36,320 --> 00:24:40,440
+But LAP-1b presents a paradox under that strict interpretation.
+
+369
+00:24:40,980 --> 00:24:46,800
+It is completely isolated in its chemical parameter space, sitting way below the metallicity floor.
+
+370
+00:24:47,180 --> 00:24:52,900
+If it was just a random building block waiting to be merged, it shouldn't be this isolated and pristine.
+
+371
+00:24:53,060 --> 00:24:54,280
+So it's not just a leftover brick.
+
+372
+00:24:54,460 --> 00:24:54,800
+Right.
+
+373
+00:24:55,180 --> 00:24:58,400
+Its properties suggest it didn't just randomly fail to grow.
+
+374
+00:24:58,400 --> 00:25:05,060
+It seems distinctly selected by the physics of the early universe to exist at this specific scale.
+
+375
+00:25:05,060 --> 00:25:06,180
+Distinctly selected.
+
+376
+00:25:06,180 --> 00:25:08,800
+That implies a mechanism beyond just random clumping.
+
+377
+00:25:09,020 --> 00:25:13,120
+And this is where Flyxion's paper dives into the SIED formalism.
+
+378
+00:25:13,260 --> 00:25:13,560
+Yes.
+
+379
+00:25:13,940 --> 00:25:17,160
+Now, looking at the paper, the math in this section gets intensely complicated.
+
+380
+00:25:17,640 --> 00:25:20,420
+It deals with free energy landscapes and polynomial regulators.
+
+381
+00:25:20,560 --> 00:25:21,340
+It does get very heavy.
+
+382
+00:25:21,340 --> 00:25:23,860
+But the underlying concept it describes is fascinating.
+
+383
+00:25:24,000 --> 00:25:27,460
+How do we understand this without getting totally lost in the equations?
+
+384
+00:25:27,460 --> 00:25:32,760
+The best way to understand SIED, which stands for scalar eruption via entropic differential,
+
+385
+00:25:33,100 --> 00:25:35,460
+is to think about phase transitions and thermodynamics.
+
+386
+00:25:36,180 --> 00:25:36,900
+Phase transitions.
+
+387
+00:25:37,080 --> 00:25:37,300
+Okay.
+
+388
+00:25:37,600 --> 00:25:43,760
+The formalism treats structure formation not as a slow, gradual accumulation of matter
+
+389
+00:25:43,760 --> 00:25:50,040
+driven purely by gravity pulling things together, but as a threshold instability in a conserved
+
+390
+00:25:50,040 --> 00:25:51,040
+scalar field.
+
+391
+00:25:51,480 --> 00:25:55,480
+The paper compares this to a process called spinodal decomposition.
+
+392
+00:25:55,480 --> 00:26:00,780
+Okay, let's break down spinodal decomposition, because that sounds terrifying.
+
+393
+00:26:01,200 --> 00:26:03,260
+It's actually a concept from chemistry.
+
+394
+00:26:03,620 --> 00:26:07,880
+Imagine you have a mixture of oil and vinegar that you have just shaken violently.
+
+395
+00:26:08,020 --> 00:26:08,780
+Like salad dressing.
+
+396
+00:26:09,200 --> 00:26:09,680
+Exactly.
+
+397
+00:26:10,120 --> 00:26:13,800
+For a brief moment, it looks like one uniform, cloudy liquid.
+
+398
+00:26:14,260 --> 00:26:19,440
+The molecules are perfectly mixed, but as it sits there, the internal thermodynamic state
+
+399
+00:26:19,440 --> 00:26:21,380
+of that mixture is highly unstable.
+
+400
+00:26:21,380 --> 00:26:25,500
+It actively wants to separate to achieve a lower energy state.
+
+401
+00:26:25,720 --> 00:26:25,740
+Right.
+
+402
+00:26:25,800 --> 00:26:27,560
+It wants to split back into oil and vinegar.
+
+403
+00:26:27,920 --> 00:26:33,620
+Suddenly, seemingly all at once, microscopic droplets of oil erupt out of the mixture, separating
+
+404
+00:26:33,620 --> 00:26:35,580
+from the vinegar everywhere simultaneously.
+
+405
+00:26:35,940 --> 00:26:41,060
+The structure of the droplets didn't form because individual oil molecules slowly drifted together
+
+406
+00:26:41,060 --> 00:26:42,060
+from across the bottle.
+
+407
+00:26:42,160 --> 00:26:44,040
+It wasn't building a house brick by brick.
+
+408
+00:26:44,040 --> 00:26:50,400
+No, the entire background state crossed a critical threshold, and the structure spontaneously erupted
+
+409
+00:26:50,400 --> 00:26:52,120
+locally all throughout the liquid.
+
+410
+00:26:52,380 --> 00:26:57,680
+So applying that to the early universe, instead of gravity just slowly pulling localized pockets
+
+411
+00:26:57,680 --> 00:27:02,720
+of gas together over millions of years, the actual underlying fabric of the early universe,
+
+412
+00:27:03,060 --> 00:27:09,880
+this smooth, mixed scalar field of dark matter and energy, cooled and reached a critical
+
+413
+00:27:09,880 --> 00:27:11,320
+thermodynamic threshold.
+
+414
+00:27:11,320 --> 00:27:16,980
+It became mathematically unstable, and structure just popped into existence locally, much like
+
+415
+00:27:16,980 --> 00:27:18,880
+the oil droplets suddenly forming in the vinegar.
+
+416
+00:27:19,100 --> 00:27:21,300
+That is the absolute core of the formalism.
+
+417
+00:27:22,040 --> 00:27:26,620
+In the mathematics of the paper, this instability is triggered when the curvature of the field's
+
+418
+00:27:26,620 --> 00:27:28,740
+free energy landscape drops below zero.
+
+419
+00:27:29,540 --> 00:27:34,320
+When that landscape curves downward, the smooth, uniform background of the universe can no longer
+
+420
+00:27:34,320 --> 00:27:35,120
+sustain itself.
+
+421
+00:27:35,260 --> 00:27:40,280
+It becomes locally unstable, and a structure, in this case, a dark matter halo erupts.
+
+422
+00:27:40,280 --> 00:27:45,340
+But if the whole field becomes unstable and wants to collapse, why doesn't everything
+
+423
+00:27:45,340 --> 00:27:48,580
+just keep collapsing endlessly into infinitely small points?
+
+424
+00:27:48,920 --> 00:27:50,060
+Like, why does it stop?
+
+425
+00:27:50,160 --> 00:27:55,180
+Why does it form a halo the exact size of LEP-1b, and not something the size of a golf ball?
+
+426
+00:27:56,020 --> 00:28:00,760
+I saw an equation in the paper for the instability growth rate that had two parts basically fighting
+
+427
+00:28:00,760 --> 00:28:01,440
+against each other.
+
+428
+00:28:01,520 --> 00:28:01,800
+Yes.
+
+429
+00:28:02,160 --> 00:28:05,700
+Without reading out all the variables, the concept is essentially a tug-of-war between
+
+430
+00:28:05,700 --> 00:28:07,120
+two mathematical forces.
+
+431
+00:28:07,840 --> 00:28:10,640
+One part of the equation acts as an engine, or an accelerator.
+
+432
+00:28:11,220 --> 00:28:13,740
+It tells the universe, the field is unstable.
+
+433
+00:28:14,100 --> 00:28:14,600
+Collapse.
+
+434
+00:28:14,940 --> 00:28:15,560
+Form structure.
+
+435
+00:28:16,000 --> 00:28:16,240
+Okay.
+
+436
+00:28:16,480 --> 00:28:17,060
+The accelerator.
+
+437
+00:28:17,180 --> 00:28:20,160
+This force drives the creation of the dark matter halos.
+
+438
+00:28:20,520 --> 00:28:23,520
+But the second part of the equation acts as an emergency bleak.
+
+439
+00:28:23,900 --> 00:28:27,680
+This brake is highly sensitive to the physical size of the structure trying to form.
+
+440
+00:28:27,680 --> 00:28:32,760
+As the structure gets smaller and smaller, the braking force grows exponentially faster
+
+441
+00:28:32,760 --> 00:28:34,020
+than the accelerating force.
+
+442
+00:28:34,560 --> 00:28:38,040
+So at large scales, the accelerator is winning, and structure collapses.
+
+443
+00:28:38,660 --> 00:28:43,720
+But as that collapse gets tighter and tighter, the brake suddenly slams on and overwhelms the
+
+444
+00:28:43,720 --> 00:28:46,800
+accelerator, physically stopping the collapse from getting any smaller.
+
+445
+00:28:47,180 --> 00:28:47,740
+Precisely.
+
+446
+00:28:48,300 --> 00:28:52,660
+You have a driving force and a suppressing force working in direct opposition.
+
+447
+00:28:52,660 --> 00:28:59,360
+When you calculate where those two forces perfectly balance out, the math yields a maximum growth
+
+448
+00:28:59,360 --> 00:29:02,100
+rate at a very specific singular scale.
+
+449
+00:29:02,600 --> 00:29:02,700
+Wow.
+
+450
+00:29:03,000 --> 00:29:08,180
+The universe literally has a mathematically preferred size for making these first pristine
+
+451
+00:29:08,180 --> 00:29:12,500
+structures, determined entirely by the local curvature of the free energy.
+
+452
+00:29:13,240 --> 00:29:17,720
+And LAP-1b happens to sit right near that preferred eruption scale.
+
+453
+00:29:17,960 --> 00:29:18,880
+That is incredible.
+
+454
+00:29:19,100 --> 00:29:21,120
+It didn't start smaller and merge its way up.
+
+455
+00:29:21,120 --> 00:29:25,780
+It was born right at that size, because that is the size the thermodynamics of the early
+
+456
+00:29:25,780 --> 00:29:26,520
+universe demanded.
+
+457
+00:29:26,660 --> 00:29:29,760
+It's like the universe has a factory setting for its first generation of galaxies.
+
+458
+00:29:30,100 --> 00:29:34,460
+But I want to make sure we include a crucial caveat here, one that Flyxion emphasizes heavily.
+
+459
+00:29:35,040 --> 00:29:39,940
+This SIE formalism is not being presented as an empirical takedown or a complete replacement
+
+460
+00:29:39,940 --> 00:29:42,000
+of the standard lambda CDM model.
+
+461
+00:29:42,180 --> 00:29:45,340
+That is a very critical point of scientific literacy here.
+
+462
+00:29:45,340 --> 00:29:49,320
+The paper is not claiming the standard model of gravity and dark matter is broken.
+
+463
+00:29:49,320 --> 00:29:55,240
+The observational data from LAP-1b fits perfectly well within the standard model if you simply
+
+464
+00:29:55,240 --> 00:30:00,320
+assume it is a tiny halo that formed early and serendipitously avoided merging with anything
+
+465
+00:30:00,320 --> 00:30:00,760
+else.
+
+466
+00:30:01,260 --> 00:30:06,740
+What the SIED formalism offers is a different philosophical and mathematical language to
+
+467
+00:30:06,740 --> 00:30:07,520
+frame the question.
+
+468
+00:30:07,520 --> 00:30:08,900
+A different lens, really.
+
+469
+00:30:08,980 --> 00:30:09,420
+Exactly.
+
+470
+00:30:09,620 --> 00:30:13,960
+It treats the preferred size of the galaxy as a primitive, fundamental property of the
+
+471
+00:30:13,960 --> 00:30:19,680
+universe's initial instability, rather than a derived, accidental consequence of random
+
+472
+00:30:19,680 --> 00:30:20,120
+clumping.
+
+473
+00:30:20,820 --> 00:30:26,120
+The author makes it very clear that they haven't quantitatively fitted the SIED parameters to
+
+474
+00:30:26,120 --> 00:30:27,720
+LAP-1b's data.
+
+475
+00:30:28,280 --> 00:30:33,340
+It is a structural argument, meant to shift how we view the birth of the earliest mass in the
+
+476
+00:30:33,340 --> 00:30:33,660
+cosmos.
+
+477
+00:30:33,660 --> 00:30:37,260
+Okay, let's step back for a second and look at the whole picture we've painted so far.
+
+478
+00:30:37,920 --> 00:30:41,420
+We have this perfectly preserved, isolated structural fossil.
+
+479
+00:30:42,060 --> 00:30:45,840
+It possesses chemical perfection, having never been overwritten by centuries of standard
+
+480
+00:30:45,840 --> 00:30:46,540
+supernovae.
+
+481
+00:30:46,740 --> 00:30:51,560
+It possesses structural perfection, having never been churned up by the violent baryonic feedback
+
+482
+00:30:51,560 --> 00:30:52,860
+of massive star formation.
+
+483
+00:30:53,020 --> 00:30:57,160
+It erupted at exactly the preferred thermodynamic scale of the early cosmos.
+
+484
+00:30:57,460 --> 00:31:03,440
+It is sitting out there in the dark, a pristine, untouched event log of the universe's infancy.
+
+485
+00:31:03,440 --> 00:31:04,880
+It really is the Holy Grail.
+
+486
+00:31:04,980 --> 00:31:06,900
+Which leads to the most baffling question of all.
+
+487
+00:31:07,040 --> 00:31:08,180
+The observation itself?
+
+488
+00:31:08,440 --> 00:31:08,780
+Yes.
+
+489
+00:31:09,340 --> 00:31:17,680
+If LAP-1b is so incredibly tiny, less than 3,300 solar masses of glowing stars, and if
+
+490
+00:31:17,680 --> 00:31:22,940
+it's sitting 13 billion light years away from Earth, how on Earth are we looking at it right
+
+491
+00:31:22,940 --> 00:31:23,300
+now?
+
+492
+00:31:23,740 --> 00:31:28,720
+Based on the physics of light and distance, a galaxy that small and that far away should
+
+493
+00:31:28,720 --> 00:31:30,800
+be entirely fundamentally invisible to us.
+
+494
+00:31:30,800 --> 00:31:32,100
+It absolutely should be.
+
+495
+00:31:32,640 --> 00:31:38,460
+Under normal astrophysical circumstances, LAP-1b falls far, far below the detection threshold
+
+496
+00:31:38,460 --> 00:31:42,960
+of any instrument humanity has ever built or conceptualized, including the James Webb
+
+497
+00:31:42,960 --> 00:31:43,860
+Space Telescope.
+
+498
+00:31:43,980 --> 00:31:44,120
+Yeah.
+
+499
+00:31:44,340 --> 00:31:49,400
+If you point at JWST's massive golden mirrors directly at the spatial coordinates of LAP-1b
+
+500
+00:31:49,400 --> 00:31:53,620
+through empty space, the sensors would register absolutely nothing but the black void.
+
+501
+00:31:53,620 --> 00:31:59,680
+So how did Nakajima and their team capture this incredibly detailed chemical barcode?
+
+502
+00:32:00,040 --> 00:32:03,820
+What is the dramatic twist that actually allowed this data to exist?
+
+503
+00:32:04,220 --> 00:32:09,000
+The twist relies on one of the most bizarre and beautiful phenomena in general relativity,
+
+504
+00:32:09,240 --> 00:32:11,060
+which is gravitational lensing.
+
+505
+00:32:11,180 --> 00:32:12,140
+Gravitational lensing.
+
+506
+00:32:12,140 --> 00:32:16,840
+It just so happens that sitting perfectly along our line of sight, roughly halfway between
+
+507
+00:32:16,840 --> 00:32:25,540
+Earth and LAP-1b, is a massive cluster of galaxies known as MACS J041c.12403.
+
+508
+00:32:25,600 --> 00:32:25,980
+Catchy name.
+
+509
+00:32:26,080 --> 00:32:26,540
+Very catchy.
+
+510
+00:32:26,940 --> 00:32:32,100
+This foreground cluster contains so much mass, trillions of stars, massive amounts of dark
+
+511
+00:32:32,100 --> 00:32:36,700
+matter, that its collective gravity physically warps the fabric of space-time around it.
+
+512
+00:32:36,700 --> 00:32:42,060
+As the impossibly faint photons of light from LAP-1b travel toward Earth, they have to pass
+
+513
+00:32:42,060 --> 00:32:43,560
+through this warped space-time.
+
+514
+00:32:43,620 --> 00:32:44,440
+Like a funhouse mirror.
+
+515
+00:32:44,640 --> 00:32:45,940
+Better than a mirror, it's a lens.
+
+516
+00:32:46,400 --> 00:32:50,340
+The foreground galaxy cluster acts as a colossal cosmic magnifying glass.
+
+517
+00:32:50,500 --> 00:32:55,800
+It bends, focuses, and concentrates the diverging light from LAP-1b, amplifying its apparent
+
+518
+00:32:55,800 --> 00:32:58,400
+brightness by a staggering factor of roughly 100.
+
+519
+00:32:58,800 --> 00:33:01,840
+An effective visual increase of five magnitudes.
+
+520
+00:33:02,180 --> 00:33:03,960
+That is just mind-bending to me.
+
+521
+00:33:03,960 --> 00:33:10,460
+The universe takes this permanently invisible ghost of a microgalaxy and leverages the mass
+
+522
+00:33:10,460 --> 00:33:15,660
+of a trillion suns to beam its light directly into JWST's detectors.
+
+523
+00:33:15,980 --> 00:33:20,500
+The paper introduces a framework called CLIO to interpret this phenomenon.
+
+524
+00:33:20,960 --> 00:33:25,440
+In this framework, the gravitational lens isn't just viewed as a happy accident or a convenient
+
+525
+00:33:25,440 --> 00:33:26,200
+trick of the light.
+
+526
+00:33:26,340 --> 00:33:26,500
+Right.
+
+527
+00:33:26,660 --> 00:33:29,360
+It acts as a physical, sparse inference operator.
+
+528
+00:33:29,360 --> 00:33:34,600
+It performs a strict geometric extraction of a signal that is permanently, fundamentally
+
+529
+00:33:34,600 --> 00:33:36,660
+inaccessible by direct imaging.
+
+530
+00:33:36,860 --> 00:33:41,360
+Meaning, the universe literally has to hand us the magnifying glass, align it perfectly,
+
+531
+00:33:41,540 --> 00:33:43,580
+and hold it steady, or we never get to see the slide.
+
+532
+00:33:43,980 --> 00:33:46,980
+And this highlights a massive systemic bias in astronomy.
+
+533
+00:33:47,240 --> 00:33:48,340
+A profound bias.
+
+534
+00:33:48,640 --> 00:33:53,980
+By necessity, we build our telescopes and detectors to look for bright, complex, highly luminous sources.
+
+535
+00:33:53,980 --> 00:33:58,760
+But Principle 1, which we discussed earlier, mathematically dictates that the most pristine
+
+536
+00:33:58,760 --> 00:34:03,280
+and formative systems are the ones with the lowest mass, the fewest stars, and the least activity.
+
+537
+00:34:03,400 --> 00:34:04,260
+The quietest ones.
+
+538
+00:34:04,680 --> 00:34:05,020
+Yes.
+
+539
+00:34:05,720 --> 00:34:11,160
+Therefore, the objects that possess the absolute highest informational value regarding the early
+
+540
+00:34:11,160 --> 00:34:16,900
+universe are structurally and systematically guaranteed to be the hardest objects to see.
+
+541
+00:34:16,900 --> 00:34:23,720
+We are inherently observationally biased towards studying heavily overwritten, noisy, messy galaxies
+
+542
+00:34:23,720 --> 00:34:27,340
+simply because they are the only ones loud enough to trigger our sensors.
+
+543
+00:34:27,900 --> 00:34:34,160
+We are effectively blind to the most important fossils unless the geometry of the cosmos physically
+
+544
+00:34:34,160 --> 00:34:36,000
+intervenes to break the rules for us.
+
+545
+00:34:36,080 --> 00:34:37,280
+That is wild.
+
+546
+00:34:37,360 --> 00:34:38,000
+It really is.
+
+547
+00:34:38,060 --> 00:34:42,320
+But there's one final environmental mystery regarding LAP-1b that we need to talk about.
+
+548
+00:34:42,620 --> 00:34:45,820
+We know it formed, we know it's pristine, and we know how we saw it.
+
+549
+00:34:45,820 --> 00:34:47,300
+But why did it stop growing?
+
+550
+00:34:47,780 --> 00:34:48,480
+Ah, right.
+
+551
+00:34:48,540 --> 00:34:50,800
+I mean, it's been sitting there for 13 billion years.
+
+552
+00:34:50,940 --> 00:34:51,080
+Yeah.
+
+553
+00:34:51,220 --> 00:34:55,560
+Why didn't it eventually pull in more hydrogen gas, clump together with its neighbors, and
+
+554
+00:34:55,560 --> 00:34:58,360
+spark a billion new stars over the next few hundred million years?
+
+555
+00:34:58,460 --> 00:34:58,660
+Yeah.
+
+556
+00:34:58,900 --> 00:35:02,480
+If it had, that pristine carbon-to-oxygen ratio would have been painted over.
+
+557
+00:35:02,920 --> 00:35:05,420
+Why did the factory shut down basically immediately after opening?
+
+558
+00:35:05,760 --> 00:35:09,700
+The answer to that lies in a cataclysmic era known as the Epoch of Rheonization.
+
+559
+00:35:10,520 --> 00:35:15,240
+To understand this, we have to picture the universe just before LAP-1b formed.
+
+560
+00:35:16,460 --> 00:35:21,600
+Space was filled with a dense, freezing cold fog of neutral hydrogen gas.
+
+561
+00:35:21,700 --> 00:35:22,220
+Cold fog.
+
+562
+00:35:22,340 --> 00:35:26,620
+Cold gas is essential for star formation because it can easily collapse under gravity.
+
+563
+00:35:27,000 --> 00:35:32,360
+But then, the very first massive galaxies and quasars began to ignite all over the universe.
+
+564
+00:35:32,360 --> 00:35:36,560
+They pumped out intense, universe-spanning ultraviolet radiation.
+
+565
+00:35:37,000 --> 00:35:40,900
+Imagine a dense, cold morning fog rolling through a valley.
+
+566
+00:35:41,220 --> 00:35:42,160
+That's the neutral hydrogen.
+
+567
+00:35:42,160 --> 00:35:45,260
+And sun comes up, representing these monstrous first galaxies.
+
+568
+00:35:45,780 --> 00:35:50,300
+But instead of just gently warming the fog, the sunlight is so intense and violent that
+
+569
+00:35:50,300 --> 00:35:53,360
+it literally strips the water molecules apart and boils the air.
+
+570
+00:35:53,620 --> 00:35:55,100
+That is a very apt description.
+
+571
+00:35:55,680 --> 00:36:00,300
+The UB photons from the first stars hit the neutral hydrogen atoms and literally knock
+
+572
+00:36:00,300 --> 00:36:03,820
+their electrons away, ionizing the gas and heating it to tremendous temperatures.
+
+573
+00:36:04,440 --> 00:36:06,420
+Hot gas has high thermal pressure.
+
+574
+00:36:06,420 --> 00:36:09,080
+It expands rapidly and moves incredibly fast.
+
+575
+00:36:09,760 --> 00:36:15,300
+For a massive, heavy, dark matter halo, its immense gravity is strong enough to hold onto
+
+576
+00:36:15,300 --> 00:36:20,340
+this boiling, fast-moving gas and eventually cool it back down to keep forming stars.
+
+577
+00:36:20,340 --> 00:36:22,100
+But LEP-1b is tiny.
+
+578
+00:36:22,260 --> 00:36:22,620
+Exactly.
+
+579
+00:36:23,060 --> 00:36:30,140
+For a tiny, fragile little halo like LEP-1b, its weak gravitational grip of just 10 million
+
+580
+00:36:30,140 --> 00:36:32,400
+solar masses wasn't nearly strong enough.
+
+581
+00:36:32,680 --> 00:36:38,560
+The intense radiation from the Epoch of Realization literally boiled the cold, star-forming gas right
+
+582
+00:36:38,560 --> 00:36:42,920
+out of the galaxy, or at the very least heated it so thoroughly that the gas could no longer
+
+583
+00:36:42,920 --> 00:36:43,500
+condense.
+
+584
+00:36:43,540 --> 00:36:44,360
+So it just stopped.
+
+585
+00:36:44,480 --> 00:36:47,100
+Star formation permanently shut down.
+
+586
+00:36:47,400 --> 00:36:48,460
+It quenched the galaxy.
+
+587
+00:36:48,460 --> 00:36:53,080
+So the intense radiation of the early universe acted as a massive erasure operator, shutting
+
+588
+00:36:53,080 --> 00:36:56,720
+down growth and wiping out the potential of these tiny structures everywhere.
+
+589
+00:36:56,920 --> 00:36:57,040
+Yep.
+
+590
+00:36:57,180 --> 00:37:03,640
+But paradoxically, by violently stopping LEP-1b from forming any more stars, that intense
+
+591
+00:37:03,640 --> 00:37:06,760
+radiation actually preserved its historical record.
+
+592
+00:37:07,380 --> 00:37:09,760
+It literally froze the galaxy in time.
+
+593
+00:37:10,360 --> 00:37:15,660
+If reionization hadn't swept through and boiled the gas away, LEP-1b would have kept forming
+
+594
+00:37:15,660 --> 00:37:20,880
+stars, normal supernovae would have eventually detonated, and that primitive chemical event
+
+595
+00:37:20,880 --> 00:37:22,660
+log would have been thoroughly destroyed.
+
+596
+00:37:22,920 --> 00:37:26,220
+That is the ultimate paradox at the heart of Flyxion's paper.
+
+597
+00:37:26,960 --> 00:37:32,060
+Reionization preserved the fossil by brutally suppressing the very chemical enrichment that
+
+598
+00:37:32,060 --> 00:37:33,380
+would have eventually overwritten it.
+
+599
+00:37:33,380 --> 00:37:33,860
+Wow.
+
+600
+00:37:34,380 --> 00:37:37,860
+When we pull all of these threads together, the implications are just staggering.
+
+601
+00:37:38,260 --> 00:37:41,480
+When we look at LEP-1b, we aren't just looking at a lucky observation.
+
+602
+00:37:41,900 --> 00:37:47,860
+We are looking at a celestial object that required three completely independent, statistically miraculous
+
+603
+00:37:47,860 --> 00:37:49,740
+conditions to be met simultaneously.
+
+604
+00:37:49,900 --> 00:37:50,100
+Right.
+
+605
+00:37:50,160 --> 00:37:51,580
+It's a cosmic lottery ticket.
+
+606
+00:37:51,580 --> 00:37:56,060
+First, it had to have low overriding, meaning it had to be violently quenched and frozen
+
+607
+00:37:56,060 --> 00:37:59,420
+in time by the brutal radiation of the epoch of reionization.
+
+608
+00:37:59,800 --> 00:38:05,820
+Second, it had to have low mass and low luminosity, meaning it survived completely untouched by its
+
+609
+00:38:05,820 --> 00:38:10,600
+own internal baryonic feedback, keeping its dark matter structure totally pristine.
+
+610
+00:38:10,720 --> 00:38:11,020
+Rack.
+
+611
+00:38:11,020 --> 00:38:16,920
+And third, despite being rendered completely invisible by condition two, it had to undergo
+
+612
+00:38:16,920 --> 00:38:23,700
+massive geometric amplification by sitting perfectly, precisely behind a random foreground
+
+613
+00:38:23,700 --> 00:38:27,500
+galaxy cluster so our telescopes could actually extract the signal.
+
+614
+00:38:27,860 --> 00:38:32,060
+If any single one of those three complex conditions failed, we would have absolutely
+
+615
+00:38:32,060 --> 00:38:33,220
+no idea it existed.
+
+616
+00:38:33,460 --> 00:38:35,260
+The signal would be permanently lost to the void.
+
+617
+00:38:35,660 --> 00:38:38,220
+It represents the ultimate inversion of observability.
+
+618
+00:38:38,220 --> 00:38:43,140
+Informational richness and observational accessibility are perfectly inversely correlated.
+
+619
+00:38:43,740 --> 00:38:47,880
+The specific galaxies that have the absolute most to teach us about the fundamental mathematical
+
+620
+00:38:47,880 --> 00:38:51,440
+mechanics of the universe are structurally guaranteed to be the hardest to see.
+
+621
+00:38:51,500 --> 00:38:54,360
+Which leads to a thrilling, almost haunting conclusion.
+
+622
+00:38:55,060 --> 00:38:57,560
+LAP1B is almost certainly not a singular anomaly.
+
+623
+00:38:57,740 --> 00:38:58,340
+You don't think so?
+
+624
+00:38:58,640 --> 00:38:58,940
+No.
+
+625
+00:38:59,080 --> 00:39:03,340
+The statistical framework suggests that the universe might actually be teeming with these pristine
+
+626
+00:39:03,340 --> 00:39:04,300
+microgalaxies.
+
+627
+00:39:04,300 --> 00:39:09,620
+There could be millions, perhaps billions of them out there, suspended in the dark, preserving
+
+628
+00:39:09,620 --> 00:39:14,160
+the exact chemical and structural event logs of the first moments of creation.
+
+629
+00:39:14,520 --> 00:39:15,760
+That is a crazy thought.
+
+630
+00:39:16,080 --> 00:39:20,940
+They are just permanently inaccessible to us, waiting in the shadows, totally invisible unless
+
+631
+00:39:20,940 --> 00:39:26,260
+the chaotic geometry of the universe happens to slide a magnifying glass directly in front
+
+632
+00:39:26,260 --> 00:39:26,600
+of them.
+
+633
+00:39:26,900 --> 00:39:32,220
+A universe filled with perfectly preserved ancient blueprints sitting in the pitch black, just
+
+634
+00:39:32,220 --> 00:39:33,160
+waiting for a lens.
+
+635
+00:39:33,160 --> 00:39:36,080
+It leaves you with a really profound, provocative thought.
+
+636
+00:39:36,900 --> 00:39:42,180
+If the universe hides its most perfect, untouched histories in the darkest, most inaccessible
+
+637
+00:39:42,180 --> 00:39:49,200
+pockets, literally requiring a cosmic alignment of trillions of stars just to decode a faint
+
+638
+00:39:49,200 --> 00:39:54,740
+whisper, it makes you wonder, what other pristine event logs exist right here in our own world?
+
+639
+00:39:55,260 --> 00:40:00,480
+What untouched, fundamental truths are hiding in our own recorded history, in the depths of our
+
+640
+00:40:00,480 --> 00:40:05,340
+oceans, or even buried within our own minds, that we simply cannot see right now because
+
+641
+00:40:05,340 --> 00:40:08,000
+we haven't yet found the right lens to extract the signal.
+
+642
+00:40:08,820 --> 00:40:11,720
+Sometimes the most important truth isn't the one shouting the loudest.
+
+643
+00:40:12,120 --> 00:40:15,860
+It's the one waiting quietly in the dark for you to finally focus your lens.
+
+644
+00:40:15,860 --> 00:40:18,460
+Thank you for joining us on this exploration.
+
+645
+00:40:18,900 --> 00:40:20,420
+We'll see you on the next deep dive.
+

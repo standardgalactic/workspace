@@ -1,0 +1,1257 @@
+% How to Build a Neocortex
+% Author: Flyxion
+% Engine: LuaLaTeX
+
+\documentclass[12pt, a4paper, openany]{book}
+
+% --- Packages ---
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[math-style=ISO, bold-style=ISO, warnings-off={mathtools-colon,mathtools-overbracket}]{unicode-math}
+\usepackage{amsthm}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{emptypage}
+
+% --- Page geometry ---
+\geometry{
+  top=2.8cm,
+  bottom=3.2cm,
+  inner=3.0cm,
+  outer=2.5cm,
+  headheight=15pt
+}
+
+% --- Fonts ---
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\setmathfont{Latin Modern Math}
+
+% --- Spacing ---
+\setstretch{1.35}
+
+% --- Theorem environments ---
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+
+% --- Section formatting ---
+\titleformat{\chapter}[display]
+  {\normalfont\Large\bfseries}
+  {\chaptertitlename\ \thechapter}{16pt}{\huge}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\usepackage[title,titletoc]{appendix}
+
+% --- Header/footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\itshape How to Build a Neocortex}
+\fancyhead[RO]{\small\itshape\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Hyperref ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+% --- Bibliography: manual list in backmatter; no external .bib required ---
+
+% --- Suppress symbol redefinition conflicts between amssymb and unicode-math ---
+\AtBeginDocument{%
+  \let\eth\relax
+  \let\smallsetminus\relax
+  \let\digamma\relax
+  \let\backepsilon\relax
+}
+
+% =====================================================================
+\begin{document}
+% =====================================================================
+
+\frontmatter
+
+% --- Title page ---
+\begin{titlepage}
+\centering
+\vspace*{4cm}
+{\Huge\bfseries How to Build a Neocortex\par}
+\vspace{1.5cm}
+{\Large Constraint Geometry, Developmental Accessibility,\\and the Active Medium of Biological Organization\par}
+\vspace{3cm}
+{\large Flyxion\par}
+\vfill
+{\normalsize 2026\par}
+\end{titlepage}
+
+% --- Table of contents ---
+\tableofcontents
+
+\mainmatter
+
+% =====================================================================
+% INTRODUCTION
+% =====================================================================
+
+\chapter*{Introduction: The Failure of the Blueprint Model}
+\addcontentsline{toc}{chapter}{Introduction}
+\markboth{Introduction}{}
+
+\section*{From Specification to Constraint Geometry}
+
+The prevailing intuition about biological development is that complexity is encoded: that genes specify structures, that programs unfold, that a blueprint written in molecular language is faithfully executed as tissue matures. This intuition is productive in many contexts, but it breaks down precisely where biological organization becomes most interesting. The neocortex, the leaf vein network, the embryonic tissue that translates a morphogen gradient into a cell-fate boundary — none of these emerge from direct specification. All of them emerge from the continuous modulation of the conditions under which future interactions remain possible.
+
+This essay argues for a different model. Biological organization, across scales from tissue mechanics to cortical communication, arises through what will be called constraint geometry: the dynamically evolving structure that governs which trajectories, signals, interactions, and developmental transformations remain accessible to a biological system at a given moment. Constraint geometry is not static background. It is not a fixed channel through which signals flow. It is an adaptive participant in the very processes it regulates, reshaped by those processes and in turn reshaping them.
+
+Four recent papers in developmental biology and neuroscience serve as the empirical foundation of this argument. Taken separately, each is a significant contribution to its field. Taken together, they form something more: a convergent demonstration that biological systems are unusual precisely because they alter the geometry of the medium through which future signals, forces, and developmental trajectories will propagate.
+
+\section*{Four Windows into Biological Organization}
+
+The first paper, by Zheng and colleagues (2026), demonstrates that the major vein network of \textit{Pilea peperomioides} approximates a Voronoi diagram, with hydathodes serving as the generator points of the tessellation. The decisive finding is not that the leaf looks geometrically organized. The decisive finding is quantitative: when the Voronoi model is tested against a biologically principled hierarchical partition alternative, the Voronoi geometry wins by a substantial margin. Hydathode-centered Voronoi polygons overlap observed vein polygons at a Jaccard index of approximately 0.72, while a k-d tree tessellation achieves only about 0.40, close to the random-point baseline. The leaf does not merely resemble a Voronoi diagram. It is better described by Voronoi geometry than by any competing model, and the mechanism that generates it is not source-to-sink transport but rather partition dynamics arising from colliding auxin concentration waves.
+
+The second paper, by Autorino and colleagues (2026), shows that a tissue-scale rigidity phase transition actively shapes morphogen gradients in the zebrafish blastoderm. The finding of primary importance here is not that tissue mechanics correlate with patterning. The finding of importance is causal: when the rigidity transition is abolished optogenetically in mutant embryos, Nodal signaling expands in both space and time; when rigidity is restored by optogenetically inducing contractility in those same embryos, Nodal spatiotemporal dynamics are fully rescued. Restoring the geometry is sufficient to restore the signal. The tissue material state is not a passive backdrop for signaling. It is a regulatory geometry that determines what the morphogen can do.
+
+The third paper, by Javed and colleagues (2026), demonstrates that species-specific cortical features emerge not through the invention of new genes but through altered developmental accessibility within conserved molecular programs. Mouse and human cortical progenitor populations share many transcription factors, but the timing and cellular localization of their activation differ in ways that produce different progenitor persistence, different intermediate progenitor dynamics, and ultimately different cortical architecture. The gene JUNB is particularly instructive: highly conserved in sequence, it is expressed in radically different progenitor populations in the two species. When the upstream regulator IRF1 is activated in mouse tissue, trajectories become accessible that partially recapitulate human-like cortical development. The developmental manifold is conserved; the accessibility function imposed on it is not.
+
+The fourth paper, by Gonzalez and colleagues (2026), identifies low-dimensional communication subspaces in the hippocampal--retrosplenial circuit and shows that these subspaces rotate relative to one another in a way that is computationally necessary. The experimental test is decisive: when input and output subspaces are fixed while recurrent weights remain free to change, learning performance is significantly impaired. Subspace rotation is not epiphenomenal. It is the geometric mechanism through which the CA1 region achieves selective information routing, flexible context-dependent computation, and the separation of plasticity and stability across the CA3--CA1--RSC axis.
+
+\section*{Signaling, Geometry, and Developmental Accessibility}
+
+These four papers address different phenomena at different scales. What unifies them is a shared deep structure. In each case, a biological system regulates organization not by directly specifying outcomes but by modulating the geometry through which signals propagate, developmental programs activate, and information routes. The Pilea leaf does not specify the locations of every vein. It positions hydathodes, whose local auxin dynamics construct the partition geometry that veins then trace. The zebrafish embryo does not directly specify where Nodal signaling stops. It builds a rigidity transition that changes the diffusion geometry of the tissue, and that geometry terminates the signal. The primate cortex does not specify every neuron's fate directly. It times the accessibility of regulatory programs in ways that cascade through progenitor dynamics into laminar organization. The hippocampus does not maintain fixed routing channels for information. It rotates communication subspaces, reconfiguring the effective topology of inter-regional communication without changing which neurons exist.
+
+The central thesis of this essay is accordingly the following. Biological organization emerges through the continuous modulation of the geometry governing admissible propagation trajectories across developmental, mechanical, and communicative manifolds. To build a neocortex is not to execute a specification. It is to construct a system whose evolving constraint geometry produces cortical structure as an emergent consequence.
+
+\section*{An Architecture of Explanation}
+
+The argument that follows operates at four distinct levels of description, and keeping these levels separate is essential to understanding what kind of claim is being made at each stage. These levels are not merely organizational — they correspond to genuinely different mathematical objects, and conflating them is the primary source of ambiguity in existing discussions of biological self-organization.
+
+The first level is the state manifold: the space of configurations that are in principle representable by the system. For a developmental system, this is the space of possible gene expression states; for a tissue, the space of possible material configurations; for a neural circuit, the space of possible population activity patterns. The state manifold is what remains fixed across species or across developmental stages in the framework developed here. It is the shared substrate whose existence makes comparison between, say, mouse and human cortical development meaningful at all.
+
+The second level is the admissibility structure: the dynamically evolving operator $C(t)$ that determines which trajectories through the state manifold are geometrically possible at each moment. This is what the term constraint geometry refers to throughout the essay. Different biological systems impose different admissibility structures on the same or similar state manifolds, and this is where species differences, developmental stage differences, and context-dependent differences in neural function are primarily encoded. The admissibility structure is topological in character: it answers the question of which paths are open, not which paths will be taken.
+
+The third level is the stochastic dynamics: the probability measure $\mu_t$ over the admissible trajectory set, induced by the fluctuations, noise, and environmental inputs that act on the system. Given the admissible set, the stochastic dynamics select among the available trajectories. This is where robustness, reproducibility, and sensitivity to perturbation are primarily determined. A system whose admissible set is small will be highly reproducible regardless of the stochastic dynamics; a system whose admissible set is large will be highly sensitive to the details of the stochastic dynamics. The distinction between levels two and three is the distinction between topology and measure theory applied to trajectory spaces.
+
+The fourth level is the realized macroscopic structure: the observable biological outcome, the typical element of the probability measure over admissible trajectories. This is what anatomy, gene expression profiling, and electrophysiology measure. It is the level at which comparisons between species, developmental stages, and behavioral conditions are usually made, and it is the level that blueprint models attempt to explain by directly encoding.
+
+The key claim of this essay is that the explanatory work in biological development is concentrated at the second level, not the fourth. Evolution acts primarily on the admissibility structure — on what trajectories are possible — rather than on the realized structure directly. Development unfolds primarily by modulating the admissibility structure — by opening and closing regions of the state manifold — rather than by specifying trajectories. Cognition operates primarily by reorganizing the admissibility structure of inter-regional communication rather than by rewiring the anatomical connectome. Understanding biological organization means understanding how $C(t)$ evolves, not primarily what $\langle\gamma\rangle$ looks like.
+
+The four levels can be arranged in a sequence that will recur throughout the manuscript:
+\begin{equation}
+\mathcal{X} \;\longrightarrow\; \Gamma_{\mathrm{adm}} \;\longrightarrow\; \mu_t \;\longrightarrow\; \langle \gamma \rangle,
+\end{equation}
+where $\mathcal{X}$ is the state manifold, $\Gamma_{\mathrm{adm}}$ the admissible trajectory family, $\mu_t$ the probability measure, and $\langle\gamma\rangle$ the realized typical developmental path. Each arrow represents a distinct transformation, governed by distinct biological mechanisms, and requiring distinct formal tools. The essay proceeds from left to right through this sequence across its four parts.
+
+\vspace{1.5em}
+\noindent\textbf{Mathematical Note.} Let $\mathcal{M}$ denote a biological state space and $\gamma : [0,T] \to \mathcal{M}$ a trajectory through it. Define an admissibility operator $C(t)$ encoding the constraints active at time $t$, so that $\gamma$ is admissible when $C(t)\gamma(t) = 0$ for all $t$. The central claim of this essay is that biological organization arises not from the trajectories themselves but from the dynamics of $C$:
+\begin{equation}
+\partial_t C = \mathcal{F}(S, M, I),
+\end{equation}
+where $S$ denotes the signaling field, $M$ the material organization of the tissue, and $I$ the interaction topology. Structure emerges from the mutual modulation of $\gamma$ and $C$.
+
+% =====================================================================
+% PART I
+% =====================================================================
+
+\part{Geometry Before Structure}
+
+% =====================================================================
+% CHAPTER 1
+% =====================================================================
+
+\chapter{Reticulate Space and the Geometry of Partition}
+
+\section{The Problem of Reticulate Venation}
+
+Reticulate venation — the closed-loop vascular architecture characteristic of many flowering plants — presents a persistent challenge to morphogenetic theory. The dominant framework for vascular patterning in plants, Sachs' canalization hypothesis, attributes vein formation to the positive feedback between auxin flux and the polar localization of auxin transporters. This mechanism is well supported for the formation of midveins and open branching patterns, where auxin flows from sources to sinks along progressively narrowed channels. But reticulate venation is topologically distinct: it produces closed loops, polygonal enclosures, network structures that surround discrete points rather than connecting them. Canalization, in its standard form, does not generate closed loops. The geometry of reticulate veins has accordingly remained without a convincing generative explanation.
+
+The difficulty is compounded by the fact that partial descriptions of reticulate venation are abundant. The branch angles, radii, and hierarchical ordering of loops have been quantified. The spatial distribution of vein densities across leaf blades is known. What has been missing is a global geometric descriptor that is precise enough to generate quantitative predictions and specific enough to be falsified by alternative models.
+
+\section{Hydathodes as Organizing Centers}
+
+Zheng and colleagues (2026) approached this problem by studying \textit{Pilea peperomioides}, the Chinese money plant, which possesses an unusually clear and regular reticulate vein pattern. The leaf surface is organized around hydathodes: secretory pores that serve as sites of excess water release, immune regulation, and chemical excretion. Hydathodes are distinct from stomata in being unidirectional, static, and substantially larger. In \textit{Pilea}, the major vein network forms closed polygons, each surrounding one or more hydathodes, with the hydathodes positioned near the interior of their respective polygons.
+
+The hypothesis that hydathodes might function as the organizing centers of the vein pattern — rather than as passive features of an independently patterned network — is suggested by this spatial relationship but not established by it. To establish it, one needs a quantitative model that uses hydathode positions as inputs, generates predictions about vein geometry, and can be compared against alternative geometric models using the same inputs.
+
+\section{Voronoi Diagrams in Biological Tissue}
+
+A Voronoi diagram is a partition of space into polygons such that each polygon contains exactly one generator point, and every location within a polygon is closer to its own generator than to any other. Voronoi diagrams have been used extensively as analytical tools in biology — to model cell packing, tissue segmentation, territory competition, and spatial resource allocation. What is unusual about \textit{Pilea} is that it appears to instantiate a Voronoi diagram in which the generator points are visible and functional biological structures. Both the polygon boundaries (the vein network) and the centers (the hydathodes) are present and identifiable.
+
+Zheng and colleagues developed three independent statistical tests to quantify how closely the hydathode-vein relationship matches a true Voronoi diagram. The first test examines local geometry: in an exact Voronoi diagram, the line segment connecting the centers of adjacent polygons perpendicularly bisects their shared edge. Deviations from perpendicularity and from equal distances to the shared edge can both be measured. The second test is global: given actual hydathode positions as inputs to a Voronoi algorithm, how much area overlap is there between the generated polygons and the observed vein polygons? The third test is inverse: given only the vein polygon structure, can one recover the hydathode positions by solving for the centers that minimize the geometric deviations?
+
+Across all three tests, hydathode positions outperform alternative reference locations — polygon centroids, midpoints, and random interior points — as Voronoi centers. The Jaccard index for hydathode-centered Voronoi polygons against observed vein polygons is approximately 0.72, indicating substantial overlap. The same index for centroid-based polygons is approximately 0.67, and for random points approximately 0.47.
+
+\section{Partition Geometry versus Transport Geometry}
+
+The more decisive comparison, however, is between the Voronoi model and a biologically motivated alternative: the k-d tree tessellation. A k-d tree is a hierarchical spatial subdivision algorithm that recursively bisects a point set, generating rectangles that partition space around the embedded points. The k-d tree is a principled alternative to Voronoi geometry because it shares several properties with known venation models: it is hierarchical, it generates perpendicular bisections between points, and its recursive structure resembles the hierarchical organization of leaf veins across orders of magnitude. If the Voronoi geometry of \textit{Pilea} were simply an artifact of having many approximately equally spaced points, the k-d tree would perform comparably.
+
+It does not. The Jaccard index for the k-d tree tessellation is approximately 0.40, near the random-point baseline of 0.47. The Voronoi model outperforms this principled alternative by approximately 0.32 Jaccard units. This is not a marginal difference. It indicates that the leaf vein geometry is specifically Voronoi-like in a way that is not captured by hierarchical partition, and that the organizing principle is something other than recursive spatial subdivision.
+
+\section{Auxin Dynamics and Bisecting Structures}
+
+The mechanistic model proposed by Zheng and colleagues is built on the observation, due to Feugier and colleagues, that weak polarization of auxin transport — as opposed to the strong polarization that produces canalization — generates auxin concentration waves that propagate away from sources rather than flowing toward sinks. When two such waves, originating from adjacent hydathodes, collide, they produce a concentration maximum at the equidistant line between the sources. This maximum can be stabilized, and if it persists long enough to trigger vascular differentiation, it marks the location of a vein that bisects the space between the two hydathodes.
+
+The Voronoi geometry emerges because this collision process operates simultaneously among all pairs of adjacent hydathodes. The resulting vein network is the set of bisecting lines between all neighboring source pairs — which is precisely the definition of a Voronoi diagram's edge structure. The mechanism is not a centralized specification of polygon boundaries. It is a distributed, local process in which each hydathode broadcasts an auxin wave and veins form wherever those waves interfere.
+
+PIN immunolocalization experiments in developing leaves are broadly consistent with this model. In P5 primordia, PIN signal is strongest in and around hydathodes in the epidermal layer, consistent with hydathodes acting as auxin sources. In the inner tissues surrounding developing secondary veins, PIN signal is weak within the vein cells themselves but shows polar localization toward the veins in adjacent ground cells — consistent with the role of the auxin concentration ridge as an organizing structure that redirects local PIN polarity.
+
+\section{Emergent Equilibrium Partitioning}
+
+The conceptual importance of the Pilea result extends beyond venation biology. What the paper demonstrates is that a biological system can generate global geometric optimization structures — Voronoi tessellations — through local biochemical interactions without any central coordination or blueprint. The leaf does not specify the Voronoi diagram. It positions hydathodes, which establish local auxin dynamics, which produce wave collisions, which locate vein boundaries. The global geometry emerges from local rules.
+
+This represents a specific instance of a general principle: biological systems often generate equilibrium partition geometries rather than shortest-path routing geometries. Classical network optimization would connect auxin sources to sinks along minimum-cost paths. The Pilea venation instead partitions developmental territory into approximately equal regions around each hydathode. The optimization is not transport efficiency but spatial balance — a fundamentally different organizational objective, achieved by a fundamentally different mechanism.
+
+\section{Local Interactions and Global Geometric Coherence}
+
+The robustness of the Voronoi pattern across environmental stress conditions — shade, high temperature, and high light intensity — underscores that this geometry is not a fragile accident of ideal development. Under all tested conditions, the Voronoi statistical tests yield low error scores comparable to controls, even as leaf morphology and hydathode size change substantially. The geometric relationship between hydathodes and vein polygons is maintained because the underlying mechanism — local auxin wave dynamics from each hydathode — is preserved even when the size and spacing of the hydathodes vary. The constraint geometry is robust because its origins are local and distributed rather than centrally specified.
+
+\subsection*{Mathematical Derivation: Voronoi Partition Operators}
+
+Let $\mathcal{H} = \{h_1, h_2, \dots, h_n\} \subset \mathbb{R}^2$ be the set of hydathode positions. The Voronoi cell associated with $h_i$ is:
+\begin{equation}
+V_i = \left\{ x \in \mathbb{R}^2 \;\middle|\; d(x,h_i) \leq d(x,h_j) \;\forall j \neq i \right\},
+\end{equation}
+where $d$ is the Euclidean metric. The biological claim is approximately:
+\begin{equation}
+\mathcal{V}_{\text{leaf}} \approx \partial\!\left(\bigcup_i V_i\right),
+\end{equation}
+where $\mathcal{V}_{\text{leaf}}$ denotes the observed major vein network and $\partial$ extracts polygon boundaries. The Jaccard similarity between the true Voronoi polygon for center $i$ and the observed vein polygon is:
+\begin{equation}
+J = \frac{1}{N}\sum_{i=1}^{N} \frac{|A_i^{\text{true}} \cap A_i^{\text{obs}}|}{|A_i^{\text{true}} \cup A_i^{\text{obs}}|},
+\end{equation}
+where $N$ is the number of single-hydathode polygons, and $A_i^{\text{true}}$, $A_i^{\text{obs}}$ are the corresponding polygon areas. The generalized developmental partition operator is:
+\begin{equation}
+\Phi_t(x) = \arg\min_i \,\mathcal{E}_i(x,t),
+\end{equation}
+where $\mathcal{E}_i(x,t)$ is the effective developmental potential generated by local signaling dynamics at time $t$. For the auxin wave collision model, $\mathcal{E}_i$ is approximated by a propagating wave front from source $h_i$, so that the partition boundary between adjacent sources arises at the collision locus:
+\begin{equation}
+\partial V_i \cap \partial V_j = \left\{ x : \|\partial_t \mathcal{E}_i(x,t)\| = \|\partial_t \mathcal{E}_j(x,t)\| \right\}.
+\end{equation}
+This reframes morphogenesis as dynamic spatial partitioning rather than static blueprint execution.
+
+% =====================================================================
+% CHAPTER 2
+% =====================================================================
+
+\chapter{Signaling Through a Changing Medium}
+
+\section{Morphogens and Tissue Material State}
+
+The classical picture of morphogen-mediated patterning treats tissue as a passive medium. A signaling molecule is produced at a source, diffuses through the tissue, and establishes a concentration gradient that cells read as positional information. The tissue itself — its mechanical state, its connectivity, its porosity — is assumed to be a fixed substrate through which the morphogen moves. This picture is an idealization that has been productive in generating clean mathematical models of gradient formation, but it abstracts away something important: the tissue is not fixed, and its material state is not independent of the signals traveling through it.
+
+Autorino and colleagues (2026) demonstrate this dependence with unusual clarity in the zebrafish blastoderm. The Nodal morphogen gradient that patterns the meso-endodermal layer arises during a period when the blastoderm undergoes a tissue-scale rigidity phase transition, shifting from a fluid-like state to a solid-like state. These two processes — morphogen gradient formation and tissue rigidification — are not merely concurrent. They are coupled through a causal feedback loop in which Nodal signaling drives rigidification and rigidification in turn regulates Nodal signaling dynamics.
+
+\section{Rigidity Percolation and the Giant Rigid Cluster}
+
+The rigidity transition studied by Autorino and colleagues is described using rigidity percolation theory, which treats embryonic tissue as a cellular network and asks when that network acquires a rigid backbone. In this framework, cells are nodes and cell-cell contacts are edges. The material response of the network depends on whether a giant rigid cluster — a connected subnetwork within which nodes have no independent movements — has percolated across the tissue.
+
+The transition occurs at a critical connectivity threshold, approximately $\langle k_c \rangle \approx 4$ contacts per cell. Below this threshold, the tissue is fluid-like: local perturbations dissipate without propagating. Above it, the tissue becomes solid-like: perturbations can propagate across the rigid cluster. The relative surface tension $\alpha$ between cells, defined by the Young-Dupré relation from contact angles, serves as an additional control parameter that is closely coupled to connectivity.
+
+In wild-type zebrafish embryos at the onset of meso-endoderm specification, the marginal blastoderm is initially poised near the critical point in both $\alpha$ and $\langle k \rangle$. As specification proceeds, Nodal signaling drives increased cell-cell adhesion strength through the Wnt11f2 pathway, which pushes the marginal cells across the critical threshold and triggers rigidification. The result is a spatially organized giant rigid cluster concentrated at the specification zone, creating a physical boundary between the specifying meso-endodermal domain and the overlying pluripotent tissue.
+
+\section{Morphogen Diffusion as Geometry-Dependent Propagation}
+
+The material state of the tissue is not simply a consequence of signaling: it is also a regulator of signaling propagation. The key mechanism identified by Autorino and colleagues is the relationship between tissue porosity and Nodal diffusivity. As tissue rigidification proceeds, tricellular contacts close, the three-dimensional interstitial fluid network collapses, and tissue porosity declines sharply. The collapse of porosity restricts the effective diffusivity of the Nodal ligand.
+
+This is demonstrated experimentally by direct measurement of the Squint-GFP ligand gradient. In wild-type embryos, which rigidify and have reduced porosity, the Nodal ligand gradient is short-range. In $MZwnt11f2/slb$ mutant embryos, where the rigidity transition is abolished and tissue remains fluid and porous, the Nodal ligand gradient is long-range. The decay length of the gradient is significantly larger in the mutants, and this is not due to changes in receptor binding or secretion: it is due to increased diffusivity in porous tissue. The tissue geometry is directly setting the spatial scale of morphogen action.
+
+The temporal dynamics of Nodal signaling are regulated by the same mechanism. In rigid tissue, the enhanced local Nodal concentration near the source — a consequence of restricted diffusivity — speeds up the transcription of the Nodal inhibitor Lefty. In fluid tissue, where Nodal diffuses further, local concentration is lower, Lefty induction is delayed, and Nodal signaling is therefore prolonged. The rigidity transition thus controls both where Nodal signals and for how long.
+
+\section{Optogenetic Rescue and Causal Feedback}
+
+The causal structure of this feedback loop is established through optogenetic intervention. Autorino and colleagues use the Opto-RhoGEF system to increase cell contractility in $MZwnt11f2/slb$ mutant embryos, reducing relative surface tension $\alpha$ in a graded manner and reintroducing a spatial adhesion gradient in the absence of Wnt11f2. This restores the tissue rigidity pattern toward the wild-type configuration.
+
+The result is decisive. Restoring the rigidity pattern is sufficient to fully rescue the Nodal spatiotemporal dynamics in the mutant embryos: Smad2 spatial distribution and temporal kinetics return to wild-type profiles. The rescue is not partial. It is not approximate. It demonstrates that the tissue material state is causally upstream of the morphogen dynamics in a strong and direct sense: you can break the patterning by removing the geometry, and you can restore the patterning by restoring the geometry, without changing the molecular components of the Nodal-Lefty signaling network directly.
+
+This experiment establishes the tissue rigidity transition as a regulatory geometry in the precise sense intended by this essay. It is not a passive backdrop. It is an active regulator of signaling, causally interposed between Nodal activity and the downstream gene expression consequences of that activity.
+
+\section{Tissue Geometry as an Active Regulatory Medium}
+
+The framework that emerges from Autorino and colleagues is one in which positional information is not simply encoded in a morphogen gradient and read by cells. Positional information is co-constructed by the morphogen and the geometry of the tissue it traverses. Nodal establishes adhesion gradients that drive rigidification; rigidification reshapes the porosity geometry of the tissue; geometry determines how Nodal diffuses; Nodal dynamics determine how much adhesion is produced. The loop is closed, causal, and self-limiting: the same signaling event that triggers rigidification eventually terminates itself through the geometric consequences of that rigidification.
+
+This is a qualitatively different picture of patterning from the classical morphogen gradient model. In the classical picture, the tissue is transparent to the signal. In the picture established by Autorino and colleagues, the tissue is the signal's own regulatory medium, shaped by it and shaping it in return.
+
+\subsection*{Mathematical Derivation: Rigidity Percolation and Coupled Signaling}
+
+Represent the tissue as a graph $G = (V, E)$ where vertices $V$ correspond to cells and edges $E$ to adhesive contacts. Define average connectivity $\langle k \rangle = 2|E|/|V|$ and relative surface tension $\alpha = \gamma_{cc}/(2\gamma_{cf})$, where $\gamma_{cc}$ and $\gamma_{cf}$ denote cell-cell and cell-fluid surface tensions respectively. The rigidity fraction of the giant rigid cluster is:
+\begin{equation}
+\rho_R = f\!\left(\langle k \rangle, \alpha\right),
+\end{equation}
+which exhibits critical behavior near the percolation threshold $\langle k_c \rangle \approx 4$, $\alpha_c \approx 0.866$.
+
+Nodal signaling through Smad2 phosphorylation drives adhesion increases via the Wnt11f2 pathway:
+\begin{equation}
+\alpha = \alpha(N),
+\end{equation}
+where $N$ denotes the Nodal concentration field. Tissue rigidification feeds back into morphogen diffusivity through porosity collapse. Let $\Phi(\alpha)$ denote tissue porosity as a function of surface tension; experimental data show that $\Phi$ undergoes a sharp decline near $\alpha_c$. The effective Nodal diffusivity scales with porosity:
+\begin{equation}
+D_N = D_N^0 \cdot \phi(\Phi),
+\end{equation}
+where $\phi$ is a decreasing function. The coupled Nodal-Lefty-rigidity system is governed by:
+\begin{align}
+\partial_t N &= \nabla \cdot \big(D_N(\Phi)\,\nabla N\big) + F(N) - G(N,L), \\
+\partial_t L &= \nabla \cdot \big(D_L\,\nabla L\big) + H(N) - kL, \\
+\partial_t \alpha &= \rho\,\frac{\alpha_E\, N}{1 + N/\alpha_0} - k_\alpha\,\alpha, \\
+\Phi &= \Phi(\alpha),
+\end{align}
+where $F$ captures Nodal production and relay, $G$ represents Lefty-mediated inhibition, and $H$ describes Lefty induction by Nodal. The constraint geometry of the system is the porosity field $\Phi(\alpha(N))$, which evolves jointly with the signals it regulates.
+
+% =====================================================================
+% CHAPTER 3
+% =====================================================================
+
+\chapter{Criticality and Biological Organization}
+
+\section{Development Near Critical Points}
+
+The rigidity transition described in the previous chapter is an example of a broader phenomenon: biological development organized near critical points in parameter space. Critical points are locations where small changes in control parameters produce qualitatively different collective behaviors, where fluctuations are amplified across all length scales, and where the system is maximally sensitive to perturbation. In physics, critical behavior is associated with phase transitions — the liquid-to-gas transition, the ferromagnetic-to-paramagnetic transition — where a continuous change in temperature or pressure produces a discontinuous change in macroscopic properties.
+
+The remarkable observation made in several recent studies, including the Autorino et al. work, is that embryonic tissues are frequently poised near critical points rather than deep within stable phases. In the wild-type zebrafish blastoderm, the marginal tissue is near the critical point in both $\langle k \rangle$ and $\alpha$ before specification begins. It is not robustly solid or robustly fluid: it is critically poised, maximally responsive to the adhesion gradient that Nodal will soon induce.
+
+\section{Fluid-like and Solid-like Tissue Regimes}
+
+The distinction between fluid-like and solid-like tissue states is not merely rheological. Fluid-like tissue allows cells to rearrange locally, permits morphogen diffusion over long ranges, and maintains spatial plasticity in cell fate assignments. Solid-like tissue resists rearrangement, restricts morphogen diffusion to short ranges, and concentrates signaling activity near the source. These are functionally different regimes, and the transition between them is not gradual but abrupt near the critical point.
+
+What makes the Autorino et al. system remarkable is that the transition between these regimes is regulated by the very morphogen whose range it controls. Nodal drives the adhesion increase that triggers rigidification; rigidification restricts Nodal's range; restricted range concentrates Nodal near the source; high local concentration speeds up Lefty induction; Lefty terminates Nodal. The critical transition is embedded in a regulatory circuit that uses it adaptively — the transition is not simply observed; it is exploited.
+
+\section{Symmetry Breaking in Developmental Systems}
+
+Near the critical point, slight spatial gradients in the control parameter can break the symmetry of the tissue's material state and polarize the giant rigid cluster toward one spatial domain. In simulations, tissues with spatially isotropic connectivity values near criticality place the rigid cluster at arbitrary locations; a slight gradient in connectivity biases the cluster toward the supercritical region. This symmetry-breaking function of the critical regime is biologically important: it allows the tissue to amplify small molecular gradients into large-scale structural differences.
+
+The initial spatial isotropy of the blastoderm at the onset of epiboly, combined with the slight gradient in connectivity and $\alpha$ generated by Nodal signaling from the yolk syncytial layer, is sufficient to break the symmetry and polarize the rigid domain toward the margin. What might otherwise be a disordered material state becomes a spatially organized boundary between specifying and pluripotent tissue, driven by the amplifying properties of the critical transition.
+
+\section{Constraint Geometry as a Developmental Principle}
+
+The concept of constraint geometry can now be given more precise meaning in the context of criticality. The constraint geometry of a developmental system includes not only the spatial organization of tissues and signals but also the position of the system relative to critical points in parameter space. A system poised near a critical point has a constraint geometry that is maximally plastic: small perturbations in signaling can produce large-scale reorganizations of the accessible trajectory space. A system deep within a stable phase has a more rigid constraint geometry: perturbations are absorbed without reorganizing the system's accessible states.
+
+Developmental systems appear to exploit this relationship deliberately. They maintain constraint geometries near critical points during periods of active patterning, maximizing sensitivity to instructive signals, and then stabilize constraint geometries — by completing the rigidity transition, for example — once patterning is established. The developmental program is in part a program for the temporal regulation of constraint geometry itself.
+
+\subsection*{Mathematical Derivation: Criticality and Constraint Sensitivity}
+
+Let the control parameter be $\lambda \in \{\langle k \rangle, \alpha\}$, and let $\lambda_c$ denote the critical value. Near the critical point, the rigidity fraction scales as:
+\begin{equation}
+\rho_R \sim |\lambda - \lambda_c|^\beta, \quad \lambda > \lambda_c,
+\end{equation}
+for a critical exponent $\beta > 0$. Define the susceptibility $\chi = \partial \rho_R / \partial \lambda$, which diverges at $\lambda_c$:
+\begin{equation}
+\chi \sim |\lambda - \lambda_c|^{-\gamma}.
+\end{equation}
+The constraint geometry $C(t)$ of the tissue near criticality has the property:
+\begin{equation}
+\frac{\delta C}{\delta \lambda} \Big|_{\lambda = \lambda_c} \to \infty,
+\end{equation}
+meaning that small changes in the signaling field $S$ (which drives $\lambda$ through the adhesion pathway) produce arbitrarily large changes in the accessible trajectory space. The information capacity of the developmental transition is therefore maximized near the critical point. Define the accessible trajectory measure:
+\begin{equation}
+\mu_{\text{acc}}(t) = \int_{\mathcal{M}} \mathbf{1}[C(t)\gamma = 0]\,d\gamma,
+\end{equation}
+which measures the volume of admissible trajectories at time $t$. Critical poising maximizes the rate of change $\partial_t \mu_{\text{acc}}$ in response to signaling, providing maximal developmental flexibility during the period of active patterning.
+
+This relation between criticality and accessibility modulation can be made precise through the concept of constraint susceptibility. Define:
+\begin{equation}
+\chi_C = \left\| \frac{\delta C}{\delta S} \right\|,
+\end{equation}
+where the norm is taken in an appropriate operator norm on $\mathcal{L}(\mathcal{B})$. The constraint susceptibility $\chi_C$ measures how much the admissibility structure changes in response to a unit perturbation of the signaling field. Near the critical point $\lambda_c$, the susceptibility diverges:
+\begin{equation}
+\chi_C \sim |\lambda - \lambda_c|^{-\gamma} \to \infty \quad \text{as } \lambda \to \lambda_c,
+\end{equation}
+meaning that at criticality, even infinitesimal changes in signaling produce large reorganizations of the admissible trajectory space. This is precisely what makes critical systems maximally responsive to developmental instruction: the admissibility structure is most plastic where signals are most informative. Developmental systems poised near critical points therefore maximize the information-theoretic efficiency of signaling, converting small upstream perturbations into large downstream reorganizations of accessible developmental outcomes. This unifies the criticality discussion of Chapter 3 with the accessibility framework of Part II: critical poising is the physical mechanism by which biological systems maximize constraint susceptibility during the periods when developmental decisions are being made.
+
+% =====================================================================
+% PART II
+% =====================================================================
+
+\part{Building Developmental Space}
+
+% =====================================================================
+% CHAPTER 4
+% =====================================================================
+
+\chapter{Accessibility Landscapes and Species Difference}
+
+\section{Cyto-Temporal Gene Expression Landscapes}
+
+The evolution of the cerebral cortex is one of the most consequential events in animal history. The expanded neocortex of primates, and particularly of humans, underlies much of what makes human cognition distinctive: the capacity for complex language, sustained abstract reasoning, flexible tool use, and cumulative cultural transmission. Understanding how the primate cortex achieved its distinctive organization — greater thickness, more neurons per area, expanded upper layers — is accordingly a central problem in developmental neuroscience.
+
+The naive expectation is that greater cortical complexity requires novel genes. If human cortex is structurally and functionally more elaborate than mouse cortex, the elaboration must come from somewhere, and the most direct source would be novel genetic material absent in simpler mammals. Javed and colleagues (2026) demonstrate that this expectation is largely wrong. The principal differences between mouse and human corticogenesis are not differences in which genes are present. They are differences in when, where, and in which progenitor populations conserved genes become active.
+
+\section{Developmental Manifolds and Trajectory Spaces}
+
+To formalize this finding, it is useful to think of cortical development as a traversal of a developmental state space. Each progenitor cell occupies a position in a high-dimensional space of gene expression profiles, and development proceeds as cells move through this space along trajectories determined by their regulatory programs. The full set of accessible trajectories at any developmental moment constitutes the developmental manifold — the geometry of possible futures available to the system.
+
+What Javed and colleagues find is that mouse and human corticogenesis traverse overlapping but non-identical regions of this shared manifold. The conserved genes provide the coordinate system of the manifold; the accessibility functions — which genes are expressed in which progenitor populations at which times — determine which trajectories through the manifold are realized in each species. Species difference emerges from differential traversal of a shared developmental manifold rather than from the presence of fundamentally different manifolds.
+
+\section{Conserved Genes and Divergent Accessibility}
+
+The gene JUNB is the most instructive case in the Javed et al. study. JUNB is a transcription factor that is highly conserved in sequence across mammals: the protein is essentially the same in mouse and human. Yet its developmental expression is radically different. In mouse cortex, JUNB is expressed in postmitotic neurons and mature cells. In human cortex, JUNB is expressed in early progenitor populations, including radial glia and outer radial glia, during the period of active neurogenesis.
+
+This difference in expression is not a small quantitative variation. It is a categorical difference in which progenitor populations the gene is deployed in, at which developmental stage, and with what downstream consequences. The conservation of the gene's sequence across species means that the gene's potential regulatory function is conserved. The divergence of its expression means that the accessibility of that function — the conditions under which it is activated — differs between species. What evolution has changed is not the molecular tool but the circumstances of its use.
+
+\section{Intermediate Progenitors as Evolutionary Amplifiers}
+
+The populations showing the greatest divergence between mouse and human in the Javed et al. dataset are intermediate progenitors: the cells that sit between apical radial glia and postmitotic neurons in the cortical lineage. Apical progenitors, which are ancient and conserved, show relatively similar gene expression profiles across species. Postmitotic neurons, which are the terminal products of the lineage, also show relatively conserved profiles. It is the transitional populations — the cells in the process of becoming committed — that differ most.
+
+This pattern has a clear theoretical interpretation. Terminal states in a developmental lineage are under strong functional selection: neurons must perform specific tasks, and the gene expression profiles that support those functions are tightly constrained by that selection. Early progenitor states are similarly constrained by the need to maintain proliferative capacity and response to patterning signals. Intermediate states are under weaker direct functional selection, because they are transitional rather than terminal. They are, in the language of constraint geometry, the regions of the developmental manifold where the constraint structure is softest — where evolutionary modification of accessibility can accumulate without immediately disrupting the output.
+
+\section{Heterochrony and Developmental Pacing}
+
+A particularly consequential form of accessibility modulation is heterochrony: changes in the timing of developmental events without changes in the events themselves. In the cortex, small shifts in the timing of progenitor differentiation can have large architectural consequences, because the laminar organization of the cortex is built through a temporal sequence of neurogenesis. Earlier-born neurons occupy deep layers; later-born neurons occupy superficial layers. Extending the period of progenitor self-renewal — by delaying the transition from symmetric to asymmetric division, or by slowing the exit from the progenitor state — increases the number of neurons that can be produced before neurogenesis terminates.
+
+Javed and colleagues show that human cortical development is characterized by extended progenitor persistence relative to mouse: radial glia and intermediate progenitors remain in proliferative states for longer in human, producing more neurons before committing to differentiation. This is a timing difference, not a molecular-novelty difference. The progenitors have the machinery to differentiate; what changes between species is the regulatory control over when that machinery is activated.
+
+\section{Timing as Accessibility Modulation}
+
+The concept of timing as accessibility modulation connects the Javed et al. findings to the broader framework of this essay. A developmental timing shift does not change the genes present in the progenitor. It changes the temporal extent over which the progenitor's current state — its particular position in the developmental manifold — remains accessible. Extending progenitor persistence means that the progenitor remains in an accessible configuration for longer before transitioning to the next. Compressing progenitor persistence means that the transition occurs earlier, reducing the number of cells produced in that configuration.
+
+Time, in this framework, is not merely a parameter acting on development. It is a structural component of the accessibility geometry. The duration for which each region of the developmental manifold is accessible is part of what determines the outcome of development. Species differences in cortical architecture are in part differences in the temporal shape of the accessibility function imposed on a shared developmental manifold.
+
+\subsection*{Mathematical Derivation: Developmental Accessibility Functions}
+
+Let developmental state space be $\mathcal{X}$, and let the trajectory of cell $i$ be $\gamma_i : [0,T] \to \mathcal{X}$. Define the time-varying accessibility region:
+\begin{equation}
+\mathcal{A}(t) \subseteq \mathcal{X},
+\end{equation}
+representing the set of developmentally admissible configurations at time $t$. Encode accessibility by the indicator function:
+\begin{equation}
+\chi(x,t) = \begin{cases} 1 & x \in \mathcal{A}(t), \\ 0 & \text{otherwise}. \end{cases}
+\end{equation}
+Species-specific cortical organization arises when two species share a similar underlying manifold but have different accessibility functions:
+\begin{equation}
+\chi_{\text{human}}(x,t) \neq \chi_{\text{mouse}}(x,t).
+\end{equation}
+The JUNB result is formalized as an upstream regulatory intervention that expands the mouse accessibility region:
+\begin{equation}
+\mathcal{A}_{\text{mouse}} \;\xrightarrow{\;\text{IRF1}\;}\; \mathcal{A}'_{\text{mouse}},
+\end{equation}
+where $\mathcal{A}'_{\text{mouse}} \supset \mathcal{A}_{\text{mouse}}$ in the region of state space corresponding to early progenitor JUNB expression. Heterochrony is formalized as a temporal dilation of the accessibility function:
+\begin{equation}
+\chi_{\text{human}}(x,t) = \chi_{\text{mouse}}(x, t/\tau), \quad \tau > 1,
+\end{equation}
+so that the human system remains in each accessible configuration for $\tau$ times as long as the mouse system, producing more cells in each developmental compartment before the transition to the next.
+
+% =====================================================================
+% CHAPTER 5
+% =====================================================================
+
+\chapter{JUNB and Latent Developmental Programs}
+
+\section{JUNB as a Species-Divergent Regulatory Node}
+
+The finding that JUNB is expressed in early progenitor populations in human cortex but not in mouse presents a conceptual puzzle. If JUNB is expressed early in human progenitors, one might expect to find molecular machinery in those human progenitors that is absent in mouse — receptors, co-factors, chromatin states — that makes JUNB expression possible there. But this is not what Javed and colleagues find. When IRF1, an upstream regulator of JUNB, is activated in mouse cortical tissue, JUNB expression shifts toward earlier progenitor populations, and the tissue acquires developmental behaviors that partially resemble human corticogenesis.
+
+This result is remarkable because it implies that the molecular machinery for JUNB expression in early progenitors is not absent in mouse. It is present but inaccessible: gated by the absence of IRF1 activity, or by some upstream regulatory difference, in a way that prevents its deployment under normal mouse developmental conditions. The mouse cortex has latent access to a developmental trajectory that it does not normally take.
+
+\section{Poised but Inaccessible Developmental Programs}
+
+The concept of a poised but inaccessible developmental program is central to understanding how evolution can produce large-scale morphological differences through regulatory changes rather than wholesale molecular novelty. A program is poised if the molecular machinery necessary to execute it is present in the genome and in principle expressible. It is inaccessible if the regulatory conditions for its activation are not met under normal developmental circumstances.
+
+Evolution can open access to a poised program by modifying the regulatory conditions for its activation — by changing a transcription factor's expression domain, an enhancer's activity, or an upstream signaling pathway's temporal profile. Once the regulatory condition is met, the poised program deploys using molecular components that were already present. The structural consequence can be large — extended progenitor persistence, expanded neurogenic capacity, additional cortical layers — even though the molecular change is small: a shift in the activity of one upstream regulator.
+
+\section{IRF1 and Upstream Accessibility Control}
+
+IRF1 functions in this system as an accessibility operator: a regulatory factor whose activity determines which downstream programs are available for deployment. When IRF1 is active in a progenitor, JUNB becomes accessible in that progenitor, and the downstream consequences of JUNB expression in that context can unfold. When IRF1 is inactive, JUNB remains inaccessible there, and the corresponding developmental trajectory is not taken.
+
+This is the precise analog, at the level of gene regulatory networks, of the optogenetic intervention in the Autorino et al. system. In both cases, a single upstream perturbation changes the accessible state space of a biological system: in one case by restoring a tissue rigidity that enables proper Nodal dynamics, in the other by activating a regulatory factor that enables an early progenitor transcriptional program. The parallel is not merely rhetorical. It reflects a shared structural principle: accessibility is controlled by specific upstream regulators, and changes in those regulators can unlock large regions of state space that were previously inaccessible.
+
+\section{Human-like Cortical Features in Mouse Tissue}
+
+The IRF1 activation experiment in Javed and colleagues produces mouse tissue with partially human-like cortical development. Progenitor persistence is extended. The ratio of intermediate progenitors is shifted. Gene expression profiles in early progenitor populations shift toward the human pattern. The result is not a complete recapitulation of human corticogenesis — many differences remain — but it is a substantial movement along the developmental manifold toward human-like trajectories, achieved by modulating the accessibility of one upstream regulatory program.
+
+The implication is that the boundary between mouse-like and human-like cortical development is not a fixed genomic barrier. It is a regulatory accessibility boundary that can be crossed by changing the activity of specific upstream regulators. The mouse and human cortical developmental programs share a large region of common accessibility; they differ in the additional regions that each makes accessible, and those additional regions are regulated by factors like IRF1 and JUNB that differ in their deployment between species.
+
+\section{Evolution Through Accessibility Modulation}
+
+The general principle that emerges from Chapters 4 and 5 is that evolution frequently operates through accessibility modulation rather than through the invention of fundamentally new developmental machinery. The components are conserved; the conditions of their deployment are not. This is a specific and falsifiable claim: wherever one finds a major morphological difference between related species, the hypothesis of accessibility modulation predicts that the molecular components underlying the more elaborate structure will be present, at least in latent form, in the simpler species, and that they will become active if the appropriate upstream regulatory conditions are met.
+
+This prediction changes the research program for understanding morphological evolution. Rather than asking what new genes appeared in the human lineage, the question becomes: what regulatory changes shifted the accessibility landscape of developmental programs that were already present? The answer, in the case of cortical expansion, appears to involve changes in the timing and cellular localization of conserved transcriptional regulators, mediated by factors like IRF1 that act as accessibility operators on the developmental manifold.
+
+\subsection*{Mathematical Derivation: Latency and Regulatory Accessibility}
+
+Define the accessible trajectory set under regulatory state $r$:
+\begin{equation}
+\Gamma_r = \left\{ \gamma \in \mathcal{X}^{[0,T]} : \chi_r(\gamma(t), t) = 1 \;\forall t \right\},
+\end{equation}
+where $\chi_r$ is the accessibility function parameterized by the upstream regulatory state $r = r(t)$ (here, the activity level of IRF1). The regulatory intervention $r \mapsto r'$ (IRF1 activation) expands the accessible set:
+\begin{equation}
+\Gamma_{r'} \supset \Gamma_r.
+\end{equation}
+The volume of expansion, $|\Gamma_{r'} \setminus \Gamma_r|$, measures the quantity of latent developmental potential unlocked by the regulatory change. The JUNB result implies:
+\begin{equation}
+|\Gamma_{r'} \setminus \Gamma_r| \gg 0,
+\end{equation}
+indicating that a single upstream regulatory change unlocks a substantial volume of previously inaccessible developmental state space. In evolutionary terms, the morphological distance between species can be parameterized as:
+\begin{equation}
+d_{\text{morph}}(\text{human}, \text{mouse}) = d_{\mathcal{X}}\!\left(\overline{\gamma}_{\text{human}}, \overline{\gamma}_{\text{mouse}}\right),
+\end{equation}
+where $\overline{\gamma}$ denotes the mean realized trajectory and $d_{\mathcal{X}}$ is an appropriate metric on trajectory space. The claim of accessibility modulation is that this distance is substantially accounted for by the accessibility boundary shift induced by changes in upstream regulators, rather than by differences in the underlying manifold $\mathcal{X}$ itself.
+
+% =====================================================================
+% PART III
+% =====================================================================
+
+\part{Communication Geometry}
+
+% =====================================================================
+% CHAPTER 6
+% =====================================================================
+
+\chapter{The Cortex as a Communication Machine}
+
+\section{Communication Beyond Anatomical Connectivity}
+
+The traditional framework for understanding inter-regional communication in the brain is anatomical: regions communicate because neurons from one region project axons to another, forming synaptic connections that transmit information when the presynaptic neuron fires. On this view, the communication structure of the brain is fixed by its wiring diagram. Understanding brain-wide information flow is a matter of characterizing the connectome.
+
+This framework is not wrong, but it is incomplete. It describes the physical substrate of communication without describing the dynamical structure of what is communicated. Two regions can be anatomically connected without communicating effectively at any given moment, if their population dynamics are not aligned. Two populations can share overlapping connectivity without routing the same information to downstream targets, if their activity patterns are organized differently. What determines whether information flows between regions at a given time is not just whether connections exist, but whether the dynamical structure of population activity in the sender is organized in a way that engages the appropriate input-recipient neurons in the receiver.
+
+Gonzalez and colleagues (2026) demonstrate this by identifying low-dimensional communication subspaces in the hippocampal-retrosplenial circuit — subspaces that mediate inter-regional communication independently of the full anatomical connectivity between the regions.
+
+\section{Low-Dimensional Communication Subspaces}
+
+The key mathematical tool in the Gonzalez et al. study is partial canonical correlation analysis, which identifies linear combinations of neural populations in two regions that maximize shared covariance while removing the influence of a third recorded region. This allows the identification of communication subspaces — low-dimensional shared spaces that capture correlated activity between two regions — that are specific to the pairwise interaction rather than driven by common input from a third source.
+
+The finding that such subspaces exist is not, in itself, surprising: dimensionality reduction methods frequently reveal low-dimensional structure in high-dimensional neural data. What is significant is the structure of these subspaces and their relationship to anatomical organization, behavioral context, and sleep replay.
+
+Gonzalez and colleagues characterize communication subspaces in five regions simultaneously: the dentate gyrus, CA3, CA2, CA1, and the retrosplenial cortex. They show that CA1 participates in multiple communication subspaces — both input subspaces connecting it to upstream hippocampal regions and output subspaces connecting it to the retrosplenial cortex. Neurons with large weights in one subspace tend to have large weights in others as well, indicating that subspace membership is not random but reflects stable properties of individual neurons. These properties include higher baseline firing rates, more frequent burst firing, and preferential localization in the deep sublayers of the pyramidal cell layer.
+
+\section{Feedforward Organization Along the CA3--CA1--RSC Axis}
+
+Time-lagged partial canonical correlation analysis confirms that the communication subspaces are organized in a feedforward direction along the CA3-to-CA1-to-RSC axis: CA3 leads CA1 in temporal correlations, and CA1 leads the retrosplenial cortex. This is consistent with the anatomical organization of the hippocampal-neocortical circuit but goes beyond anatomy: it demonstrates that the dynamical correlations between populations are not merely a reflection of reciprocal connections but specifically organized in a feedforward direction.
+
+The sparsity of subspace weights, measured by the Gini coefficient, decreases monotonically from CA3 to CA1 to the retrosplenial cortex: at successive processing stages, more neurons contribute to the shared inter-regional activity patterns, and the communication subspace becomes more distributed. This suggests that the hippocampal-cortical circuit transforms sparse, selective coding in the hippocampus into more distributed coding in the neocortex — a transformation achieved not by adding neurons but by reorganizing the geometry of the communication subspace.
+
+\section{Communication Geometry as Dynamic Organization}
+
+The central insight of the Gonzalez et al. paper is that the communication geometry between hippocampal and cortical regions is not fixed by anatomy. It is dynamically reconfigurable: the same population of neurons can participate in different communication subspaces, routing different information to different downstream targets, depending on the behavioral context, the brain state, and the history of experience.
+
+This reconfigurability is the neural analog of the developmental accessibility modulation described in the previous chapters. Just as the same molecular machinery can be deployed in different progenitor populations by changing the regulatory context, the same neurons can participate in different communication geometries by changing the pattern of their coordinated activity. The tissue does not change; the geometry of its information routing does.
+
+\subsection*{Mathematical Derivation: Communication Subspaces and Projection Operators}
+
+Let neural population activity in regions $X$ and $Y$ be represented as:
+\begin{equation}
+\mathbf{X}(t) \in \mathbb{R}^m, \qquad \mathbf{Y}(t) \in \mathbb{R}^n.
+\end{equation}
+Partial canonical correlation analysis, controlling for the influence of a third region $\mathbf{Z}(t) \in \mathbb{R}^p$, operates on the residuals:
+\begin{align}
+\mathbf{X}_{\text{res}} &= \mathbf{X} - \Sigma_{XZ}\Sigma_{ZZ}^{-1}\mathbf{Z}, \\
+\mathbf{Y}_{\text{res}} &= \mathbf{Y} - \Sigma_{YZ}\Sigma_{ZZ}^{-1}\mathbf{Z},
+\end{align}
+and finds projection operators $W_X \in \mathbb{R}^{m \times d}$, $W_Y \in \mathbb{R}^{n \times d}$ maximizing:
+\begin{equation}
+\rho = \max_{W_X, W_Y} \text{corr}\!\left(W_X^\top \mathbf{X}_{\text{res}},\; W_Y^\top \mathbf{Y}_{\text{res}}\right).
+\end{equation}
+The communication subspace is $\mathcal{S}_{XY} = \operatorname{span}(W_X, W_Y)$. The mutual information transferred through the subspace is approximated by:
+\begin{equation}
+\mathrm{MI} = -\frac{1}{2}\sum_{i=1}^{d} \log(1 - \rho_i^2),
+\end{equation}
+where $\rho_i$ are the canonical correlation coefficients ranked in decreasing order.
+
+A formal distinction that the subspace framework makes possible — and that anatomical connectivity analysis does not — is between the structural connectome and the effective communication geometry. Define the anatomical connectivity as the static directed graph:
+\begin{equation}
+G_A = (V, E, w),
+\end{equation}
+where $V$ is the set of neurons, $E$ the set of synaptic connections, and $w : E \to \mathbb{R}_{>0}$ the synaptic weight function. The anatomical graph is fixed on the timescale of behavior. The communication geometry, by contrast, is a time-varying projection structure:
+\begin{equation}
+\mathcal{S}(t) = \{(W_X(t), W_Y(t)) : \text{pCCA solution at time } t\},
+\end{equation}
+embedded within the anatomical graph but not determined by it. Many distinct communication geometries $\mathcal{S}(t)$ are consistent with the same anatomical graph $G_A$. The graph sets the outer boundary of what is possible, but within that boundary the actual routing of information is determined by the dynamical organization of population activity. Formally, the mapping $G_A \mapsto \mathcal{S}(t)$ is many-to-one and time-dependent, so that:
+\begin{equation}
+G_A = G_{A'} \;\not\Rightarrow\; \mathcal{S}(t) = \mathcal{S}'(t),
+\end{equation}
+and conversely the same anatomical graph supports a family of effective communication geometries indexed by behavioral context, brain state, and experience. This is what makes the subspace rotation finding consequential: it demonstrates that the brain exploits this many-to-one mapping adaptively, reconfiguring effective routing geometry within a fixed anatomical substrate.
+
+% =====================================================================
+% CHAPTER 7
+% =====================================================================
+
+\chapter{Rotating Subspaces and Contextual Computation}
+
+\section{Subspace Rotation and Information Routing}
+
+The most significant finding in the Gonzalez et al. paper is not the existence of communication subspaces but their geometric relationship to one another. CA1 participates in both input subspaces (linking it to CA3 and other upstream hippocampal regions) and output subspaces (linking it to the retrosplenial cortex). These subspaces are not identical. They share overlapping neuronal membership — the same neurons participate in both — but the pattern of their participation, the linear combination of neurons that defines each subspace, is different.
+
+The difference is measured by the principal angles between the subspaces. If two subspaces were identical, the principal angle between them would be zero. If they were orthogonal, the principal angle would be 90 degrees. Gonzalez and colleagues find that the principal angles between CA1's input and output subspaces approach orthogonality — across all tested pairs of subspaces from different partners (DG, CA3, CA2, and RSC), the maximum principal angle is consistently much larger than the within-subspace angle measured by comparing the same subspace computed on different portions of the recording.
+
+This means that the same neurons are organized into qualitatively different patterns of coordinated activity when participating in different inter-regional interactions. The input pattern to CA1 from CA3 and the output pattern from CA1 to the retrosplenial cortex are nearly orthogonal representations, constructed from the same neural population. This is subspace rotation: the communication geometry rotates between different inter-regional contexts.
+
+\section{The Computational Necessity of Subspace Rotation}
+
+The crucial question is whether subspace rotation is an epiphenomenon — a description of how hippocampal populations happen to be organized — or whether it serves a specific computational function. Gonzalez and colleagues address this question directly through a recurrent neural network experiment that constitutes one of the most important results in the paper.
+
+A recurrent neural network is trained to predict retrosplenial cortex subspace activity from CA3 subspace activity, approximating at an algorithmic level the transformation implemented by CA1. As the RNN learns to map CA3 activity to retrosplenial cortex activity, its input and output subspaces rotate relative to one another — exactly as observed in the biological data.
+
+The critical manipulation is then to fix the input and output subspaces while allowing the recurrent weights to change freely. If subspace rotation were incidental to the learning process, fixing the rotation should have little effect: the recurrent weights could compensate. In fact, fixing the subspaces significantly impairs learning performance. The RNN with learnable subspaces achieves lower loss after training than the RNN with fixed subspaces, by a statistically significant margin. This demonstrates that subspace rotation is not epiphenomenal. It is computationally necessary for the modeled CA3-to-RSC transformation.
+
+\section{Why Rotation is Computationally Load-Bearing}
+
+The computational reason that subspace rotation is necessary can be understood in terms of selective information routing. CA1 receives input from multiple upstream regions simultaneously — DG, CA3, CA2 — and must route selected aspects of each input to the retrosplenial cortex while preventing interference between them. If the input subspace from CA3 and the output subspace to the retrosplenial cortex were aligned, then any pattern of CA3 activity would directly drive the retrosplenial cortex output, regardless of context. By rotating the subspaces to near-orthogonality, CA1 ensures that information from CA3 is transformed — not directly transmitted — before reaching the retrosplenial cortex.
+
+This rotation is what allows the same neural population to implement different input-output mappings in different behavioral contexts. When the animal is in maze 1, the subspace weights are organized one way; when the animal is in maze 2, the weights are reorganized to reflect the new context, even though the neurons themselves remain the same. The context-dependence of the communication geometry — not the context-dependence of which neurons are present — is the mechanism of flexible cognition.
+
+\section{Stability, Plasticity, and Sleep Replay}
+
+The Gonzalez et al. paper further demonstrates that CA1's input subspace (linking it to CA3) and its output subspace (linking it to the retrosplenial cortex) have different plasticity profiles. After novel maze experience, CA1-CA3 subspace correlations are significantly enhanced during post-experience NREM sleep, particularly during sharp-wave ripple events. The CA1-RSC subspace does not show the same enhancement: it is more stable across pre- and post-experience sleep than the CA1-CA3 subspace.
+
+This asymmetry reflects a functional division of labor between the intrahippocampal communication geometry (plastic, rapidly updated by experience, selectively reactivated during replay) and the hippocampal-cortical communication geometry (stable, resistant to rapid update, protected from overwriting). The stability of the CA1-RSC subspace allows the retrosplenial cortex to maintain its stable environmental representations even as the hippocampal circuit rapidly encodes new experiences. The plasticity of the CA1-CA3 subspace allows the hippocampal circuit to update its representations in response to novel experience without immediately destabilizing the cortical output.
+
+The replay analysis confirms that the CA1-CA3 subspace is preferentially reactivated during high-quality replay events: sharp-wave ripple events with high CA1-CA3 subspace correlation are more likely to contain statistically significant spatial sequence scores than events with low CA1-CA3 subspace correlation. Conversely, events with high CA1-RSC subspace correlation are associated with reduced replay fidelity, consistent with the interpretation that the CA1-RSC subspace serves a different function — maintaining cortical state rather than replaying hippocampal sequences.
+
+\subsection*{Mathematical Derivation: Principal Angles and Subspace Rotation}
+
+Let $\mathcal{S}_1 = \operatorname{span}(W_1)$ and $\mathcal{S}_2 = \operatorname{span}(W_2)$ be two communication subspaces in $\mathbb{R}^N$, represented by orthonormal bases $Q_1$ and $Q_2$. The principal angles $\theta_i$ are defined by the singular values $\sigma_i$ of $Q_1^\top Q_2$ via:
+\begin{equation}
+\theta_i = \arccos(\sigma_i), \quad i = 1, \dots, d,
+\end{equation}
+where $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_d \geq 0$. Near-orthogonality of the two subspaces corresponds to $\theta_{\max} \approx 90^\circ$, i.e., $\sigma_{\min} \approx 0$. For the RNN learning model, the input-to-hidden projection is $W_{\text{in}} \in \mathbb{R}^{r \times d_{\text{CA3}}}$ and the hidden-to-output projection is $W_{\text{out}} \in \mathbb{R}^{d_{\text{RSC}} \times r}$. The corresponding input and output subspaces are:
+\begin{equation}
+\mathcal{S}_{\text{in}} = \operatorname{colspace}(W_{\text{in}}^\top), \qquad \mathcal{S}_{\text{out}} = \operatorname{rowspace}(W_{\text{out}}).
+\end{equation}
+The loss function for the CA3-to-RSC prediction task is:
+\begin{equation}
+\mathcal{L} = \mathbb{E}\!\left[\left\|W_{\text{out}} \mathbf{h}(t) - W_Y^\top \mathbf{Y}_{\text{res}}(t)\right\|^2\right],
+\end{equation}
+where $\mathbf{h}(t) = \tanh(W_{\text{rec}}\mathbf{h}(t-1) + W_{\text{in}} W_X^\top \mathbf{X}_{\text{res}}(t))$ is the recurrent hidden state. Fixing $W_{\text{in}}$ and $W_{\text{out}}$ while optimizing only $W_{\text{rec}}$ constrains the rotation between $\mathcal{S}_{\text{in}}$ and $\mathcal{S}_{\text{out}}$ to its initialized value, preventing the rotation from adapting to the task. The significant impairment of learning under this constraint establishes:
+\begin{equation}
+\frac{\partial \mathcal{L}^*}{\partial \theta_{\max}} < 0,
+\end{equation}
+meaning that increasing subspace rotation (larger $\theta_{\max}$) decreases the minimum achievable loss, proving that rotation is computationally necessary for the input-output transformation.
+
+% =====================================================================
+% PART IV
+% =====================================================================
+
+\part{Toward a Theory of Biological Organization}
+
+% =====================================================================
+% CHAPTER 8
+% =====================================================================
+
+\chapter{Constraint Geometry Across Scales}
+
+\section{A Note on Notation}
+
+By Part IV the formal apparatus has accumulated across seven chapters of biological argument and mathematical derivation. The following table collects the principal symbols used throughout, to spare the reader the task of reconstructing each definition from its first occurrence. Symbols introduced locally within a single section and not carried forward are not listed here.
+
+\medskip
+
+\noindent
+\begin{tabular}{@{}lp{10.5cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Meaning} \\
+\midrule
+$\mathcal{B},\,\mathcal{M},\,\mathcal{X}$ & Biological state spaces; $\mathcal{X}$ is used specifically for developmental gene-expression space \\[4pt]
+$\gamma(t)$ & A trajectory through a biological state space \\[4pt]
+$\Gamma$ & The set of all trajectories \\[4pt]
+$\Gamma_{\mathrm{adm}}(t)$ & The set of admissible trajectories at time $t$ \\[4pt]
+$C(t)$ & The dynamically evolving constraint operator; $C(t)\gamma(t)=0$ defines admissibility \\[4pt]
+$\mathcal{C}$ & The space of all possible constraint operators \\[4pt]
+$\mathcal{F}$ & Constraint evolution operator: $\partial_t C = \mathcal{F}(S,M,I)$ \\[4pt]
+$S$ & Signaling field (e.g.\ Nodal, auxin concentration) \\[4pt]
+$G$ & Geometry field (e.g.\ tissue rigidity, porosity distribution) \\[4pt]
+$M$ & Material organization of the tissue \\[4pt]
+$I$ & Interaction topology \\[4pt]
+$A_t,\,\Psi$ & Accessibility operator and the map $(G,S)\mapsto A_t$ \\[4pt]
+$\chi(x,t)$ & Accessibility indicator: $1$ if state $x$ accessible at time $t$, $0$ otherwise \\[4pt]
+$\mathcal{A}(t)$ & The accessibility region $\{x:\chi(x,t)=1\}$ \\[4pt]
+$\mathcal{H}=\{h_i\}$ & Hydathode positions (Voronoi generator points) \\[4pt]
+$V_i$ & Voronoi cell for generator $h_i$ \\[4pt]
+$J,\,\Phi_t$ & Jaccard similarity index; developmental partition operator \\[4pt]
+$\langle k\rangle,\,\alpha,\,\rho_R$ & Cell connectivity, relative surface tension, rigidity fraction \\[4pt]
+$N,\,L$ & Nodal and Lefty concentration fields \\[4pt]
+$D_N(\Phi)$ & Nodal effective diffusivity as a function of tissue porosity \\[4pt]
+$\mathbf{X}(t),\,\mathbf{Y}(t)$ & Neural population activity in regions $X$ and $Y$ \\[4pt]
+$W_X,\,W_Y$ & Projection operators defining the communication subspace \\[4pt]
+$\mathcal{S}_{XY}$ & Communication subspace between regions $X$ and $Y$ \\[4pt]
+$\rho_i,\,\theta_i,\,\sigma_i$ & Canonical correlations, principal angles, singular values \\[4pt]
+$\mu_t$ & Probability measure over $\Gamma_{\mathrm{adm}}(t)$ induced by stochastic dynamics \\[4pt]
+$\Omega$ & Developmental path through $\mathcal{C}$: the full sequence of constraint operators \\[4pt]
+$T_{\mathrm{dev}}$ & Total developmental time \\[4pt]
+$K_t(x,y)$ & Propagation kernel: influence of signal at $y$ on state at $x$ given geometry at $t$ \\[4pt]
+\bottomrule
+\end{tabular}
+
+\medskip\noindent
+The distinction between $C(t)$ (admissibility, topological) and $A_t$ (accessibility operator, regulatory) is maintained throughout: $C$ determines which trajectories are geometrically possible; $A_t$ determines which biological programs are currently expressible within the accessible region.
+
+\section{What Counts as Geometry in Biological Systems}
+
+The term geometry has been used throughout this manuscript to describe phenomena that range from the spatial organization of leaf veins to the orientation of communication subspaces in neural circuits to the regulatory accessibility landscape of developmental progenitors. This range of usage is not equivocation. It reflects a genuine generalization of the geometric concept, but that generalization deserves explicit statement before the synthesis of Part IV proceeds.
+
+In ordinary usage, geometry refers to the study of spatial properties: distances, angles, areas, volumes, curvatures. A spatial geometry $G_{\text{spatial}}$ is a structure on a physical space that determines how points, curves, and regions relate to one another metrically. This is the sense in which the Voronoi geometry of \textit{Pilea} venation is geometric: it is a partition of two-dimensional physical space by equidistance conditions, and the relevant geometric objects are polygons with measurable areas and angles.
+
+The generalization used here defines geometry operationally as any structure that modifies the accessibility or propagation relations between states. Under this definition, a geometry is not necessarily spatial. It is any structure that answers the question: given that the system is in state $x$, which states $y$ can it reach, and at what cost or probability? This question is answered by a geometry in the spatial case through distances and geodesics; it is answered by a material geometry through porosity and diffusivity; by a regulatory geometry through the accessibility function $\chi(x,t)$; by a communication geometry through the subspace orientation $\mathcal{S}(t)$.
+
+Four distinct types of geometry appear in this manuscript, and they should be held apart. $G_{\text{spatial}}$ denotes spatial partition structure, determining physical propagation boundaries, as in the Voronoi tessellation of the leaf. $G_{\text{material}}$ denotes mechanical phase structure, determining diffusion and flow geometry, as in the rigidity field of the zebrafish blastoderm. $G_{\text{regulatory}}$ denotes accessibility structure, determining which programs are expressible, as in the regulatory landscape of cortical progenitors. $G_{\text{communicative}}$ denotes subspace structure, determining which activity patterns route information to downstream regions, as in the hippocampal communication subspaces.
+These are different realizations of a more general accessibility structure. All four modify the relations between states — which trajectories are open, which signals can propagate, which programs can be activated, which information can be routed — and all four evolve as functions of biological activity. What they share is not spatial extension but the formal role they play: they are the structures that determine the shape of $\Gamma_{\mathrm{adm}}(t)$, the admissible trajectory set, within the relevant state space.
+
+The framework is intentionally operator-agnostic: $C_V$, $C_R$, $C_A$, and $C_S$ belong to different mathematical classes — spatial partition operators, mechanical percolation operators, regulatory accessibility operators, and dynamical projection operators respectively. No claim is made that these operators are formally identical or that they belong to the same mathematical category. The claim is structural: each governs which trajectories remain accessible at each moment, and each evolves jointly with the biological processes it constrains. The generalized geometry concept is a family of structural roles, not a single formal object.
+
+\section{Partition Geometry in Leaves}
+
+The Voronoi geometry of \textit{Pilea} venation, established in Chapter 1, is an instance of partition geometry: the spatial organization of tissue by local competitive dynamics among distributed organizing centers. The constraint geometry of the leaf is the set of rules — established by hydathode positions and auxin transport kinetics — that determines where vein boundaries can form. The actual vein boundaries emerge as the equilibrium of this constraint geometry under developmental dynamics. The leaf does not specify partition boundaries; it specifies hydathode positions, and the constraint geometry of auxin wave competition does the rest.
+
+\section{Rigidity Geometry in Embryos}
+
+The tissue rigidity geometry of the zebrafish blastoderm, established in Chapters 2 and 3, is an instance of material constraint geometry: the organization of a tissue's mechanical state that determines what signals can propagate where and how far. The constraint geometry of the blastoderm at the onset of gastrulation is the spatial distribution of rigidity — the location of the giant rigid cluster — which sets the effective diffusion geometry of the Nodal morphogen. This rigidity geometry is not fixed; it evolves as Nodal drives adhesion, adhesion drives rigidification, and rigidification reshapes the porosity landscape through which Nodal diffuses. The constraint geometry evolves jointly with the signals it constrains.
+
+\section{Accessibility Geometry in Development}
+
+The developmental accessibility geometry of the cortical progenitor pool, established in Chapters 4 and 5, is an instance of regulatory constraint geometry: the time-varying set of gene expression programs that are accessible in each progenitor population at each developmental moment. The constraint geometry of mouse corticogenesis differs from that of human corticogenesis not because the underlying molecular components are different, but because the regulatory accessibility landscape imposed on those components differs in timing and cellular localization. Species difference is a difference in accessibility geometry, not in the manifold itself.
+
+\section{Communication Geometry in Cortex}
+
+The communication geometry of the hippocampal-retrosplenial circuit, established in Chapters 6 and 7, is an instance of dynamical constraint geometry: the set of communication subspaces that are actively engaged at each behavioral moment, determining which aspects of hippocampal population activity are routed to the retrosplenial cortex and in what form. The constraint geometry of inter-regional communication is not fixed by anatomy; it rotates in response to experience, behavioral context, and brain state, providing the flexibility that underlies context-dependent cognition and the stability that protects long-term cortical representations from disruption by rapid hippocampal learning.
+
+\section{Shared Organizational Principles}
+
+These four instances of constraint geometry are not merely analogous. They share a formal structure: each is a dynamically evolving operator on a state space, shaped by signaling and in turn shaping what signals can accomplish. Each is active rather than passive: the constraint geometry participates in the dynamics rather than merely hosting them. Each is self-modifying: the processes that the constraint geometry governs also modify the constraint geometry itself.
+
+The four systems differ in their substrates — auxin dynamics in leaf tissue, Nodal-rigidity coupling in embryonic tissue, transcription factor accessibility in progenitor populations, and subspace rotation in neural circuits — but the organizational principle is the same. Biological organization emerges through the continuous modulation of constraint geometry, not through the execution of fixed specifications.
+
+\subsection*{Mathematical Derivation: Unified Constraint Geometry Framework}
+
+Let $\mathcal{B}$ be a biological state space appropriate to the system under consideration, and let $\Gamma$ be the set of all trajectories $\gamma : [0,T] \to \mathcal{B}$. Define a dynamically evolving constraint operator $C : [0,T] \to \mathcal{L}(\mathcal{B})$, where $\mathcal{L}(\mathcal{B})$ is the space of linear operators on $\mathcal{B}$. A trajectory $\gamma$ is admissible if:
+\begin{equation}
+C(t)\gamma(t) = 0 \quad \forall t \in [0,T].
+\end{equation}
+The set of admissible trajectories is:
+\begin{equation}
+\Gamma_{\text{adm}} = \left\{ \gamma \in \Gamma : C(t)\gamma(t) = 0 \;\forall t \right\}.
+\end{equation}
+The four constraint geometries of this essay correspond to specific instantiations of $C$. Voronoi partition geometry corresponds to a constraint operator $C_V$ encoding the equidistance conditions between adjacent hydathode-centered cells: it is satisfied precisely when each point in the tissue is closer to its own hydathode than to any other, which is the Voronoi condition that the developing vein network realizes. Rigidity geometry corresponds to an operator $C_R$ encoding the tissue connectivity and surface-tension constraints governing the giant rigid cluster: it captures the percolation threshold in cell-cell connectivity above which the tissue transitions from fluid-like to solid-like, changing what morphogen diffusion scales are accessible. Accessibility geometry corresponds to an operator $C_A$ encoding the regulatory state of each progenitor population, determining which transcriptional programs are expressible at each developmental moment: it is the formal object that differs between mouse and human corticogenesis, not the underlying manifold of possible gene expression states. Communication geometry corresponds to an operator $C_S$ encoding the orientation of active communication subspaces in the hippocampal-retrosplenial circuit, determining which neural activity patterns route information to downstream targets and at what efficiency: it rotates with experience, behavioral context, and brain state, implementing selective information routing through geometric reorientation rather than anatomical rewiring.
+
+In each case, $C$ evolves jointly with the trajectories it constrains:
+\begin{equation}
+\partial_t C = \mathcal{F}(S, M, I),
+\end{equation}
+where $S$, $M$, and $I$ denote signaling fields, material organization, and interaction topology respectively. The central claim of this essay is that the evolution of $C$ is the primary determinant of biological organization: understanding how $C$ changes is understanding how structure emerges.
+
+% =====================================================================
+% CHAPTER 9
+% =====================================================================
+
+\chapter{Biological Systems as Self-Modifying Propagation Media}
+
+\section{Signaling That Reshapes Its Own Medium}
+
+What distinguishes biological systems from most engineered systems is not the complexity of their components but the reflexive relationship between their signals and their propagation media. In most engineered communication systems, the medium is fixed: a wire, a fiber, a wireless channel. The signal travels through the medium but does not change it. In biological systems, signals routinely change the medium through which future signals will propagate.
+
+This reflexivity is what connects the four systems examined in this essay. Nodal does not merely diffuse through the zebrafish blastoderm: it reshapes the blastoderm's porosity, which changes the geometry through which Nodal itself propagates. Auxin does not merely flow through the \textit{Pilea} leaf: it polarizes PIN transporters, which change the geometry of future auxin flow, which determines where wave collisions occur, which determines where veins form. Transcription factors do not merely activate target genes: they change the regulatory accessibility landscape of the cell, altering which future transcriptional programs can be activated. Neural population activity does not merely encode information: it rotates communication subspaces, changing the geometry through which future activity patterns are transmitted to downstream regions.
+
+In each case, the signal is also a medium-modifier. The propagation geometry that the signal encounters is partly a consequence of previous signaling activity. This reflexivity creates the possibility of self-organizing dynamics that no single component of the system controls, and that no external blueprint specifies.
+
+\section{Active Media and Developmental Computation}
+
+The concept of an active medium — one that participates in the dynamics it hosts rather than merely transmitting them — has a precise formal character. A passive medium supports propagation without modification: the signal passes through, and the medium is unchanged. An active medium changes in response to the signal, and those changes alter how future signals propagate. The zebrafish blastoderm is an active medium for Nodal signaling in exactly this sense: it rigidifies in response to Nodal, and that rigidification changes the diffusion geometry for subsequent Nodal propagation.
+
+It is important to be precise about what this claim does and does not assert. Calling the tissue an active medium is a dynamical systems claim, not a claim about agency or cognition. The tissue does not intend to regulate signaling. It does not represent the morphogen gradient, evaluate it, or decide to respond. What it does is change its material state as a consequence of signaling activity — specifically, its porosity and connectivity — and those material changes alter the propagation kernel $K(x,y;G)$ for future signals. The formalism expresses this as:
+\begin{equation}
+\frac{\delta K}{\delta S} \neq 0,
+\end{equation}
+which simply states that the propagation kernel depends on the signal history. No more is being claimed. The language of activity and participation is a way of marking the contrast with passive-medium models, not an attribution of cognition to tissue.
+
+Active media make biological computation possible in a way that passive media cannot support. The distinction is not merely about feedback. It is about whether the medium itself is a participant in the computational process. In the hippocampal-retrosplenial circuit, the communication geometry — the active medium of inter-regional information routing — participates in the computation by rotating in response to experience, restructuring the routing geometry for future information flow. This is computation implemented in the medium itself, not just in the signals that traverse it.
+
+\section{Why Biological Systems Resist Static Description}
+
+The practical consequence of biological systems being self-modifying propagation media is that they resist static description. At any given moment, the accessible state space of a biological system depends on the history of previous states: on which signals have propagated, how the medium has been reshaped, which accessibility landscapes have been modified. A static description — a blueprint, a wiring diagram, a gene expression profile — captures a snapshot of the system at one moment but does not capture the dynamics of the medium in which that state is embedded.
+
+This is not merely a limitation of current methods. It is a structural feature of the systems themselves. A neocortex cannot be fully described by its anatomy, because the communication geometry of the neocortex is dynamically reconfigurable and its state at any moment depends on the animal's experience. A progenitor population cannot be fully described by its gene expression profile, because the accessibility landscape in which that profile is embedded depends on the upstream regulatory history of the cell. A tissue cannot be fully described by its mechanical properties, because those properties are being continuously modified by the signaling activity of the cells within it.
+
+\section{Development as a Theory of Evolving Propagation Kernels}
+
+The propagation kernel $K_t(x,y)$ is the deepest unifying object in this manuscript, and it deserves its own synthesis rather than distribution across individual chapters. The kernel describes how a signal, developmental program, or information pattern at location or state $y$ influences the future state at $x$ given the current geometry of the system. In compact notation:
+\begin{equation}
+S(x, t+\delta t) = \int K_t(x,y)\,S(y,t)\,dy + \text{source terms}.
+\end{equation}
+The central theoretical claim can now be stated in its most compact form: development, in all four systems examined here, consists primarily in modifying $K_t$ rather than in propagating signals through a fixed kernel.
+
+In the \textit{Pilea} leaf, the developing vein network modifies the spatial propagation boundaries of auxin: before vein formation, the propagation kernel for auxin is approximately isotropic; after vein formation, it is strongly anisotropic, channeling transport along established vascular paths and restricting it across vein boundaries. The developmental process changes the kernel so that future auxin flows are constrained rather than free.
+
+In the zebrafish blastoderm, the rigidity transition directly modifies the diffusion kernel for the Nodal morphogen: as porosity collapses, $K_t(x,y)$ decreases sharply for large $|x-y|$, restricting long-range Nodal propagation and concentrating signaling near the source. The kernel is not fixed; it narrows as a consequence of the signaling it transmits.
+
+In the cortical progenitor pool, the developmental progression modifies the regulatory transition kernel: the probability that a progenitor at state $y$ transitions to state $x$ after one division depends on the regulatory accessibility landscape $\chi(x,t)$, which changes as upstream regulators like IRF1 and JUNB are activated in different cellular contexts. The accessibility of developmental trajectories is the kernel structure governing which regulatory transitions are possible.
+
+In the hippocampal-retrosplenial circuit, the communication subspace $\mathcal{S}(t)$ defines the effective routing kernel between CA1 and the retrosplenial cortex: activity patterns in the input subspace $W_X^\top \mathbf{X}$ are transmitted efficiently; activity patterns orthogonal to the subspace are not. As the subspace rotates with behavioral context and experience, the kernel structure of inter-regional communication changes, rerouting information through different effective channels without anatomical rewiring.
+
+The four instances are formally unified by the condition $\delta K_t / \delta S \neq 0$: the propagation kernel evolves as a function of the signals that pass through it. Development is the process by which biological systems construct the sequence of kernels $\{K_t\}_{t \in [0,T_{\mathrm{dev}}]}$ through which all subsequent biological activity will propagate. The blueprint model holds the kernel fixed and varies the input; the constraint geometry model recognizes that the kernel itself is the primary object of developmental regulation.
+
+\subsection*{Mathematical Derivation: Coupled Signaling-Geometry Dynamics}
+
+Define a coupled system of signaling field $S$, geometry field $G$, and accessibility operator $A$:
+\begin{align}
+\partial_t S &= F(S, G) + \eta_S, \\
+\partial_t G &= H(S, G) + \eta_G, \\
+A_t &= \Psi(G, S),
+\end{align}
+where $F$ and $H$ are nonlinear operators capturing the mutual regulation of signaling and geometry, $\Psi$ maps the current state $(G,S)$ to the accessibility operator, and $\eta_S$, $\eta_G$ represent stochastic fluctuations. The system is self-modifying in the sense that $G$ — the propagation medium — changes as a function of $S$ — the signal — through $H$, and in turn changes how $S$ propagates through $F$. A fixed point $(S^*, G^*)$ satisfies:
+\begin{equation}
+F(S^*, G^*) = 0, \qquad H(S^*, G^*) = 0.
+\end{equation}
+But in developing systems, fixed points are typically unstable or transient: the system moves through a sequence of quasi-stable constraint geometries, each collapsed by the signaling activity it hosts, which drives the system toward the next. The trajectory through constraint geometry space is:
+\begin{equation}
+\Omega : [0, T_{\text{dev}}] \to \mathcal{C}, \qquad t \mapsto C(t),
+\end{equation}
+where $\mathcal{C}$ is the space of all possible constraint operators. The developmental program is the specification of $\Omega$ — not the specification of $\gamma$ directly, but the specification of how the constraint geometry evolves, from which the realized trajectories emerge.
+
+% =====================================================================
+% CHAPTER 10
+% =====================================================================
+
+\chapter{How to Build a Neocortex}
+
+\section{Why Direct Specification Fails}
+
+The question posed in the title of this essay — how to build a neocortex — does not have a simple answer, because it is not the right kind of question. A neocortex cannot be built by specifying every neuron's position, identity, and connection. The number of neurons in the human neocortex is approximately 16 billion; the number of synaptic connections is several orders of magnitude larger. No genome contains sufficient information to specify this structure at the level of individual components. The neocortex must be built by a process that generates the required complexity from a much smaller specification.
+
+But the answer is not simply that the genome encodes a developmental program that unfolds deterministically to produce the neocortex. The developmental program does not specify the outcome: it specifies a sequence of constraint geometries that, interacting with stochastic and environmental inputs, produce outcomes that are consistent with the species-typical neocortical architecture while varying in their details. The specification is of the process, not the product.
+
+\section{Building Accessibility Rather Than Final Form}
+
+The first principle emerging from this essay is that biological construction consists primarily of establishing constraint geometries that make certain outcomes accessible rather than of specifying those outcomes directly. The zebrafish embryo does not specify where the meso-endodermal boundary will form: it establishes a rigidity geometry that makes certain Nodal diffusion scales accessible during patterning, and the boundary forms where those diffusion scales intersect the tissue's positional information. The \textit{Pilea} plant does not specify where each vein will run: it positions hydathodes, and the Voronoi geometry of auxin wave competition determines the vein boundaries. The primate cortex does not specify the laminar fate of each neuron: it establishes regulatory accessibility landscapes in progenitor populations that make certain differentiation trajectories more or less accessible, and the laminar architecture emerges from the temporal sequence of those trajectories.
+
+\section{Regulating Developmental Trajectories}
+
+The second principle is that what is regulated in development is not primarily gene expression per se but the accessibility of developmental trajectories. A gene that is expressed in a progenitor does not determine that progenitor's fate: the fate is determined by the entire accessibility landscape in which that expression occurs, which determines what other programs can be co-activated, what transitions can be made, and on what timescale. JUNB expression in an early radial glial progenitor does not have the same consequences as JUNB expression in a postmitotic neuron, even though the protein is the same, because the accessibility landscapes of these two cell types are radically different.
+
+This means that the evolution of cortical architecture is primarily an evolution of regulatory accessibility landscapes rather than an evolution of effector genes. The machinery of cortical development is ancient and conserved; what has changed in the primate lineage is primarily the temporal and cellular organization of regulatory access to that machinery. Evolution has not invented a new neocortex: it has reorganized the accessibility geometry of a developmental program that was largely already present.
+
+\section{Coordinating Timing Across Scales}
+
+The third principle is that time is not a passive parameter in development but an active structural variable. The temporal ordering of developmental events — which progenitor populations emerge when, which transcriptional programs become accessible in which order, how long each developmental state persists before transitioning — is itself a specification that carries biological information. Heterochronic changes, which alter the timing of developmental events without changing their sequence or molecular content, can have large architectural consequences because the temporal shape of the accessibility function determines how many cells are produced in each developmental compartment before the compartment closes.
+
+Building a larger or more complex neocortex requires, among other things, extending the temporal windows during which progenitor accessibility is organized for symmetric self-renewal rather than asymmetric neurogenesis. This temporal extension is itself a constraint geometry: it specifies the shape of the temporal accessibility function rather than the final neuronal output.
+
+\section{The Neocortex as a Dynamically Organized Propagation Structure}
+
+The fourth and final principle is that the neocortex, once built, continues to function as a self-modifying propagation medium. The communication geometry of the neocortex is not fixed by its developmental history. It is dynamically reconfigured by experience through the hippocampal-cortical system, in which the plasticity of intrahippocampal communication subspaces allows rapid encoding of novel experience, and the stability of hippocampal-neocortical subspaces allows gradual, protected consolidation of that experience into long-term cortical representations.
+
+The neocortex is a propagation structure whose organizing principle is not anatomical fixity but geometric flexibility. The same neurons that represent a familiar environment can participate in different communication subspaces when the environment changes, rerouting information through different effective channels to produce context-appropriate behavior. This flexibility is not a failure of specification: it is the point of the system. A neocortex that could not reconfigure its communication geometry would be unable to adapt to novel experience without losing established representations.
+
+\section{Development as Controlled Constraint Reorganization}
+
+To build a neocortex is therefore not to execute a blueprint. It is to organize a sequence of constraint geometries — rigidity transitions, accessibility landscapes, temporal windows, communication subspace rotations — whose interactions produce neocortical structure and function as emergent consequences. The blueprint model imagines development as reading and implementing a specification. The constraint geometry model understands development as the construction of a succession of organized environments within which biological processes can operate, and the outcomes emerge from those processes operating within those environments.
+
+The four papers examined in this essay demonstrate this principle across four distinct systems, using four distinct empirical approaches. The Pilea vein geometry demonstrates that global geometric organization can emerge from local constraint dynamics without central specification. The zebrafish rigidity transition demonstrates that signaling geometry is causally upstream of morphogen dynamics, not merely correlated with them. The cortical developmental accessibility study demonstrates that species differences in architecture arise from regulatory reorganization of conserved programs rather than from molecular novelty. The hippocampal subspace study demonstrates that the communication geometry of the cortex is computationally load-bearing and dynamically maintained.
+
+Together they argue for a single conclusion: the organizing principle of biological complexity is the dynamic regulation of constraint geometry. To build a neocortex, or a leaf vein network, or a meso-endodermal boundary, or a context-dependent memory system, is to establish the right sequence of constraint geometries at the right times. The structure builds itself.
+
+\section{Predictive Consequences of the Framework}
+
+A theoretical framework earns its status not only by synthesizing existing results but by generating predictions that differ from those of competing frameworks and that are in principle falsifiable. The constraint geometry framework makes several such predictions that traditional developmental and systems neuroscience models do not, and making them explicit is the appropriate conclusion of a synthesis that has aimed throughout at theoretical rigor rather than interpretive latitude.
+
+The first prediction concerns the priority of geometry over signal in developmental intervention. If the constraint geometry framework is correct, then upstream manipulation of propagation geometry should generally outperform direct manipulation of downstream signals in achieving developmental outcomes. This is already demonstrated by the Autorino et al. optogenetic rescue result: restoring tissue rigidity rescues Nodal dynamics more completely than would be expected from a model in which Nodal and rigidity are merely correlated. More broadly, the framework predicts that interventions targeting the admissibility structure — the accessibility landscape, the material geometry, the communication subspace orientation — will be more efficient and more precise than interventions targeting signal concentrations directly. This is a testable claim in developmental biology, regenerative medicine, and neural circuit manipulation.
+
+The second prediction concerns latent developmental programs. If species differences arise from accessibility modulation rather than molecular novelty, then conserved developmental programs should exist in latent form outside their normal accessibility domains, in organisms that do not normally deploy them. The IRF1-JUNB result in Javed et al. is one confirmation: mouse tissue has latent access to early progenitor JUNB expression that is released by upstream regulatory activation. The framework predicts that this pattern should be widespread: regulatory changes that expand the accessibility region should repeatedly reveal human-like or otherwise novel-for-the-species developmental trajectories in mouse or other model organisms, because the molecular machinery for those trajectories is already present.
+
+The third prediction concerns the source of biological robustness. If robustness emerges from distributed local constraint dynamics rather than centralized encoding, then biological systems should be more robust to perturbations that leave the constraint geometry intact than to perturbations that disrupt it, even when the latter perturbations are smaller in molecular magnitude. Specifically, removing a downstream signaling component should be less disruptive than removing an upstream geometrical regulator, because the downstream component is one of many signals operating within a constraint geometry that remains intact, while the upstream geometrical regulator shapes the constraint geometry through which all downstream signals propagate.
+
+The fourth prediction concerns the mechanism of cognitive flexibility. If context-dependent computation in the hippocampal-cortical system arises from geometric reorientation of communication subspaces rather than from rewiring, then the same population of neurons should be capable of representing fundamentally different input-output relationships without anatomical change, on timescales too fast for synaptic rewiring. The Gonzalez et al. maze-switching result is consistent with this: communication subspaces reorganize between environments within minutes, while the neurons themselves — their firing rate properties, their anatomical positions, their synaptic partners — remain stable. The framework predicts that similar geometric reorientation underlies other forms of rapid behavioral flexibility: task switching, context generalization, and the selective retrieval of memories with similar content in different behavioral frames.
+
+These predictions share a common structure. In each case, the framework assigns explanatory priority to the constraint geometry — the admissibility structure — over the signals that propagate within it. In each case, the prediction is that manipulating the geometry should be more powerful than manipulating the signal, that latent access to programs is the rule rather than the exception, and that flexibility arises from geometric reorganization rather than from molecular novelty or anatomical rewiring. These are strong claims. They are falsifiable. And they follow directly from taking the constraint geometry framework seriously as a positive theory rather than merely as a descriptive synthesis.
+
+\subsection*{Mathematical Synthesis: Development as Geometry Modulation}
+
+The full developmental program may be represented as a path $\Omega$ through the space $\mathcal{C}$ of constraint operators:
+\begin{equation}
+\Omega : [0, T_{\text{dev}}] \to \mathcal{C}, \qquad t \mapsto C(t),
+\end{equation}
+governed by the coupled dynamics:
+\begin{align}
+\partial_t S &= F(S, G), \\
+\partial_t G &= H(S, G), \\
+C(t) &= \Psi(G(t), S(t)).
+\end{align}
+Structure emerges not from a fixed blueprint but from the realization that, for each $t$, the admissible trajectory set $\Gamma_{\text{adm}}(t)$ has a specific geometry that channels biological processes toward species-typical outcomes. The developmental program specifies $\Omega$; the realized structures are selected from the admissible set by stochastic developmental dynamics.
+
+Two distinct claims are at work here, and they should be kept separate. The first is topological: constraint geometry defines admissibility, determining which trajectories are geometrically possible at each developmental moment. This is a claim about the structure of $\Gamma_{\mathrm{adm}}(t)$, not about probability. The second is statistical-mechanical: given the admissible set, stochastic developmental dynamics — fluctuations in signaling, cell division, environmental input — define a probability measure over admissible trajectories. The statistically typical realized structure is accordingly:
+\begin{equation}
+\langle \gamma \rangle = \mathbb{E}_{\mu_t}\!\left[ \gamma \;\middle|\; \gamma \in \Gamma_{\text{adm}}(t) \right],
+\end{equation}
+where $\mu_t$ is the probability measure over $\Gamma_{\mathrm{adm}}(t)$ induced by the stochastic fluctuations $\eta_S$, $\eta_G$. The developmental program specifies $\Omega$ — the evolution of the constraint operator — and thereby determines both the admissible set and, indirectly, the shape of $\mu_t$ within it. The realized structures are not specified directly: they are the most probable outcomes consistent with the evolving constraint geometry, where probability is defined over the space of admissible trajectories rather than over all trajectories.
+
+The neocortex emerges as the statistically typical outcome of this process over developmental time — not because it was specified, but because the sequence of constraint geometries encoded in $\Omega$ makes it the overwhelmingly most accessible developmental outcome under the relevant probability measure.
+
+% =====================================================================
+% MATHEMATICAL APPENDICES
+% =====================================================================
+
+\begin{appendices}
+
+\chapter{Voronoi Geometry and Biological Partition Operators}
+
+\section{Voronoi Cells and Spatial Partitioning}
+
+Let a collection of generator points be given by $\mathcal{H} = \{h_1, h_2, \dots, h_n\} \subset \mathbb{R}^2$. The Voronoi cell associated with $h_i$ is:
+\begin{equation}
+V_i = \left\{ x \in \mathbb{R}^2 \;\middle|\; d(x,h_i) \leq d(x,h_j) \;\forall j \neq i \right\},
+\end{equation}
+where $d$ is the Euclidean metric. The biological claim of the venation paper is:
+\begin{equation}
+\mathcal{V}_{\text{leaf}} \approx \partial\!\left(\bigcup_i V_i\right).
+\end{equation}
+The Jaccard similarity between corresponding polygons quantifies the closeness of the approximation as defined in equation (3) of Chapter 1.
+
+\section{Partition Operators in Morphogenesis}
+
+A generalized developmental partition operator may be written as:
+\begin{equation}
+\Phi_t(x) = \arg\min_i \,\mathcal{E}_i(x,t),
+\end{equation}
+where $\mathcal{E}_i(x,t)$ is an effective developmental potential generated by local signaling dynamics emanating from source $h_i$. For the auxin wave collision model with polar transport:
+\begin{equation}
+\partial_t c_A = \sigma - \mu c_A + \sum_{B \in \mathrm{nb}_4(A)} (J_{B\to A} - J_{A\to B}),
+\end{equation}
+where the unidirectional flux is:
+\begin{equation}
+J_{A\to B} = c_A(k_d + k_p[\mathrm{PIN}]_{A\to B}).
+\end{equation}
+PIN dynamics follow:
+\begin{equation}
+\frac{d[\mathrm{PIN}]_{A\to B}}{dt} = \alpha[\mathrm{PIN}]_{A,u}\,J_{A\to B} - \min\!\left(\gamma[\mathrm{PIN}]_{A\to B}\,J_{B\to A},\; e_{\max}\right).
+\end{equation}
+The partition boundary between adjacent sources $h_i$ and $h_j$ emerges at the collision locus of their respective concentration waves.
+
+\section{Developmental Potential Fields}
+
+More generally, the developmental potential field $\mathcal{E}_i$ satisfies a wave equation modified by polar transport:
+\begin{equation}
+\frac{\partial^2 \mathcal{E}_i}{\partial t^2} = \nabla \cdot \big(D(x,t)\,\nabla \mathcal{E}_i\big) - \lambda \mathcal{E}_i,
+\end{equation}
+where $D(x,t)$ is a spatially and temporally varying diffusivity. The Voronoi geometry emerges as the steady-state partition of this wave competition.
+
+\chapter{Rigidity Percolation and Tissue Phase Transitions}
+
+\section{Cellular Networks as Mechanical Graphs}
+
+Let embryonic tissue be represented as a graph $G = (V, E)$. Define average connectivity $\langle k \rangle = 2|E|/|V|$ and the rigidity fraction:
+\begin{equation}
+\rho_R = f\!\left(\langle k \rangle, \alpha\right),
+\end{equation}
+with critical behavior near $\langle k_c \rangle \approx 4$, $\alpha_c \approx 0.866$.
+
+\section{Morphogen Diffusion in Dynamic Material Media}
+
+The Nodal concentration $N(x,t)$ satisfies:
+\begin{equation}
+\partial_t N = \nabla \cdot \big(D(\rho_R)\,\nabla N\big) + F(N) - G(N,L),
+\end{equation}
+where $D$ decreases with increasing rigidity, $F$ represents production, and $G$ represents Lefty-mediated degradation. Lefty satisfies:
+\begin{equation}
+\partial_t L = D_L \nabla^2 L + H(N) - kL.
+\end{equation}
+Rigidity evolves through adhesion dynamics:
+\begin{equation}
+\frac{d\alpha}{dt} = \rho_{\alpha}\,\frac{\alpha_E N}{1 + N/\alpha_0} - k_\alpha \alpha.
+\end{equation}
+Porosity as a function of $\alpha$:
+\begin{equation}
+\Phi(\alpha) = \Phi_0 \cdot \mathbf{1}[\alpha < \alpha_c] + \Phi_{\min}\cdot \mathbf{1}[\alpha \geq \alpha_c],
+\end{equation}
+with $\Phi_{\min} \approx 0$ for $\alpha \leq 0.707$. The diffusivity-porosity coupling:
+\begin{equation}
+D({\rho_R}) = D_0\,\phi(\Phi(\alpha(\rho_R))),
+\end{equation}
+where $\phi$ is a decreasing function satisfying $\phi(0) = 0$.
+
+\chapter{Developmental Accessibility Landscapes}
+
+\section{Developmental State Spaces}
+
+Let developmental state space be $\mathcal{X}$, with cell trajectories $\gamma_i(t) \in \mathcal{X}$. The time-varying accessibility region $\mathcal{A}(t) \subseteq \mathcal{X}$ is encoded by the indicator function $\chi(x,t)$ defined in equation (9) of Chapter 4.
+
+\section{Conserved Manifolds and Divergent Trajectories}
+
+Species differences in cortical organization correspond to differences in the accessibility function:
+\begin{equation}
+\Delta\chi(x,t) = \chi_{\text{human}}(x,t) - \chi_{\text{mouse}}(x,t).
+\end{equation}
+The IRF1-mediated trajectory expansion gives:
+\begin{equation}
+\mathcal{A}'_{\text{mouse}} = \mathcal{A}_{\text{mouse}} \cup \left\{x : \Delta\chi(x,t) > 0\right\}.
+\end{equation}
+Heterochrony as temporal dilation:
+\begin{equation}
+\chi_{\text{human}}(x,t) = \chi_{\text{mouse}}\!\left(x,\,t/\tau\right), \quad \tau > 1.
+\end{equation}
+The number of neurons produced in developmental compartment $i$ scales as:
+\begin{equation}
+n_i \propto \int_0^{T_i} r_i(t)\,\chi(x_i, t)\,dt,
+\end{equation}
+where $r_i(t)$ is the division rate and $T_i$ is the duration of compartment accessibility.
+
+\chapter{Communication Subspaces and Neural Routing}
+
+\section{Population Activity Spaces and pCCA}
+
+Neural population activity in regions $X$ and $Y$: $\mathbf{X}(t) \in \mathbb{R}^m$, $\mathbf{Y}(t) \in \mathbb{R}^n$. The partial CCA residuals and the canonical correlation maximization problem are defined in Chapter 6. The $d$-dimensional communication subspace is:
+\begin{equation}
+\mathcal{S}_{XY} = \operatorname{span}(W_X, W_Y), \quad W_X \in \mathbb{R}^{m\times d},\; W_Y \in \mathbb{R}^{n\times d}.
+\end{equation}
+
+\section{Principal Angles and Subspace Rotation}
+
+Let $Q_1$ and $Q_2$ be orthonormal bases for $\mathcal{S}_1$ and $\mathcal{S}_2$. Singular values of $Q_1^\top Q_2$ are $\sigma_i$, giving principal angles $\theta_i = \arccos(\sigma_i)$. The rotation between subspaces is quantified by $\theta_{\max} = \max_i \theta_i$. Between different CA1 subspaces (input vs.\ output), $\theta_{\max} \to 90^\circ$; within the same subspace across recording windows, $\theta_{\max}$ is small.
+
+\section{Selective Information Routing}
+
+The information routed through the subspace in a given time window:
+\begin{equation}
+I_{XY}(t) = \mathrm{MI}\!\left(W_X^\top \mathbf{X}_{\text{res}}(t),\; W_Y^\top \mathbf{Y}_{\text{res}}(t)\right) = -\frac{1}{2}\sum_i \log(1-\rho_i^2).
+\end{equation}
+Context-dependent communication corresponds to a time-varying subspace orientation $W_X(t)$, $W_Y(t)$, such that $I_{XY}(t)$ is selectively high for task-relevant information and low for irrelevant dimensions.
+
+\chapter{Constraint Geometry}
+
+\section{Dynamic Constraint Operators}
+
+Let $\mathcal{B}$ be a biological state space and $C : [0,T] \to \mathcal{L}(\mathcal{B})$ a time-varying linear constraint operator. A trajectory $\gamma$ is admissible iff $C(t)\gamma(t) = 0$ for all $t$. The admissible trajectory set:
+\begin{equation}
+\Gamma_{\text{adm}} = \left\{ \gamma \in C^1([0,T],\mathcal{B}) : C(t)\gamma(t) = 0 \;\forall t \right\}.
+\end{equation}
+
+\section{Evolving Constraint Systems}
+
+The constraint operator evolves according to:
+\begin{equation}
+\partial_t C = \mathcal{F}(S, M, I),
+\end{equation}
+where $S$, $M$, $I$ are signaling, material, and interaction fields. Each of the four biological systems studied instantiates a specific form of $\mathcal{F}$:
+\begin{align}
+\mathcal{F}_V(S,M,I) &= \text{(auxin wave competition dynamics)}, \\
+\mathcal{F}_R(S,M,I) &= \text{(Nodal-adhesion-rigidity coupling)}, \\
+\mathcal{F}_A(S,M,I) &= \text{(regulatory accessibility update)}, \\
+\mathcal{F}_S(S,M,I) &= \text{(subspace rotation dynamics)}.
+\end{align}
+The unified claim is that in all four cases, biological organization emerges from the dynamics of $C$ rather than from the specification of $\gamma$ directly.
+
+\chapter{Development as Geometry Modulation}
+
+\section{Coupled Signaling-Geometry Dynamics}
+
+The general coupled system:
+\begin{align}
+\partial_t S &= F(S,G) + \eta_S, \\
+\partial_t G &= H(S,G) + \eta_G, \\
+A_t &= \Psi(G,S),
+\end{align}
+with $S$ the signaling field, $G$ the geometry field, and $A_t$ the accessibility operator. Fixed points $(S^*,G^*)$ satisfy $F(S^*,G^*) = H(S^*,G^*) = 0$.
+
+\section{Active Propagation Media}
+
+The propagation kernel $K(x,y;G)$ describes how a signal at $y$ influences the state at $x$ given geometry $G$:
+\begin{equation}
+S(x,t) = \int K(x,y;G(t))\,S(y,t-\delta t)\,dy + \text{source terms}.
+\end{equation}
+The self-modifying character of the medium is expressed by:
+\begin{equation}
+\frac{\delta K}{\delta S} \neq 0,
+\end{equation}
+which means the propagation kernel itself depends on the signal — the medium changes as signals pass through it.
+
+\section{Emergent Structure Through Constraint Regulation}
+
+Two distinct claims underlie the emergent-structure argument and must be kept formally separate. The first is admissibility: constraint geometry defines which trajectories are geometrically possible. The second is probability: stochastic developmental dynamics define a measure over those admissible trajectories. These are not the same claim, and conflating them obscures the structure of the argument.
+
+Let $\mu_t$ denote the probability measure over $\Gamma_{\mathrm{adm}}(t)$ induced by the stochastic fluctuations $\eta_S$ and $\eta_G$. The statistically typical realized structure is:
+\begin{equation}
+\langle \gamma \rangle = \mathbb{E}_{\mu_t}\!\left[ \gamma \;\middle|\; \gamma \in \Gamma_{\mathrm{adm}}(t) \right].
+\end{equation}
+The developmental program specifies the evolution of $C(t)$ through:
+\begin{equation}
+\partial_t C = \mathcal{F}(S, M, I),
+\end{equation}
+which determines both the admissible set $\Gamma_{\mathrm{adm}}(t)$ and, through the coupled dynamics, the shape of $\mu_t$ within it. Realized structures are not specified directly: they are the most probable outcomes consistent with the evolving constraint geometry, where probability is defined over the admissible set rather than over all trajectories. The constraint geometry narrows the accessible region; the stochastic dynamics select within it.
+
+\chapter{Categories of Constraint Operators}
+
+The four constraint operators $C_V$, $C_R$, $C_A$, and $C_S$ introduced across this manuscript belong to different mathematical classes. The framework is intentionally operator-agnostic — no single formalism unifies all four — but it is important to be explicit about what kind of object each operator is, to prevent the reader from either over-interpreting the formal uniformity of the notation or under-interpreting the genuine structural parallel between the four cases.
+
+$C_V$, the Voronoi partition operator, is a spatial partition operator. It acts on the tissue space $\mathbb{R}^2$ and assigns to each point $x$ the index of its nearest hydathode generator. The operator is deterministic, local, and defined by a minimum-distance criterion:
+\begin{equation}
+C_V : x \mapsto \arg\min_i\, d(x, h_i).
+\end{equation}
+A trajectory $\gamma$ through tissue space is admissible under $C_V$ if it remains within a single Voronoi cell, which is the constraint that vein boundaries enforce on morphogen propagation within a polygon. The operator is non-linear (due to the minimum operation), time-varying through the evolution of hydathode positions during development, and defined on a continuous spatial domain.
+
+$C_R$, the rigidity geometry operator, is a mechanical percolation operator. It acts on the cell adjacency graph $G = (V,E)$ and assigns to each subgraph the rigidity fraction $\rho_R$, which determines whether the subgraph belongs to the giant rigid cluster. The operator is defined by the percolation threshold:
+\begin{equation}
+C_R(G) = \mathbf{1}[\langle k \rangle \geq k_c \;\text{ and }\; \alpha \leq \alpha_c],
+\end{equation}
+where $\mathbf{1}[\cdot]$ is the indicator function. Admissibility under $C_R$ means that the tissue's material configuration is within the rigid phase, which constrains Nodal propagation to short ranges. The operator is discrete (it acts on a graph), has a sharp critical threshold, and evolves on the timescale of cell-cell adhesion changes driven by Nodal signaling.
+
+$C_A$, the regulatory accessibility operator, is a regulatory state operator. It acts on the gene expression space $\mathcal{X}$ and determines, for each progenitor state $x \in \mathcal{X}$ and time $t$, whether the regulatory machinery is configured to allow expression of the programs characteristic of state $x$:
+\begin{equation}
+C_A(x,t) = \chi(x,t) = \mathbf{1}[x \in \mathcal{A}(t)].
+\end{equation}
+This is the accessibility indicator function. The admissible trajectory set under $C_A$ is the set of developmental paths that remain within the time-varying accessibility region $\mathcal{A}(t)$. The operator is a binary function on state space, time-varying, and governed by upstream regulatory dynamics including transcription factor availability, chromatin state, and signaling inputs. It is neither linear nor defined on a metric space in general.
+
+$C_S$, the communication subspace operator, is a dynamical projection operator. It acts on the neural population activity space $\mathbb{R}^N$ and projects it onto the active communication subspace $\mathcal{S}(t)$:
+\begin{equation}
+C_S(t) = P_{\mathcal{S}(t)},
+\end{equation}
+where $P_{\mathcal{S}(t)}$ is the orthogonal projection onto $\mathcal{S}(t)$. A neural activity pattern $\gamma(t) \in \mathbb{R}^N$ contributes to inter-regional communication precisely to the extent that $P_{\mathcal{S}(t)}\gamma(t) \neq 0$; activity orthogonal to $\mathcal{S}(t)$ does not propagate to the downstream region. The operator is linear (projections are linear), time-varying on the timescale of behavioral context shifts, and changes through subspace rotation as quantified by the principal angle dynamics of Chapter 7.
+
+The four operators are structurally parallel — each governs which trajectories remain accessible in its respective domain — but they are formally distinct objects: a minimum-distance partition, a percolation threshold indicator, a regulatory accessibility function, and an orthogonal projection. The unifying claim of this manuscript is not that these are the same mathematical object. It is that they play the same structural role across four different biological systems: they define the admissible trajectory set, they evolve jointly with the signals they constrain, and they are the primary locus of biological regulation and evolutionary change.
+
+\end{appendices}
+
+% =====================================================================
+% BIBLIOGRAPHY
+% =====================================================================
+
+\backmatter
+
+\begin{thebibliography}{99}
+
+\bibitem{autorino2026}
+Autorino, Camilla, Diana Khoromskaia, Louise Harari, Elisa Floris, Harry Booth,
+Cristina Pallares-Cartes, Vesta Petrasiunaite, Michael Dorrity, Bernat
+Corominas-Murtra, Zena Hadjivasiliou, and Nicoletta~I. Petridou.
+``Tissue Rigidity Phase Transition Shapes Morphogen Gradients.''
+\textit{Nature Cell Biology} (2026).
+\texttt{doi:10.1038/s41556-026-01954-4}.
+
+\bibitem{gonzalez2026}
+Gonzalez, Joaquin, Mih\'{a}ly V\"{o}r\"{o}slakos, Deren Aykan, Nina Soto,
+Noam Nitzan, Rachel Swanson, Mursel Karadas, Zhe~Sage Chen, and
+Gy\"{o}rgy Buzs\'{a}ki.
+``Subspace Communication in the Hippocampal--Retrosplenial Axis.''
+\textit{Nature} (2026).
+\texttt{doi:10.1038/s41586-026-10481-z}.
+
+\bibitem{javed2026}
+Javed, Awais, et al.
+``Developmental Gene Expression Patterns Driving Species-Specific Cortical
+Features.''
+\textit{Nature} (2026).
+\texttt{doi:10.1038/s41586-026-10491-x}.
+
+\bibitem{zheng2026}
+Zheng, CiCi~Xingyu, Shirsa Palit, Matthew Venezia, Elijah Blum,
+Ullas~V. Pedmale, Dave Jackson, Enrico Scarpella, Przemyslaw Prusinkiewicz,
+and Saket Navlakha.
+``Reticulate Leaf Venation in \textit{Pilea peperomioides} is a Voronoi
+Diagram.''
+\textit{Nature Communications} 17, 4111 (2026).
+\texttt{doi:10.1038/s41467-026-71768-3}.
+
+\bibitem{alon2006}
+Alon, Uri.
+\textit{An Introduction to Systems Biology: Design Principles of Biological
+Circuits}.
+Chapman and Hall/CRC, 2006.
+
+\bibitem{ball1999}
+Ball, Philip.
+\textit{The Self-Made Tapestry: Pattern Formation in Nature}.
+Oxford University Press, 1999.
+
+\bibitem{barabasi2016}
+Barab\'{a}si, Albert-L\'{a}szl\'{o}.
+\textit{Network Science}.
+Cambridge University Press, 2016.
+
+\bibitem{buzsaki2006}
+Buzs\'{a}ki, Gy\"{o}rgy.
+\textit{Rhythms of the Brain}.
+Oxford University Press, 2006.
+
+\bibitem{cross1993}
+Cross, Michael~C. and Pierre~C. Hohenberg.
+``Pattern Formation Outside of Equilibrium.''
+\textit{Reviews of Modern Physics} 65, no.~3 (1993): 851--1112.
+
+\bibitem{friston2010}
+Friston, Karl.
+``The Free-Energy Principle: A Unified Brain Theory?''
+\textit{Nature Reviews Neuroscience} 11 (2010): 127--138.
+
+\bibitem{gilbert2013}
+Gilbert, Scott~F.
+\textit{Developmental Biology}.
+10th ed.
+Sinauer Associates, 2013.
+
+\bibitem{goodwin1994}
+Goodwin, Brian.
+\textit{How the Leopard Changed Its Spots: The Evolution of Complexity}.
+Princeton University Press, 1994.
+
+\bibitem{haken1983}
+Haken, Hermann.
+\textit{Synergetics: An Introduction}.
+3rd ed.
+Springer, 1983.
+
+\bibitem{kauffman1993}
+Kauffman, Stuart~A.
+\textit{The Origins of Order: Self-Organization and Selection in Evolution}.
+Oxford University Press, 1993.
+
+\bibitem{kauffman1995}
+Kauffman, Stuart~A.
+\textit{At Home in the Universe}.
+Oxford University Press, 1995.
+
+\bibitem{murray2003}
+Murray, J.~D.
+\textit{Mathematical Biology II: Spatial Models and Biomedical Applications}.
+3rd ed.
+Springer, 2003.
+
+\bibitem{newman2018}
+Newman, Mark.
+\textit{Networks}.
+2nd ed.
+Oxford University Press, 2018.
+
+\bibitem{prusinkiewicz1990}
+Prusinkiewicz, Przemyslaw and Aristid Lindenmayer.
+\textit{The Algorithmic Beauty of Plants}.
+Springer, 1990.
+
+\bibitem{strogatz2001}
+Strogatz, Steven~H.
+\textit{Sync: The Emerging Science of Spontaneous Order}.
+Hyperion, 2001.
+
+\bibitem{thom1975}
+Thom, Ren\'{e}.
+\textit{Structural Stability and Morphogenesis}.
+W.~A. Benjamin, 1975.
+
+\bibitem{turing1952}
+Turing, Alan~M.
+``The Chemical Basis of Morphogenesis.''
+\textit{Philosophical Transactions of the Royal Society B}
+237, no.~641 (1952): 37--72.
+
+\bibitem{winfree2001}
+Winfree, Arthur~T.
+\textit{The Geometry of Biological Time}.
+2nd ed.
+Springer, 2001.
+
+\end{thebibliography}
+
+\end{document}

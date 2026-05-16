@@ -1,0 +1,806 @@
+% =============================================================
+%  Fossil Manifolds and Mediated Extraction:
+%  LAP1-B, Regulated Instability, and the Geometry of Observability
+%
+%  Author: Flyxion
+%  Engine: LuaLaTeX
+% =============================================================
+
+\documentclass[12pt, a4paper]{article}
+
+% ── Font and typography ──────────────────────────────────────
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}[
+  Ligatures = TeX,
+  Numbers   = OldStyle,
+]
+\setsansfont{Linux Biolinum O}[Ligatures = TeX]
+\setmonofont{DejaVu Sans Mono}[Scale = 0.88]
+
+% ── Mathematics ─────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+
+% ── Microtype and spacing ────────────────────────────────────
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.18}
+
+% ── Page geometry ────────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top    = 3.2cm,
+  bottom = 3.5cm,
+  left   = 3.4cm,
+  right  = 3.4cm,
+  marginparwidth = 2.0cm,
+]{geometry}
+
+% ── Section formatting ───────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\large\bfseries\sffamily}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\sffamily}
+  {\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{2.4ex plus .6ex minus .2ex}{1.0ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .4ex minus .2ex}{0.8ex plus .2ex}
+
+% ── Headers and footers ─────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily Flyxion}
+\fancyhead[R]{\small\sffamily Fossil Manifolds and Mediated Extraction}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+
+% ── Hyperlinks ───────────────────────────────────────────────
+\usepackage[
+  colorlinks = true,
+  linkcolor  = black,
+  citecolor  = black,
+  urlcolor   = black,
+]{hyperref}
+
+% ── References ───────────────────────────────────────────────
+% Bibliography is embedded as \thebibliography at end of document.
+% Use \citep{key} for parenthetical and \citet{key} for textual citations.
+\usepackage{natbib}
+
+% ── Epigraph ─────────────────────────────────────────────────
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.72\textwidth}
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\sourceflush}{center}
+
+% ── Custom commands ──────────────────────────────────────────
+\newcommand{\Msun}{M_{\odot}}
+\newcommand{\Mstar}{M_{\star}}
+\newcommand{\Mdyn}{M_{\mathrm{dyn}}}
+\newcommand{\Mbar}{M_{\mathrm{bar}}}
+\newcommand{\nbar}{\bar{n}}
+\newcommand{\ell}{\ell}
+\newcommand{\xiion}{\xi_{\mathrm{ion}}}
+\newcommand{\RSVP}{\textsc{rsvp}}
+\newcommand{\SIED}{\textsc{sied}}
+\newcommand{\CLIO}{\textsc{clio}}
+
+% ── Theorem-style environments ───────────────────────────────
+\theoremstyle{definition}
+\newtheorem{principle}{Principle}
+
+% =============================================================
+\begin{document}
+
+% ── Title block ─────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\sffamily Fossil Manifolds and Mediated Extraction}\\[0.55em]
+  {\large\sffamily LAP1-B, Regulated Instability, and the Geometry of Observability}\\[1.2em]
+  {\normalsize Flyxion}\\[0.4em]
+  {\small\itshape Independent researcher}\\[0.3em]
+  {\small May 2026}
+\end{center}
+
+\vspace{0.6em}
+
+\epigraph{%
+  The most informative structures in the universe are often both maximally
+  preserved and maximally inaccessible.%
+}{}
+
+\vspace{0.8em}
+
+% ── Abstract ────────────────────────────────────────────────
+\begin{abstract}
+\noindent
+The recently reported JWST spectroscopy of LAP1-B --- an ultra-faint galaxy
+at redshift $z \approx 6.6$ with oxygen abundance $(4.2 \pm 1.8)\times 10^{-3}$
+solar, stellar mass below $3{,}300\,\Msun$, and dynamical mass of order
+$10^{7}\,\Msun$ --- provides an unusual occasion for reflection on the
+epistemology of preserved systems. This essay argues that LAP1-B exemplifies
+a general principle: systems with the highest informational value are
+frequently not the largest or most chemically evolved, but the least
+overwritten. Beginning from observational facts, we develop this principle
+through four interlocking themes. First, we characterize informational
+preservation as a structural property of low-averaging systems, distinguishing
+it from mere antiquity. Second, we connect LAP1-B's compactness and chemical
+isolation to the band-limited instability formalism of Scalar Irruption via
+Entropic Differential (\SIED{}), where a preferred correlation length
+$\ell \sim \sqrt{\kappa/|f''(\nbar)|}$ constrains which modes of structure
+are physically admissible. Third, we interpret the galaxy's chemical abundance
+pattern as a retained event history --- an irreversible admissibility record
+encoding which nucleosynthetic products were allowed to propagate into future
+evolutionary pathways. Fourth, we read the gravitational lensing geometry not
+merely as a technical convenience but as an instance of mediated extraction:
+the physical amplification that makes an otherwise permanently inaccessible
+low-entropy fossil detectable at cosmological distances. The essay concludes
+that the deepest observational access to early-universe structure may come not
+through the brightest or most massive objects, but through the rarest
+coincidence of minimal overwriting and maximal geometric mediation.
+\end{abstract}
+
+\newpage
+
+% =============================================================
+\section{Least Overwritten Systems}
+\label{sec:overwrite}
+
+Most of what we call chemical evolution in galaxies is more precisely chemical
+averaging. Each successive generation of star formation stirs, dilutes, and
+partially overwrites the abundance record left by previous generations.
+Supernovae inject metals into a medium already enriched by earlier events;
+inflows bring pristine gas that dilutes those metals; mergers mix populations
+with distinct enrichment histories; turbulent transport spreads gradients that
+would otherwise remain spatially coherent. The cumulative effect is that the
+interstellar medium of a mature galaxy encodes not any single enrichment event
+but an integral over many, and the integrand --- the specific sequence and
+geometry of individual nucleosynthetic episodes --- is largely irrecoverable
+from the integral alone.
+
+This is not a merely practical limitation. It reflects something structural
+about how information is stored in matter. A system that has undergone many
+enrichment events has high chemical complexity but low historical resolution:
+the state space accessible to it is large, but the trajectory that produced
+its current state cannot be reconstructed without independent records of each
+step. By contrast, a system that has undergone very few enrichment events
+retains something closer to a first-order record of those events, precisely
+because subsequent processing has not yet averaged the signal away. Its
+chemical state is simpler, but its historical legibility is correspondingly
+higher.
+
+We propose calling such systems \emph{least overwritten} in the sense that
+their current state retains the highest ratio of recoverable event history to
+total elapsed time. Antiquity alone does not make a system least overwritten.
+A very old galaxy with a rich star-formation history is thoroughly overwritten
+despite its age. A young galaxy that formed early but evolved slowly ---
+whether through low mass, environmental isolation, or reionization-induced
+quenching --- may preserve far more of its initial conditions than a coeval
+system that underwent vigorous enrichment. Least overwritten is therefore an
+informational category, not a chronological one.
+
+\begin{principle}[Informational Privilege of Low-Averaging Systems]
+Among physically comparable systems, those that have undergone the fewest
+averaging operations over their history retain the highest density of
+recoverable information per observable degree of freedom.
+\end{principle}
+
+The corollary is that the instruments capable of reading such systems must
+match the sparsity of the record: a detector calibrated for high-flux,
+chemically complex sources will systematically miss the faintest, most
+primitive signals. This creates a structural bias in observational surveys
+toward overwritten systems and away from the very objects whose information
+content is highest. We return to this selection problem in Section~\ref{sec:mediation}.
+
+% =============================================================
+\section{Event-History Legibility}
+\label{sec:legibility}
+
+A galaxy's abundance pattern is, in a precise sense, a projection of its
+enrichment history onto the space of measurable ratios. The projection is
+lossy: many distinct enrichment histories can produce similar abundance
+patterns, and the projection operator --- the combined action of nucleosynthesis,
+mixing, fallback, and chemical evolution --- discards information at every
+step. Nevertheless, for a system that has undergone very few enrichment
+events, the projection is substantially less lossy than for a chemically
+mature system, because fewer intermediate states have intervened between the
+first events and the currently observable state.
+
+In sufficiently primitive systems, individual enrichment events may remain
+legible not merely as integrated signatures but as geometrically specific
+imprints. The carbon-to-oxygen ratio is a particularly sensitive indicator
+because its value depends strongly on which fraction of each supernova's
+yield survives to enter the subsequent gas phase. In energetic core-collapse
+supernovae, both carbon and oxygen are produced and largely expelled into the
+surrounding medium. In the so-called ``faint'' Population~III supernovae,
+where the explosion energy is low enough that the oxygen-rich inner layers
+undergo gravitational fallback into the central remnant while the carbon-rich
+outer layers are ejected, the result is a characteristically elevated C/O
+ratio at very low total metallicity \citep{Iwamoto2005, Nomoto2006}.
+
+This is not merely a compositional signature. It is a record of a specific
+dynamical asymmetry in the propagation of nucleosynthetic products: certain
+outputs of stellar nucleosynthesis were prevented from entering the subsequent
+evolutionary pathways of the system, not by random chance but by the physical
+geometry of the collapse. The resulting abundance pattern therefore encodes
+not only what elements were present but which physical channels remained open
+for their propagation. In a chemically mature galaxy, repeated mixing would
+erase much of this asymmetry. In a system that has experienced only one or a
+few such events, the asymmetry survives as a nearly unprocessed record of
+the earliest selective propagation.
+
+It is in this sense that chemical abundances in primitive systems function as
+an \emph{event log in matter}: a sparse, partially ordered record of
+irreversible transitions whose outputs became the initial conditions for
+everything that followed. The log is readable precisely because so little
+has been written over it.
+
+% =============================================================
+\section{LAP1-B as a Preserved Enrichment Manifold}
+\label{sec:lap1b}
+
+The JWST spectroscopy of LAP1-B \citep{Nakajima2026} presents a system
+whose properties align with the least-overwritten category in a particularly
+striking way. The galaxy is observed at redshift $z_{\mathrm{spec}} =
+6.625 \pm 0.001$, corresponding to a cosmic age of approximately 800~Myr
+after the Big Bang. Its gas-phase oxygen abundance is $(4.2 \pm 1.8) \times
+10^{-3}$ solar --- well below the previously observed metallicity floor of
+roughly $2\%$ solar --- and its elevated C/O ratio, at approximately one to
+two times the solar value, is inconsistent with standard chemical enrichment
+pathways but consistent with nucleosynthetic yields from faint Population~III
+supernovae operating through the fallback mechanism described in
+Section~\ref{sec:legibility}.
+
+The ionizing radiation field offers an independent convergent constraint. The
+ionizing-photon production efficiency satisfies $\log[\xiion] > 26.1$, a
+value incompatible with metal-enriched stellar populations or black-hole
+accretion but consistent with either metal-free Population~III stars or
+extreme Population~II stars with a top-heavy initial mass function. These
+three independent observational lines --- oxygen abundance, C/O ratio, and
+ionization hardness --- each point toward the same conclusion: the stellar
+population responsible for LAP1-B's current observable state is among the
+least chemically processed known.
+
+The mass budget adds a further structural dimension. The stellar mass is
+constrained by the absence of a detectable stellar continuum to below
+$\Mstar < 3{,}300\,\Msun$ --- a quantity more typical of a massive star
+cluster than a conventional galaxy --- while the dynamical mass, inferred
+from H$\alpha$ emission-line broadening, is of order $\Mdyn \sim
+10^{7}\,\Msun$. The implied baryonic fraction falls below approximately $1\%$.
+The luminous component is therefore not the dynamically dominant constituent
+of the system; it is a sparse visible tracer of a much larger organizing
+structure inferred only through its gravitational effects.
+
+Reading these features together, LAP1-B occupies an unusual position in the
+space of observable systems. Its chemistry is primitive enough to be
+considered a nearly direct record of its first enrichment events. Its stellar
+mass is low enough that those events have not been substantially processed
+by subsequent stellar generations. And its dynamical structure is dominated
+by an unobserved component relative to which the luminous matter constitutes
+only a sparse luminous layer. In the language developed in the preceding
+sections, LAP1-B is a system whose event log remains readable precisely
+because so few subsequent entries have been made.
+
+% =============================================================
+\section{Constraint Basins and Sparse Tracers}
+\label{sec:constraint}
+
+The standard $\Lambda$CDM interpretation of LAP1-B's mass budget treats the
+dark matter halo as a pre-existing gravitational scaffold into which baryons
+have condensed. The luminous stellar component is then understood as baryonic
+matter that has settled to the potential minimum of this scaffold, with the
+large dynamical-to-stellar mass ratio simply reflecting the efficiency with
+which the halo assembled mass relative to the efficiency with which the
+baryons converted gas into stars.
+
+An alternative descriptive framing, more natural within the \RSVP{}/\SIED{}
+interpretive framework, inverts the phenomenological emphasis. Rather than
+treating the dark matter halo as a container that the baryons fall into, one
+can read the luminous matter as marking the deepest observable point of a
+constraint basin --- by which we mean the dynamically admissible region toward
+which trajectories converge under the effective organization of the system ---
+whose full extent is inferred only dynamically. The baryons
+do not fill the basin; they indicate where it is. They function as tracer
+particles in the sense of fluid dynamics: sparse probes whose positions reveal
+the geometry of a larger flow field that would otherwise be invisible.
+
+This reframing does not alter the dynamics. The gravitational physics of
+$\Lambda$CDM and the constraint-basin language of \RSVP{} are not competing
+accounts of the same microphysical process; they operate at different
+descriptive levels. What differs is what each framework treats as primary.
+$\Lambda$CDM takes the particle inventory as fundamental and derives the
+organizing structure from it. The constraint-basin framing takes the
+organizing structure as fundamental and treats the particle inventory as its
+sparse observable projection.
+
+At LAP1-B's scale, the distinction is nearly testable in principle, precisely
+because the baryonic component is so sparse that it genuinely cannot
+significantly reshape the potential well it inhabits. In a massive galaxy,
+baryonic feedback --- stellar winds, supernova-driven outflows, AGN jets ---
+substantially modifies the dark matter distribution on timescales comparable
+to or shorter than the Hubble time, entangling the constraint geometry and
+the particle content in ways that are difficult to disentangle. In a system
+with $\Mstar < 3{,}300\,\Msun$, no such modification has occurred. The baryons
+are tracers in a nearly pure sense: they probe the organizing structure without
+participating in its formation. This makes LAP1-B one of the cleanest available
+readouts of gravitational organization in a state prior to substantial baryonic
+modification.
+
+% =============================================================
+\section{Regulated Instability and Preferred Irruption Scales}
+\label{sec:sied}
+
+The \SIED{} formalism offers a more precise account of why an object like
+LAP1-B should exist at all and why it should exist at the scale it does.
+In the standard hierarchical picture of structure formation, small-scale
+structure forms first and subsequently merges into larger halos. The existence
+of an isolated, extremely low-mass object at $z \approx 6.6$ is not, within
+this picture, surprising --- it simply represents a halo at the low end of the
+mass function. What is somewhat surprising is the object's apparent isolation
+in chemical parameter space: its metallicity is not merely low but
+discontinuously low relative to contemporaneous systems, occupying a regime
+below what was previously identified as a metallicity floor.
+
+The \SIED{} approach begins from a different structural assumption. Rather than
+treating structure formation as hierarchical accumulation driven by gravitational
+instability in an expanding medium, it treats it as a threshold instability in
+a conserved scalar field. The relevant criterion is a sign change in the
+free-energy curvature of the background state,
+\begin{equation}
+  f''(\nbar) < 0,
+  \label{eq:spinodal}
+\end{equation}
+where $\nbar$ is the mean field density and $f$ is the local free-energy
+functional. When condition~\eqref{eq:spinodal} is satisfied, the homogeneous
+background becomes locally unstable to perturbations, and structure irrupts
+into the formerly smooth medium. This is structurally analogous to spinodal
+decomposition in condensed matter: a sudden phase separation driven not by
+nucleation but by the loss of convexity in the free-energy landscape.
+
+The crucial feature of \SIED{} that distinguishes it from unconstrained
+gravitational collapse is the regulator term. The instability growth rate
+takes the form
+\begin{equation}
+  \gamma(k) = a k^{2} - b k^{4},
+  \label{eq:growthrate}
+\end{equation}
+where $k$ is the perturbation wavenumber and $a, b > 0$. The $ak^{2}$ term
+drives instability at all scales, while the $bk^{4}$ term suppresses growth
+at high wavenumbers, preventing arbitrary ultraviolet runaway. The regulated
+growth rate has a maximum at $k_{\star} = \sqrt{a/2b}$, defining a preferred
+irruption scale. Below $k_{\star}$, growth is too slow; above $k_{\star}$,
+growth is suppressed by the regulator. Only a finite band of modes around
+$k_{\star}$ can irrupt efficiently into visible structure.
+
+The preferred spatial scale corresponding to this band is
+\begin{equation}
+  \ell \sim \sqrt{\frac{\kappa}{|f''(\nbar)|}},
+  \label{eq:corrlen}
+\end{equation}
+where $\kappa$ is the gradient coefficient in the free-energy functional.
+This correlation length is not a free parameter but is set by the physical
+properties of the background state at the moment of irruption. Structure
+does not emerge at arbitrary scales and subsequently filter down or up
+through a merger hierarchy; instead, it emerges at a physically preferred
+scale determined by the local curvature of the free-energy landscape.
+
+LAP1-B's unusual compactness and apparent isolation in chemical parameter
+space are naturally interpreted within this framework as evidence of
+constrained mode selection rather than incomplete hierarchical growth. The
+object is not surprisingly small for its epoch; it is near the preferred
+irruption scale for a localized instability in a medium still close to the
+convexity boundary of its free-energy landscape. Its extreme chemical
+primitivity corresponds to a region of the plenum that crossed the instability
+threshold early and locally, forming a coherent low-complexity structure
+before the surrounding medium had undergone substantial entropic processing.
+In this reading, LAP1-B does not represent a fragment of a larger hierarchy
+that failed to grow; it represents a preferred mode that irrupted near its
+natural correlation length and has since been preserved against further
+averaging by the very sparsity of its subsequent evolution.
+
+It is important to note the epistemic status of this interpretation. \SIED{}
+does not provide an alternative microphysical account that would observationally
+distinguish itself from $\Lambda$CDM at the level of LAP1-B's reported data.
+What it offers is a different higher-level description of the same
+phenomenology: a language in which scale-selection, constraint-basin structure,
+and instability thresholds are primitive rather than derived. The comparison
+with the Nature paper's findings is interpretive rather than evidential. In
+particular, the preferred irruption scale $\ell$ introduced in
+equation~\eqref{eq:corrlen} has not been quantitatively fitted to LAP1-B's
+observed properties: the correspondence developed here is qualitative. The
+parameters $\kappa$ and $f''(\nbar)$ would need to be constrained against
+independent observational data before any quantitative claim about
+scale-selection could be made. The argument is structural, not numerical.
+
+% =============================================================
+\section{Historical Encoding and the Admissibility of Propagation}
+\label{sec:admissibility}
+
+The fallback mechanism that produces LAP1-B's elevated C/O ratio is, at the
+level of plasma physics, a straightforward dynamical process: the explosion
+energy is insufficient to overcome the gravitational binding energy of the
+oxygen-rich inner layers, which therefore fall back onto the central remnant
+rather than being expelled into the surrounding medium. The carbon-rich outer
+layers, less tightly bound and structurally positioned to receive the
+initial momentum of the shock, escape into the interstellar gas. The result
+is a characteristic chemical signature: elevated C/O at very low total
+metallicity.
+
+This is the complete physical account. It is important to be clear that the
+Spherepop interpretive language introduced below does not supplement or replace
+this physical account; it describes the same dynamical process at a higher level
+of abstraction, in terms of which outputs of a physical transition become
+available to subsequent evolutionary pathways.
+
+Within the Spherepop framework, the fallback mechanism instantiates what can
+be called a \emph{propagation filter}: a physical constraint that selectively
+allows certain products of an irreversible event to persist into the state
+space available to the system's future evolution, while preventing others from
+doing so. The oxygen-rich inner layers are dynamically refused entry into
+the ambient gas; the carbon-rich outer layers are admitted. The system's
+subsequent chemistry reflects not the full nucleosynthetic yield of the event
+but the filtered yield --- those products that survived the propagation
+constraint.
+
+Spherepop does not treat this filter as operating through any semantic or
+intentional mechanism. The refusal of oxygen to propagate is not a ``choice''
+made by the system or by any abstract operator; it is the consequence of
+specific initial conditions, explosion energetics, and gravitational geometry.
+What Spherepop contributes is a vocabulary for describing the structural logic
+of such constraints: the observation that physical systems routinely generate
+irreversible events whose outputs are selectively admitted or blocked from
+future evolutionary pathways, and that the pattern of admissions and blockings
+constitutes a kind of historical record encoded in the system's current state.
+
+In the case of LAP1-B, this record is unusually readable because so few
+subsequent events have been written over it. The galaxy's current C/O ratio
+is not merely a chemical datum; it is a partially preserved record of which
+physical channels were open and which were closed during the earliest
+nucleosynthetic episodes of its history. In a chemically mature galaxy,
+successive rounds of enrichment would progressively overwrite this record,
+replacing it with an integrated average over many such episodes. Here, the
+record from one or at most a few events remains nearly intact. The galaxy's
+chemistry functions as an event log, and the log is still sparse enough to
+be read entry by entry rather than only as an average.
+
+% =============================================================
+\section{Lensing as Mediated Extraction}
+\label{sec:mediation}
+
+LAP1-B is observable at all only because the line of sight from the observer
+to the galaxy passes through the gravitational lensing cluster MACS~J0416.1-2403,
+which amplifies the galaxy's apparent flux by a factor of approximately 100.
+Without this amplification, the galaxy would fall below the detection threshold
+of any existing instrument, including JWST. The lensing geometry is not a
+detail of the observation; it is the condition of its possibility.
+
+This circumstance has a straightforward observational explanation: gravitational
+lensing by a massive foreground cluster bends and focuses light from background
+sources, increasing their apparent brightness in proportion to the solid angle
+subtended by the Einstein ring of the lens. The amplification factor of $\sim
+100$ corresponds to an effective increase of five magnitudes, bringing a
+source that would be undetectable in unlensed conditions into the range of
+spectroscopic accessibility. The physics is well understood, and the lens
+model can be used to reconstruct the intrinsic properties of the source from
+its lensed appearance.
+
+What deserves emphasis is the structural role this plays in the epistemology
+of observational access to primitive systems. The selection problem raised in
+Section~\ref{sec:overwrite} --- that surveys systematically favor overwritten
+systems because primitive systems are too faint to detect --- cannot be
+resolved by improved detector sensitivity alone, at least not within the
+current technological horizon. The intrinsic luminosity of a system like
+LAP1-B scales with its stellar mass, and a stellar mass of $\Mstar < 3{,}300\,
+\Msun$ produces a surface brightness below the detection threshold of any
+foreseeable direct-imaging survey at cosmological distances. The only currently
+available mechanism for accessing such objects is geometric: the rare coincidence
+of a suitable lensing mass along the line of sight.
+
+The gravitational lens therefore functions, in this context, as a physical
+sparse-inference operator: a mechanism that extracts a coherent signal from
+a source that would otherwise be permanently inaccessible, by performing a
+geometric amplification that brings the signal above the observational threshold.
+This is not a metaphorical characterization. The lens does not create
+information; it amplifies access to information that exists but cannot be
+directly recovered. The operation is analogous, in the language of \CLIO{}
+inference, to a compression-and-amplification step that allows a low-entropy
+signal to be decoded from an attenuated projection.
+
+The observation of LAP1-B thus depends on the simultaneous satisfaction of
+three independent conditions: the galaxy must have remained chemically primitive
+(low overwriting), it must have remained dynamically tiny (low mass, low
+luminosity), and the line of sight must have passed through a massive lensing
+cluster (geometric amplification). The failure of any one condition would have
+made the observation impossible. The galaxy's chemical primitivity and
+dynamical smallness are not incidental properties that happen to make it
+interesting; they are the same properties that make it nearly impossible to
+observe. The most informationally rich objects are precisely the hardest to
+detect.
+
+This inversion --- that informational richness and observational accessibility
+are inversely correlated in the primitive regime --- has consequences for how
+we understand the census of early-universe structure. If LAP1-B is
+representative of a class of objects rather than an anomaly, then the
+population of chemically primitive micro-galaxies in the reionization era may
+be substantially larger than flux-limited surveys suggest. Most of this
+population would be permanently inaccessible without lensing assistance, not
+because the objects do not exist but because the geometric coincidence required
+to observe them is rare. The fossil record of early galaxy formation is likely
+more populated than our instruments can directly see; the lensing geometry
+performs the first stage of inference, and only then does spectroscopic
+analysis become possible.
+
+% =============================================================
+\section{The Geometry of Observability}
+\label{sec:clio}
+
+The preceding sections have assembled the components of a broader argument
+about the structure of observational access to the early universe. We can
+now state this argument in a unified form.
+
+Primitive systems --- those that are least overwritten in the sense of
+Section~\ref{sec:overwrite} --- carry the highest density of recoverable
+information about the earliest stages of structure formation. Their chemical
+patterns encode event histories that more evolved systems have averaged away.
+Their dynamical structures reflect organizing geometries that baryonic
+feedback has not yet substantially modified. Their instability signatures,
+where interpretable through frameworks like \SIED{}, reveal the preferred
+scales at which structure first irrupts from a near-uniform background. In
+all these respects, primitive systems are epistemically privileged relative
+to chemically and dynamically mature ones.
+
+And yet primitive systems are also maximally difficult to observe. Their
+informational richness derives from the same sparsity that makes them
+intrinsically faint. A galaxy with $\Mstar < 3{,}300\,\Msun$ is not merely
+dim; it is, at cosmological distances, effectively invisible without geometric
+assistance. The flux attenuation that comes from extreme distance and low
+stellar mass conspires to place the most informative objects precisely below
+the observational threshold.
+
+The consequence is that cosmological knowledge of the primitive epoch is
+structurally dependent on mediated extraction. Direct access is not available.
+What is available is access through operators --- physical, geometric, and
+instrumental --- that amplify attenuated signals into the detectable range.
+The gravitational lens is the clearest physical instance of such an operator,
+but the principle extends further. The epoch of reionization itself acts as
+a kind of erasure operator on the population of primitive galaxies, quenching
+star formation in low-mass halos and thereby preventing the further overwriting
+of primitive chemical records. The fossil galaxies that survive reionization
+are precisely those that were too small to sustain star formation against the
+ionizing radiation field, and they are therefore also the least overwritten.
+Reionization, paradoxically, preserves the fossil record by suppressing the
+enrichment that would overwrite it.
+
+The \CLIO{} framework, which treats inference as the reconstruction of sparse
+signals from attenuated projections, provides a natural language for describing
+this structure. Observational cosmology in the primitive regime is not a matter
+of gathering larger datasets from brighter sources; it is a matter of
+identifying the rare configurations in which a mediation operator --- a
+gravitational lens, a reionization geometry, an instrumental coincidence ---
+brings a sparse, primitive signal into the recoverable range. LAP1-B is not
+merely an early galaxy; it is a demonstration that such configurations exist,
+and a proof of concept that the fossil record of the earliest enrichment events
+can, under the right geometric conditions, be read directly from the matter
+that preserves them.
+
+The deepest observational access to the early universe, in this view, comes
+not from the largest structures, which are bright but overwritten, nor from
+the smallest structures in general, which are primitive but inaccessible,
+but from the rarest coincidence: systems that are minimally overwritten,
+sitting at preferred irruption scales within a constrained instability
+spectrum, and located at the intersection of a sufficient geometric mediation.
+That coincidence is what LAP1-B instantiates. It is small enough to be a
+fossil, primitive enough for its history to remain legible, and lensed
+enough to be seen.
+
+% =============================================================
+\section*{Acknowledgements}
+
+This essay was written in response to the JWST spectroscopy reported by
+\citet{Nakajima2026}. The interpretive frameworks developed here ---
+\RSVP{}, \SIED{}, Spherepop, and \CLIO{} --- are theoretical constructs
+under ongoing development and are not presented as empirically established
+alternatives to standard cosmological models. The engagement with LAP1-B
+is interpretive rather than evidential: the Nature paper's findings are
+fully compatible with $\Lambda$CDM and are not claimed here as support for
+any competing cosmological framework.
+
+\newpage
+% =============================================================
+\begin{thebibliography}{99}
+
+\bibitem[Atek et~al.(2023)]{Atek2023}
+Atek, H., Ellis, R., Richard, J., et~al.
+\newblock Search for ultra-faint galaxies in the reionization era.
+\newblock \textit{Monthly Notices of the Royal Astronomical Society}, 519(1):120--138, 2023.
+
+\bibitem[Barkana \& Loeb(2001)]{Barkana2001}
+Barkana, R., and Loeb, A.
+\newblock In the beginning: the first sources of light and the reionization of the universe.
+\newblock \textit{Physics Reports}, 349(2):125--238, 2001.
+
+\bibitem[Bland-Hawthorn \& Freeman(2015)]{BlandHawthorn2015}
+Bland-Hawthorn, J., and Freeman, K.
+\newblock Near-field cosmology with dwarf elliptical galaxies.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 53:631--688, 2015.
+
+\bibitem[Bromm \& Larson(2004)]{Bromm2004}
+Bromm, V., and Larson, R.
+\newblock The first stars.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 42:79--118, 2004.
+
+\bibitem[Bromm \& Yoshida(2011)]{Bromm2011}
+Bromm, V., and Yoshida, N.
+\newblock The first galaxies.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 49:373--407, 2011.
+
+\bibitem[Bullock \& Boylan-Kolchin(2017)]{Bullock2017}
+Bullock, J.~S., and Boylan-Kolchin, M.
+\newblock Small-scale challenges to the $\Lambda$CDM paradigm.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 55:343--387, 2017.
+
+\bibitem[Carath\'{e}odory(1909)]{Caratheodory1909}
+Carath\'{e}odory, C.
+\newblock Untersuchungen \"{u}ber die Grundlagen der Thermodynamik.
+\newblock \textit{Mathematische Annalen}, 67:355--386, 1909.
+
+\bibitem[Colin et~al.(2019)]{Colin2019}
+Colin, J., Mohayaee, R., Rameez, M., and Sarkar, S.
+\newblock Evidence for anisotropy of cosmic acceleration.
+\newblock \textit{Astronomy and Astrophysics}, 631:L13, 2019.
+
+\bibitem[Dekel \& Silk(1986)]{Dekel1986}
+Dekel, A., and Silk, J.
+\newblock The origin of dwarf galaxies, cold dark matter, and biased galaxy formation.
+\newblock \textit{Astrophysical Journal}, 303:39--55, 1986.
+
+\bibitem[Eisenstein et~al.(2005)]{Eisenstein2005}
+Eisenstein, D.~J., Zehavi, I., Hogg, D.~W., et~al.
+\newblock Detection of the baryon acoustic peak in the large-scale correlation function
+  of SDSS luminous red galaxies.
+\newblock \textit{Astrophysical Journal}, 633(2):560--574, 2005.
+
+\bibitem[Fan et~al.(2006)]{Fan2006}
+Fan, X., Carilli, C., and Keating, B.
+\newblock Observational constraints on cosmic reionization.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 44:415--462, 2006.
+
+\bibitem[Ferrara(2012)]{Ferrara2012}
+Ferrara, A.
+\newblock The first galaxies and the likely discovery of their fossils in the Local Group.
+\newblock \textit{Monthly Notices of the Royal Astronomical Society}, 421(1):282--294, 2012.
+
+\bibitem[Frebel \& Norris(2015)]{Frebel2015}
+Frebel, A., and Norris, J.~E.
+\newblock Near-field cosmology with extremely metal-poor stars.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 53:631--688, 2015.
+
+\bibitem[Furlanetto et~al.(2006)]{Furlanetto2006}
+Furlanetto, S.~R., Oh, S.~P., and Briggs, F.
+\newblock Cosmology at low frequencies: the 21\,cm transition and the high-redshift universe.
+\newblock \textit{Physics Reports}, 433(4--6):181--301, 2006.
+
+\bibitem[Gnedin(2000)]{Gnedin2000}
+Gnedin, N.~Y.
+\newblock Effect of reionization on structure formation in the universe.
+\newblock \textit{Astrophysical Journal}, 542(2):535--541, 2000.
+
+\bibitem[Greif(2015)]{Greif2015}
+Greif, T.~H.
+\newblock The numerical frontier of the high-redshift universe.
+\newblock \textit{Computational Astrophysics and Cosmology}, 2(3):1--33, 2015.
+
+\bibitem[Iwamoto et~al.(2005)]{Iwamoto2005}
+Iwamoto, N., Nomoto, K., Umeda, H., et~al.
+\newblock The first chemical enrichment in the universe and the formation of
+  hyper metal-poor stars.
+\newblock \textit{Science}, 309(5733):451--453, 2005.
+
+\bibitem[Kang et~al.(2020)]{Kang2020}
+Kang, Y., Lee, Y.-W., Kim, Y.-L., et~al.
+\newblock Evidence for luminosity evolution of Type~Ia supernovae from their local environments.
+\newblock \textit{Astrophysical Journal}, 889(1):8, 2020.
+
+\bibitem[Kycia(2022)]{Kycia2022}
+Kycia, R.
+\newblock Entropy and ordering relations in thermodynamics.
+\newblock \textit{Entropy}, 24(3):401, 2022.
+
+\bibitem[Lieb \& Yngvason(1999)]{Lieb1999}
+Lieb, E.~H., and Yngvason, J.
+\newblock The physics and mathematics of the second law of thermodynamics.
+\newblock \textit{Physics Reports}, 310(1):1--96, 1999.
+
+\bibitem[Madau \& Dickinson(2014)]{Madau2014}
+Madau, P., and Dickinson, M.
+\newblock Cosmic star-formation history.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 52:415--486, 2014.
+
+\bibitem[Maoz et~al.(2014)]{Maoz2014}
+Maoz, D., Mannucci, F., and Nelemans, G.
+\newblock Observational clues to the progenitors of Type~Ia supernovae.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 52:107--170, 2014.
+
+\bibitem[Mo et~al.(2010)]{Mo2010}
+Mo, H., van den Bosch, F., and White, S.
+\newblock \textit{Galaxy Formation and Evolution}.
+\newblock Cambridge University Press, Cambridge, 2010.
+
+\bibitem[Nakajima et~al.(2026)]{Nakajima2026}
+Nakajima, K., Ouchi, M., Zhang, Y., et~al.
+\newblock An ultra-faint, chemically primitive galaxy forming in the reionization era.
+\newblock \textit{Nature}, 653:363--367, 2026.
+
+\bibitem[Navarro et~al.(1997)]{Navarro1997}
+Navarro, J.~F., Frenk, C.~S., and White, S.~D.~M.
+\newblock A universal density profile from hierarchical clustering.
+\newblock \textit{Astrophysical Journal}, 490(2):493--508, 1997.
+
+\bibitem[Nielsen et~al.(2016)]{Nielsen2016}
+Nielsen, J.~T., Guffanti, A., and Sarkar, S.
+\newblock Marginal evidence for cosmic acceleration from Type~Ia supernovae.
+\newblock \textit{Scientific Reports}, 6:35596, 2016.
+
+\bibitem[Nomoto et~al.(2006)]{Nomoto2006}
+Nomoto, K., Tominaga, N., Umeda, H., et~al.
+\newblock Nucleosynthesis yields of core-collapse supernovae and hypernovae,
+  and galactic chemical evolution.
+\newblock \textit{Nuclear Physics A}, 777:424--458, 2006.
+
+\bibitem[{Planck Collaboration}(2020)]{Planck2020}
+{Planck Collaboration}.
+\newblock Planck 2018 results. VI. Cosmological parameters.
+\newblock \textit{Astronomy and Astrophysics}, 641:A6, 2020.
+
+\bibitem[Sarkar et~al.(2008)]{Sarkar2008}
+Sarkar, S., Garcia-Bellido, J., and Haugb\o{}lle, T.
+\newblock Is the evidence for dark energy secure?
+\newblock \textit{International Journal of Modern Physics D}, 17(14):2505--2516, 2008.
+
+\bibitem[Springel et~al.(2005)]{Springel2005}
+Springel, V., White, S.~D.~M., Jenkins, A., et~al.
+\newblock Simulations of the formation, evolution and clustering of galaxies and quasars.
+\newblock \textit{Nature}, 435:629--636, 2005.
+
+\bibitem[Tegmark et~al.(2004)]{Tegmark2004}
+Tegmark, M., Strauss, M., Blanton, M., et~al.
+\newblock Cosmological parameters from SDSS and WMAP.
+\newblock \textit{Physical Review D}, 69(10):103501, 2004.
+
+\bibitem[Tolstoy et~al.(2009)]{Tolstoy2009}
+Tolstoy, E., Hill, V., and Tosi, M.
+\newblock Star-formation histories, abundances, and kinematics of dwarf galaxies
+  in the Local Group.
+\newblock \textit{Annual Review of Astronomy and Astrophysics}, 47:371--425, 2009.
+
+\bibitem[Umeda \& Nomoto(2003)]{Umeda2003}
+Umeda, H., and Nomoto, K.
+\newblock First-generation black-hole-forming supernovae and the metal abundance pattern
+  of the most iron-poor stars.
+\newblock \textit{Nature}, 422:871--873, 2003.
+
+\bibitem[Weinberg(1989)]{Weinberg1989}
+Weinberg, S.
+\newblock The cosmological constant problem.
+\newblock \textit{Reviews of Modern Physics}, 61(1):1--23, 1989.
+
+\bibitem[White \& Rees(1978)]{White1978}
+White, S.~D.~M., and Rees, M.
+\newblock Core condensation in heavy halos: a two-stage theory for galaxy formation
+  and clustering.
+\newblock \textit{Monthly Notices of the Royal Astronomical Society}, 183:341--358, 1978.
+
+\bibitem[Wise et~al.(2012)]{Wise2012}
+Wise, J.~H., Turk, M.~J., Abel, T., and O'Shea, B.~W.
+\newblock The birth of a galaxy: primordial metal enrichment and stellar populations.
+\newblock \textit{Astrophysical Journal}, 745(1):50, 2012.
+
+\bibitem[Yoshida et~al.(2008)]{Yoshida2008}
+Yoshida, N., Omukai, T., Hernquist, L., and Springel, V.
+\newblock Formation of primordial stars in a $\Lambda$CDM universe.
+\newblock \textit{Science}, 321(5897):669--671, 2008.
+
+\end{thebibliography}
+
+\end{document}

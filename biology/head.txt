@@ -1,0 +1,24 @@
+==> blog-post.md <==
+# Forget the Blueprint: The Hidden Geometry Building Your Brain (and Every Leaf)
+
+For decades, biological education has leaned on a comfortable but increasingly fragile metaphor: the blueprint. We imagine DNA as a static master plan where every neuron’s coordinate is pre-assigned and every leaf vein is drawn with architectural intent. But the 16 billion neurons of the human neocortex cannot be specified by a mere three billion base pairs of genomic data. The complexity gap is not just wide; it is an ontological chasm.
+
+==> case-study.md <==
+# Nature’s Hidden Architecture: A Comparative Study of Constraint Geometry
+
+## 1. Introduction: Moving Beyond the “Blueprint”
+
+==> conceptual-primer.md <==
+# Beyond the Blueprint: How Biology Builds Itself through Active Media
+
+## 1. The Great Shift: From Blueprints to Active Media
+
+==> research-roadmap.md <==
+# Strategic Research Roadmap: Implementing Constraint Geometry in Bio-Inspired Engineering
+
+## 1. The Paradigm Shift: From Biological Blueprints to Constraint Geometry
+
+==> technical-report.md <==
+# Technical Report: A Formal Framework of Constraint Geometry and Self-Modifying Propagation Kernels in Biological Organization
+
+## 1. Introduction: From Blueprints to Constraint Geometry
